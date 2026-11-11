@@ -1,0 +1,54 @@
+name: Curve or numerical method proposal
+description: Propose a bounded curve, calculation, risk method or regression test.
+title: "[Curve] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Welcome your curve. P-Curve is selected open source, not the full PFICC system.
+        New topics require an existing openly licensed same-topic precedent plus human review.
+        No precedent established means HOLD. Never include private code, real positions or licensed raw data.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and bounded contribution
+      description: What useful behavior would change? Include the curve type and what is intentionally not modeled.
+    validations:
+      required: true
+  - type: textarea
+    id: conventions
+    attributes:
+      label: Financial and numerical conventions
+      description: State rate units, currencies/quote direction, compounding, year fractions/day count, calendars, interpolation/extrapolation and risk signs. Mark omitted concepts as not modeled.
+    validations:
+      required: true
+  - type: textarea
+    id: precedent
+    attributes:
+      label: Already-open same-topic precedent and license
+      description: Link the canonical repository, exact implementation and license. Explain the overlap. A public paper or unlicensed repository alone does not pass the gate.
+    validations:
+      required: true
+  - type: textarea
+    id: rights
+    attributes:
+      label: Code and data rights
+      description: Identify original versus adapted code, attribution/license obligations and any data usage limits. Confirm you have authority to publish; public precedent is not permission to export private work.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Reproducible baseline and edge tests
+      description: Supply a synthetic fixture, independent expected values/tolerances, commands and actual results. Cover relevant negative rates, zero/short maturity, non-finite inputs and off-node behavior. Mark unrun work NOT_RUN.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safeguards
+    attributes:
+      label: Publication safeguards
+      options:
+        - label: I have not included secrets, private PFICC material, client/employer information or restricted raw data.
+          required: true
+        - label: I understand that precedent and passing tests do not bypass human scope, rights and publication review.
+          required: true

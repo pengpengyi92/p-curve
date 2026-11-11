@@ -1,0 +1,45 @@
+name: Reproducible numerical or software bug
+description: Report unexpected behavior with a minimal synthetic example.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For security vulnerabilities or accidental disclosures, follow SECURITY.md instead.
+        Use synthetic data only. Do not attach real positions, restricted market data or private PFICC files.
+  - type: textarea
+    id: environment
+    attributes:
+      label: Version and environment
+      description: Include P-Curve version/commit, Python version, operating system and exact command.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal synthetic reproduction
+      description: Supply a small executable example and label units, compounding, day count/year fractions, curve type and risk signs as relevant.
+      render: python
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior and independent baseline
+      description: Show a hand calculation or justified oracle with tolerance. Cite a public source if needed; do not reuse the failing helper as its own oracle.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Include the numerical difference or sanitized traceback and state whether the failure is deterministic.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safe reproduction
+      options:
+        - label: The reproduction contains no secrets, client/employer information, private source or restricted raw data.
+          required: true

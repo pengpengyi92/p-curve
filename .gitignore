@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+.pytest_cache/
+.coverage
+.public-audit/
+.env
+.env.*
+raw_data/
+private_raw/
+*.csv

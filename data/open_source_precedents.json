@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0.0",
+  "reviewed_at": "2026-11-11",
+  "review_scope": "BOUNDED_PRIMARY_SOURCE_REVIEW_NOT_EXHAUSTIVE",
+  "review_method": "Canonical repository metadata, current commit, pinned license text and implementation inspection; no execution or third-party code import.",
+  "publication_gate": {
+    "same_topic_public_precedent_required": true,
+    "no_verified_precedent": "HOLD",
+    "precedent_is_sufficient_for_export": false,
+    "additional_gates": [
+      "OWNER_APPROVAL",
+      "EXPLICIT_FILE_ALLOWLIST",
+      "CODE_AND_DATA_RIGHTS",
+      "PRIVACY_REVIEW",
+      "CONVENTIONS_AND_LIMITATIONS",
+      "REPRODUCIBLE_TESTS"
+    ]
+  },
+  "sources": [
+    {
+      "id": "nelson_siegel_svensson",
+      "canonical_url": "https://github.com/luphord/nelson_siegel_svensson",
+      "default_branch_at_review": "master",
+      "reviewed_commit": "0cc9aea682e3e007d6cf08e028e07e7ca5157ed6",
+      "license_spdx": "MIT",
+      "license_label": "MIT License",
+      "license_path": "LICENSE",
+      "implementation_paths": [
+        "nelson_siegel_svensson/ns.py",
+        "nelson_siegel_svensson/nss.py"
+      ],
+      "covered_topics": ["ns_nss_given_parameters"],
+      "relationship": "TOPIC_PRECEDENT_ONLY_NOT_DEPENDENCY_NOT_BENCHMARK",
+      "code_copied": false,
+      "upstream_tests_executed": false,
+      "limitations": "Public given-parameter NS/NSS functions do not establish calibration convergence or validate P-Curve's implementation."
+    },
+    {
+      "id": "quantlib",
+      "canonical_url": "https://github.com/lballabio/QuantLib",
+      "default_branch_at_review": "master",
+      "reviewed_commit": "cf74c9f657150750dfbf00ed6fd4c0768bc5ce36",
+      "license_spdx": null,
+      "license_label": "QuantLib BSD-style three-condition license; GitHub SPDX metadata NOASSERTION",
+      "license_path": "LICENSE.TXT",
+      "implementation_paths": [
+        "ql/termstructures/yieldtermstructure.cpp",
+        "ql/pricingengines/bond/bondfunctions.cpp"
+      ],
+      "covered_topics": ["period_forward", "fixed_cashflow_pv", "related_bond_basis_point_risk"],
+      "relationship": "TOPIC_PRECEDENT_ONLY_NOT_DEPENDENCY_NOT_BENCHMARK",
+      "code_copied": false,
+      "upstream_tests_executed": false,
+      "limitations": "Bond BPS, yield BPV and zero-node bump DV01 are not interchangeable; full QuantLib date/instrument conventions are outside this scope."
+    },
+    {
+      "id": "financepy",
+      "canonical_url": "https://github.com/domokane/FinancePy",
+      "default_branch_at_review": "master",
+      "reviewed_commit": "0b0dc17ab3bcdaa0a21ae73b734f2641c9e5cf41",
+      "license_spdx": "GPL-3.0-or-later",
+      "license_label": "GPL v3 text plus GPL-3.0-or-later declaration in pyproject.toml",
+      "license_path": "LICENSE",
+      "license_metadata_path": "pyproject.toml",
+      "implementation_paths": ["financepy/products/bonds/bond.py"],
+      "observed_symbols": ["Bond.dv01", "Bond.key_rate_durations_zero_tent", "Bond.key_rate_durations"],
+      "covered_topics": ["parallel_dv01", "key_rate_zero_node_risk"],
+      "relationship": "TOPIC_PRECEDENT_ONLY_NOT_DEPENDENCY_NOT_BENCHMARK",
+      "code_copied": false,
+      "upstream_tests_executed": false,
+      "limitations": "Key-rate duration and currency DV01 have different units; zero-node and par-curve risk differ. No GPL implementation is copied or vendored."
+    },
+    {
+      "id": "strata",
+      "canonical_url": "https://github.com/tradingtechnologies/Strata",
+      "default_branch_at_review": "main",
+      "reviewed_commit": "171b1c3c9347e36534f014779064b1ff1bc19216",
+      "license_spdx": "Apache-2.0",
+      "license_label": "Apache License 2.0",
+      "license_path": "LICENSE.txt",
+      "implementation_paths": [
+        "modules/pricer/src/main/java/com/opengamma/strata/pricer/ZeroRateDiscountFactors.java",
+        "modules/market/src/main/java/com/opengamma/strata/market/curve/interpolator/LinearCurveInterpolator.java",
+        "modules/pricer/src/main/java/com/opengamma/strata/pricer/DiscountingPaymentPricer.java"
+      ],
+      "covered_topics": ["continuous_zero_discount_factor", "linear_zero_interpolation", "fixed_cashflow_pv", "curve_parameter_sensitivity"],
+      "relationship": "TOPIC_PRECEDENT_ONLY_NOT_DEPENDENCY_NOT_BENCHMARK",
+      "code_copied": false,
+      "upstream_tests_executed": false,
+      "limitations": "Public interpolation/payment/sensitivity topics are precedents, not proof that P-Curve matches Strata calibration, calendars, day counts or analytic sensitivities."
+    }
+  ],
+  "topic_gates": [
+    {"topic": "ns_nss_given_parameters", "sources": ["nelson_siegel_svensson"], "status": "PRECEDENT_FOUND"},
+    {"topic": "continuous_zero_discount_factor", "sources": ["strata"], "status": "PRECEDENT_FOUND"},
+    {"topic": "period_forward", "sources": ["quantlib"], "status": "PRECEDENT_FOUND"},
+    {"topic": "linear_zero_interpolation", "sources": ["strata"], "status": "PRECEDENT_FOUND"},
+    {"topic": "fixed_cashflow_pv", "sources": ["strata", "quantlib"], "status": "PRECEDENT_FOUND"},
+    {"topic": "parallel_dv01", "sources": ["financepy", "quantlib"], "status": "PRECEDENT_FOUND"},
+    {"topic": "key_rate_zero_node_risk", "sources": ["financepy", "strata"], "status": "PRECEDENT_FOUND"}
+  ],
+  "future_topic_gate": "UNREVIEWED_HOLD_UNTIL_PUBLIC_PRECEDENT_AND_ALL_OTHER_EXPORT_GATES_PASS",
+  "cross_library_accuracy": "UNMEASURED",
+  "performance_comparison": "UNMEASURED",
+  "frontier_or_sota_status": "NOT_ESTABLISHED"
+}

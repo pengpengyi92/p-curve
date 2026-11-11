@@ -1,0 +1,60 @@
+name: FICC repository recommendation
+description: Recommend a useful, already public FICC or curve repository for review.
+title: "[Repo] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Recommendations are welcome, including small educational projects.
+        A recommendation is not an endorsement, dependency decision or instruction to execute/download code.
+        Do not submit credentials, scraping scripts or private repository links.
+  - type: input
+    id: url
+    attributes:
+      label: Canonical public repository URL
+      placeholder: https://github.com/owner/repository
+    validations:
+      required: true
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Exact FICC relevance
+      description: Which curve type, financial conventions, dataset adapter, numerical test or engineering practice is useful? Link a concrete source file or example, preferably at a fixed commit.
+    validations:
+      required: true
+  - type: textarea
+    id: license
+    attributes:
+      label: License and source/data boundaries
+      description: Link the license and distinguish code permissions from data permissions. State unknowns; a public repository without a license is not verified open source.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: What you actually checked
+      description: State inspected version/date, documentation reviewed and any tests actually run. Include limitations, maintenance signals or competing alternatives without inventing scores.
+    validations:
+      required: true
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Your relationship to this repository
+      options:
+        - No affiliation
+        - User or contributor
+        - Author or maintainer
+        - Other affiliation (explain below)
+    validations:
+      required: true
+  - type: textarea
+    id: disclosure
+    attributes:
+      label: Optional context or affiliation disclosure
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Review boundary
+      options:
+        - label: This submission contains only public, non-sensitive references and is a recommendation for human review, not authorization to run code or disclose PFICC material.
+          required: true

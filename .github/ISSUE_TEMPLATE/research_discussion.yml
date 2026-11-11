@@ -1,0 +1,32 @@
+name: Research question or comparison
+description: Discuss a falsifiable curve/FICC question without implying a production result.
+title: "[Research] "
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question and intended contribution
+      description: State a falsifiable question and why it matters. Differentiate an identity, numerical experiment, calibration problem, forecast or trading claim.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Public sources and open-source precedents
+      description: Link relevant public sources, exact openly licensed implementation precedents and license evidence. If no same-topic implementation is known, say so; publication of that topic stays HOLD.
+    validations:
+      required: true
+  - type: textarea
+    id: protocol
+    attributes:
+      label: Proposed evaluation
+      description: Describe conventions, synthetic fixtures, independent baseline, metrics, costs and failure conditions. Distinguish actual measurements from NOT_RUN or UNMEASURED proposals.
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: Limitations and rights
+      description: Note code/data permissions, confidentiality and missing evidence. No private PFICC files, restricted raw data, customer information or implied institutional endorsement.
+    validations:
+      required: true
