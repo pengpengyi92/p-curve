@@ -12,7 +12,7 @@
 
 - [x] Add offline immutable `curve/` archive, source-specific rights review and
   first selected dated snapshot with all native source points.
-- [ ] Confirm v0.2.0 full tests, public allowlist and six-platform CI/readback.
+- [x] Confirm v0.2.0 full49tests, public allowlist and six-platform CI/readback.
 
 - [x] Run Python3.10/3.12/3.14 tests on Linux and Windows; record results.
 - [ ] Add independently sourced numerical reference fixtures only after their

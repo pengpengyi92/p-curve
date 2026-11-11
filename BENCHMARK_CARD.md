@@ -55,10 +55,11 @@ HOLD until their separate publication review passes.
 - **Result:**49/49 local tests PASS; independent0.2.0 install PASS;745 public nodes
   exactly match reviewed source extractions. All8 private-side SVG layouts
   visually inspected; no raw downloads or excluded-market figures exported.
-  Public CI/readback PENDING until delivery receipt.
+  Public PR passed12checks across both event types; actual Linux/Windows3.10,
+ 3.12and3.14 all PASS. Remote immutable archive subtree readback MATCH.
 - **Trade-off:** asynchronous source dates, par/YTM/spot differences, missing
   native tenors and selected publication rights constrain comparisons. These
   archives do not establish pricing accuracy, PIT, live feeds or financial value.
-- **Next Action:** verify public delivery/CI, then append future snapshots with
+- **Next Action:** append future snapshots with
   reviewed sources and new timestamps. Financial accuracy vs independent vendor,
   alpha, profitability and production readiness remain UNMEASURED / NOT_RUN.

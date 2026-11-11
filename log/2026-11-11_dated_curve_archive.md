@@ -34,14 +34,29 @@ No private archive/history or raw CSV, XLS/XLSX, ZIP download is exported.
 - Eight source-derived SVGs were rasterized for visual review using the bundled
   image tool; titles, dates, axes and plotted source nodes were legible.
 - Real public input and outputs generated successfully; exact41-file publication
-  allowlist/heuristic scan PASS. Remote CI/readback PENDING final delivery.
+  allowlist/heuristic scan PASS.
 - Git normalizes text to LF; source values/timestamps are unchanged. Generated
   snapshots are not overwritten when appended.
 - First CI found that Python3.10 rejects source timestamps with seven fractional
   second digits, while3.12/3.14 accepted them. The parser now normalizes only its
   internal comparison value to microseconds (the newer Python behavior), keeping
   original archived strings unchanged. Two regressions cover a strict old-parser
-  stub and write/read preservation. Actual3.10 rerun remains a CI gate.
+  stub and write/read preservation. Actual3.10 reruns passed on Linux and Windows.
+
+## Delivery receipts
+
+- [PR1](https://github.com/pengpengyi92/p-curve/pull/1) merged as
+  `e2bcfd18bd2a50334b30583187e10d68be50c583` after all12checks succeeded
+  (push+PR events, each Linux/Windows × Python3.10/3.12/3.14).
+- Verified code head `4f18feb7083297675bccaf413a9c7b6f8c0f36e9`:
+  [run43041490074](https://github.com/pengpengyi92/p-curve/actions/runs/43041490074)
+  and [run43041477243](https://github.com/pengpengyi92/p-curve/actions/runs/43041477243)
+  both SUCCESS. The initial failure is retained, not hidden or bypassed.
+- Remote immutable archive subtree matches local Git tree
+  `c771c3781fceacd4eac6d455b89eed615393ec65` exactly. Snapshot JSON/SVG values and
+  original timestamp strings were not changed by the compatibility fix.
+- This receipt-only follow-up uses the same workflow; the Actions page is the
+  live source for its status. No PyPI upload or hosted/live-data deployment.
 
 ## Next action
 
