@@ -41,7 +41,18 @@ installed. The register is not a performance benchmark or proof of frontier/SOTA
   offline attempt exposed a missing build backend in the unrelated research
   environment. No packages were installed into that environment. Fresh-environment
   build isolation installed the declared backend and succeeded.
-- Public remote and GitHub CI: PENDING.
+- Public remote created: [pengpengyi92/p-curve](https://github.com/pengpengyi92/p-curve).
+  Issues and Discussions enabled. PFICC independently rechecked as private;
+  its contents and visibility were not modified.
+- Initial public root commit `f2f63b657addeed7cdd202fc1147420fed419174` has **zero
+  parents**. Remote tree readback returned exactly the28 allowlisted files.
+- [Initial-code CI43037316248](https://github.com/pengpengyi92/p-curve/actions/runs/43037316248):
+  **6/6 jobs PASS** — Linux and Windows × Python3.10/3.12/3.14. Each job independently
+  installed the package, ran34 tests, ran the synthetic example and passed the
+  publication check. Follow-up receipt/documentation edits are checked by the
+  same workflow; the Actions page remains the live status source.
+- Package version is0.1.0. This delivery publishes source to GitHub only; no PyPI
+  upload, data service, hosted dashboard, trade or external upstream PR occurred.
 
 The scanner is a bounded heuristic and allowlist check, not proof of absence of
 all sensitive content. Every selected public file also receives content review.
@@ -50,5 +61,5 @@ production readiness, economic benefit and adoption remain **UNMEASURED**.
 
 ## Next action
 
-Finish the bounded release checks and remote readback. Review community curves
-and recommendations individually; do not widen the public scope automatically.
+Review community curves and recommendations individually; prioritize independent
+numerical oracles before breadth. Do not widen the public scope automatically.

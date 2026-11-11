@@ -101,8 +101,9 @@ dv01 = parallel_dv01(cashflows, curve)
 
 We welcome your curve implementations, independent test oracles, bug reports,
 FICC repository recommendations, and carefully bounded research questions.
-Start with an [issue](https://github.com/pengpengyi92/p-curve/issues/new/choose) or
-read [CONTRIBUTING.md](CONTRIBUTING.md). Novel topics without a reviewed public
+Start with an [issue](https://github.com/pengpengyi92/p-curve/issues/new/choose),
+join [Discussions](https://github.com/pengpengyi92/p-curve/discussions), or read
+[CONTRIBUTING.md](CONTRIBUTING.md). Novel topics without a reviewed public
 precedent remain on hold under the publication policy. Never submit private
 positions, employer/client material, credentials, or unlicensed datasets.
 

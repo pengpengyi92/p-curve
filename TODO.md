@@ -5,12 +5,12 @@
 - [x] Freeze selected-file manifest; review ownership, public precedents and all
   exported content; confirm no private Git history or market data.
 - [x] Run the full offline suite and synthetic example in a clean environment.
-- [ ] Publish the approved subset to `pengpengyi92/p-curve`; verify public
+- [x] Publish the approved subset to `pengpengyi92/p-curve`; verify public
   visibility, committed files and remote CI results.
 
 ## P1 — quality before breadth
 
-- [ ] Run tests on the declared Python range on Linux and Windows; record results.
+- [x] Run Python3.10/3.12/3.14 tests on Linux and Windows; record results.
 - [ ] Add independently sourced numerical reference fixtures only after their
   exact source/license and convention contracts are reviewed.
 - [ ] Review first community curves and FICC recommendations through the issue

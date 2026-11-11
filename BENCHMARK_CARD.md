@@ -25,7 +25,8 @@ release receipts are recorded in `log/2026-11-11_initial_public_release.md`.
 Independent fresh-environment install, **34/34 tests** (30 math +4 repository
 contracts), the synthetic example, dependency check and exact28-file publication
 check PASS on Python3.12.14. An unapproved-file negative probe was correctly
-rejected. Linux/Windows remote CI is PENDING. No claim is inferred from the
+rejected. Initial code commit passed all six Linux/Windows remote jobs on
+Python3.10/3.12/3.14; see the linked run in the delivery log. No claim is inferred from the
 private project's tests. Performance vs QuantLib/FinancePy/NSS, calibration
 accuracy, empirical forecasts, PIT/OOS alpha, economic benefit, user adoption and
 production readiness: **UNMEASURED / NOT_RUN**.
