@@ -18,7 +18,7 @@ from .math import (
     price_cashflows,
 )
 
-__version__ = "0.2.0"
+__version__ = "0.2.1"
 __all__ = [
     "BP", "Cashflows", "Curve", "discount_factor", "key_rate_dv01",
     "linear_zero", "nelson_siegel", "nelson_siegel_svensson",

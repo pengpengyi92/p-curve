@@ -10,6 +10,9 @@
 
 ## P1 — quality before breadth
 
+- [x] Add current pengyi-attributed overview, editorial comments and portable local launcher.
+- [ ] Verify one-click public Pages HTTP/rendering,64-test CI and both Git syncs.
+
 - [x] Add offline immutable `curve/` archive, source-specific rights review and
   first selected dated snapshot with all native source points.
 - [x] Confirm v0.2.0 full49tests, public allowlist and six-platform CI/readback.

@@ -63,3 +63,20 @@ HOLD until their separate publication review passes.
 - **Next Action:** append future snapshots with
   reviewed sources and new timestamps. Financial accuracy vs independent vendor,
   alpha, profitability and production readiness remain UNMEASURED / NOT_RUN.
+
+## 0.2.1 — One-click author-attributed overview
+
+- **Baseline:** GitHub HTML links show source; the frozen local overview has no
+  author/editorial presentation and lacks a stable local entry.
+- **Change:** stable current portal, online/source/local entry links, portable
+  launcher, pengyi curation credit and clearly subjective aesthetic comments.
+- **Measure:** author/link/source/data/rights/immutability contracts, full offline
+  tests, public CI, Pages deployment and actual browser rendering.
+- **Result:**64/64 offline tests PASS; frozen snapshot subtree unchanged.
+  Local file-browser automation blocked by tool policy, not bypassed. Hosted
+  verification and cross-platform CI PENDING until delivery.
+- **Trade-off:** private8curve portal stays local; public4curve portal may be
+  hosted. Aesthetic comments add no empirical or pricing evidence. Current page
+  can evolve while historical snapshots remain immutable.
+- **Next Action:** verify selected public deployment and both Git syncs. New
+  collection events still need new dated source/rights reviews and timestamps.
