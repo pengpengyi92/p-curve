@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="680" viewBox="0 0 1100 680" role="img" aria-labelledby="title description">
+<title id="title">UST — Treasury nominal par yield curve</title>
+<desc id="description">Selected public sovereign curves — latest available, collected 2026-11-11. Market date 2026-11-10. Generated 2026-11-11T14:33:34+00:00. Source nodes only; no missing yields filled.</desc>
+<rect width="1100" height="680" fill="#f8fafc"/>
+<g font-family="Arial,sans-serif" fill="#172033">
+<text x="85" y="35" font-size="23" font-weight="bold">UST — Treasury nominal par yield curve</text>
+<text x="85" y="60" font-size="13">Market date: 2026-11-10 | Generated: 2026-11-11T14:33:34+00:00</text>
+<text x="85" y="83" font-size="13">USD | Official Treasury constant-maturity nominal par yields; fitted benchmark, not zero or executable quotes</text>
+<text x="85" y="107" font-size="12" fill="#934500">PUBLIC DISPLAY — producer-reviewed source rights</text>
+<line x1="85" y1="525.000" x2="1065" y2="525.000" stroke="#d6dee9"/>
+<text x="73" y="529.000" text-anchor="end" font-size="12">3.889</text>
+<line x1="85" y1="449.000" x2="1065" y2="449.000" stroke="#d6dee9"/>
+<text x="73" y="453.000" text-anchor="end" font-size="12">4.222</text>
+<line x1="85" y1="373.000" x2="1065" y2="373.000" stroke="#d6dee9"/>
+<text x="73" y="377.000" text-anchor="end" font-size="12">4.554</text>
+<line x1="85" y1="297.000" x2="1065" y2="297.000" stroke="#d6dee9"/>
+<text x="73" y="301.000" text-anchor="end" font-size="12">4.886</text>
+<line x1="85" y1="221.000" x2="1065" y2="221.000" stroke="#d6dee9"/>
+<text x="73" y="225.000" text-anchor="end" font-size="12">5.218</text>
+<line x1="85" y1="145.000" x2="1065" y2="145.000" stroke="#d6dee9"/>
+<text x="73" y="149.000" text-anchor="end" font-size="12">5.551</text>
+<line x1="85.000" y1="145" x2="85.000" y2="525" stroke="#e3e8ef"/>
+<text x="85.000" y="547" text-anchor="middle" font-size="12">0</text>
+<line x1="117.667" y1="145" x2="117.667" y2="525" stroke="#e3e8ef"/>
+<text x="117.667" y="547" text-anchor="middle" font-size="12">1</text>
+<line x1="150.333" y1="145" x2="150.333" y2="525" stroke="#e3e8ef"/>
+<text x="150.333" y="547" text-anchor="middle" font-size="12">2</text>
+<line x1="183.000" y1="145" x2="183.000" y2="525" stroke="#e3e8ef"/>
+<text x="183.000" y="547" text-anchor="middle" font-size="12">3</text>
+<line x1="248.333" y1="145" x2="248.333" y2="525" stroke="#e3e8ef"/>
+<text x="248.333" y="547" text-anchor="middle" font-size="12">5</text>
+<line x1="313.667" y1="145" x2="313.667" y2="525" stroke="#e3e8ef"/>
+<text x="313.667" y="547" text-anchor="middle" font-size="12">7</text>
+<line x1="411.667" y1="145" x2="411.667" y2="525" stroke="#e3e8ef"/>
+<text x="411.667" y="547" text-anchor="middle" font-size="12">10</text>
+<line x1="575.000" y1="145" x2="575.000" y2="525" stroke="#e3e8ef"/>
+<text x="575.000" y="547" text-anchor="middle" font-size="12">15</text>
+<line x1="738.333" y1="145" x2="738.333" y2="525" stroke="#e3e8ef"/>
+<text x="738.333" y="547" text-anchor="middle" font-size="12">20</text>
+<line x1="901.667" y1="145" x2="901.667" y2="525" stroke="#e3e8ef"/>
+<text x="901.667" y="547" text-anchor="middle" font-size="12">25</text>
+<line x1="1065.000" y1="145" x2="1065.000" y2="525" stroke="#e3e8ef"/>
+<text x="1065.000" y="547" text-anchor="middle" font-size="12">30</text>
+<path d="M87.722,488.226 L89.083,463.069 L90.444,451.635 L93.167,431.052 L95.889,435.626 L101.333,412.756 L117.667,371.591 L150.333,332.713 L183.000,330.426 L248.333,314.417 L313.667,296.122 L411.667,275.539 L738.333,181.774 L1065.000,190.922" fill="none" stroke="#176b9e" stroke-width="2.5"/>
+<circle cx="87.722" cy="488.226" r="3" fill="#176b9e"><title>1M: 4.05%</title></circle>
+<circle cx="89.083" cy="463.069" r="3" fill="#176b9e"><title>1.5M: 4.16%</title></circle>
+<circle cx="90.444" cy="451.635" r="3" fill="#176b9e"><title>2M: 4.21%</title></circle>
+<circle cx="93.167" cy="431.052" r="3" fill="#176b9e"><title>3M: 4.3%</title></circle>
+<circle cx="95.889" cy="435.626" r="3" fill="#176b9e"><title>4M: 4.28%</title></circle>
+<circle cx="101.333" cy="412.756" r="3" fill="#176b9e"><title>6M: 4.38%</title></circle>
+<circle cx="117.667" cy="371.591" r="3" fill="#176b9e"><title>1Y: 4.56%</title></circle>
+<circle cx="150.333" cy="332.713" r="3" fill="#176b9e"><title>2Y: 4.73%</title></circle>
+<circle cx="183.000" cy="330.426" r="3" fill="#176b9e"><title>3Y: 4.74%</title></circle>
+<circle cx="248.333" cy="314.417" r="3" fill="#176b9e"><title>5Y: 4.81%</title></circle>
+<circle cx="313.667" cy="296.122" r="3" fill="#176b9e"><title>7Y: 4.89%</title></circle>
+<circle cx="411.667" cy="275.539" r="3" fill="#176b9e"><title>10Y: 4.98%</title></circle>
+<circle cx="738.333" cy="181.774" r="3" fill="#176b9e"><title>20Y: 5.39%</title></circle>
+<circle cx="1065.000" cy="190.922" r="3" fill="#176b9e"><title>30Y: 5.35%</title></circle>
+<text x="85" y="573" font-size="11">Maturity (caller-supplied years); source yields in percent per annum</text>
+<text x="85" y="591" font-size="11">Retrieved: 2026-11-11T14:29:38+00:00 | As-of: Latest available official daily table at retrieval; not live or executable</text>
+<text x="85" y="609" font-size="11">All supplied source nodes plotted. Lines are visual guides, not additional quotes or calibrated interpolation.</text>
+<text x="85" y="627" font-size="11">Not a live executable quote, trading recommendation, zero-curve conversion or PIT backtest.</text>
+<text x="85" y="645" font-size="11">Rights: APPROVED_PUBLIC_DISPLAY — Official Treasury-published Data.gov dataset metadata specifies CC0 1.0; attribute Treasury and preserve methodology/date limitatio</text>
+<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value=2026" target="_blank" rel="noopener noreferrer"><text x="85" y="668" font-size="10" fill="#176b9e">Source: https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&amp;field_tdr_date_value=2026</text></a>
+</g>
+</svg>

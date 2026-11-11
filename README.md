@@ -34,7 +34,20 @@ data, or authorize disclosure of PFICC. We do not claim to have surveyed every
 FICC repository. See [precedents](docs/OPEN_SOURCE_PRECEDENTS.md) and the
 [publication policy](docs/PUBLICATION_POLICY.md).
 
-## Version 0.1.0: deliberately bounded
+## Version 0.2.0: dated curve archives
+
+[Curve archive](curve/README.md) stores selected rights-reviewed sovereign curves
+under immutable timestamped folders. Each has an independent SVG, full node table
+and source metadata. Market date is separate from retrieval/generation time;
+latest-available data is not advertised as today's live price. Source-published
+par, issue-YTM and fitted-zero representations remain explicitly distinguished.
+
+Only approved public-display sources are included. Requested markets with
+unconfirmed redistribution rights remain excluded; see
+[source/data rights](curve/DATA_LICENSES.md). The offline renderer does not fetch
+data and cannot grant source rights. Future snapshots must pass the same gate.
+
+## Mathematical core (introduced in 0.1.0)
 
 - Given-parameter Nelson–Siegel and Nelson–Siegel–Svensson yield functions.
 - Continuous-zero discount factors and period-average continuous forwards.
@@ -114,5 +127,7 @@ positions, employer/client material, credentials, or unlicensed datasets.
 - [Changelog](CHANGELOG.md) and [log](log/): versioned delivery records.
 - [AGENTS.md](AGENTS.md): instructions for maintainers and coding agents.
 
-MIT applies to the approved material in **this repository only**. It does not
-license private PFICC code, data, models, or research. See [LICENSE](LICENSE).
+MIT applies to our code and documentation in **this repository only**. Archived
+source data retains the separate conditions in [DATA_LICENSES.md](curve/DATA_LICENSES.md),
+not an automatic MIT relicensing. No private PFICC code, data, models or research
+outside the selected public files is licensed here. See [LICENSE](LICENSE).

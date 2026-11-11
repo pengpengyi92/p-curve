@@ -5,6 +5,7 @@ Run after initializing this independent repository and before each public push.
 """
 
 import ast
+import importlib.util
 import json
 from pathlib import Path
 import re
@@ -88,6 +89,22 @@ def check() -> list[str]:
                 errors.append(f"source lacks license/implementation evidence: {source_id}")
             if source.get("code_copied") is not False:
                 errors.append(f"third-party copy outside initial approval: {source_id}")
+    archive_dir = ROOT / "curve"
+    if archive_dir.is_dir():
+        spec = importlib.util.spec_from_file_location("reviewed_curve_archive", ROOT / "scripts/curve_archive.py")
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        for snapshot_path in sorted(archive_dir.glob("*/snapshot.json")):
+            try:
+                snapshot = module.load_snapshot(snapshot_path)
+                module.validate_snapshot(snapshot, public=True)
+                if snapshot_path.parent.name != snapshot["snapshot_id"]:
+                    raise ValueError("snapshot ID differs from directory")
+                for name in ["index.html", *[m["id"] + ".svg" for m in snapshot["markets"]]]:
+                    if not (snapshot_path.parent / name).is_file():
+                        raise ValueError("missing archived artifact: " + name)
+            except (ValueError, OSError) as exc:
+                errors.append(f"public archive rejected: {snapshot_path.parent.name}: {exc}")
     return errors
 
 

@@ -23,6 +23,7 @@ INITIAL_TOPICS = {
     "fixed_cashflow_pv",
     "parallel_dv01",
     "key_rate_zero_node_risk",
+    "dated_sovereign_curve_archive",
 }
 
 
