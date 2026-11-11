@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 import xml.etree.ElementTree as ET
 
 
@@ -122,6 +123,43 @@ class CurveArchiveTests(unittest.TestCase):
             data["markets"][0].update(market)
             with self.subTest(top=top, market=market), self.assertRaises(ValueError):
                 archive.validate_snapshot(data)
+
+    def test_fractional_seconds_compatible_with_python310_parser(self):
+        real_datetime = archive.datetime
+
+        class OldFractionParser:
+            @staticmethod
+            def fromisoformat(value):
+                # Deterministically model the3.10 restriction even on new Python.
+                time_part = value.split("T", 1)[1].split("+", 1)[0]
+                if "." in time_part and len(time_part.split(".", 1)[1]) not in {3, 6}:
+                    raise ValueError("old parser rejects this fractional precision")
+                return real_datetime.fromisoformat(value)
+
+        cases = [
+            ("2026-11-11T14:28:16.1Z", 100000),
+            ("2026-11-11T14:28:16.1234+00:00", 123400),
+            ("2026-11-11T14:28:16.3461095Z", 346109),
+            ("2026-11-11T22:28:16.346109599+08:00", 346109),
+        ]
+        with patch.object(archive, "datetime", OldFractionParser):
+            for value, expected_microsecond in cases:
+                with self.subTest(value=value):
+                    parsed = archive._timestamp(value, "retrieved_at")
+                    self.assertEqual(parsed.microsecond, expected_microsecond)
+                    self.assertIsNotNone(parsed.utcoffset())
+
+    def test_high_precision_timestamp_original_string_is_preserved(self):
+        data = fixture()
+        original = "2026-11-11T14:28:16.3461095Z"
+        data["markets"][0]["retrieved_at"] = original
+        with tempfile.TemporaryDirectory() as directory:
+            path = archive.write_archive(data, Path(directory), public=True)
+            result = json.loads((path / "snapshot.json").read_text(encoding="utf-8"))
+            self.assertEqual(result["markets"][0]["retrieved_at"], original)
+            self.assertIn(original, (path / "fictional.svg").read_text(encoding="utf-8"))
+            self.assertIn(original, (path / "index.html").read_text(encoding="utf-8"))
+            self.assertEqual(data["markets"][0]["retrieved_at"], original)
 
     def test_paths_unsafe_urls_and_unreviewed_keys_rejected(self):
         for value in ["../escape", "nested/path", "CON", "a.b"]:

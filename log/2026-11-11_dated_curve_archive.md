@@ -27,7 +27,7 @@ No private archive/history or raw CSV, XLS/XLSX, ZIP download is exported.
 
 ## Verification
 
-- Full local suite **47/47 PASS**:30math +4repository +10renderer +3actual-archive
+- Full local suite **49/49 PASS**:30math +4repository +12renderer +3actual-archive
   regression tests. No skipped tests. Fresh0.2.0 wheel install PASS.
 - Independent source-to-output checks PASS: all selected source values unchanged,
  745 public nodes, and actual rights-HOLD private input rejected in public mode.
@@ -37,6 +37,11 @@ No private archive/history or raw CSV, XLS/XLSX, ZIP download is exported.
   allowlist/heuristic scan PASS. Remote CI/readback PENDING final delivery.
 - Git normalizes text to LF; source values/timestamps are unchanged. Generated
   snapshots are not overwritten when appended.
+- First CI found that Python3.10 rejects source timestamps with seven fractional
+  second digits, while3.12/3.14 accepted them. The parser now normalizes only its
+  internal comparison value to microseconds (the newer Python behavior), keeping
+  original archived strings unchanged. Two regressions cover a strict old-parser
+  stub and write/read preservation. Actual3.10 rerun remains a CI gate.
 
 ## Next action
 

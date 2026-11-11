@@ -30,8 +30,17 @@ def _text(value: object, field: str, limit: int = 2000) -> str:
 
 def _timestamp(value: object, field: str) -> datetime:
     raw = _text(value, field, 80)
+    # Python3.10's fromisoformat accepts 3/6 fractional digits, whereas newer
+    # versions accept (and truncate) longer fractions such as PowerShell's7.
+    # Normalize only this temporary comparison value to datetime's microsecond
+    # precision. The original metadata string is never rewritten.
+    normalized = re.sub(
+        r"(\d{2}:\d{2}:\d{2})\.(\d+)(?=Z$|[+-]\d{2}:\d{2}$)",
+        lambda match: match.group(1) + "." + (match.group(2) + "000000")[:6],
+        raw,
+    )
     try:
-        result = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+        result = datetime.fromisoformat(normalized.replace("Z", "+00:00"))
     except ValueError as exc:
         raise ValueError(f"{field} must be ISO8601") from exc
     if result.tzinfo is None or result.utcoffset() is None:
