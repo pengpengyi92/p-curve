@@ -44,6 +44,20 @@ Documentation can name their absence but must not disclose their private content
 
 ## Code and data are different permissions
 
+### Version0.2 approved extension
+
+The owner requested timestamped CGB/UST/JGB/UK/HK/euro-area curve storage. The
+selected PUBLIC extension is the offline archive renderer and only those
+individual datasets with reviewed public display/reproduction rights. Others
+remain private or unavailable. OpenBB provides a reviewed same-topic public
+precedent; it is not a code donor, dependency, or data entitlement.
+
+Every snapshot needs title, timezone-aware generation/retrieval times, distinct
+market date, source URL, curve representation, units and rights decision. Preserve
+all native nodes without inventing missing annual observations. Outputs are
+append-only; corrections create a new snapshot. Code MIT and upstream data rights
+are separate; see the archive's DATA_LICENSES document.
+
 An upstream MIT/BSD license covers that upstream's licensed code, not PFICC code
 or market data. Our MIT license does not grant rights to any private PFICC work.
 An openly viewable market page is not automatically an open dataset. Therefore

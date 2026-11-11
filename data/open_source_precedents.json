@@ -18,6 +18,24 @@
   },
   "sources": [
     {
+      "id": "openbb_curve_archive",
+      "canonical_url": "https://github.com/openbq-org/OpenBB",
+      "default_branch_at_review": "develop",
+      "reviewed_commit": "11290d8b468570cea64b5feb0225ad9cbf5228e0",
+      "license_spdx": "Apache-2.0",
+      "license_label": "Root LICENSE explicitly Apache License 2.0; GitHub SPDX metadata NOASSERTION",
+      "license_path": "LICENSE",
+      "implementation_paths": [
+        "openbb_platform/providers/ecb/openbb_ecb/models/yield_curve.py",
+        "openbb_platform/providers/federal_reserve/openbb_federal_reserve/models/yield_curve.py"
+      ],
+      "covered_topics": ["dated_sovereign_curve_archive"],
+      "relationship": "TOPIC_PRECEDENT_ONLY_NOT_DEPENDENCY_NOT_BENCHMARK",
+      "code_copied": false,
+      "upstream_tests_executed": false,
+      "limitations": "Public date/maturity/yield-curve representations establish the topic precedent, not source-data redistribution rights. No OpenBB code is copied or installed."
+    },
+    {
       "id": "nelson_siegel_svensson",
       "canonical_url": "https://github.com/luphord/nelson_siegel_svensson",
       "default_branch_at_review": "master",
@@ -91,6 +109,7 @@
     }
   ],
   "topic_gates": [
+    {"topic": "dated_sovereign_curve_archive", "sources": ["openbb_curve_archive"], "status": "PRECEDENT_FOUND"},
     {"topic": "ns_nss_given_parameters", "sources": ["nelson_siegel_svensson"], "status": "PRECEDENT_FOUND"},
     {"topic": "continuous_zero_discount_factor", "sources": ["strata"], "status": "PRECEDENT_FOUND"},
     {"topic": "period_forward", "sources": ["quantlib"], "status": "PRECEDENT_FOUND"},

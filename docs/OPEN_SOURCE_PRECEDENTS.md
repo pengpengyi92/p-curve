@@ -79,3 +79,15 @@ public implementation exists.
 Refresh triggers: a contribution proposes a new topic, a license or canonical
 repository changes, or a measured comparison is planned. Preserve reviewed SHAs
 and add a dated revision rather than quietly rewriting the historical evidence.
+
+## 2026-11-11 extension: dated sovereign curve archive
+
+[OpenBB](https://github.com/openbq-org/OpenBB/tree/11290d8b468570cea64b5feb0225ad9cbf5228e0)
+provides [ECB dated curve handling](https://github.com/openbq-org/OpenBB/blob/11290d8b468570cea64b5feb0225ad9cbf5228e0/openbb_platform/providers/ecb/openbb_ecb/models/yield_curve.py)
+and [Federal Reserve maturity/date observations](https://github.com/openbq-org/OpenBB/blob/11290d8b468570cea64b5feb0225ad9cbf5228e0/openbb_platform/providers/federal_reserve/openbb_federal_reserve/models/yield_curve.py).
+The pinned root [LICENSE](https://github.com/openbq-org/OpenBB/blob/11290d8b468570cea64b5feb0225ad9cbf5228e0/LICENSE)
+explicitly specifies Apache-2.0 (GitHub SPDX metadata itself is NOASSERTION).
+This clears the same-topic precedent gate for sourced dated-curve records, not
+rights to market data. P-Curve's offline renderer is original; no OpenBB code,
+dependencies, fixtures or data are imported. Source-by-source display decisions
+remain separate and are recorded in the archive DATA_LICENSES document.

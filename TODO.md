@@ -10,6 +10,10 @@
 
 ## P1 — quality before breadth
 
+- [x] Add offline immutable `curve/` archive, source-specific rights review and
+  first selected dated snapshot with all native source points.
+- [ ] Confirm v0.2.0 full tests, public allowlist and six-platform CI/readback.
+
 - [x] Run Python3.10/3.12/3.14 tests on Linux and Windows; record results.
 - [ ] Add independently sourced numerical reference fixtures only after their
   exact source/license and convention contracts are reviewed.
@@ -21,6 +25,6 @@
 ## HOLD — not initial publication scope
 
 - Calibration, par bootstrap, calendar/day-count engines, empirical macro models,
-  market-data connectors, real-data dashboards, multi-curve/CSA pricing, private
+  live market-data connectors, unreviewed real-data dashboards, multi-curve/CSA pricing, private
   strategies and production deployment. Each needs separate precedent, rights,
   disclosure, test and human approval; no automatic export from PFICC.

@@ -37,10 +37,27 @@ See `docs/PUBLICATION_POLICY.md`. A public precedent is necessary, not sufficien
 
 Given-parameter NS/NSS, continuous-zero DF and forward identities, linear-zero
 interpolation, deterministic fixed-cashflow PV, and finite-difference parallel /
-key-rate DV01, with fully synthetic fixtures. Same-topic public implementations
-must be documented before initial publication. Calibration, bootstrap, macro
-models, market-data ingestion, multi-curve and live execution are NOT approved by
-this initial scope. Do not silently promote TODO items to delivered features.
+key-rate DV01, with fully synthetic fixtures. Version0.2 also approves offline,
+timestamped sovereign-curve archives from individually rights-reviewed public
+sources, plus the standalone renderer. Every real-data snapshot needs separate
+source, date, units, representation and public-display rights evidence. HOLD
+sources must not enter public input, figures or output; a renderer flag does not
+establish source rights. Same-topic public implementations must be documented.
+Calibration, bootstrap, macro models, live data ingestion, multi-curve and live
+execution remain outside approved scope. Do not promote TODOs to delivered work.
+
+## Curve archive protocol
+
+- Store each snapshot under `curve/<UTC timestamp>/`; include title, generated_at,
+  retrieved_at, market_date, curve_type, units and source/rights links.
+- Never overwrite a snapshot. Corrections get a new timestamp and an explicit
+  note linking the superseded snapshot; earlier observations remain intact.
+- Keep all available native source tenors, including subannual and beyond30Y.
+  Missing integer years are unavailable, not invented observations or zero.
+- Do not combine par, benchmark-issue YTM and continuous-zero rates as one
+  homogeneous discount curve. Lines on plots are visual guides only.
+- Do not copy private PFICC archives to this repo. Produce a separately selected
+  public input after source/data-rights review. MIT code is not a data license.
 
 ## Engineering and evidence
 

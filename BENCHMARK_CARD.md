@@ -1,4 +1,4 @@
-# P-Curve 0.1.0 — Benchmark Card
+# P-Curve — Benchmark Cards
 
 ## Baseline
 
@@ -43,3 +43,22 @@ These are established formulas, not a novel curve model or SOTA claim.
 Complete the exact public gate and CI; then prioritize independent numerical
 oracles and community-reviewed bugs before adding features. New topics remain on
 HOLD until their separate publication review passes.
+
+## 0.2.0 — Timestamped sovereign archives
+
+- **Baseline:** no dedicated immutable curve archive or source-specific public
+  data gate; mathematical core only.
+- **Change:** offline SVG/HTML/JSON renderer, explicit source/market/retrieval
+  clocks, append-only writes, per-source data terms and745 selected native nodes.
+- **Measure:** synthetic renderer tests, actual-data date/grid/SVG regressions,
+  source-to-output equality, rights HOLD rejection, full package checks and CI.
+- **Result:**47/47 local tests PASS; independent0.2.0 install PASS;745 public nodes
+  exactly match reviewed source extractions. All8 private-side SVG layouts
+  visually inspected; no raw downloads or excluded-market figures exported.
+  Public CI/readback PENDING until delivery receipt.
+- **Trade-off:** asynchronous source dates, par/YTM/spot differences, missing
+  native tenors and selected publication rights constrain comparisons. These
+  archives do not establish pricing accuracy, PIT, live feeds or financial value.
+- **Next Action:** verify public delivery/CI, then append future snapshots with
+  reviewed sources and new timestamps. Financial accuracy vs independent vendor,
+  alpha, profitability and production readiness remain UNMEASURED / NOT_RUN.
