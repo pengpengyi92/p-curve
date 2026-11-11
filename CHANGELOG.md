@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.1 — 2026-11-11
+
+- Add a current curve overview with `Author: pengyi`, restrained subjective
+  aesthetic comments, full source-node tables and links to immutable snapshots.
+- Place rendered online overview links beside HTML source links; add a portable
+  local Windows launcher and public-only GitHub Pages entry files.
+- Keep the original dated JSON/HTML/SVG assets unchanged and private curves local.
+
 ## 0.2.0 — 2026-11-11
 
 - Add `curve/` append-only archives with title, generation/retrieval timestamps,

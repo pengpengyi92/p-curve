@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "release": "0.2.0",
+  "release": "0.2.1",
   "scope": "SELECTED_PUBLIC_SUBSET_NOT_FULL_PFICC",
   "default_data": "SYNTHETIC_EXAMPLES_AND_SELECTED_RIGHTS_REVIEWED_DATED_ARCHIVES",
   "external_code_copied": false,
@@ -18,6 +18,7 @@
   ],
   "files": [
     ".gitattributes",
+    ".nojekyll",
     ".github/ISSUE_TEMPLATE/bug_report.yml",
     ".github/ISSUE_TEMPLATE/config.yml",
     ".github/ISSUE_TEMPLATE/curve_proposal.yml",
@@ -32,10 +33,13 @@
     "CONTRIBUTING.md",
     "LICENSE",
     "README.md",
+    "index.html",
     "SECURITY.md",
     "TODO.md",
     "data/open_source_precedents.json",
     "curve/README.md",
+    "curve/index.html",
+    "curve/OPEN_OVERVIEW.cmd",
     "curve/DATA_LICENSES.md",
     "curve/20261111T143334Z/snapshot.json",
     "curve/20261111T143334Z/index.html",
@@ -48,15 +52,19 @@
     "examples/synthetic_curve.py",
     "log/2026-11-11_initial_public_release.md",
     "log/2026-11-11_dated_curve_archive.md",
+    "log/2026-11-11_one_click_overview.md",
     "publication_manifest.json",
     "pyproject.toml",
     "scripts/publication_check.py",
     "scripts/curve_archive.py",
+    "scripts/curve_overview.py",
     "src/p_curve/__init__.py",
     "src/p_curve/math.py",
     "tests/test_math.py",
     "tests/test_repository_contract.py",
     "tests/test_curve_archive.py",
-    "tests/test_archived_snapshot.py"
+    "tests/test_archived_snapshot.py",
+    "tests/test_curve_overview.py",
+    "tests/test_oneclick_entry.py"
   ]
 }

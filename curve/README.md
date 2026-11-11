@@ -1,5 +1,19 @@
 # Timestamped sovereign curve archive
 
+## Open the overview
+
+**[一键打开总览 / Open overview](https://pengpengyi92.github.io/p-curve/curve/)** ·
+[HTML source](index.html) · [Local one-click launcher](OPEN_OVERVIEW.cmd)
+
+**Author: pengyi** — curated and visualized by pengyi; source institutions remain
+the authors/providers of their data. “What a beautiful curve.” is a subjective
+editorial note, not a pricing or investment conclusion.
+
+The online button renders the selected public overview, not GitHub's HTML source
+viewer. After cloning/downloading, Windows users can double-click
+`OPEN_OVERVIEW.cmd` beside `index.html`; it opens only that local page. The
+current overview may evolve, but the timestamped source snapshots below do not.
+
 Each directory is one immutable collection event, not a synchronized live close.
 Every chart records its title, generation timestamp, market date, retrieval time,
 curve representation, units, source and rights decision. Source-published par,
@@ -29,9 +43,9 @@ CGB, HKGB and UK were also requested. Their derived figures/data are **not
 published here**, because public reproduction/redistribution permission was not
 established for the retrieved sources. See [DATA_LICENSES.md](DATA_LICENSES.md).
 
-GitHub previews SVGs. Download the folder to open its HTML overview locally;
-GitHub's HTML source page does not execute it. No hosted website or live feed is
-being deployed by this archive.
+GitHub previews SVGs but its HTML source page does not execute the overview.
+GitHub Pages renders the selected public files through the online button above.
+No private archive is hosted and no live feed is deployed.
 
 ## Add the next curve
 

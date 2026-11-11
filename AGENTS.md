@@ -48,6 +48,14 @@ execution remain outside approved scope. Do not promote TODOs to delivered work.
 
 ## Curve archive protocol
 
+- `curve/index.html` is the updatable current presentation, not a frozen market
+  observation. It may add navigation, author credit and clearly subjective
+  editorial comments while linking to unchanged timestamped artifacts.
+- Public Pages may serve ONLY this approved public repository. Never enable
+  Pages on private PFICC or deploy its eight-curve local portal to a public host.
+- Credit `Author: pengyi` for curation/visualization separately from official
+  data providers. Aesthetic commentary must not imply trading/pricing conclusions.
+
 - Store each snapshot under `curve/<UTC timestamp>/`; include title, generated_at,
   retrieved_at, market_date, curve_type, units and source/rights links.
 - Never overwrite a snapshot. Corrections get a new timestamp and an explicit

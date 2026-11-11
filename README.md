@@ -2,6 +2,13 @@
 
 **Selected open-source curve research from PFICC / P-Curve.**
 
+**[一键打开 Curve 总览](https://pengpengyi92.github.io/p-curve/curve/)** ·
+[HTML source](curve/index.html) · [Local one-click](curve/OPEN_OVERVIEW.cmd)
+
+Author: **pengyi** · Curated & visualized by pengyi. Official data sources are
+credited separately. Aesthetic comments in the viewer are subjective, not
+investment signals.
+
 P-Curve is a small, reproducible FICC research library maintained by Pengyi Peng.
 It is the **selected public subset** of the proprietary PFICC P-Curve program,
 not a mirror, full release, or disclosure of that program. PFICC and its P-Curve
