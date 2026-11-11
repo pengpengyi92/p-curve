@@ -73,10 +73,11 @@ HOLD until their separate publication review passes.
 - **Measure:** author/link/source/data/rights/immutability contracts, full offline
   tests, public CI, Pages deployment and actual browser rendering.
 - **Result:**64/64 offline tests PASS; frozen snapshot subtree unchanged.
-  Local file-browser automation blocked by tool policy, not bypassed. Hosted
-  verification and cross-platform CI PENDING until delivery.
+  Local file-browser automation blocked by tool policy, not bypassed. All12PR
+  checks and6main checks PASS; Pages built, HTTP200/HTML, author and4figure
+  checks PASS. Actual README click and browser visual review PASS.
 - **Trade-off:** private8curve portal stays local; public4curve portal may be
   hosted. Aesthetic comments add no empirical or pricing evidence. Current page
   can evolve while historical snapshots remain immutable.
-- **Next Action:** verify selected public deployment and both Git syncs. New
+- **Next Action:** preserve selected public deployment and both Git syncs. New
   collection events still need new dated source/rights reviews and timestamps.

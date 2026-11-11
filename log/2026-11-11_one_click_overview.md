@@ -30,7 +30,25 @@ curve.” Synchronize the presentation pattern without exporting private curves.
   full node tables, HOLD rejection and immutable-byte preservation checked.
 - Browser automation blocks `file://` navigation. Local-only UI clicks were not
   automated; private content was not served through a workaround.
-- Remote CI, Pages deployment, HTTP and public browser verification: PENDING.
+- [Public PR2](https://github.com/pengpengyi92/p-curve/pull/2) merged as
+  `9f7ced670dbf81466c4b5dcde1cbc2ffffdff6de` after12successful push/PR checks;
+  six Linux/Windows × Python3.10/3.12/3.14 combinations each ran64tests.
+- Main [CI43046169865](https://github.com/pengpengyi92/p-curve/actions/runs/43046169865)
+  and [Pages43046177042](https://github.com/pengpengyi92/p-curve/actions/runs/43046177042)
+  both SUCCESS. Native Pages reports `built`, main/root source, HTTPS enforced.
+- Live [one-click overview](https://pengpengyi92.github.io/p-curve/curve/) returned
+  HTTP200 /`text/html; charset=utf-8`, Author pengyi, editorial text and exactly
+  four figures. Sample SVG also returned200.
+- Actual browser test: refreshed GitHub README, clicked the displayed one-click
+  link, arrived at the rendered overview and visually confirmed the author,
+  comments and curve. Screenshot saved in local audit. No file-URL policy bypass.
+- Remote current-portal blob matches local Git SHA
+  `7b542717ddb74b6775e54fc16d33f7969856ccfa`. Frozen source tree unchanged.
+- Native GitHub Pages was selected to render existing repository HTML without a
+  new Site project, domain, credentials, dependencies or private deployment.
+  Independent latency/mobile benchmarks and traffic cost remain UNMEASURED.
+- Receipt-only follow-up commits are checked by the same CI; live status is on
+  Actions. No new prices or curve data are introduced by this presentation.
 
 ## Scope
 
