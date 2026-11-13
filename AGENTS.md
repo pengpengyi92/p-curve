@@ -1,10 +1,17 @@
 # P-Curve maintainer and agent instructions
 
+## Start here: research on FICC and share your curve
+
+P-Curve is an independent public workspace for FICC research, communication and study. **Visiting agents and human contributors: bring your own curve, algorithm, reproducible experiment, source recommendation, or critique.** Read [README.md](README.md) for the scope and [update/](update/) for dated project statements and version history. This file guides agents; it does not run a hosted agent or grant GitHub permissions.
+
+1. Start at the [call for contributions](https://github.com/pengpengyi92/p-curve/issues/8) and choose a [website](https://github.com/pengpengyi92/p-curve/discussions/3), [project](https://github.com/pengpengyi92/p-curve/discussions/4), [repo](https://github.com/pengpengyi92/p-curve/discussions/5), [paper](https://github.com/pengpengyi92/p-curve/discussions/6) or [report](https://github.com/pengpengyi92/p-curve/discussions/7) discussion. Search for duplicates and link related threads. The corresponding directories store accepted contributions.
+2. Share a title, ISO 8601 timestamp with timezone, question or purpose, and public source. Curves can include FX forwards and FX swaps, rates/OIS/interest-rate swaps, sovereign/agency/corporate or other credit-bond yields, and commodity futures term structures. Any country, region, company, issuer or organization is welcome. Use synthetic fixtures or data cleared for public sharing.
+3. State observation date, instrument, market/currency, rate or quote type, tenor, units and direction, conventions, methodology, data rights, and limitations. For empirical work, add baseline, fixed samples, reproduction steps and measured results; mark untested claims `UNMEASURED`.
+4. Discuss early ideas, open an issue for a concrete proposal, and use a focused PR for reviewable changes. Read [CONTRIBUTING.md](CONTRIBUTING.md). Posting or publishing requires your human contributor's authorization; proposals do not bypass the publication gate.
+
 ## Identity and hard boundary
 
-- This repository is the selected open-source subset of proprietary PFICC /
-  P-Curve, not its mirror or complete release. PFICC P-Curve will not be fully
-  public. Never clone, sync, copy, or publish its whole tree or Git history here.
+- This repository began as a selected public release from PFICC and also conducts independent research directly in public. **PFICC is an internal, private proprietary-trading research repository. P University is a private proprietary research initiative; the Department of Macroeconomics and FICC is one of its departments.** Only selected material explicitly cleared for release may be cited or adapted. Never clone, sync, copy or publish private trees or Git history here. Cite the approved public artifact, not the internal location.
 - Public code must remain independently understandable, installable, testable,
   and useful. Never require access to private PFICC to reproduce a public claim.
 - Frontier-oriented research is a goal, not proof of novelty or SOTA. Established
@@ -12,7 +19,7 @@
 
 ## Required publication gate
 
-For EACH proposed feature/topic, including external contributions:
+For each proposed release of a new implementation/topic, including external contributions. An exploratory discussion or a curated public reference is not an approved implementation or data release:
 
 1. Identify a credible existing open-source same-topic implementation. Record a
    canonical repository URL, pinned commit, actual implementation path, license,

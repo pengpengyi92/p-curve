@@ -2,8 +2,10 @@
 
 ## Purpose
 
-P-Curve makes selected parts of the proprietary PFICC P-Curve program useful to
-the public. It is not a staged commitment to disclose the remaining program.
+P-Curve conducts independent public research and may release selected material
+from private PFICC or from the Department of Macroeconomics and FICC within
+private P University. Naming either source does not authorize disclosure or
+commit to a wider release.
 The public repository has an independent root commit and no private Git history.
 Its license applies only to approved public files.
 

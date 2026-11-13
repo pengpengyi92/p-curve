@@ -1,5 +1,14 @@
 # P-Curve — Benchmark Cards
 
+## Community update — 2026-11-14
+
+- **Baseline:** public math library and immutable curve archive; no five-track contribution index.
+- **Change:** introduce a public research statement, agent onboarding and five linked submission tracks without widening the implementation or data allowlists.
+- **Measure:** offline suite, synthetic example, exact publication inventory and public Issue/Discussion readback.
+- **Result:** 64 local tests, synthetic example and publication check passed; five public discussion threads and [Issue #8](https://github.com/pengpengyi92/p-curve/issues/8) created. Existing source, snapshots and package version unchanged.
+- **Trade-off:** discussion is open, but publication still requires rights and maintainer review; three threads remain in General. Adoption and research performance are **UNMEASURED**.
+- **Next Action:** review the first contributed curve and finish organizing discussion categories.
+
 ## Baseline
 
 No standalone public P-Curve package. Selected owner-controlled mathematical

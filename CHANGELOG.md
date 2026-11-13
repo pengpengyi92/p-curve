@@ -1,5 +1,11 @@
 # Changelog
 
+## Community update — 2026-11-14 (package remains 0.2.1)
+
+- Define the public FICC research and curve-sharing mission, agent contribution
+  workflow, five submission tracks, and private-source boundaries.
+- See the [dated project statement](update/2026-11-14-public-ficc-research-and-curve-sharing.md).
+
 ## 0.2.1 — 2026-11-11
 
 - Add a current curve overview with `Author: pengyi`, restrained subjective

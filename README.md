@@ -1,6 +1,6 @@
 # P-Curve
 
-**Selected open-source curve research from PFICC / P-Curve.**
+**Research on FICC. Share your curve.** P-Curve is a public place to study fixed income, currencies and commodities, conduct reproducible research, and exchange curve implementations and ideas. Humans and AI agents are welcome: start with [AGENTS.md](AGENTS.md).
 
 **[一键打开 Curve 总览](https://pengpengyi92.github.io/p-curve/curve/)** ·
 [HTML source](curve/index.html) · [Local one-click](curve/OPEN_OVERVIEW.cmd)
@@ -9,15 +9,23 @@ Author: **pengyi** · Curated & visualized by pengyi. Official data sources are
 credited separately. Aesthetic comments in the viewer are subjective, not
 investment signals.
 
-P-Curve is a small, reproducible FICC research library maintained by Pengyi Peng.
-It is the **selected public subset** of the proprietary PFICC P-Curve program,
-not a mirror, full release, or disclosure of that program. PFICC and its P-Curve
-work will **not** be fully open-sourced. This public repository has its own scope,
-tests, versioning, and contribution process.
+P-Curve began with a selected release from **PFICC**, an internal, private proprietary-trading research repository. It now also conducts original curve research directly in public. We may publish or cite selected work from PFICC and the **Department of Macroeconomics and FICC**, one of the departments of **P University**, a private proprietary research initiative. Only explicitly approved material may be shared. Neither private repository is a dependency or a mirror of P-Curve.
 
-> 这是 PFICC / P-Curve 的精选开源部分，不是 PFICC 或其 P-Curve 的完整公开版。
-> 已有可信开源先例的相关主题，才进入公开候选；找不到相关先例的部分暂缓公开。
-> 有先例也不等于自动公开：仍须审查代码权属、许可、数据和研究边界。
+> P-Curve 是公开的 FICC 研究、学习与交流项目。欢迎分享自己的曲线。PFICC 和 P University 均为私有；只会择取经批准可公开的成果，不公开内部原始材料。
+
+## P-Curve opens for public FICC research and curve sharing
+
+**2026-11-14T03:37:12+08:00** (Asia/Shanghai) · [Full statement and version history](update/).
+
+Share synthetic or rights-cleared curves from any market: FX forwards and swaps, rates/OIS/swap curves, sovereign and corporate/credit bond yields, or commodity futures term structures. Countries, regions, issuers, and other organizations are all welcome. Clearly distinguish the market observation date from the submission timestamp.
+
+| Direction | What to share |
+| --- | --- |
+| [Website](website/) · [Discuss](https://github.com/pengpengyi92/p-curve/discussions/3) | Public data-source pages, methodology guides, and educational sites |
+| [Project](project/) · [Discuss](https://github.com/pengpengyi92/p-curve/discussions/4) | Original implementations, synthetic experiments, and reproductions |
+| [Repo](repo/) · [Discuss](https://github.com/pengpengyi92/p-curve/discussions/5) | Upstream FICC code with an exact entry point and license |
+| [Paper](paper/) · [Discuss](https://github.com/pengpengyi92/p-curve/discussions/6) | Research papers, reading notes, and reproduction proposals |
+| [Report](report/) · [Discuss](https://github.com/pengpengyi92/p-curve/discussions/7) | Your own curve reports, convention comparisons, or source notes |
 
 ## Why a selected public release?
 
@@ -119,13 +127,7 @@ dv01 = parallel_dv01(cashflows, curve)
 
 ## Contribute your curve
 
-We welcome your curve implementations, independent test oracles, bug reports,
-FICC repository recommendations, and carefully bounded research questions.
-Start with an [issue](https://github.com/pengpengyi92/p-curve/issues/new/choose),
-join [Discussions](https://github.com/pengpengyi92/p-curve/discussions), or read
-[CONTRIBUTING.md](CONTRIBUTING.md). Novel topics without a reviewed public
-precedent remain on hold under the publication policy. Never submit private
-positions, employer/client material, credentials, or unlicensed datasets.
+Bring your own curve, algorithm, research question, or negative result. Start at [Share your curve — Issue #8](https://github.com/pengpengyi92/p-curve/issues/8) and choose a [Discussion](https://github.com/pengpengyi92/p-curve/discussions). Use issues for concrete proposals and focused PRs for reviewed changes. Include a title, timezone-aware timestamp, conventions, source and rights. Read [CONTRIBUTING.md](CONTRIBUTING.md) first. A proposal is not authorization to upload market data or release a new method.
 
 ## Evidence and roadmap
 

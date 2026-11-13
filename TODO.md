@@ -1,5 +1,12 @@
 # Verifiable priorities
 
+## P0 — community research launch
+
+- [x] Publish a dated direction and five public contribution indexes.
+- [x] Open [the public call for contributions](https://github.com/pengpengyi92/p-curve/issues/8) and five linked discussion threads.
+- [ ] Move Repo, Paper and Report threads from General to dedicated categories once those categories exist.
+- [ ] Review the first submitted curve for conventions, reproducibility and rights before accepting any files.
+
 ## P0 — initial public gate
 
 - [x] Freeze selected-file manifest; review ownership, public precedents and all

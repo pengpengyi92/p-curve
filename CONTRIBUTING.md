@@ -4,9 +4,9 @@ Welcome your curve implementations, numerical tests, reproducible bug reports,
 research questions, and recommendations of useful FICC repositories. A careful
 small contribution is more useful than an unreviewable expansion of scope.
 
-P-Curve is a **selected open-source surface** of PFICC's P-Curve research, not the
-complete proprietary system. A contribution does not grant access to PFICC, and
-this repository is not a route for requesting private code, datasets or methods.
+P-Curve conducts original FICC research in public and may publish selected,
+release-approved work from private PFICC or P University's private Department of
+Macroeconomics and FICC. A contribution does not grant access to either initiative.
 
 ## Choose a contribution path
 
@@ -18,10 +18,12 @@ this repository is not a route for requesting private code, datasets or methods.
 | A research question or comparison | Research discussion issue | Falsifiable question, public references, baseline and a proposed measurement |
 | Better documentation or a regression test | A small PR | Explain which ambiguity or failure the change resolves |
 
-Issue templates are available under **New issue**. Use Discussions if enabled for
+Issue templates are available under **New issue**. Use [Discussions](https://github.com/pengpengyi92/p-curve/discussions) for
 longer exploration; keep an implementation issue or PR linked to the resulting
 decision. Recommendations are reviewed, not automatically endorsed, installed,
 executed or merged into the project.
+
+Use one of the five tracks: [website](website/), [project](project/), [repo](repo/), [paper](paper/) or [report](report/). Start with a title, timezone-aware timestamp, primary public link or synthetic-data statement, and one concrete reason the submission is useful. For a curve, include the market date separately, plus instrument, currency/quote direction, curve type, units, conventions and source rights. When redistribution is unclear, share a link and commentary, not a data attachment.
 
 ## Publication gate: precedent is necessary, not sufficient
 

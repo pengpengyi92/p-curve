@@ -35,7 +35,7 @@ def check() -> list[str]:
     for path in sorted(expected - actual):
         errors.append(f"allowlisted file missing from public inventory: {path}")
     patterns = [
-        ("private repository URL", re.compile(r"https?://github\.com/[^/\s]+/PFICC(?:[/#?]|\b)", re.I)),
+        ("private repository URL", re.compile(r"https?://github\.com/[^/\s]+/(?:PFICC|P-University)(?:[/#?]|\b)", re.I)),
         ("absolute Windows path", re.compile(r"\b[A-Z]:[\\/]")),
         ("credential-like token", re.compile(r"(?:gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,})")),
         ("private key", re.compile(r"-----BEGIN (?:RSA|OPENSSH|EC) PRIVATE KEY-----")),
