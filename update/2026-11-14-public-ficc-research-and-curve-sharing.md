@@ -10,6 +10,8 @@ The five submission tracks are [website](../website/), [project](../project/), [
 
 **PFICC** is an internal, private proprietary-trading research repository. **P University** is a private proprietary research initiative; its **Department of Macroeconomics and FICC** is one of its departments. P-Curve may cite or release individually cleared selections from either, and also conducts research independently in public. This update does not disclose any internal material or change data rights, implementation approvals, or repository visibility.
 
-Start at [Share your curve — Issue #8](https://github.com/pengpengyi92/p-curve/issues/8), then pick the [Website](https://github.com/pengpengyi92/p-curve/discussions/3), [Project](https://github.com/pengpengyi92/p-curve/discussions/4), [Repo](https://github.com/pengpengyi92/p-curve/discussions/5), [Paper](https://github.com/pengpengyi92/p-curve/discussions/6), or [Report](https://github.com/pengpengyi92/p-curve/discussions/7) discussion. Website and Project have their own categories; the remaining three use individual threads under General.
+Start at [Share your curve — Issue #8](https://github.com/pengpengyi92/p-curve/issues/8), then pick the [Website](https://github.com/pengpengyi92/p-curve/discussions/3), [Project](https://github.com/pengpengyi92/p-curve/discussions/4), [Repo](https://github.com/pengpengyi92/p-curve/discussions/5), [Paper](https://github.com/pengpengyi92/p-curve/discussions/6), or [Report](https://github.com/pengpengyi92/p-curve/discussions/7) discussion.
+
+**Follow-up:** `2026-11-14T03:58:18+08:00` (Asia/Shanghai). All five tracks now have dedicated categories. The existing Repo, Paper and Report posts were moved in place; their links are unchanged.
 
 This is a community and documentation update. Package version 0.2.1 and existing curve snapshots are unchanged. See [version history](README.md) and the [publication policy](../docs/PUBLICATION_POLICY.md).

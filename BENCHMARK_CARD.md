@@ -9,6 +9,8 @@
 - **Trade-off:** discussion is open, but publication still requires rights and maintainer review; three threads remain in General. Adoption and research performance are **UNMEASURED**.
 - **Next Action:** review the first contributed curve and finish organizing discussion categories.
 
+Follow-up: all five dedicated categories are live. The original three threads moved in place; no duplicate posts were created.
+
 ## Baseline
 
 No standalone public P-Curve package. Selected owner-controlled mathematical
