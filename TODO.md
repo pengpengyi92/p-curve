@@ -1,5 +1,12 @@
 # Verifiable priorities
 
+## P1 — grouped sovereign archive (2026-11-14)
+
+- [x] Add separate group indexes, dated geography pages and exact public source metadata.
+- [ ] Verify an exact-date Hong Kong government-bond fixing source and source
+  rights; do not relabel local Exchange Fund data as government bonds.
+- [ ] Establish rights for a CGB and U.K. public figure or retain source-only pages.
+
 ## P1 — visualization reference route (2026-11-14)
 
 - [x] Add12 pinned public references and FICC-specific axes/units/curve-type/rights checklist; preserve unknown-license/NOTICE/AGPL boundaries.

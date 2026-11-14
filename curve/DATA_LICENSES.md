@@ -18,3 +18,15 @@ Only a small latest-date selected dataset is stored here, not the downloaded
 historical CSVs, XLS/XLSX workbooks, ZIPs, an API mirror or raw cache. Source hashes,
 retrieval times and representations appear in snapshot notes. The metadata
 labels do not certify financial accuracy or grant rights beyond the sources.
+
+## Grouped edition — 2026-11-14
+
+- **Australia F2 nominal yields:** the four daily series in the edition identify
+  the RBA alone in the CSV's source row. Public display is limited to those
+  selected data and the derived chart, under [RBA terms, sections 3 and 5](https://www.rba.gov.au/copyright/).
+  Source: Reserve Bank of Australia 2026. P-Curve drew the chart without
+  changing yields. No RBA endorsement or use as a financial benchmark.
+- U.S., Japan and ECB use the same source-specific conditions as above.
+- ChinaBond and BoE remain **HOLD**. Hong Kong's source-only page does not
+  republish the institutional fixings or y-t-m from the separate HKMA Exchange
+  Fund proxy; that proxy has a third-party data credit and remains **HOLD**.

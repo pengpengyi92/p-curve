@@ -1,5 +1,19 @@
 # P-Curve — Benchmark Cards
 
+## Grouped sovereign archive — 2026-11-14
+
+- **Baseline:** four rights-reviewed public series in a flat dated archive.
+- **Change:** index new immutable editions by market group and geography; add RBA
+  F2 and keep source-only pages distinct from plotted data.
+- **Measure:** source-date/node checks, internal HTML links, SVG-node counts,
+  HOLD exclusions and exact publication allowlist.
+- **Result:** five public series, 749 source nodes; no synthetic fills. Pricing
+  accuracy, investment value and adoption remain **UNMEASURED**.
+- **Trade-off:** different observation dates and quote conventions; do not treat
+  plots as compatible zero curves. Public art is text-based SVG.
+- **Next Action:** resolve the exact HKGB observation and outstanding source rights
+  before exporting any additional series.
+
 ## Visualization reference route — 2026-11-14
 
 - **Baseline**:independent curve renderer and public archive; no visualization repo reading route.

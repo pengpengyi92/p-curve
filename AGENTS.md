@@ -63,8 +63,11 @@ execution remain outside approved scope. Do not promote TODOs to delivered work.
 - Credit `Author: pengyi` for curation/visualization separately from official
   data providers. Aesthetic commentary must not imply trading/pricing conclusions.
 
-- Store each snapshot under `curve/<UTC timestamp>/`; include title, generated_at,
-  retrieved_at, market_date, curve_type, units and source/rights links.
+- Store new grouped snapshots under
+  `curve/{developed,emerging}/<country-or-region>/<UTC timestamp>/`; keep the
+  group edition index under `curve/<group>/<UTC timestamp>/`. Leave existing
+  flat snapshots untouched. Include title, generated_at, retrieved_at,
+  market_date, curve_type, units and source/rights links.
 - Never overwrite a snapshot. Corrections get a new timestamp and an explicit
   note linking the superseded snapshot; earlier observations remain intact.
 - Keep all available native source tenors, including subannual and beyond30Y.

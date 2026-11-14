@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_id": "20261114T155232Z",
+  "title": "Global sovereign yield curves — collection 2026-11-14",
+  "generated_at": "2026-11-14T15:52:32+00:00",
+  "notes": [
+    "IMF WEO classification; source curves use different conventions and dates.",
+    "No additional tenor is calibrated or filled; source file timestamps record collection, not historical first availability."
+  ],
+  "markets": [
+    {
+      "id": "ust",
+      "title": "US Treasury — nominal par",
+      "currency": "USD",
+      "market_date": "2026-11-13",
+      "asof": "Latest usable observation in the saved official input(s); not a common close.",
+      "retrieved_at": "2026-11-14T15:41:50+00:00",
+      "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value_month=202611",
+      "curve_type": "Treasury nominal constant-maturity par",
+      "units": "percent_per_annum",
+      "status": "AVAILABLE",
+      "rights": {
+        "status": "APPROVED_PUBLIC_DISPLAY",
+        "source_url": "https://catalog.data.gov/dataset/interest-rate-statistics-daily-treasury-yield-curve-rates",
+        "reason": "CC0 1.0 per Data.gov. US Department of the Treasury. P-Curve selected the dated row and drew the chart; yields unchanged."
+      },
+      "nodes": [
+        {
+          "tenor": "1M",
+          "years": 0.08333333333333333,
+          "yield_pct": 4.1
+        },
+        {
+          "tenor": "1.5M",
+          "years": 0.125,
+          "yield_pct": 4.18
+        },
+        {
+          "tenor": "2M",
+          "years": 0.16666666666666666,
+          "yield_pct": 4.26
+        },
+        {
+          "tenor": "3M",
+          "years": 0.25,
+          "yield_pct": 4.32
+        },
+        {
+          "tenor": "4M",
+          "years": 0.3333333333333333,
+          "yield_pct": 4.34
+        },
+        {
+          "tenor": "6M",
+          "years": 0.5,
+          "yield_pct": 4.42
+        },
+        {
+          "tenor": "1Y",
+          "years": 1.0,
+          "yield_pct": 4.65
+        },
+        {
+          "tenor": "2Y",
+          "years": 2.0,
+          "yield_pct": 4.88
+        },
+        {
+          "tenor": "3Y",
+          "years": 3.0,
+          "yield_pct": 4.92
+        },
+        {
+          "tenor": "5Y",
+          "years": 5.0,
+          "yield_pct": 4.98
+        },
+        {
+          "tenor": "7Y",
+          "years": 7.0,
+          "yield_pct": 5.05
+        },
+        {
+          "tenor": "10Y",
+          "years": 10.0,
+          "yield_pct": 5.15
+        },
+        {
+          "tenor": "20Y",
+          "years": 20.0,
+          "yield_pct": 5.52
+        },
+        {
+          "tenor": "30Y",
+          "years": 30.0,
+          "yield_pct": 5.47
+        }
+      ],
+      "notes": [
+        "Source: US Department of the Treasury.",
+        "Source response SHA-256 (ust.xml): a503506e7474780e0f04eb4f60bb62806b70efadd34eed3bc2e1fea05b111a1f; input recorded 2026-11-14T15:41:50+00:00; https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value_month=202611"
+      ]
+    }
+  ]
+}

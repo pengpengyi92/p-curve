@@ -1,0 +1,3640 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_id": "20261114T155232Z",
+  "title": "Global sovereign yield curves — collection 2026-11-14",
+  "generated_at": "2026-11-14T15:52:32+00:00",
+  "notes": [
+    "IMF WEO classification; source curves use different conventions and dates.",
+    "No additional tenor is calibrated or filled; source file timestamps record collection, not historical first availability."
+  ],
+  "markets": [
+    {
+      "id": "euro_area_aaa",
+      "title": "Euro area — AAA spot",
+      "currency": "EUR",
+      "market_date": "2026-11-12",
+      "asof": "Latest usable observation in the saved official input(s); not a common close.",
+      "retrieved_at": "2026-11-14T15:42:07+00:00",
+      "source_url": "https://data-api.ecb.europa.eu/service/data/YC/B.U2.EUR.4F.G_N_A.SV_C_YM.?startPeriod=2026-11-10&endPeriod=2026-11-14&format=csvdata",
+      "curve_type": "ECB fitted continuous zero; AAA government issuers",
+      "units": "percent_per_annum",
+      "status": "AVAILABLE",
+      "rights": {
+        "status": "APPROVED_PUBLIC_DISPLAY",
+        "source_url": "https://www.ecb.europa.eu/services/using-our-site/disclaimer/html/index.en.html",
+        "reason": "European Central Bank; latest dated source nodes reproduced unchanged. P-Curve added the tenor mapping and redrew the chart."
+      },
+      "nodes": [
+        {
+          "tenor": "3M",
+          "years": 0.25,
+          "yield_pct": 2.6357552721
+        },
+        {
+          "tenor": "4M",
+          "years": 0.3333333333333333,
+          "yield_pct": 2.6901589417
+        },
+        {
+          "tenor": "5M",
+          "years": 0.4166666666666667,
+          "yield_pct": 2.738787635
+        },
+        {
+          "tenor": "6M",
+          "years": 0.5,
+          "yield_pct": 2.7821896015
+        },
+        {
+          "tenor": "7M",
+          "years": 0.5833333333333334,
+          "yield_pct": 2.8208653776
+        },
+        {
+          "tenor": "8M",
+          "years": 0.6666666666666666,
+          "yield_pct": 2.8552717684
+        },
+        {
+          "tenor": "9M",
+          "years": 0.75,
+          "yield_pct": 2.8858255033
+        },
+        {
+          "tenor": "10M",
+          "years": 0.8333333333333334,
+          "yield_pct": 2.9129065947
+        },
+        {
+          "tenor": "11M",
+          "years": 0.9166666666666666,
+          "yield_pct": 2.9368614196
+        },
+        {
+          "tenor": "1Y",
+          "years": 1.0,
+          "yield_pct": 2.9580055507
+        },
+        {
+          "tenor": "1Y1M",
+          "years": 1.0833333333333333,
+          "yield_pct": 2.9766263541
+        },
+        {
+          "tenor": "1Y2M",
+          "years": 1.1666666666666667,
+          "yield_pct": 2.9929853739
+        },
+        {
+          "tenor": "1Y3M",
+          "years": 1.25,
+          "yield_pct": 3.007320521
+        },
+        {
+          "tenor": "1Y4M",
+          "years": 1.3333333333333333,
+          "yield_pct": 3.0198480812
+        },
+        {
+          "tenor": "1Y5M",
+          "years": 1.4166666666666667,
+          "yield_pct": 3.030764558
+        },
+        {
+          "tenor": "1Y6M",
+          "years": 1.5,
+          "yield_pct": 3.0402483631
+        },
+        {
+          "tenor": "1Y7M",
+          "years": 1.5833333333333333,
+          "yield_pct": 3.048461367
+        },
+        {
+          "tenor": "1Y8M",
+          "years": 1.6666666666666667,
+          "yield_pct": 3.0555503212
+        },
+        {
+          "tenor": "1Y9M",
+          "years": 1.75,
+          "yield_pct": 3.0616481624
+        },
+        {
+          "tenor": "1Y10M",
+          "years": 1.8333333333333333,
+          "yield_pct": 3.066875208
+        },
+        {
+          "tenor": "1Y11M",
+          "years": 1.9166666666666667,
+          "yield_pct": 3.0713402527
+        },
+        {
+          "tenor": "2Y",
+          "years": 2.0,
+          "yield_pct": 3.0751415729
+        },
+        {
+          "tenor": "2Y1M",
+          "years": 2.0833333333333335,
+          "yield_pct": 3.0783678476
+        },
+        {
+          "tenor": "2Y2M",
+          "years": 2.1666666666666665,
+          "yield_pct": 3.0810990016
+        },
+        {
+          "tenor": "2Y3M",
+          "years": 2.25,
+          "yield_pct": 3.083406979
+        },
+        {
+          "tenor": "2Y4M",
+          "years": 2.3333333333333335,
+          "yield_pct": 3.0853564505
+        },
+        {
+          "tenor": "2Y5M",
+          "years": 2.4166666666666665,
+          "yield_pct": 3.0870054615
+        },
+        {
+          "tenor": "2Y6M",
+          "years": 2.5,
+          "yield_pct": 3.0884060259
+        },
+        {
+          "tenor": "2Y7M",
+          "years": 2.5833333333333335,
+          "yield_pct": 3.0896046687
+        },
+        {
+          "tenor": "2Y8M",
+          "years": 2.6666666666666665,
+          "yield_pct": 3.0906429236
+        },
+        {
+          "tenor": "2Y9M",
+          "years": 2.75,
+          "yield_pct": 3.0915577868
+        },
+        {
+          "tenor": "2Y10M",
+          "years": 2.8333333333333335,
+          "yield_pct": 3.092382134
+        },
+        {
+          "tenor": "2Y11M",
+          "years": 2.9166666666666665,
+          "yield_pct": 3.0931450994
+        },
+        {
+          "tenor": "3Y",
+          "years": 3.0,
+          "yield_pct": 3.0938724244
+        },
+        {
+          "tenor": "3Y1M",
+          "years": 3.0833333333333335,
+          "yield_pct": 3.0945867746
+        },
+        {
+          "tenor": "3Y2M",
+          "years": 3.1666666666666665,
+          "yield_pct": 3.0953080301
+        },
+        {
+          "tenor": "3Y3M",
+          "years": 3.25,
+          "yield_pct": 3.0960535506
+        },
+        {
+          "tenor": "3Y4M",
+          "years": 3.3333333333333335,
+          "yield_pct": 3.0968384174
+        },
+        {
+          "tenor": "3Y5M",
+          "years": 3.4166666666666665,
+          "yield_pct": 3.0976756542
+        },
+        {
+          "tenor": "3Y6M",
+          "years": 3.5,
+          "yield_pct": 3.0985764283
+        },
+        {
+          "tenor": "3Y7M",
+          "years": 3.5833333333333335,
+          "yield_pct": 3.0995502345
+        },
+        {
+          "tenor": "3Y8M",
+          "years": 3.6666666666666665,
+          "yield_pct": 3.1006050627
+        },
+        {
+          "tenor": "3Y9M",
+          "years": 3.75,
+          "yield_pct": 3.1017475502
+        },
+        {
+          "tenor": "3Y10M",
+          "years": 3.8333333333333335,
+          "yield_pct": 3.1029831206
+        },
+        {
+          "tenor": "3Y11M",
+          "years": 3.9166666666666665,
+          "yield_pct": 3.1043161106
+        },
+        {
+          "tenor": "4Y",
+          "years": 4.0,
+          "yield_pct": 3.1057498845
+        },
+        {
+          "tenor": "4Y1M",
+          "years": 4.083333333333333,
+          "yield_pct": 3.1072869396
+        },
+        {
+          "tenor": "4Y2M",
+          "years": 4.166666666666667,
+          "yield_pct": 3.1089290004
+        },
+        {
+          "tenor": "4Y3M",
+          "years": 4.25,
+          "yield_pct": 3.1106771055
+        },
+        {
+          "tenor": "4Y4M",
+          "years": 4.333333333333333,
+          "yield_pct": 3.1125316858
+        },
+        {
+          "tenor": "4Y5M",
+          "years": 4.416666666666667,
+          "yield_pct": 3.1144926355
+        },
+        {
+          "tenor": "4Y6M",
+          "years": 4.5,
+          "yield_pct": 3.1165593766
+        },
+        {
+          "tenor": "4Y7M",
+          "years": 4.583333333333333,
+          "yield_pct": 3.1187309169
+        },
+        {
+          "tenor": "4Y8M",
+          "years": 4.666666666666667,
+          "yield_pct": 3.1210059031
+        },
+        {
+          "tenor": "4Y9M",
+          "years": 4.75,
+          "yield_pct": 3.1233826683
+        },
+        {
+          "tenor": "4Y10M",
+          "years": 4.833333333333333,
+          "yield_pct": 3.1258592749
+        },
+        {
+          "tenor": "4Y11M",
+          "years": 4.916666666666667,
+          "yield_pct": 3.1284335537
+        },
+        {
+          "tenor": "5Y",
+          "years": 5.0,
+          "yield_pct": 3.1311031388
+        },
+        {
+          "tenor": "5Y1M",
+          "years": 5.083333333333333,
+          "yield_pct": 3.1338654986
+        },
+        {
+          "tenor": "5Y2M",
+          "years": 5.166666666666667,
+          "yield_pct": 3.1367179649
+        },
+        {
+          "tenor": "5Y3M",
+          "years": 5.25,
+          "yield_pct": 3.1396577573
+        },
+        {
+          "tenor": "5Y4M",
+          "years": 5.333333333333333,
+          "yield_pct": 3.1426820068
+        },
+        {
+          "tenor": "5Y5M",
+          "years": 5.416666666666667,
+          "yield_pct": 3.1457877755
+        },
+        {
+          "tenor": "5Y6M",
+          "years": 5.5,
+          "yield_pct": 3.1489720748
+        },
+        {
+          "tenor": "5Y7M",
+          "years": 5.583333333333333,
+          "yield_pct": 3.1522318819
+        },
+        {
+          "tenor": "5Y8M",
+          "years": 5.666666666666667,
+          "yield_pct": 3.1555641535
+        },
+        {
+          "tenor": "5Y9M",
+          "years": 5.75,
+          "yield_pct": 3.158965839
+        },
+        {
+          "tenor": "5Y10M",
+          "years": 5.833333333333333,
+          "yield_pct": 3.1624338917
+        },
+        {
+          "tenor": "5Y11M",
+          "years": 5.916666666666667,
+          "yield_pct": 3.165965278
+        },
+        {
+          "tenor": "6Y",
+          "years": 6.0,
+          "yield_pct": 3.1695569869
+        },
+        {
+          "tenor": "6Y1M",
+          "years": 6.083333333333333,
+          "yield_pct": 3.173206037
+        },
+        {
+          "tenor": "6Y2M",
+          "years": 6.166666666666667,
+          "yield_pct": 3.1769094832
+        },
+        {
+          "tenor": "6Y3M",
+          "years": 6.25,
+          "yield_pct": 3.1806644224
+        },
+        {
+          "tenor": "6Y4M",
+          "years": 6.333333333333333,
+          "yield_pct": 3.184467998
+        },
+        {
+          "tenor": "6Y5M",
+          "years": 6.416666666666667,
+          "yield_pct": 3.1883174046
+        },
+        {
+          "tenor": "6Y6M",
+          "years": 6.5,
+          "yield_pct": 3.1922098909
+        },
+        {
+          "tenor": "6Y7M",
+          "years": 6.583333333333333,
+          "yield_pct": 3.196142763
+        },
+        {
+          "tenor": "6Y8M",
+          "years": 6.666666666666667,
+          "yield_pct": 3.2001133862
+        },
+        {
+          "tenor": "6Y9M",
+          "years": 6.75,
+          "yield_pct": 3.2041191875
+        },
+        {
+          "tenor": "6Y10M",
+          "years": 6.833333333333333,
+          "yield_pct": 3.2081576566
+        },
+        {
+          "tenor": "6Y11M",
+          "years": 6.916666666666667,
+          "yield_pct": 3.2122263471
+        },
+        {
+          "tenor": "7Y",
+          "years": 7.0,
+          "yield_pct": 3.2163228773
+        },
+        {
+          "tenor": "7Y1M",
+          "years": 7.083333333333333,
+          "yield_pct": 3.2204449304
+        },
+        {
+          "tenor": "7Y2M",
+          "years": 7.166666666666667,
+          "yield_pct": 3.2245902549
+        },
+        {
+          "tenor": "7Y3M",
+          "years": 7.25,
+          "yield_pct": 3.2287566648
+        },
+        {
+          "tenor": "7Y4M",
+          "years": 7.333333333333333,
+          "yield_pct": 3.2329420384
+        },
+        {
+          "tenor": "7Y5M",
+          "years": 7.416666666666667,
+          "yield_pct": 3.2371443191
+        },
+        {
+          "tenor": "7Y6M",
+          "years": 7.5,
+          "yield_pct": 3.2413615137
+        },
+        {
+          "tenor": "7Y7M",
+          "years": 7.583333333333333,
+          "yield_pct": 3.2455916924
+        },
+        {
+          "tenor": "7Y8M",
+          "years": 7.666666666666667,
+          "yield_pct": 3.2498329875
+        },
+        {
+          "tenor": "7Y9M",
+          "years": 7.75,
+          "yield_pct": 3.2540835929
+        },
+        {
+          "tenor": "7Y10M",
+          "years": 7.833333333333333,
+          "yield_pct": 3.2583417625
+        },
+        {
+          "tenor": "7Y11M",
+          "years": 7.916666666666667,
+          "yield_pct": 3.2626058097
+        },
+        {
+          "tenor": "8Y",
+          "years": 8.0,
+          "yield_pct": 3.2668741056
+        },
+        {
+          "tenor": "8Y1M",
+          "years": 8.083333333333334,
+          "yield_pct": 3.2711450784
+        },
+        {
+          "tenor": "8Y2M",
+          "years": 8.166666666666666,
+          "yield_pct": 3.2754172118
+        },
+        {
+          "tenor": "8Y3M",
+          "years": 8.25,
+          "yield_pct": 3.2796890436
+        },
+        {
+          "tenor": "8Y4M",
+          "years": 8.333333333333334,
+          "yield_pct": 3.2839591649
+        },
+        {
+          "tenor": "8Y5M",
+          "years": 8.416666666666666,
+          "yield_pct": 3.2882262182
+        },
+        {
+          "tenor": "8Y6M",
+          "years": 8.5,
+          "yield_pct": 3.2924888964
+        },
+        {
+          "tenor": "8Y7M",
+          "years": 8.583333333333334,
+          "yield_pct": 3.2967459416
+        },
+        {
+          "tenor": "8Y8M",
+          "years": 8.666666666666666,
+          "yield_pct": 3.3009961433
+        },
+        {
+          "tenor": "8Y9M",
+          "years": 8.75,
+          "yield_pct": 3.3052383376
+        },
+        {
+          "tenor": "8Y10M",
+          "years": 8.833333333333334,
+          "yield_pct": 3.3094714055
+        },
+        {
+          "tenor": "8Y11M",
+          "years": 8.916666666666666,
+          "yield_pct": 3.3136942719
+        },
+        {
+          "tenor": "9Y",
+          "years": 9.0,
+          "yield_pct": 3.317905904
+        },
+        {
+          "tenor": "9Y1M",
+          "years": 9.083333333333334,
+          "yield_pct": 3.3221053103
+        },
+        {
+          "tenor": "9Y2M",
+          "years": 9.166666666666666,
+          "yield_pct": 3.3262915392
+        },
+        {
+          "tenor": "9Y3M",
+          "years": 9.25,
+          "yield_pct": 3.330463678
+        },
+        {
+          "tenor": "9Y4M",
+          "years": 9.333333333333334,
+          "yield_pct": 3.3346208512
+        },
+        {
+          "tenor": "9Y5M",
+          "years": 9.416666666666666,
+          "yield_pct": 3.33876222
+        },
+        {
+          "tenor": "9Y6M",
+          "years": 9.5,
+          "yield_pct": 3.3428869806
+        },
+        {
+          "tenor": "9Y7M",
+          "years": 9.583333333333334,
+          "yield_pct": 3.3469943633
+        },
+        {
+          "tenor": "9Y8M",
+          "years": 9.666666666666666,
+          "yield_pct": 3.3510836313
+        },
+        {
+          "tenor": "9Y9M",
+          "years": 9.75,
+          "yield_pct": 3.3551540798
+        },
+        {
+          "tenor": "9Y10M",
+          "years": 9.833333333333334,
+          "yield_pct": 3.3592050348
+        },
+        {
+          "tenor": "9Y11M",
+          "years": 9.916666666666666,
+          "yield_pct": 3.3632358521
+        },
+        {
+          "tenor": "10Y",
+          "years": 10.0,
+          "yield_pct": 3.3672459164
+        },
+        {
+          "tenor": "10Y1M",
+          "years": 10.083333333333334,
+          "yield_pct": 3.3712346402
+        },
+        {
+          "tenor": "10Y2M",
+          "years": 10.166666666666666,
+          "yield_pct": 3.375201463
+        },
+        {
+          "tenor": "10Y3M",
+          "years": 10.25,
+          "yield_pct": 3.3791458501
+        },
+        {
+          "tenor": "10Y4M",
+          "years": 10.333333333333334,
+          "yield_pct": 3.3830672922
+        },
+        {
+          "tenor": "10Y5M",
+          "years": 10.416666666666666,
+          "yield_pct": 3.3869653041
+        },
+        {
+          "tenor": "10Y6M",
+          "years": 10.5,
+          "yield_pct": 3.3908394241
+        },
+        {
+          "tenor": "10Y7M",
+          "years": 10.583333333333334,
+          "yield_pct": 3.3946892131
+        },
+        {
+          "tenor": "10Y8M",
+          "years": 10.666666666666666,
+          "yield_pct": 3.3985142538
+        },
+        {
+          "tenor": "10Y9M",
+          "years": 10.75,
+          "yield_pct": 3.4023141502
+        },
+        {
+          "tenor": "10Y10M",
+          "years": 10.833333333333334,
+          "yield_pct": 3.4060885263
+        },
+        {
+          "tenor": "10Y11M",
+          "years": 10.916666666666666,
+          "yield_pct": 3.409837026
+        },
+        {
+          "tenor": "11Y",
+          "years": 11.0,
+          "yield_pct": 3.413559312
+        },
+        {
+          "tenor": "11Y1M",
+          "years": 11.083333333333334,
+          "yield_pct": 3.4172550655
+        },
+        {
+          "tenor": "11Y2M",
+          "years": 11.166666666666666,
+          "yield_pct": 3.420923985
+        },
+        {
+          "tenor": "11Y3M",
+          "years": 11.25,
+          "yield_pct": 3.4245657864
+        },
+        {
+          "tenor": "11Y4M",
+          "years": 11.333333333333334,
+          "yield_pct": 3.4281802018
+        },
+        {
+          "tenor": "11Y5M",
+          "years": 11.416666666666666,
+          "yield_pct": 3.431766979
+        },
+        {
+          "tenor": "11Y6M",
+          "years": 11.5,
+          "yield_pct": 3.4353258813
+        },
+        {
+          "tenor": "11Y7M",
+          "years": 11.583333333333334,
+          "yield_pct": 3.4388566867
+        },
+        {
+          "tenor": "11Y8M",
+          "years": 11.666666666666666,
+          "yield_pct": 3.4423591873
+        },
+        {
+          "tenor": "11Y9M",
+          "years": 11.75,
+          "yield_pct": 3.445833189
+        },
+        {
+          "tenor": "11Y10M",
+          "years": 11.833333333333334,
+          "yield_pct": 3.4492785107
+        },
+        {
+          "tenor": "11Y11M",
+          "years": 11.916666666666666,
+          "yield_pct": 3.4526949843
+        },
+        {
+          "tenor": "12Y",
+          "years": 12.0,
+          "yield_pct": 3.4560824537
+        },
+        {
+          "tenor": "12Y1M",
+          "years": 12.083333333333334,
+          "yield_pct": 3.4594407749
+        },
+        {
+          "tenor": "12Y2M",
+          "years": 12.166666666666666,
+          "yield_pct": 3.462769815
+        },
+        {
+          "tenor": "12Y3M",
+          "years": 12.25,
+          "yield_pct": 3.4660694524
+        },
+        {
+          "tenor": "12Y4M",
+          "years": 12.333333333333334,
+          "yield_pct": 3.4693395758
+        },
+        {
+          "tenor": "12Y5M",
+          "years": 12.416666666666666,
+          "yield_pct": 3.4725800843
+        },
+        {
+          "tenor": "12Y6M",
+          "years": 12.5,
+          "yield_pct": 3.4757908867
+        },
+        {
+          "tenor": "12Y7M",
+          "years": 12.583333333333334,
+          "yield_pct": 3.4789719014
+        },
+        {
+          "tenor": "12Y8M",
+          "years": 12.666666666666666,
+          "yield_pct": 3.4821230559
+        },
+        {
+          "tenor": "12Y9M",
+          "years": 12.75,
+          "yield_pct": 3.4852442865
+        },
+        {
+          "tenor": "12Y10M",
+          "years": 12.833333333333334,
+          "yield_pct": 3.4883355379
+        },
+        {
+          "tenor": "12Y11M",
+          "years": 12.916666666666666,
+          "yield_pct": 3.4913967631
+        },
+        {
+          "tenor": "13Y",
+          "years": 13.0,
+          "yield_pct": 3.4944279227
+        },
+        {
+          "tenor": "13Y1M",
+          "years": 13.083333333333334,
+          "yield_pct": 3.4974289852
+        },
+        {
+          "tenor": "13Y2M",
+          "years": 13.166666666666666,
+          "yield_pct": 3.5003999263
+        },
+        {
+          "tenor": "13Y3M",
+          "years": 13.25,
+          "yield_pct": 3.5033407285
+        },
+        {
+          "tenor": "13Y4M",
+          "years": 13.333333333333334,
+          "yield_pct": 3.5062513814
+        },
+        {
+          "tenor": "13Y5M",
+          "years": 13.416666666666666,
+          "yield_pct": 3.5091318809
+        },
+        {
+          "tenor": "13Y6M",
+          "years": 13.5,
+          "yield_pct": 3.5119822293
+        },
+        {
+          "tenor": "13Y7M",
+          "years": 13.583333333333334,
+          "yield_pct": 3.5148024347
+        },
+        {
+          "tenor": "13Y8M",
+          "years": 13.666666666666666,
+          "yield_pct": 3.5175925114
+        },
+        {
+          "tenor": "13Y9M",
+          "years": 13.75,
+          "yield_pct": 3.5203524789
+        },
+        {
+          "tenor": "13Y10M",
+          "years": 13.833333333333334,
+          "yield_pct": 3.5230823624
+        },
+        {
+          "tenor": "13Y11M",
+          "years": 13.916666666666666,
+          "yield_pct": 3.525782192
+        },
+        {
+          "tenor": "14Y",
+          "years": 14.0,
+          "yield_pct": 3.5284520029
+        },
+        {
+          "tenor": "14Y1M",
+          "years": 14.083333333333334,
+          "yield_pct": 3.5310918353
+        },
+        {
+          "tenor": "14Y2M",
+          "years": 14.166666666666666,
+          "yield_pct": 3.5337017336
+        },
+        {
+          "tenor": "14Y3M",
+          "years": 14.25,
+          "yield_pct": 3.5362817469
+        },
+        {
+          "tenor": "14Y4M",
+          "years": 14.333333333333334,
+          "yield_pct": 3.5388319286
+        },
+        {
+          "tenor": "14Y5M",
+          "years": 14.416666666666666,
+          "yield_pct": 3.5413523361
+        },
+        {
+          "tenor": "14Y6M",
+          "years": 14.5,
+          "yield_pct": 3.5438430306
+        },
+        {
+          "tenor": "14Y7M",
+          "years": 14.583333333333334,
+          "yield_pct": 3.5463040774
+        },
+        {
+          "tenor": "14Y8M",
+          "years": 14.666666666666666,
+          "yield_pct": 3.5487355452
+        },
+        {
+          "tenor": "14Y9M",
+          "years": 14.75,
+          "yield_pct": 3.5511375062
+        },
+        {
+          "tenor": "14Y10M",
+          "years": 14.833333333333334,
+          "yield_pct": 3.553510036
+        },
+        {
+          "tenor": "14Y11M",
+          "years": 14.916666666666666,
+          "yield_pct": 3.5558532136
+        },
+        {
+          "tenor": "15Y",
+          "years": 15.0,
+          "yield_pct": 3.5581671207
+        },
+        {
+          "tenor": "15Y1M",
+          "years": 15.083333333333334,
+          "yield_pct": 3.5604518422
+        },
+        {
+          "tenor": "15Y2M",
+          "years": 15.166666666666666,
+          "yield_pct": 3.562707466
+        },
+        {
+          "tenor": "15Y3M",
+          "years": 15.25,
+          "yield_pct": 3.5649340824
+        },
+        {
+          "tenor": "15Y4M",
+          "years": 15.333333333333334,
+          "yield_pct": 3.5671317845
+        },
+        {
+          "tenor": "15Y5M",
+          "years": 15.416666666666666,
+          "yield_pct": 3.5693006679
+        },
+        {
+          "tenor": "15Y6M",
+          "years": 15.5,
+          "yield_pct": 3.5714408305
+        },
+        {
+          "tenor": "15Y7M",
+          "years": 15.583333333333334,
+          "yield_pct": 3.5735523727
+        },
+        {
+          "tenor": "15Y8M",
+          "years": 15.666666666666666,
+          "yield_pct": 3.5756353968
+        },
+        {
+          "tenor": "15Y9M",
+          "years": 15.75,
+          "yield_pct": 3.5776900076
+        },
+        {
+          "tenor": "15Y10M",
+          "years": 15.833333333333334,
+          "yield_pct": 3.5797163114
+        },
+        {
+          "tenor": "15Y11M",
+          "years": 15.916666666666666,
+          "yield_pct": 3.581714417
+        },
+        {
+          "tenor": "16Y",
+          "years": 16.0,
+          "yield_pct": 3.5836844345
+        },
+        {
+          "tenor": "16Y1M",
+          "years": 16.083333333333332,
+          "yield_pct": 3.5856264762
+        },
+        {
+          "tenor": "16Y2M",
+          "years": 16.166666666666668,
+          "yield_pct": 3.5875406559
+        },
+        {
+          "tenor": "16Y3M",
+          "years": 16.25,
+          "yield_pct": 3.5894270888
+        },
+        {
+          "tenor": "16Y4M",
+          "years": 16.333333333333332,
+          "yield_pct": 3.591285892
+        },
+        {
+          "tenor": "16Y5M",
+          "years": 16.416666666666668,
+          "yield_pct": 3.5931171837
+        },
+        {
+          "tenor": "16Y6M",
+          "years": 16.5,
+          "yield_pct": 3.5949210838
+        },
+        {
+          "tenor": "16Y7M",
+          "years": 16.583333333333332,
+          "yield_pct": 3.5966977133
+        },
+        {
+          "tenor": "16Y8M",
+          "years": 16.666666666666668,
+          "yield_pct": 3.5984471945
+        },
+        {
+          "tenor": "16Y9M",
+          "years": 16.75,
+          "yield_pct": 3.6001696509
+        },
+        {
+          "tenor": "16Y10M",
+          "years": 16.833333333333332,
+          "yield_pct": 3.6018652071
+        },
+        {
+          "tenor": "16Y11M",
+          "years": 16.916666666666668,
+          "yield_pct": 3.6035339888
+        },
+        {
+          "tenor": "17Y",
+          "years": 17.0,
+          "yield_pct": 3.6051761227
+        },
+        {
+          "tenor": "17Y1M",
+          "years": 17.083333333333332,
+          "yield_pct": 3.6067917364
+        },
+        {
+          "tenor": "17Y2M",
+          "years": 17.166666666666668,
+          "yield_pct": 3.6083809585
+        },
+        {
+          "tenor": "17Y3M",
+          "years": 17.25,
+          "yield_pct": 3.6099439183
+        },
+        {
+          "tenor": "17Y4M",
+          "years": 17.333333333333332,
+          "yield_pct": 3.6114807462
+        },
+        {
+          "tenor": "17Y5M",
+          "years": 17.416666666666668,
+          "yield_pct": 3.6129915728
+        },
+        {
+          "tenor": "17Y6M",
+          "years": 17.5,
+          "yield_pct": 3.6144765301
+        },
+        {
+          "tenor": "17Y7M",
+          "years": 17.583333333333332,
+          "yield_pct": 3.6159357501
+        },
+        {
+          "tenor": "17Y8M",
+          "years": 17.666666666666668,
+          "yield_pct": 3.6173693659
+        },
+        {
+          "tenor": "17Y9M",
+          "years": 17.75,
+          "yield_pct": 3.6187775109
+        },
+        {
+          "tenor": "17Y10M",
+          "years": 17.833333333333332,
+          "yield_pct": 3.6201603191
+        },
+        {
+          "tenor": "17Y11M",
+          "years": 17.916666666666668,
+          "yield_pct": 3.621517925
+        },
+        {
+          "tenor": "18Y",
+          "years": 18.0,
+          "yield_pct": 3.6228504637
+        },
+        {
+          "tenor": "18Y1M",
+          "years": 18.083333333333332,
+          "yield_pct": 3.6241580704
+        },
+        {
+          "tenor": "18Y2M",
+          "years": 18.166666666666668,
+          "yield_pct": 3.6254408808
+        },
+        {
+          "tenor": "18Y3M",
+          "years": 18.25,
+          "yield_pct": 3.6266990312
+        },
+        {
+          "tenor": "18Y4M",
+          "years": 18.333333333333332,
+          "yield_pct": 3.6279326579
+        },
+        {
+          "tenor": "18Y5M",
+          "years": 18.416666666666668,
+          "yield_pct": 3.6291418975
+        },
+        {
+          "tenor": "18Y6M",
+          "years": 18.5,
+          "yield_pct": 3.6303268871
+        },
+        {
+          "tenor": "18Y7M",
+          "years": 18.583333333333332,
+          "yield_pct": 3.6314877637
+        },
+        {
+          "tenor": "18Y8M",
+          "years": 18.666666666666668,
+          "yield_pct": 3.6326246647
+        },
+        {
+          "tenor": "18Y9M",
+          "years": 18.75,
+          "yield_pct": 3.6337377276
+        },
+        {
+          "tenor": "18Y10M",
+          "years": 18.833333333333332,
+          "yield_pct": 3.6348270901
+        },
+        {
+          "tenor": "18Y11M",
+          "years": 18.916666666666668,
+          "yield_pct": 3.6358928898
+        },
+        {
+          "tenor": "19Y",
+          "years": 19.0,
+          "yield_pct": 3.6369352645
+        },
+        {
+          "tenor": "19Y1M",
+          "years": 19.083333333333332,
+          "yield_pct": 3.6379543523
+        },
+        {
+          "tenor": "19Y2M",
+          "years": 19.166666666666668,
+          "yield_pct": 3.6389502908
+        },
+        {
+          "tenor": "19Y3M",
+          "years": 19.25,
+          "yield_pct": 3.6399232181
+        },
+        {
+          "tenor": "19Y4M",
+          "years": 19.333333333333332,
+          "yield_pct": 3.6408732721
+        },
+        {
+          "tenor": "19Y5M",
+          "years": 19.416666666666668,
+          "yield_pct": 3.6418005906
+        },
+        {
+          "tenor": "19Y6M",
+          "years": 19.5,
+          "yield_pct": 3.6427053115
+        },
+        {
+          "tenor": "19Y7M",
+          "years": 19.583333333333332,
+          "yield_pct": 3.6435875723
+        },
+        {
+          "tenor": "19Y8M",
+          "years": 19.666666666666668,
+          "yield_pct": 3.6444475109
+        },
+        {
+          "tenor": "19Y9M",
+          "years": 19.75,
+          "yield_pct": 3.6452852647
+        },
+        {
+          "tenor": "19Y10M",
+          "years": 19.833333333333332,
+          "yield_pct": 3.6461009711
+        },
+        {
+          "tenor": "19Y11M",
+          "years": 19.916666666666668,
+          "yield_pct": 3.6468947673
+        },
+        {
+          "tenor": "20Y",
+          "years": 20.0,
+          "yield_pct": 3.6476667904
+        },
+        {
+          "tenor": "20Y1M",
+          "years": 20.083333333333332,
+          "yield_pct": 3.6484171773
+        },
+        {
+          "tenor": "20Y2M",
+          "years": 20.166666666666668,
+          "yield_pct": 3.6491460647
+        },
+        {
+          "tenor": "20Y3M",
+          "years": 20.25,
+          "yield_pct": 3.649853589
+        },
+        {
+          "tenor": "20Y4M",
+          "years": 20.333333333333332,
+          "yield_pct": 3.6505398865
+        },
+        {
+          "tenor": "20Y5M",
+          "years": 20.416666666666668,
+          "yield_pct": 3.6512050932
+        },
+        {
+          "tenor": "20Y6M",
+          "years": 20.5,
+          "yield_pct": 3.6518493448
+        },
+        {
+          "tenor": "20Y7M",
+          "years": 20.583333333333332,
+          "yield_pct": 3.6524727768
+        },
+        {
+          "tenor": "20Y8M",
+          "years": 20.666666666666668,
+          "yield_pct": 3.6530755243
+        },
+        {
+          "tenor": "20Y9M",
+          "years": 20.75,
+          "yield_pct": 3.6536577223
+        },
+        {
+          "tenor": "20Y10M",
+          "years": 20.833333333333332,
+          "yield_pct": 3.6542195054
+        },
+        {
+          "tenor": "20Y11M",
+          "years": 20.916666666666668,
+          "yield_pct": 3.6547610078
+        },
+        {
+          "tenor": "21Y",
+          "years": 21.0,
+          "yield_pct": 3.6552823634
+        },
+        {
+          "tenor": "21Y1M",
+          "years": 21.083333333333332,
+          "yield_pct": 3.6557837058
+        },
+        {
+          "tenor": "21Y2M",
+          "years": 21.166666666666668,
+          "yield_pct": 3.6562651683
+        },
+        {
+          "tenor": "21Y3M",
+          "years": 21.25,
+          "yield_pct": 3.6567268838
+        },
+        {
+          "tenor": "21Y4M",
+          "years": 21.333333333333332,
+          "yield_pct": 3.6571689847
+        },
+        {
+          "tenor": "21Y5M",
+          "years": 21.416666666666668,
+          "yield_pct": 3.6575916031
+        },
+        {
+          "tenor": "21Y6M",
+          "years": 21.5,
+          "yield_pct": 3.6579948709
+        },
+        {
+          "tenor": "21Y7M",
+          "years": 21.583333333333332,
+          "yield_pct": 3.6583789194
+        },
+        {
+          "tenor": "21Y8M",
+          "years": 21.666666666666668,
+          "yield_pct": 3.6587438794
+        },
+        {
+          "tenor": "21Y9M",
+          "years": 21.75,
+          "yield_pct": 3.6590898816
+        },
+        {
+          "tenor": "21Y10M",
+          "years": 21.833333333333332,
+          "yield_pct": 3.659417056
+        },
+        {
+          "tenor": "21Y11M",
+          "years": 21.916666666666668,
+          "yield_pct": 3.6597255323
+        },
+        {
+          "tenor": "22Y",
+          "years": 22.0,
+          "yield_pct": 3.6600154397
+        },
+        {
+          "tenor": "22Y1M",
+          "years": 22.083333333333332,
+          "yield_pct": 3.6602869071
+        },
+        {
+          "tenor": "22Y2M",
+          "years": 22.166666666666668,
+          "yield_pct": 3.6605400628
+        },
+        {
+          "tenor": "22Y3M",
+          "years": 22.25,
+          "yield_pct": 3.6607750346
+        },
+        {
+          "tenor": "22Y4M",
+          "years": 22.333333333333332,
+          "yield_pct": 3.6609919501
+        },
+        {
+          "tenor": "22Y5M",
+          "years": 22.416666666666668,
+          "yield_pct": 3.6611909361
+        },
+        {
+          "tenor": "22Y6M",
+          "years": 22.5,
+          "yield_pct": 3.6613721193
+        },
+        {
+          "tenor": "22Y7M",
+          "years": 22.583333333333332,
+          "yield_pct": 3.6615356256
+        },
+        {
+          "tenor": "22Y8M",
+          "years": 22.666666666666668,
+          "yield_pct": 3.6616815805
+        },
+        {
+          "tenor": "22Y9M",
+          "years": 22.75,
+          "yield_pct": 3.6618101092
+        },
+        {
+          "tenor": "22Y10M",
+          "years": 22.833333333333332,
+          "yield_pct": 3.6619213361
+        },
+        {
+          "tenor": "22Y11M",
+          "years": 22.916666666666668,
+          "yield_pct": 3.6620153854
+        },
+        {
+          "tenor": "23Y",
+          "years": 23.0,
+          "yield_pct": 3.6620923806
+        },
+        {
+          "tenor": "23Y1M",
+          "years": 23.083333333333332,
+          "yield_pct": 3.6621524449
+        },
+        {
+          "tenor": "23Y2M",
+          "years": 23.166666666666668,
+          "yield_pct": 3.6621957007
+        },
+        {
+          "tenor": "23Y3M",
+          "years": 23.25,
+          "yield_pct": 3.6622222701
+        },
+        {
+          "tenor": "23Y4M",
+          "years": 23.333333333333332,
+          "yield_pct": 3.6622322747
+        },
+        {
+          "tenor": "23Y5M",
+          "years": 23.416666666666668,
+          "yield_pct": 3.6622258355
+        },
+        {
+          "tenor": "23Y6M",
+          "years": 23.5,
+          "yield_pct": 3.662203073
+        },
+        {
+          "tenor": "23Y7M",
+          "years": 23.583333333333332,
+          "yield_pct": 3.6621641072
+        },
+        {
+          "tenor": "23Y8M",
+          "years": 23.666666666666668,
+          "yield_pct": 3.6621090575
+        },
+        {
+          "tenor": "23Y9M",
+          "years": 23.75,
+          "yield_pct": 3.662038043
+        },
+        {
+          "tenor": "23Y10M",
+          "years": 23.833333333333332,
+          "yield_pct": 3.6619511819
+        },
+        {
+          "tenor": "23Y11M",
+          "years": 23.916666666666668,
+          "yield_pct": 3.6618485922
+        },
+        {
+          "tenor": "24Y",
+          "years": 24.0,
+          "yield_pct": 3.6617303911
+        },
+        {
+          "tenor": "24Y1M",
+          "years": 24.083333333333332,
+          "yield_pct": 3.6615966956
+        },
+        {
+          "tenor": "24Y2M",
+          "years": 24.166666666666668,
+          "yield_pct": 3.6614476218
+        },
+        {
+          "tenor": "24Y3M",
+          "years": 24.25,
+          "yield_pct": 3.6612832856
+        },
+        {
+          "tenor": "24Y4M",
+          "years": 24.333333333333332,
+          "yield_pct": 3.661103802
+        },
+        {
+          "tenor": "24Y5M",
+          "years": 24.416666666666668,
+          "yield_pct": 3.6609092857
+        },
+        {
+          "tenor": "24Y6M",
+          "years": 24.5,
+          "yield_pct": 3.6606998508
+        },
+        {
+          "tenor": "24Y7M",
+          "years": 24.583333333333332,
+          "yield_pct": 3.6604756109
+        },
+        {
+          "tenor": "24Y8M",
+          "years": 24.666666666666668,
+          "yield_pct": 3.6602366789
+        },
+        {
+          "tenor": "24Y9M",
+          "years": 24.75,
+          "yield_pct": 3.6599831674
+        },
+        {
+          "tenor": "24Y10M",
+          "years": 24.833333333333332,
+          "yield_pct": 3.6597151883
+        },
+        {
+          "tenor": "24Y11M",
+          "years": 24.916666666666668,
+          "yield_pct": 3.6594328529
+        },
+        {
+          "tenor": "25Y",
+          "years": 25.0,
+          "yield_pct": 3.6591362719
+        },
+        {
+          "tenor": "25Y1M",
+          "years": 25.083333333333332,
+          "yield_pct": 3.6588255558
+        },
+        {
+          "tenor": "25Y2M",
+          "years": 25.166666666666668,
+          "yield_pct": 3.6585008142
+        },
+        {
+          "tenor": "25Y3M",
+          "years": 25.25,
+          "yield_pct": 3.6581621562
+        },
+        {
+          "tenor": "25Y4M",
+          "years": 25.333333333333332,
+          "yield_pct": 3.6578096905
+        },
+        {
+          "tenor": "25Y5M",
+          "years": 25.416666666666668,
+          "yield_pct": 3.6574435252
+        },
+        {
+          "tenor": "25Y6M",
+          "years": 25.5,
+          "yield_pct": 3.6570637677
+        },
+        {
+          "tenor": "25Y7M",
+          "years": 25.583333333333332,
+          "yield_pct": 3.656670525
+        },
+        {
+          "tenor": "25Y8M",
+          "years": 25.666666666666668,
+          "yield_pct": 3.6562639036
+        },
+        {
+          "tenor": "25Y9M",
+          "years": 25.75,
+          "yield_pct": 3.6558440091
+        },
+        {
+          "tenor": "25Y10M",
+          "years": 25.833333333333332,
+          "yield_pct": 3.6554109471
+        },
+        {
+          "tenor": "25Y11M",
+          "years": 25.916666666666668,
+          "yield_pct": 3.6549648222
+        },
+        {
+          "tenor": "26Y",
+          "years": 26.0,
+          "yield_pct": 3.6545057386
+        },
+        {
+          "tenor": "26Y1M",
+          "years": 26.083333333333332,
+          "yield_pct": 3.6540338
+        },
+        {
+          "tenor": "26Y2M",
+          "years": 26.166666666666668,
+          "yield_pct": 3.6535491095
+        },
+        {
+          "tenor": "26Y3M",
+          "years": 26.25,
+          "yield_pct": 3.6530517696
+        },
+        {
+          "tenor": "26Y4M",
+          "years": 26.333333333333332,
+          "yield_pct": 3.6525418823
+        },
+        {
+          "tenor": "26Y5M",
+          "years": 26.416666666666668,
+          "yield_pct": 3.6520195491
+        },
+        {
+          "tenor": "26Y6M",
+          "years": 26.5,
+          "yield_pct": 3.6514848709
+        },
+        {
+          "tenor": "26Y7M",
+          "years": 26.583333333333332,
+          "yield_pct": 3.650937948
+        },
+        {
+          "tenor": "26Y8M",
+          "years": 26.666666666666668,
+          "yield_pct": 3.6503788803
+        },
+        {
+          "tenor": "26Y9M",
+          "years": 26.75,
+          "yield_pct": 3.6498077671
+        },
+        {
+          "tenor": "26Y10M",
+          "years": 26.833333333333332,
+          "yield_pct": 3.6492247069
+        },
+        {
+          "tenor": "26Y11M",
+          "years": 26.916666666666668,
+          "yield_pct": 3.6486297982
+        },
+        {
+          "tenor": "27Y",
+          "years": 27.0,
+          "yield_pct": 3.6480231383
+        },
+        {
+          "tenor": "27Y1M",
+          "years": 27.083333333333332,
+          "yield_pct": 3.6474048246
+        },
+        {
+          "tenor": "27Y2M",
+          "years": 27.166666666666668,
+          "yield_pct": 3.6467749535
+        },
+        {
+          "tenor": "27Y3M",
+          "years": 27.25,
+          "yield_pct": 3.646133621
+        },
+        {
+          "tenor": "27Y4M",
+          "years": 27.333333333333332,
+          "yield_pct": 3.6454809226
+        },
+        {
+          "tenor": "27Y5M",
+          "years": 27.416666666666668,
+          "yield_pct": 3.6448169532
+        },
+        {
+          "tenor": "27Y6M",
+          "years": 27.5,
+          "yield_pct": 3.6441418073
+        },
+        {
+          "tenor": "27Y7M",
+          "years": 27.583333333333332,
+          "yield_pct": 3.6434555787
+        },
+        {
+          "tenor": "27Y8M",
+          "years": 27.666666666666668,
+          "yield_pct": 3.6427583608
+        },
+        {
+          "tenor": "27Y9M",
+          "years": 27.75,
+          "yield_pct": 3.6420502464
+        },
+        {
+          "tenor": "27Y10M",
+          "years": 27.833333333333332,
+          "yield_pct": 3.6413313276
+        },
+        {
+          "tenor": "27Y11M",
+          "years": 27.916666666666668,
+          "yield_pct": 3.6406016964
+        },
+        {
+          "tenor": "28Y",
+          "years": 28.0,
+          "yield_pct": 3.6398614438
+        },
+        {
+          "tenor": "28Y1M",
+          "years": 28.083333333333332,
+          "yield_pct": 3.6391106606
+        },
+        {
+          "tenor": "28Y2M",
+          "years": 28.166666666666668,
+          "yield_pct": 3.638349437
+        },
+        {
+          "tenor": "28Y3M",
+          "years": 28.25,
+          "yield_pct": 3.6375778625
+        },
+        {
+          "tenor": "28Y4M",
+          "years": 28.333333333333332,
+          "yield_pct": 3.6367960263
+        },
+        {
+          "tenor": "28Y5M",
+          "years": 28.416666666666668,
+          "yield_pct": 3.6360040171
+        },
+        {
+          "tenor": "28Y6M",
+          "years": 28.5,
+          "yield_pct": 3.6352019228
+        },
+        {
+          "tenor": "28Y7M",
+          "years": 28.583333333333332,
+          "yield_pct": 3.6343898311
+        },
+        {
+          "tenor": "28Y8M",
+          "years": 28.666666666666668,
+          "yield_pct": 3.6335678289
+        },
+        {
+          "tenor": "28Y9M",
+          "years": 28.75,
+          "yield_pct": 3.6327360029
+        },
+        {
+          "tenor": "28Y10M",
+          "years": 28.833333333333332,
+          "yield_pct": 3.631894439
+        },
+        {
+          "tenor": "28Y11M",
+          "years": 28.916666666666668,
+          "yield_pct": 3.6310432228
+        },
+        {
+          "tenor": "29Y",
+          "years": 29.0,
+          "yield_pct": 3.6301824392
+        },
+        {
+          "tenor": "29Y1M",
+          "years": 29.083333333333332,
+          "yield_pct": 3.6293121728
+        },
+        {
+          "tenor": "29Y2M",
+          "years": 29.166666666666668,
+          "yield_pct": 3.6284325075
+        },
+        {
+          "tenor": "29Y3M",
+          "years": 29.25,
+          "yield_pct": 3.6275435268
+        },
+        {
+          "tenor": "29Y4M",
+          "years": 29.333333333333332,
+          "yield_pct": 3.6266453138
+        },
+        {
+          "tenor": "29Y5M",
+          "years": 29.416666666666668,
+          "yield_pct": 3.6257379508
+        },
+        {
+          "tenor": "29Y6M",
+          "years": 29.5,
+          "yield_pct": 3.62482152
+        },
+        {
+          "tenor": "29Y7M",
+          "years": 29.583333333333332,
+          "yield_pct": 3.6238961027
+        },
+        {
+          "tenor": "29Y8M",
+          "years": 29.666666666666668,
+          "yield_pct": 3.6229617799
+        },
+        {
+          "tenor": "29Y9M",
+          "years": 29.75,
+          "yield_pct": 3.6220186323
+        },
+        {
+          "tenor": "29Y10M",
+          "years": 29.833333333333332,
+          "yield_pct": 3.6210667397
+        },
+        {
+          "tenor": "29Y11M",
+          "years": 29.916666666666668,
+          "yield_pct": 3.6201061817
+        },
+        {
+          "tenor": "30Y",
+          "years": 30.0,
+          "yield_pct": 3.6191370374
+        }
+      ],
+      "notes": [
+        "Source: European Central Bank.",
+        "Euro-area issuer group, not an individual country.",
+        "Source response SHA-256 (ecb-aaa.csv): e004c8df16b9e7389c904a7d3732d0244ff8894e84c4dd8478a3f7c7d332671f; input recorded 2026-11-14T15:42:07+00:00; https://data-api.ecb.europa.eu/service/data/YC/B.U2.EUR.4F.G_N_A.SV_C_YM.?startPeriod=2026-11-10&endPeriod=2026-11-14&format=csvdata"
+      ]
+    },
+    {
+      "id": "euro_area_all",
+      "title": "Euro area — all-ratings spot",
+      "currency": "EUR",
+      "market_date": "2026-11-12",
+      "asof": "Latest usable observation in the saved official input(s); not a common close.",
+      "retrieved_at": "2026-11-14T15:42:31+00:00",
+      "source_url": "https://data-api.ecb.europa.eu/service/data/YC/B.U2.EUR.4F.G_N_C.SV_C_YM.?startPeriod=2026-11-10&endPeriod=2026-11-14&format=csvdata",
+      "curve_type": "ECB fitted continuous zero; all rated government issuers",
+      "units": "percent_per_annum",
+      "status": "AVAILABLE",
+      "rights": {
+        "status": "APPROVED_PUBLIC_DISPLAY",
+        "source_url": "https://www.ecb.europa.eu/services/using-our-site/disclaimer/html/index.en.html",
+        "reason": "European Central Bank; latest dated source nodes reproduced unchanged. P-Curve added the tenor mapping and redrew the chart."
+      },
+      "nodes": [
+        {
+          "tenor": "3M",
+          "years": 0.25,
+          "yield_pct": 2.7763657326
+        },
+        {
+          "tenor": "4M",
+          "years": 0.3333333333333333,
+          "yield_pct": 2.8276229118
+        },
+        {
+          "tenor": "5M",
+          "years": 0.4166666666666667,
+          "yield_pct": 2.8734743591
+        },
+        {
+          "tenor": "6M",
+          "years": 0.5,
+          "yield_pct": 2.9145226833
+        },
+        {
+          "tenor": "7M",
+          "years": 0.5833333333333334,
+          "yield_pct": 2.9513076852
+        },
+        {
+          "tenor": "8M",
+          "years": 0.6666666666666666,
+          "yield_pct": 2.9843126697
+        },
+        {
+          "tenor": "9M",
+          "years": 0.75,
+          "yield_pct": 3.0139701355
+        },
+        {
+          "tenor": "10M",
+          "years": 0.8333333333333334,
+          "yield_pct": 3.0406669038
+        },
+        {
+          "tenor": "11M",
+          "years": 0.9166666666666666,
+          "yield_pct": 3.0647487393
+        },
+        {
+          "tenor": "1Y",
+          "years": 1.0,
+          "yield_pct": 3.0865245143
+        },
+        {
+          "tenor": "1Y1M",
+          "years": 1.0833333333333333,
+          "yield_pct": 3.1062699606
+        },
+        {
+          "tenor": "1Y2M",
+          "years": 1.1666666666666667,
+          "yield_pct": 3.124231048
+        },
+        {
+          "tenor": "1Y3M",
+          "years": 1.25,
+          "yield_pct": 3.1406270282
+        },
+        {
+          "tenor": "1Y4M",
+          "years": 1.3333333333333333,
+          "yield_pct": 3.1556531746
+        },
+        {
+          "tenor": "1Y5M",
+          "years": 1.4166666666666667,
+          "yield_pct": 3.1694832497
+        },
+        {
+          "tenor": "1Y6M",
+          "years": 1.5,
+          "yield_pct": 3.1822717257
+        },
+        {
+          "tenor": "1Y7M",
+          "years": 1.5833333333333333,
+          "yield_pct": 3.1941557831
+        },
+        {
+          "tenor": "1Y8M",
+          "years": 1.6666666666666667,
+          "yield_pct": 3.2052571087
+        },
+        {
+          "tenor": "1Y9M",
+          "years": 1.75,
+          "yield_pct": 3.2156835131
+        },
+        {
+          "tenor": "1Y10M",
+          "years": 1.8333333333333333,
+          "yield_pct": 3.2255303858
+        },
+        {
+          "tenor": "1Y11M",
+          "years": 1.9166666666666667,
+          "yield_pct": 3.2348820028
+        },
+        {
+          "tenor": "2Y",
+          "years": 2.0,
+          "yield_pct": 3.2438127026
+        },
+        {
+          "tenor": "2Y1M",
+          "years": 2.0833333333333335,
+          "yield_pct": 3.2523879428
+        },
+        {
+          "tenor": "2Y2M",
+          "years": 2.1666666666666665,
+          "yield_pct": 3.2606652495
+        },
+        {
+          "tenor": "2Y3M",
+          "years": 2.25,
+          "yield_pct": 3.2686950696
+        },
+        {
+          "tenor": "2Y4M",
+          "years": 2.3333333333333335,
+          "yield_pct": 3.2765215368
+        },
+        {
+          "tenor": "2Y5M",
+          "years": 2.4166666666666665,
+          "yield_pct": 3.2841831585
+        },
+        {
+          "tenor": "2Y6M",
+          "years": 2.5,
+          "yield_pct": 3.2917134322
+        },
+        {
+          "tenor": "2Y7M",
+          "years": 2.5833333333333335,
+          "yield_pct": 3.299141399
+        },
+        {
+          "tenor": "2Y8M",
+          "years": 2.6666666666666665,
+          "yield_pct": 3.3064921387
+        },
+        {
+          "tenor": "2Y9M",
+          "years": 2.75,
+          "yield_pct": 3.3137872149
+        },
+        {
+          "tenor": "2Y10M",
+          "years": 2.8333333333333335,
+          "yield_pct": 3.3210450726
+        },
+        {
+          "tenor": "2Y11M",
+          "years": 2.9166666666666665,
+          "yield_pct": 3.3282813949
+        },
+        {
+          "tenor": "3Y",
+          "years": 3.0,
+          "yield_pct": 3.335509422
+        },
+        {
+          "tenor": "3Y1M",
+          "years": 3.0833333333333335,
+          "yield_pct": 3.3427402363
+        },
+        {
+          "tenor": "3Y2M",
+          "years": 3.1666666666666665,
+          "yield_pct": 3.3499830178
+        },
+        {
+          "tenor": "3Y3M",
+          "years": 3.25,
+          "yield_pct": 3.357245272
+        },
+        {
+          "tenor": "3Y4M",
+          "years": 3.3333333333333335,
+          "yield_pct": 3.3645330335
+        },
+        {
+          "tenor": "3Y5M",
+          "years": 3.4166666666666665,
+          "yield_pct": 3.3718510473
+        },
+        {
+          "tenor": "3Y6M",
+          "years": 3.5,
+          "yield_pct": 3.3792029314
+        },
+        {
+          "tenor": "3Y7M",
+          "years": 3.5833333333333335,
+          "yield_pct": 3.3865913203
+        },
+        {
+          "tenor": "3Y8M",
+          "years": 3.6666666666666665,
+          "yield_pct": 3.394017994
+        },
+        {
+          "tenor": "3Y9M",
+          "years": 3.75,
+          "yield_pct": 3.4014839922
+        },
+        {
+          "tenor": "3Y10M",
+          "years": 3.8333333333333335,
+          "yield_pct": 3.4089897155
+        },
+        {
+          "tenor": "3Y11M",
+          "years": 3.9166666666666665,
+          "yield_pct": 3.4165350161
+        },
+        {
+          "tenor": "4Y",
+          "years": 4.0,
+          "yield_pct": 3.424119277
+        },
+        {
+          "tenor": "4Y1M",
+          "years": 4.083333333333333,
+          "yield_pct": 3.4317414834
+        },
+        {
+          "tenor": "4Y2M",
+          "years": 4.166666666666667,
+          "yield_pct": 3.4394002847
+        },
+        {
+          "tenor": "4Y3M",
+          "years": 4.25,
+          "yield_pct": 3.4470940504
+        },
+        {
+          "tenor": "4Y4M",
+          "years": 4.333333333333333,
+          "yield_pct": 3.454820918
+        },
+        {
+          "tenor": "4Y5M",
+          "years": 4.416666666666667,
+          "yield_pct": 3.4625788369
+        },
+        {
+          "tenor": "4Y6M",
+          "years": 4.5,
+          "yield_pct": 3.4703656049
+        },
+        {
+          "tenor": "4Y7M",
+          "years": 4.583333333333333,
+          "yield_pct": 3.4781789023
+        },
+        {
+          "tenor": "4Y8M",
+          "years": 4.666666666666667,
+          "yield_pct": 3.4860163199
+        },
+        {
+          "tenor": "4Y9M",
+          "years": 4.75,
+          "yield_pct": 3.4938753849
+        },
+        {
+          "tenor": "4Y10M",
+          "years": 4.833333333333333,
+          "yield_pct": 3.5017535819
+        },
+        {
+          "tenor": "4Y11M",
+          "years": 4.916666666666667,
+          "yield_pct": 3.5096483729
+        },
+        {
+          "tenor": "5Y",
+          "years": 5.0,
+          "yield_pct": 3.5175572128
+        },
+        {
+          "tenor": "5Y1M",
+          "years": 5.083333333333333,
+          "yield_pct": 3.5254775638
+        },
+        {
+          "tenor": "5Y2M",
+          "years": 5.166666666666667,
+          "yield_pct": 3.5334069075
+        },
+        {
+          "tenor": "5Y3M",
+          "years": 5.25,
+          "yield_pct": 3.5413427549
+        },
+        {
+          "tenor": "5Y4M",
+          "years": 5.333333333333333,
+          "yield_pct": 3.5492826553
+        },
+        {
+          "tenor": "5Y5M",
+          "years": 5.416666666666667,
+          "yield_pct": 3.5572242031
+        },
+        {
+          "tenor": "5Y6M",
+          "years": 5.5,
+          "yield_pct": 3.5651650439
+        },
+        {
+          "tenor": "5Y7M",
+          "years": 5.583333333333333,
+          "yield_pct": 3.5731028797
+        },
+        {
+          "tenor": "5Y8M",
+          "years": 5.666666666666667,
+          "yield_pct": 3.5810354724
+        },
+        {
+          "tenor": "5Y9M",
+          "years": 5.75,
+          "yield_pct": 3.5889606467
+        },
+        {
+          "tenor": "5Y10M",
+          "years": 5.833333333333333,
+          "yield_pct": 3.5968762931
+        },
+        {
+          "tenor": "5Y11M",
+          "years": 5.916666666666667,
+          "yield_pct": 3.604780369
+        },
+        {
+          "tenor": "6Y",
+          "years": 6.0,
+          "yield_pct": 3.6126709
+        },
+        {
+          "tenor": "6Y1M",
+          "years": 6.083333333333333,
+          "yield_pct": 3.6205459805
+        },
+        {
+          "tenor": "6Y2M",
+          "years": 6.166666666666667,
+          "yield_pct": 3.628403774
+        },
+        {
+          "tenor": "6Y3M",
+          "years": 6.25,
+          "yield_pct": 3.6362425131
+        },
+        {
+          "tenor": "6Y4M",
+          "years": 6.333333333333333,
+          "yield_pct": 3.6440604986
+        },
+        {
+          "tenor": "6Y5M",
+          "years": 6.416666666666667,
+          "yield_pct": 3.6518560993
+        },
+        {
+          "tenor": "6Y6M",
+          "years": 6.5,
+          "yield_pct": 3.6596277508
+        },
+        {
+          "tenor": "6Y7M",
+          "years": 6.583333333333333,
+          "yield_pct": 3.6673739545
+        },
+        {
+          "tenor": "6Y8M",
+          "years": 6.666666666666667,
+          "yield_pct": 3.6750932763
+        },
+        {
+          "tenor": "6Y9M",
+          "years": 6.75,
+          "yield_pct": 3.6827843453
+        },
+        {
+          "tenor": "6Y10M",
+          "years": 6.833333333333333,
+          "yield_pct": 3.6904458522
+        },
+        {
+          "tenor": "6Y11M",
+          "years": 6.916666666666667,
+          "yield_pct": 3.698076548
+        },
+        {
+          "tenor": "7Y",
+          "years": 7.0,
+          "yield_pct": 3.7056752419
+        },
+        {
+          "tenor": "7Y1M",
+          "years": 7.083333333333333,
+          "yield_pct": 3.7132408002
+        },
+        {
+          "tenor": "7Y2M",
+          "years": 7.166666666666667,
+          "yield_pct": 3.7207721443
+        },
+        {
+          "tenor": "7Y3M",
+          "years": 7.25,
+          "yield_pct": 3.7282682492
+        },
+        {
+          "tenor": "7Y4M",
+          "years": 7.333333333333333,
+          "yield_pct": 3.7357281414
+        },
+        {
+          "tenor": "7Y5M",
+          "years": 7.416666666666667,
+          "yield_pct": 3.7431508977
+        },
+        {
+          "tenor": "7Y6M",
+          "years": 7.5,
+          "yield_pct": 3.7505356432
+        },
+        {
+          "tenor": "7Y7M",
+          "years": 7.583333333333333,
+          "yield_pct": 3.7578815496
+        },
+        {
+          "tenor": "7Y8M",
+          "years": 7.666666666666667,
+          "yield_pct": 3.7651878337
+        },
+        {
+          "tenor": "7Y9M",
+          "years": 7.75,
+          "yield_pct": 3.7724537559
+        },
+        {
+          "tenor": "7Y10M",
+          "years": 7.833333333333333,
+          "yield_pct": 3.7796786181
+        },
+        {
+          "tenor": "7Y11M",
+          "years": 7.916666666666667,
+          "yield_pct": 3.7868617628
+        },
+        {
+          "tenor": "8Y",
+          "years": 8.0,
+          "yield_pct": 3.7940025709
+        },
+        {
+          "tenor": "8Y1M",
+          "years": 8.083333333333334,
+          "yield_pct": 3.8011004608
+        },
+        {
+          "tenor": "8Y2M",
+          "years": 8.166666666666666,
+          "yield_pct": 3.8081548866
+        },
+        {
+          "tenor": "8Y3M",
+          "years": 8.25,
+          "yield_pct": 3.8151653368
+        },
+        {
+          "tenor": "8Y4M",
+          "years": 8.333333333333334,
+          "yield_pct": 3.822131333
+        },
+        {
+          "tenor": "8Y5M",
+          "years": 8.416666666666666,
+          "yield_pct": 3.8290524286
+        },
+        {
+          "tenor": "8Y6M",
+          "years": 8.5,
+          "yield_pct": 3.8359282072
+        },
+        {
+          "tenor": "8Y7M",
+          "years": 8.583333333333334,
+          "yield_pct": 3.8427582818
+        },
+        {
+          "tenor": "8Y8M",
+          "years": 8.666666666666666,
+          "yield_pct": 3.8495422934
+        },
+        {
+          "tenor": "8Y9M",
+          "years": 8.75,
+          "yield_pct": 3.8562799097
+        },
+        {
+          "tenor": "8Y10M",
+          "years": 8.833333333333334,
+          "yield_pct": 3.8629708244
+        },
+        {
+          "tenor": "8Y11M",
+          "years": 8.916666666666666,
+          "yield_pct": 3.8696147557
+        },
+        {
+          "tenor": "9Y",
+          "years": 9.0,
+          "yield_pct": 3.8762114454
+        },
+        {
+          "tenor": "9Y1M",
+          "years": 9.083333333333334,
+          "yield_pct": 3.8827606582
+        },
+        {
+          "tenor": "9Y2M",
+          "years": 9.166666666666666,
+          "yield_pct": 3.8892621802
+        },
+        {
+          "tenor": "9Y3M",
+          "years": 9.25,
+          "yield_pct": 3.8957158185
+        },
+        {
+          "tenor": "9Y4M",
+          "years": 9.333333333333334,
+          "yield_pct": 3.9021213999
+        },
+        {
+          "tenor": "9Y5M",
+          "years": 9.416666666666666,
+          "yield_pct": 3.9084787705
+        },
+        {
+          "tenor": "9Y6M",
+          "years": 9.5,
+          "yield_pct": 3.9147877943
+        },
+        {
+          "tenor": "9Y7M",
+          "years": 9.583333333333334,
+          "yield_pct": 3.921048353
+        },
+        {
+          "tenor": "9Y8M",
+          "years": 9.666666666666666,
+          "yield_pct": 3.9272603449
+        },
+        {
+          "tenor": "9Y9M",
+          "years": 9.75,
+          "yield_pct": 3.9334236842
+        },
+        {
+          "tenor": "9Y10M",
+          "years": 9.833333333333334,
+          "yield_pct": 3.9395383005
+        },
+        {
+          "tenor": "9Y11M",
+          "years": 9.916666666666666,
+          "yield_pct": 3.9456041378
+        },
+        {
+          "tenor": "10Y",
+          "years": 10.0,
+          "yield_pct": 3.9516211543
+        },
+        {
+          "tenor": "10Y1M",
+          "years": 10.083333333333334,
+          "yield_pct": 3.9575893214
+        },
+        {
+          "tenor": "10Y2M",
+          "years": 10.166666666666666,
+          "yield_pct": 3.9635086234
+        },
+        {
+          "tenor": "10Y3M",
+          "years": 10.25,
+          "yield_pct": 3.9693790565
+        },
+        {
+          "tenor": "10Y4M",
+          "years": 10.333333333333334,
+          "yield_pct": 3.9752006291
+        },
+        {
+          "tenor": "10Y5M",
+          "years": 10.416666666666666,
+          "yield_pct": 3.9809733601
+        },
+        {
+          "tenor": "10Y6M",
+          "years": 10.5,
+          "yield_pct": 3.9866972796
+        },
+        {
+          "tenor": "10Y7M",
+          "years": 10.583333333333334,
+          "yield_pct": 3.9923724276
+        },
+        {
+          "tenor": "10Y8M",
+          "years": 10.666666666666666,
+          "yield_pct": 3.9979988537
+        },
+        {
+          "tenor": "10Y9M",
+          "years": 10.75,
+          "yield_pct": 4.0035766172
+        },
+        {
+          "tenor": "10Y10M",
+          "years": 10.833333333333334,
+          "yield_pct": 4.0091057859
+        },
+        {
+          "tenor": "10Y11M",
+          "years": 10.916666666666666,
+          "yield_pct": 4.014586436
+        },
+        {
+          "tenor": "11Y",
+          "years": 11.0,
+          "yield_pct": 4.0200186522
+        },
+        {
+          "tenor": "11Y1M",
+          "years": 11.083333333333334,
+          "yield_pct": 4.0254025265
+        },
+        {
+          "tenor": "11Y2M",
+          "years": 11.166666666666666,
+          "yield_pct": 4.0307381584
+        },
+        {
+          "tenor": "11Y3M",
+          "years": 11.25,
+          "yield_pct": 4.0360256545
+        },
+        {
+          "tenor": "11Y4M",
+          "years": 11.333333333333334,
+          "yield_pct": 4.0412651279
+        },
+        {
+          "tenor": "11Y5M",
+          "years": 11.416666666666666,
+          "yield_pct": 4.0464566981
+        },
+        {
+          "tenor": "11Y6M",
+          "years": 11.5,
+          "yield_pct": 4.0516004909
+        },
+        {
+          "tenor": "11Y7M",
+          "years": 11.583333333333334,
+          "yield_pct": 4.0566966377
+        },
+        {
+          "tenor": "11Y8M",
+          "years": 11.666666666666666,
+          "yield_pct": 4.0617452755
+        },
+        {
+          "tenor": "11Y9M",
+          "years": 11.75,
+          "yield_pct": 4.0667465464
+        },
+        {
+          "tenor": "11Y10M",
+          "years": 11.833333333333334,
+          "yield_pct": 4.0717005977
+        },
+        {
+          "tenor": "11Y11M",
+          "years": 11.916666666666666,
+          "yield_pct": 4.0766075812
+        },
+        {
+          "tenor": "12Y",
+          "years": 12.0,
+          "yield_pct": 4.0814676537
+        },
+        {
+          "tenor": "12Y1M",
+          "years": 12.083333333333334,
+          "yield_pct": 4.0862809757
+        },
+        {
+          "tenor": "12Y2M",
+          "years": 12.166666666666666,
+          "yield_pct": 4.0910477123
+        },
+        {
+          "tenor": "12Y3M",
+          "years": 12.25,
+          "yield_pct": 4.0957680322
+        },
+        {
+          "tenor": "12Y4M",
+          "years": 12.333333333333334,
+          "yield_pct": 4.1004421079
+        },
+        {
+          "tenor": "12Y5M",
+          "years": 12.416666666666666,
+          "yield_pct": 4.1050701153
+        },
+        {
+          "tenor": "12Y6M",
+          "years": 12.5,
+          "yield_pct": 4.1096522337
+        },
+        {
+          "tenor": "12Y7M",
+          "years": 12.583333333333334,
+          "yield_pct": 4.1141886456
+        },
+        {
+          "tenor": "12Y8M",
+          "years": 12.666666666666666,
+          "yield_pct": 4.1186795364
+        },
+        {
+          "tenor": "12Y9M",
+          "years": 12.75,
+          "yield_pct": 4.1231250943
+        },
+        {
+          "tenor": "12Y10M",
+          "years": 12.833333333333334,
+          "yield_pct": 4.1275255103
+        },
+        {
+          "tenor": "12Y11M",
+          "years": 12.916666666666666,
+          "yield_pct": 4.1318809777
+        },
+        {
+          "tenor": "13Y",
+          "years": 13.0,
+          "yield_pct": 4.1361916924
+        },
+        {
+          "tenor": "13Y1M",
+          "years": 13.083333333333334,
+          "yield_pct": 4.1404578524
+        },
+        {
+          "tenor": "13Y2M",
+          "years": 13.166666666666666,
+          "yield_pct": 4.1446796579
+        },
+        {
+          "tenor": "13Y3M",
+          "years": 13.25,
+          "yield_pct": 4.148857311
+        },
+        {
+          "tenor": "13Y4M",
+          "years": 13.333333333333334,
+          "yield_pct": 4.1529910157
+        },
+        {
+          "tenor": "13Y5M",
+          "years": 13.416666666666666,
+          "yield_pct": 4.1570809779
+        },
+        {
+          "tenor": "13Y6M",
+          "years": 13.5,
+          "yield_pct": 4.161127405
+        },
+        {
+          "tenor": "13Y7M",
+          "years": 13.583333333333334,
+          "yield_pct": 4.1651305058
+        },
+        {
+          "tenor": "13Y8M",
+          "years": 13.666666666666666,
+          "yield_pct": 4.1690904909
+        },
+        {
+          "tenor": "13Y9M",
+          "years": 13.75,
+          "yield_pct": 4.1730075718
+        },
+        {
+          "tenor": "13Y10M",
+          "years": 13.833333333333334,
+          "yield_pct": 4.1768819617
+        },
+        {
+          "tenor": "13Y11M",
+          "years": 13.916666666666666,
+          "yield_pct": 4.1807138746
+        },
+        {
+          "tenor": "14Y",
+          "years": 14.0,
+          "yield_pct": 4.1845035257
+        },
+        {
+          "tenor": "14Y1M",
+          "years": 14.083333333333334,
+          "yield_pct": 4.1882511312
+        },
+        {
+          "tenor": "14Y2M",
+          "years": 14.166666666666666,
+          "yield_pct": 4.1919569082
+        },
+        {
+          "tenor": "14Y3M",
+          "years": 14.25,
+          "yield_pct": 4.1956210745
+        },
+        {
+          "tenor": "14Y4M",
+          "years": 14.333333333333334,
+          "yield_pct": 4.1992438489
+        },
+        {
+          "tenor": "14Y5M",
+          "years": 14.416666666666666,
+          "yield_pct": 4.2028254506
+        },
+        {
+          "tenor": "14Y6M",
+          "years": 14.5,
+          "yield_pct": 4.2063660995
+        },
+        {
+          "tenor": "14Y7M",
+          "years": 14.583333333333334,
+          "yield_pct": 4.2098660163
+        },
+        {
+          "tenor": "14Y8M",
+          "years": 14.666666666666666,
+          "yield_pct": 4.2133254219
+        },
+        {
+          "tenor": "14Y9M",
+          "years": 14.75,
+          "yield_pct": 4.2167445376
+        },
+        {
+          "tenor": "14Y10M",
+          "years": 14.833333333333334,
+          "yield_pct": 4.2201235853
+        },
+        {
+          "tenor": "14Y11M",
+          "years": 14.916666666666666,
+          "yield_pct": 4.223462787
+        },
+        {
+          "tenor": "15Y",
+          "years": 15.0,
+          "yield_pct": 4.226762365
+        },
+        {
+          "tenor": "15Y1M",
+          "years": 15.083333333333334,
+          "yield_pct": 4.2300225419
+        },
+        {
+          "tenor": "15Y2M",
+          "years": 15.166666666666666,
+          "yield_pct": 4.2332435404
+        },
+        {
+          "tenor": "15Y3M",
+          "years": 15.25,
+          "yield_pct": 4.2364255833
+        },
+        {
+          "tenor": "15Y4M",
+          "years": 15.333333333333334,
+          "yield_pct": 4.2395688934
+        },
+        {
+          "tenor": "15Y5M",
+          "years": 15.416666666666666,
+          "yield_pct": 4.2426736937
+        },
+        {
+          "tenor": "15Y6M",
+          "years": 15.5,
+          "yield_pct": 4.2457402069
+        },
+        {
+          "tenor": "15Y7M",
+          "years": 15.583333333333334,
+          "yield_pct": 4.2487686558
+        },
+        {
+          "tenor": "15Y8M",
+          "years": 15.666666666666666,
+          "yield_pct": 4.2517592632
+        },
+        {
+          "tenor": "15Y9M",
+          "years": 15.75,
+          "yield_pct": 4.2547122516
+        },
+        {
+          "tenor": "15Y10M",
+          "years": 15.833333333333334,
+          "yield_pct": 4.2576278434
+        },
+        {
+          "tenor": "15Y11M",
+          "years": 15.916666666666666,
+          "yield_pct": 4.2605062607
+        },
+        {
+          "tenor": "16Y",
+          "years": 16.0,
+          "yield_pct": 4.2633477253
+        },
+        {
+          "tenor": "16Y1M",
+          "years": 16.083333333333332,
+          "yield_pct": 4.2661524591
+        },
+        {
+          "tenor": "16Y2M",
+          "years": 16.166666666666668,
+          "yield_pct": 4.2689206832
+        },
+        {
+          "tenor": "16Y3M",
+          "years": 16.25,
+          "yield_pct": 4.2716526187
+        },
+        {
+          "tenor": "16Y4M",
+          "years": 16.333333333333332,
+          "yield_pct": 4.2743484862
+        },
+        {
+          "tenor": "16Y5M",
+          "years": 16.416666666666668,
+          "yield_pct": 4.2770085059
+        },
+        {
+          "tenor": "16Y6M",
+          "years": 16.5,
+          "yield_pct": 4.2796328976
+        },
+        {
+          "tenor": "16Y7M",
+          "years": 16.583333333333332,
+          "yield_pct": 4.2822218808
+        },
+        {
+          "tenor": "16Y8M",
+          "years": 16.666666666666668,
+          "yield_pct": 4.2847756742
+        },
+        {
+          "tenor": "16Y9M",
+          "years": 16.75,
+          "yield_pct": 4.2872944965
+        },
+        {
+          "tenor": "16Y10M",
+          "years": 16.833333333333332,
+          "yield_pct": 4.2897785653
+        },
+        {
+          "tenor": "16Y11M",
+          "years": 16.916666666666668,
+          "yield_pct": 4.2922280982
+        },
+        {
+          "tenor": "17Y",
+          "years": 17.0,
+          "yield_pct": 4.2946433119
+        },
+        {
+          "tenor": "17Y1M",
+          "years": 17.083333333333332,
+          "yield_pct": 4.2970244228
+        },
+        {
+          "tenor": "17Y2M",
+          "years": 17.166666666666668,
+          "yield_pct": 4.2993716464
+        },
+        {
+          "tenor": "17Y3M",
+          "years": 17.25,
+          "yield_pct": 4.3016851978
+        },
+        {
+          "tenor": "17Y4M",
+          "years": 17.333333333333332,
+          "yield_pct": 4.3039652914
+        },
+        {
+          "tenor": "17Y5M",
+          "years": 17.416666666666668,
+          "yield_pct": 4.3062121411
+        },
+        {
+          "tenor": "17Y6M",
+          "years": 17.5,
+          "yield_pct": 4.30842596
+        },
+        {
+          "tenor": "17Y7M",
+          "years": 17.583333333333332,
+          "yield_pct": 4.3106069605
+        },
+        {
+          "tenor": "17Y8M",
+          "years": 17.666666666666668,
+          "yield_pct": 4.3127553544
+        },
+        {
+          "tenor": "17Y9M",
+          "years": 17.75,
+          "yield_pct": 4.3148713528
+        },
+        {
+          "tenor": "17Y10M",
+          "years": 17.833333333333332,
+          "yield_pct": 4.3169551661
+        },
+        {
+          "tenor": "17Y11M",
+          "years": 17.916666666666668,
+          "yield_pct": 4.3190070038
+        },
+        {
+          "tenor": "18Y",
+          "years": 18.0,
+          "yield_pct": 4.321027075
+        },
+        {
+          "tenor": "18Y1M",
+          "years": 18.083333333333332,
+          "yield_pct": 4.3230155878
+        },
+        {
+          "tenor": "18Y2M",
+          "years": 18.166666666666668,
+          "yield_pct": 4.3249727495
+        },
+        {
+          "tenor": "18Y3M",
+          "years": 18.25,
+          "yield_pct": 4.3268987668
+        },
+        {
+          "tenor": "18Y4M",
+          "years": 18.333333333333332,
+          "yield_pct": 4.3287938457
+        },
+        {
+          "tenor": "18Y5M",
+          "years": 18.416666666666668,
+          "yield_pct": 4.330658191
+        },
+        {
+          "tenor": "18Y6M",
+          "years": 18.5,
+          "yield_pct": 4.3324920072
+        },
+        {
+          "tenor": "18Y7M",
+          "years": 18.583333333333332,
+          "yield_pct": 4.3342954977
+        },
+        {
+          "tenor": "18Y8M",
+          "years": 18.666666666666668,
+          "yield_pct": 4.3360688652
+        },
+        {
+          "tenor": "18Y9M",
+          "years": 18.75,
+          "yield_pct": 4.3378123115
+        },
+        {
+          "tenor": "18Y10M",
+          "years": 18.833333333333332,
+          "yield_pct": 4.3395260376
+        },
+        {
+          "tenor": "18Y11M",
+          "years": 18.916666666666668,
+          "yield_pct": 4.3412102437
+        },
+        {
+          "tenor": "19Y",
+          "years": 19.0,
+          "yield_pct": 4.3428651292
+        },
+        {
+          "tenor": "19Y1M",
+          "years": 19.083333333333332,
+          "yield_pct": 4.3444908925
+        },
+        {
+          "tenor": "19Y2M",
+          "years": 19.166666666666668,
+          "yield_pct": 4.3460877313
+        },
+        {
+          "tenor": "19Y3M",
+          "years": 19.25,
+          "yield_pct": 4.3476558424
+        },
+        {
+          "tenor": "19Y4M",
+          "years": 19.333333333333332,
+          "yield_pct": 4.3491954218
+        },
+        {
+          "tenor": "19Y5M",
+          "years": 19.416666666666668,
+          "yield_pct": 4.3507066645
+        },
+        {
+          "tenor": "19Y6M",
+          "years": 19.5,
+          "yield_pct": 4.3521897646
+        },
+        {
+          "tenor": "19Y7M",
+          "years": 19.583333333333332,
+          "yield_pct": 4.3536449156
+        },
+        {
+          "tenor": "19Y8M",
+          "years": 19.666666666666668,
+          "yield_pct": 4.3550723098
+        },
+        {
+          "tenor": "19Y9M",
+          "years": 19.75,
+          "yield_pct": 4.3564721389
+        },
+        {
+          "tenor": "19Y10M",
+          "years": 19.833333333333332,
+          "yield_pct": 4.3578445935
+        },
+        {
+          "tenor": "19Y11M",
+          "years": 19.916666666666668,
+          "yield_pct": 4.3591898634
+        },
+        {
+          "tenor": "20Y",
+          "years": 20.0,
+          "yield_pct": 4.3605081375
+        },
+        {
+          "tenor": "20Y1M",
+          "years": 20.083333333333332,
+          "yield_pct": 4.3617996038
+        },
+        {
+          "tenor": "20Y2M",
+          "years": 20.166666666666668,
+          "yield_pct": 4.3630644494
+        },
+        {
+          "tenor": "20Y3M",
+          "years": 20.25,
+          "yield_pct": 4.3643028606
+        },
+        {
+          "tenor": "20Y4M",
+          "years": 20.333333333333332,
+          "yield_pct": 4.3655150226
+        },
+        {
+          "tenor": "20Y5M",
+          "years": 20.416666666666668,
+          "yield_pct": 4.3667011199
+        },
+        {
+          "tenor": "20Y6M",
+          "years": 20.5,
+          "yield_pct": 4.367861336
+        },
+        {
+          "tenor": "20Y7M",
+          "years": 20.583333333333332,
+          "yield_pct": 4.3689958536
+        },
+        {
+          "tenor": "20Y8M",
+          "years": 20.666666666666668,
+          "yield_pct": 4.3701048542
+        },
+        {
+          "tenor": "20Y9M",
+          "years": 20.75,
+          "yield_pct": 4.3711885187
+        },
+        {
+          "tenor": "20Y10M",
+          "years": 20.833333333333332,
+          "yield_pct": 4.3722470271
+        },
+        {
+          "tenor": "20Y11M",
+          "years": 20.916666666666668,
+          "yield_pct": 4.3732805583
+        },
+        {
+          "tenor": "21Y",
+          "years": 21.0,
+          "yield_pct": 4.3742892903
+        },
+        {
+          "tenor": "21Y1M",
+          "years": 21.083333333333332,
+          "yield_pct": 4.3752734004
+        },
+        {
+          "tenor": "21Y2M",
+          "years": 21.166666666666668,
+          "yield_pct": 4.3762330649
+        },
+        {
+          "tenor": "21Y3M",
+          "years": 21.25,
+          "yield_pct": 4.377168459
+        },
+        {
+          "tenor": "21Y4M",
+          "years": 21.333333333333332,
+          "yield_pct": 4.3780797573
+        },
+        {
+          "tenor": "21Y5M",
+          "years": 21.416666666666668,
+          "yield_pct": 4.3789671332
+        },
+        {
+          "tenor": "21Y6M",
+          "years": 21.5,
+          "yield_pct": 4.3798307595
+        },
+        {
+          "tenor": "21Y7M",
+          "years": 21.583333333333332,
+          "yield_pct": 4.3806708078
+        },
+        {
+          "tenor": "21Y8M",
+          "years": 21.666666666666668,
+          "yield_pct": 4.3814874491
+        },
+        {
+          "tenor": "21Y9M",
+          "years": 21.75,
+          "yield_pct": 4.3822808532
+        },
+        {
+          "tenor": "21Y10M",
+          "years": 21.833333333333332,
+          "yield_pct": 4.3830511891
+        },
+        {
+          "tenor": "21Y11M",
+          "years": 21.916666666666668,
+          "yield_pct": 4.383798625
+        },
+        {
+          "tenor": "22Y",
+          "years": 22.0,
+          "yield_pct": 4.384523328
+        },
+        {
+          "tenor": "22Y1M",
+          "years": 22.083333333333332,
+          "yield_pct": 4.3852254646
+        },
+        {
+          "tenor": "22Y2M",
+          "years": 22.166666666666668,
+          "yield_pct": 4.3859052001
+        },
+        {
+          "tenor": "22Y3M",
+          "years": 22.25,
+          "yield_pct": 4.3865626991
+        },
+        {
+          "tenor": "22Y4M",
+          "years": 22.333333333333332,
+          "yield_pct": 4.3871981251
+        },
+        {
+          "tenor": "22Y5M",
+          "years": 22.416666666666668,
+          "yield_pct": 4.387811641
+        },
+        {
+          "tenor": "22Y6M",
+          "years": 22.5,
+          "yield_pct": 4.3884034085
+        },
+        {
+          "tenor": "22Y7M",
+          "years": 22.583333333333332,
+          "yield_pct": 4.3889735886
+        },
+        {
+          "tenor": "22Y8M",
+          "years": 22.666666666666668,
+          "yield_pct": 4.3895223414
+        },
+        {
+          "tenor": "22Y9M",
+          "years": 22.75,
+          "yield_pct": 4.3900498261
+        },
+        {
+          "tenor": "22Y10M",
+          "years": 22.833333333333332,
+          "yield_pct": 4.3905562009
+        },
+        {
+          "tenor": "22Y11M",
+          "years": 22.916666666666668,
+          "yield_pct": 4.3910416233
+        },
+        {
+          "tenor": "23Y",
+          "years": 23.0,
+          "yield_pct": 4.3915062498
+        },
+        {
+          "tenor": "23Y1M",
+          "years": 23.083333333333332,
+          "yield_pct": 4.3919502361
+        },
+        {
+          "tenor": "23Y2M",
+          "years": 23.166666666666668,
+          "yield_pct": 4.3923737368
+        },
+        {
+          "tenor": "23Y3M",
+          "years": 23.25,
+          "yield_pct": 4.3927769061
+        },
+        {
+          "tenor": "23Y4M",
+          "years": 23.333333333333332,
+          "yield_pct": 4.3931598967
+        },
+        {
+          "tenor": "23Y5M",
+          "years": 23.416666666666668,
+          "yield_pct": 4.3935228611
+        },
+        {
+          "tenor": "23Y6M",
+          "years": 23.5,
+          "yield_pct": 4.3938659503
+        },
+        {
+          "tenor": "23Y7M",
+          "years": 23.583333333333332,
+          "yield_pct": 4.394189315
+        },
+        {
+          "tenor": "23Y8M",
+          "years": 23.666666666666668,
+          "yield_pct": 4.3944931046
+        },
+        {
+          "tenor": "23Y9M",
+          "years": 23.75,
+          "yield_pct": 4.3947774678
+        },
+        {
+          "tenor": "23Y10M",
+          "years": 23.833333333333332,
+          "yield_pct": 4.3950425526
+        },
+        {
+          "tenor": "23Y11M",
+          "years": 23.916666666666668,
+          "yield_pct": 4.3952885059
+        },
+        {
+          "tenor": "24Y",
+          "years": 24.0,
+          "yield_pct": 4.395515474
+        },
+        {
+          "tenor": "24Y1M",
+          "years": 24.083333333333332,
+          "yield_pct": 4.395723602
+        },
+        {
+          "tenor": "24Y2M",
+          "years": 24.166666666666668,
+          "yield_pct": 4.3959130346
+        },
+        {
+          "tenor": "24Y3M",
+          "years": 24.25,
+          "yield_pct": 4.3960839152
+        },
+        {
+          "tenor": "24Y4M",
+          "years": 24.333333333333332,
+          "yield_pct": 4.3962363868
+        },
+        {
+          "tenor": "24Y5M",
+          "years": 24.416666666666668,
+          "yield_pct": 4.3963705912
+        },
+        {
+          "tenor": "24Y6M",
+          "years": 24.5,
+          "yield_pct": 4.3964866696
+        },
+        {
+          "tenor": "24Y7M",
+          "years": 24.583333333333332,
+          "yield_pct": 4.3965847623
+        },
+        {
+          "tenor": "24Y8M",
+          "years": 24.666666666666668,
+          "yield_pct": 4.3966650087
+        },
+        {
+          "tenor": "24Y9M",
+          "years": 24.75,
+          "yield_pct": 4.3967275475
+        },
+        {
+          "tenor": "24Y10M",
+          "years": 24.833333333333332,
+          "yield_pct": 4.3967725165
+        },
+        {
+          "tenor": "24Y11M",
+          "years": 24.916666666666668,
+          "yield_pct": 4.3968000527
+        },
+        {
+          "tenor": "25Y",
+          "years": 25.0,
+          "yield_pct": 4.3968102924
+        },
+        {
+          "tenor": "25Y1M",
+          "years": 25.083333333333332,
+          "yield_pct": 4.3968033708
+        },
+        {
+          "tenor": "25Y2M",
+          "years": 25.166666666666668,
+          "yield_pct": 4.3967794226
+        },
+        {
+          "tenor": "25Y3M",
+          "years": 25.25,
+          "yield_pct": 4.3967385816
+        },
+        {
+          "tenor": "25Y4M",
+          "years": 25.333333333333332,
+          "yield_pct": 4.3966809807
+        },
+        {
+          "tenor": "25Y5M",
+          "years": 25.416666666666668,
+          "yield_pct": 4.396606752
+        },
+        {
+          "tenor": "25Y6M",
+          "years": 25.5,
+          "yield_pct": 4.396516027
+        },
+        {
+          "tenor": "25Y7M",
+          "years": 25.583333333333332,
+          "yield_pct": 4.3964089363
+        },
+        {
+          "tenor": "25Y8M",
+          "years": 25.666666666666668,
+          "yield_pct": 4.3962856097
+        },
+        {
+          "tenor": "25Y9M",
+          "years": 25.75,
+          "yield_pct": 4.3961461761
+        },
+        {
+          "tenor": "25Y10M",
+          "years": 25.833333333333332,
+          "yield_pct": 4.3959907639
+        },
+        {
+          "tenor": "25Y11M",
+          "years": 25.916666666666668,
+          "yield_pct": 4.3958195004
+        },
+        {
+          "tenor": "26Y",
+          "years": 26.0,
+          "yield_pct": 4.3956325124
+        },
+        {
+          "tenor": "26Y1M",
+          "years": 26.083333333333332,
+          "yield_pct": 4.3954299257
+        },
+        {
+          "tenor": "26Y2M",
+          "years": 26.166666666666668,
+          "yield_pct": 4.3952118656
+        },
+        {
+          "tenor": "26Y3M",
+          "years": 26.25,
+          "yield_pct": 4.3949784564
+        },
+        {
+          "tenor": "26Y4M",
+          "years": 26.333333333333332,
+          "yield_pct": 4.3947298217
+        },
+        {
+          "tenor": "26Y5M",
+          "years": 26.416666666666668,
+          "yield_pct": 4.3944660844
+        },
+        {
+          "tenor": "26Y6M",
+          "years": 26.5,
+          "yield_pct": 4.3941873666
+        },
+        {
+          "tenor": "26Y7M",
+          "years": 26.583333333333332,
+          "yield_pct": 4.3938937896
+        },
+        {
+          "tenor": "26Y8M",
+          "years": 26.666666666666668,
+          "yield_pct": 4.3935854742
+        },
+        {
+          "tenor": "26Y9M",
+          "years": 26.75,
+          "yield_pct": 4.3932625401
+        },
+        {
+          "tenor": "26Y10M",
+          "years": 26.833333333333332,
+          "yield_pct": 4.3929251065
+        },
+        {
+          "tenor": "26Y11M",
+          "years": 26.916666666666668,
+          "yield_pct": 4.3925732917
+        },
+        {
+          "tenor": "27Y",
+          "years": 27.0,
+          "yield_pct": 4.3922072136
+        },
+        {
+          "tenor": "27Y1M",
+          "years": 27.083333333333332,
+          "yield_pct": 4.3918269888
+        },
+        {
+          "tenor": "27Y2M",
+          "years": 27.166666666666668,
+          "yield_pct": 4.3914327338
+        },
+        {
+          "tenor": "27Y3M",
+          "years": 27.25,
+          "yield_pct": 4.391024564
+        },
+        {
+          "tenor": "27Y4M",
+          "years": 27.333333333333332,
+          "yield_pct": 4.390602594
+        },
+        {
+          "tenor": "27Y5M",
+          "years": 27.416666666666668,
+          "yield_pct": 4.3901669381
+        },
+        {
+          "tenor": "27Y6M",
+          "years": 27.5,
+          "yield_pct": 4.3897177095
+        },
+        {
+          "tenor": "27Y7M",
+          "years": 27.583333333333332,
+          "yield_pct": 4.3892550208
+        },
+        {
+          "tenor": "27Y8M",
+          "years": 27.666666666666668,
+          "yield_pct": 4.388778984
+        },
+        {
+          "tenor": "27Y9M",
+          "years": 27.75,
+          "yield_pct": 4.3882897103
+        },
+        {
+          "tenor": "27Y10M",
+          "years": 27.833333333333332,
+          "yield_pct": 4.3877873102
+        },
+        {
+          "tenor": "27Y11M",
+          "years": 27.916666666666668,
+          "yield_pct": 4.3872718935
+        },
+        {
+          "tenor": "28Y",
+          "years": 28.0,
+          "yield_pct": 4.3867435694
+        },
+        {
+          "tenor": "28Y1M",
+          "years": 28.083333333333332,
+          "yield_pct": 4.3862024464
+        },
+        {
+          "tenor": "28Y2M",
+          "years": 28.166666666666668,
+          "yield_pct": 4.3856486321
+        },
+        {
+          "tenor": "28Y3M",
+          "years": 28.25,
+          "yield_pct": 4.3850822338
+        },
+        {
+          "tenor": "28Y4M",
+          "years": 28.333333333333332,
+          "yield_pct": 4.3845033577
+        },
+        {
+          "tenor": "28Y5M",
+          "years": 28.416666666666668,
+          "yield_pct": 4.3839121096
+        },
+        {
+          "tenor": "28Y6M",
+          "years": 28.5,
+          "yield_pct": 4.3833085946
+        },
+        {
+          "tenor": "28Y7M",
+          "years": 28.583333333333332,
+          "yield_pct": 4.382692917
+        },
+        {
+          "tenor": "28Y8M",
+          "years": 28.666666666666668,
+          "yield_pct": 4.3820651807
+        },
+        {
+          "tenor": "28Y9M",
+          "years": 28.75,
+          "yield_pct": 4.3814254886
+        },
+        {
+          "tenor": "28Y10M",
+          "years": 28.833333333333332,
+          "yield_pct": 4.3807739432
+        },
+        {
+          "tenor": "28Y11M",
+          "years": 28.916666666666668,
+          "yield_pct": 4.3801106463
+        },
+        {
+          "tenor": "29Y",
+          "years": 29.0,
+          "yield_pct": 4.3794356988
+        },
+        {
+          "tenor": "29Y1M",
+          "years": 29.083333333333332,
+          "yield_pct": 4.3787492014
+        },
+        {
+          "tenor": "29Y2M",
+          "years": 29.166666666666668,
+          "yield_pct": 4.3780512538
+        },
+        {
+          "tenor": "29Y3M",
+          "years": 29.25,
+          "yield_pct": 4.3773419552
+        },
+        {
+          "tenor": "29Y4M",
+          "years": 29.333333333333332,
+          "yield_pct": 4.3766214041
+        },
+        {
+          "tenor": "29Y5M",
+          "years": 29.416666666666668,
+          "yield_pct": 4.3758896985
+        },
+        {
+          "tenor": "29Y6M",
+          "years": 29.5,
+          "yield_pct": 4.3751469356
+        },
+        {
+          "tenor": "29Y7M",
+          "years": 29.583333333333332,
+          "yield_pct": 4.374393212
+        },
+        {
+          "tenor": "29Y8M",
+          "years": 29.666666666666668,
+          "yield_pct": 4.3736286238
+        },
+        {
+          "tenor": "29Y9M",
+          "years": 29.75,
+          "yield_pct": 4.3728532665
+        },
+        {
+          "tenor": "29Y10M",
+          "years": 29.833333333333332,
+          "yield_pct": 4.3720672347
+        },
+        {
+          "tenor": "29Y11M",
+          "years": 29.916666666666668,
+          "yield_pct": 4.3712706227
+        },
+        {
+          "tenor": "30Y",
+          "years": 30.0,
+          "yield_pct": 4.370463524
+        }
+      ],
+      "notes": [
+        "Source: European Central Bank.",
+        "Different issuer set, not a sovereign credit spread or individual country.",
+        "Source response SHA-256 (ecb-all.csv): 6d2698531a1722e0d966047da91c9c3b7702d9c66362b6f3a59cc0b0a3c93138; input recorded 2026-11-14T15:42:31+00:00; https://data-api.ecb.europa.eu/service/data/YC/B.U2.EUR.4F.G_N_C.SV_C_YM.?startPeriod=2026-11-10&endPeriod=2026-11-14&format=csvdata"
+      ]
+    }
+  ]
+}

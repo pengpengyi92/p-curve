@@ -47,9 +47,9 @@ class OneClickEntryTests(unittest.TestCase):
         self.assertRegex(text,r'Author:\s*pengyi')
         self.assertIn('What a beautiful curve.',text)
         images = [attrs['src'] for tag,attrs in doc.tags if tag=='img']
-        self.assertEqual(len(images),4)
+        self.assertEqual(len(images),5)
         self.assertEqual({Path(src).stem for src in images},
-                         {'ust','jgb','euro_area_aaa','euro_area_all'})
+                         {'ust','jgb','euro_area_aaa','euro_area_all','australia'})
         for src in images:
             self.assertNotRegex(src,r'^(?:https?:|file:|/|[A-Za-z]:)')
             target = (ROOT/'curve'/src).resolve()

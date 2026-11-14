@@ -94,7 +94,7 @@ def check() -> list[str]:
         spec = importlib.util.spec_from_file_location("reviewed_curve_archive", ROOT / "scripts/curve_archive.py")
         module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(module)
-        for snapshot_path in sorted(archive_dir.glob("*/snapshot.json")):
+        for snapshot_path in sorted(archive_dir.rglob("snapshot.json")):
             try:
                 snapshot = module.load_snapshot(snapshot_path)
                 module.validate_snapshot(snapshot, public=True)

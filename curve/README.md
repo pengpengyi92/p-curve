@@ -19,7 +19,20 @@ Every chart records its title, generation timestamp, market date, retrieval time
 curve representation, units, source and rights decision. Source-published par,
 benchmark yields and fitted continuous-zero rates are not interchangeable.
 
-## Latest collection
+## Latest collection — global sovereign yield curves
+
+**Generated:** `2026-11-14T15:52:32+00:00` (23:52:32 Asia/Shanghai).
+
+- [Developed markets](developed/20261114T155232Z/index.html): U.S. Treasury, Japan, euro area (AAA and all ratings), and Australia; source links only for the U.K. and Hong Kong.
+- [Emerging and developing markets](emerging/20261114T155232Z/index.html): mainland China; source link only.
+- [Edition notes, actual observation dates and rights](../update/2026-11-14-global-sovereign-yield-curves.md).
+
+The public edition contains five series (749 source nodes) across four
+geographies. Selected public charts use SVG/HTML so they remain available
+without JavaScript, data APIs or a Python install. Internal/local figures can
+also be rendered as PNG; do not upload PNGs of data that are on HOLD.
+
+## Previous collection — 2026-11-11
 
 **Title:** Selected public sovereign curves, collected2026-11-11.
 **Generated:** 2026-11-11T14:33:34+00:00 (22:33:34 Asia/Shanghai).
@@ -49,6 +62,10 @@ No private archive is hosted and no live feed is deployed.
 
 ## Add the next curve
 
+Use `curve/{developed,emerging}/<country-or-region>/<UTC timestamp>/` for a
+market or regional edition, and `curve/<group>/<UTC timestamp>/` for its group
+index. Original flat timestamped snapshots stay where they were created.
+
 1. Review the actual source, public-display rights, units, representation,
    observation date and all native maturity points. Record retrieval time and
    source hashes in the notes where available. Do not reuse a prior price under
@@ -59,7 +76,7 @@ No private archive is hosted and no live feed is deployed.
 3. Run offline:
 
    ```sh
-   python scripts/curve_archive.py REVIEWED_INPUT.json --output-root curve --public
+   python scripts/curve_archive.py REVIEWED_INPUT.json --output-root curve/developed/united-states --public
    ```
 
 4. The renderer rejects existing snapshot directories and any rights HOLD. It

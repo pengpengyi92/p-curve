@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_id": "20261114T155232Z",
+  "title": "Global sovereign yield curves — collection 2026-11-14",
+  "generated_at": "2026-11-14T15:52:32+00:00",
+  "notes": [
+    "IMF WEO classification; source curves use different conventions and dates.",
+    "No additional tenor is calibrated or filled; source file timestamps record collection, not historical first availability."
+  ],
+  "markets": [
+    {
+      "id": "australia",
+      "title": "Australia — nominal government yields",
+      "currency": "AUD",
+      "market_date": "2026-11-11",
+      "asof": "Latest usable observation in the saved official input(s); not a common close.",
+      "retrieved_at": "2026-11-14T15:41:55+00:00",
+      "source_url": "https://www.rba.gov.au/statistics/tables/csv/f2-data.csv",
+      "curve_type": "RBA F2 nominal government yields; interpolated by source",
+      "units": "percent_per_annum",
+      "status": "AVAILABLE",
+      "rights": {
+        "status": "APPROVED_PUBLIC_DISPLAY",
+        "source_url": "https://www.rba.gov.au/copyright/#financial-data",
+        "reason": "Source: Reserve Bank of Australia 2026; Copyright and Disclaimer Notice sections 3 and 5; selected four columns explicitly sourced to RBA. Chart by P-Curve; no endorsement or use as a financial benchmark."
+      },
+      "nodes": [
+        {
+          "tenor": "2Y",
+          "years": 2.0,
+          "yield_pct": 4.808
+        },
+        {
+          "tenor": "3Y",
+          "years": 3.0,
+          "yield_pct": 4.733
+        },
+        {
+          "tenor": "5Y",
+          "years": 5.0,
+          "yield_pct": 4.757
+        },
+        {
+          "tenor": "10Y",
+          "years": 10.0,
+          "yield_pct": 5.044
+        }
+      ],
+      "notes": [
+        "Source: Reserve Bank of Australia 2026.",
+        "F2 daily series: 2Y, 3Y, 5Y and 10Y, no real/indexed rate. RBA worksheet vintage is not the observation date.",
+        "Source response SHA-256 (au.csv): ce557587cb80a8d5a2c288ae9bc0bcff15053e1b6caa08923dbc822c4eef8655; input recorded 2026-11-14T15:41:55+00:00; https://www.rba.gov.au/statistics/tables/csv/f2-data.csv"
+      ]
+    }
+  ]
+}

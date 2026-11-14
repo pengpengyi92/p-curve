@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="680" viewBox="0 0 1100 680" role="img" aria-labelledby="title description">
+<title id="title">US Treasury — nominal par</title>
+<desc id="description">Global sovereign yield curves — collection 2026-11-14. Market date 2026-11-13. Generated 2026-11-14T15:52:32+00:00. Source nodes only; no missing yields filled.</desc>
+<rect width="1100" height="680" fill="#f8fafc"/>
+<g font-family="Arial,sans-serif" fill="#172033">
+<text x="85" y="35" font-size="23" font-weight="bold">US Treasury — nominal par</text>
+<text x="85" y="60" font-size="13">Market date: 2026-11-13 | Generated: 2026-11-14T15:52:32+00:00</text>
+<text x="85" y="83" font-size="13">USD | Treasury nominal constant-maturity par</text>
+<text x="85" y="107" font-size="12" fill="#934500">PUBLIC DISPLAY — producer-reviewed source rights</text>
+<line x1="85" y1="525.000" x2="1065" y2="525.000" stroke="#d6dee9"/>
+<text x="73" y="529.000" text-anchor="end" font-size="12">3.930</text>
+<line x1="85" y1="449.000" x2="1065" y2="449.000" stroke="#d6dee9"/>
+<text x="73" y="453.000" text-anchor="end" font-size="12">4.282</text>
+<line x1="85" y1="373.000" x2="1065" y2="373.000" stroke="#d6dee9"/>
+<text x="73" y="377.000" text-anchor="end" font-size="12">4.634</text>
+<line x1="85" y1="297.000" x2="1065" y2="297.000" stroke="#d6dee9"/>
+<text x="73" y="301.000" text-anchor="end" font-size="12">4.986</text>
+<line x1="85" y1="221.000" x2="1065" y2="221.000" stroke="#d6dee9"/>
+<text x="73" y="225.000" text-anchor="end" font-size="12">5.338</text>
+<line x1="85" y1="145.000" x2="1065" y2="145.000" stroke="#d6dee9"/>
+<text x="73" y="149.000" text-anchor="end" font-size="12">5.690</text>
+<line x1="85.000" y1="145" x2="85.000" y2="525" stroke="#e3e8ef"/>
+<text x="85.000" y="547" text-anchor="middle" font-size="12">0</text>
+<line x1="117.667" y1="145" x2="117.667" y2="525" stroke="#e3e8ef"/>
+<text x="117.667" y="547" text-anchor="middle" font-size="12">1</text>
+<line x1="150.333" y1="145" x2="150.333" y2="525" stroke="#e3e8ef"/>
+<text x="150.333" y="547" text-anchor="middle" font-size="12">2</text>
+<line x1="183.000" y1="145" x2="183.000" y2="525" stroke="#e3e8ef"/>
+<text x="183.000" y="547" text-anchor="middle" font-size="12">3</text>
+<line x1="248.333" y1="145" x2="248.333" y2="525" stroke="#e3e8ef"/>
+<text x="248.333" y="547" text-anchor="middle" font-size="12">5</text>
+<line x1="313.667" y1="145" x2="313.667" y2="525" stroke="#e3e8ef"/>
+<text x="313.667" y="547" text-anchor="middle" font-size="12">7</text>
+<line x1="411.667" y1="145" x2="411.667" y2="525" stroke="#e3e8ef"/>
+<text x="411.667" y="547" text-anchor="middle" font-size="12">10</text>
+<line x1="575.000" y1="145" x2="575.000" y2="525" stroke="#e3e8ef"/>
+<text x="575.000" y="547" text-anchor="middle" font-size="12">15</text>
+<line x1="738.333" y1="145" x2="738.333" y2="525" stroke="#e3e8ef"/>
+<text x="738.333" y="547" text-anchor="middle" font-size="12">20</text>
+<line x1="901.667" y1="145" x2="901.667" y2="525" stroke="#e3e8ef"/>
+<text x="901.667" y="547" text-anchor="middle" font-size="12">25</text>
+<line x1="1065.000" y1="145" x2="1065.000" y2="525" stroke="#e3e8ef"/>
+<text x="1065.000" y="547" text-anchor="middle" font-size="12">30</text>
+<path d="M87.722,488.226 L89.083,470.961 L90.444,453.696 L93.167,440.747 L95.889,436.431 L101.333,419.166 L117.667,369.530 L150.333,319.893 L183.000,311.261 L248.333,298.312 L313.667,283.205 L411.667,261.624 L738.333,181.774 L1065.000,192.565" fill="none" stroke="#176b9e" stroke-width="2.5"/>
+<circle cx="87.722" cy="488.226" r="3" fill="#176b9e"><title>1M: 4.1%</title></circle>
+<circle cx="89.083" cy="470.961" r="3" fill="#176b9e"><title>1.5M: 4.18%</title></circle>
+<circle cx="90.444" cy="453.696" r="3" fill="#176b9e"><title>2M: 4.26%</title></circle>
+<circle cx="93.167" cy="440.747" r="3" fill="#176b9e"><title>3M: 4.32%</title></circle>
+<circle cx="95.889" cy="436.431" r="3" fill="#176b9e"><title>4M: 4.34%</title></circle>
+<circle cx="101.333" cy="419.166" r="3" fill="#176b9e"><title>6M: 4.42%</title></circle>
+<circle cx="117.667" cy="369.530" r="3" fill="#176b9e"><title>1Y: 4.65%</title></circle>
+<circle cx="150.333" cy="319.893" r="3" fill="#176b9e"><title>2Y: 4.88%</title></circle>
+<circle cx="183.000" cy="311.261" r="3" fill="#176b9e"><title>3Y: 4.92%</title></circle>
+<circle cx="248.333" cy="298.312" r="3" fill="#176b9e"><title>5Y: 4.98%</title></circle>
+<circle cx="313.667" cy="283.205" r="3" fill="#176b9e"><title>7Y: 5.05%</title></circle>
+<circle cx="411.667" cy="261.624" r="3" fill="#176b9e"><title>10Y: 5.15%</title></circle>
+<circle cx="738.333" cy="181.774" r="3" fill="#176b9e"><title>20Y: 5.52%</title></circle>
+<circle cx="1065.000" cy="192.565" r="3" fill="#176b9e"><title>30Y: 5.47%</title></circle>
+<text x="85" y="573" font-size="11">Maturity (caller-supplied years); source yields in percent per annum</text>
+<text x="85" y="591" font-size="11">Retrieved: 2026-11-14T15:41:50+00:00 | As-of: Latest usable observation in the saved official input(s); not a common close.</text>
+<text x="85" y="609" font-size="11">All supplied source nodes plotted. Lines are visual guides, not additional quotes or calibrated interpolation.</text>
+<text x="85" y="627" font-size="11">Not a live executable quote, trading recommendation, zero-curve conversion or PIT backtest.</text>
+<text x="85" y="645" font-size="11">Rights: APPROVED_PUBLIC_DISPLAY — CC0 1.0 per Data.gov. US Department of the Treasury. P-Curve selected the dated row and drew the chart; yields unchanged.</text>
+<a href="https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202611" target="_blank" rel="noopener noreferrer"><text x="85" y="668" font-size="10" fill="#176b9e">Source: https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&amp;field_tdr_date_value_month=202611</text></a>
+</g>
+</svg>

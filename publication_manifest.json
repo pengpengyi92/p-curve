@@ -79,6 +79,26 @@
     "tests/test_curve_archive.py",
     "tests/test_archived_snapshot.py",
     "tests/test_curve_overview.py",
-    "tests/test_oneclick_entry.py"
+    "tests/test_oneclick_entry.py",
+    "curve/developed/20261114T155232Z/index.html",
+    "curve/developed/australia/20261114T155232Z/australia.svg",
+    "curve/developed/australia/20261114T155232Z/index.html",
+    "curve/developed/australia/20261114T155232Z/snapshot.json",
+    "curve/developed/euro-area/20261114T155232Z/euro_area_aaa.svg",
+    "curve/developed/euro-area/20261114T155232Z/euro_area_all.svg",
+    "curve/developed/euro-area/20261114T155232Z/index.html",
+    "curve/developed/euro-area/20261114T155232Z/snapshot.json",
+    "curve/developed/hong-kong/20261114T155232Z/index.html",
+    "curve/developed/japan/20261114T155232Z/index.html",
+    "curve/developed/japan/20261114T155232Z/jgb.svg",
+    "curve/developed/japan/20261114T155232Z/snapshot.json",
+    "curve/developed/united-kingdom/20261114T155232Z/index.html",
+    "curve/developed/united-states/20261114T155232Z/index.html",
+    "curve/developed/united-states/20261114T155232Z/snapshot.json",
+    "curve/developed/united-states/20261114T155232Z/ust.svg",
+    "curve/emerging/20261114T155232Z/index.html",
+    "curve/emerging/china/20261114T155232Z/index.html",
+    "tests/test_grouped_curve_archive.py",
+    "update/2026-11-14-global-sovereign-yield-curves.md"
   ]
 }

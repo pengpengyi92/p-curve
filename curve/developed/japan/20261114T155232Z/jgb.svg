@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="680" viewBox="0 0 1100 680" role="img" aria-labelledby="title description">
+<title id="title">Japan — JGB constant maturity</title>
+<desc id="description">Global sovereign yield curves — collection 2026-11-14. Market date 2026-11-12. Generated 2026-11-14T15:52:32+00:00. Source nodes only; no missing yields filled.</desc>
+<rect width="1100" height="680" fill="#f8fafc"/>
+<g font-family="Arial,sans-serif" fill="#172033">
+<text x="85" y="35" font-size="23" font-weight="bold">Japan — JGB constant maturity</text>
+<text x="85" y="60" font-size="13">Market date: 2026-11-12 | Generated: 2026-11-14T15:52:32+00:00</text>
+<text x="85" y="83" font-size="13">JPY | MOF constant maturity; semiannual compounding</text>
+<text x="85" y="107" font-size="12" fill="#934500">PUBLIC DISPLAY — producer-reviewed source rights</text>
+<line x1="85" y1="525.000" x2="1065" y2="525.000" stroke="#d6dee9"/>
+<text x="73" y="529.000" text-anchor="end" font-size="12">1.371</text>
+<line x1="85" y1="449.000" x2="1065" y2="449.000" stroke="#d6dee9"/>
+<text x="73" y="453.000" text-anchor="end" font-size="12">1.954</text>
+<line x1="85" y1="373.000" x2="1065" y2="373.000" stroke="#d6dee9"/>
+<text x="73" y="377.000" text-anchor="end" font-size="12">2.538</text>
+<line x1="85" y1="297.000" x2="1065" y2="297.000" stroke="#d6dee9"/>
+<text x="73" y="301.000" text-anchor="end" font-size="12">3.121</text>
+<line x1="85" y1="221.000" x2="1065" y2="221.000" stroke="#d6dee9"/>
+<text x="73" y="225.000" text-anchor="end" font-size="12">3.705</text>
+<line x1="85" y1="145.000" x2="1065" y2="145.000" stroke="#d6dee9"/>
+<text x="73" y="149.000" text-anchor="end" font-size="12">4.288</text>
+<line x1="85.000" y1="145" x2="85.000" y2="525" stroke="#e3e8ef"/>
+<text x="85.000" y="547" text-anchor="middle" font-size="12">0</text>
+<line x1="109.500" y1="145" x2="109.500" y2="525" stroke="#e3e8ef"/>
+<text x="109.500" y="547" text-anchor="middle" font-size="12">1</text>
+<line x1="134.000" y1="145" x2="134.000" y2="525" stroke="#e3e8ef"/>
+<text x="134.000" y="547" text-anchor="middle" font-size="12">2</text>
+<line x1="158.500" y1="145" x2="158.500" y2="525" stroke="#e3e8ef"/>
+<text x="158.500" y="547" text-anchor="middle" font-size="12">3</text>
+<line x1="207.500" y1="145" x2="207.500" y2="525" stroke="#e3e8ef"/>
+<text x="207.500" y="547" text-anchor="middle" font-size="12">5</text>
+<line x1="256.500" y1="145" x2="256.500" y2="525" stroke="#e3e8ef"/>
+<text x="256.500" y="547" text-anchor="middle" font-size="12">7</text>
+<line x1="330.000" y1="145" x2="330.000" y2="525" stroke="#e3e8ef"/>
+<text x="330.000" y="547" text-anchor="middle" font-size="12">10</text>
+<line x1="452.500" y1="145" x2="452.500" y2="525" stroke="#e3e8ef"/>
+<text x="452.500" y="547" text-anchor="middle" font-size="12">15</text>
+<line x1="575.000" y1="145" x2="575.000" y2="525" stroke="#e3e8ef"/>
+<text x="575.000" y="547" text-anchor="middle" font-size="12">20</text>
+<line x1="697.500" y1="145" x2="697.500" y2="525" stroke="#e3e8ef"/>
+<text x="697.500" y="547" text-anchor="middle" font-size="12">25</text>
+<line x1="820.000" y1="145" x2="820.000" y2="525" stroke="#e3e8ef"/>
+<text x="820.000" y="547" text-anchor="middle" font-size="12">30</text>
+<line x1="1065.000" y1="145" x2="1065.000" y2="525" stroke="#e3e8ef"/>
+<text x="1065.000" y="547" text-anchor="middle" font-size="12">40</text>
+<path d="M109.500,488.226 L134.000,461.657 L158.500,449.154 L183.000,430.009 L207.500,415.813 L232.000,403.050 L256.500,387.942 L281.000,369.839 L305.500,352.647 L330.000,333.502 L452.500,263.043 L575.000,221.888 L697.500,182.035 L820.000,185.942 L1065.000,181.774" fill="none" stroke="#176b9e" stroke-width="2.5"/>
+<circle cx="109.500" cy="488.226" r="3" fill="#176b9e"><title>1Y: 1.653%</title></circle>
+<circle cx="134.000" cy="461.657" r="3" fill="#176b9e"><title>2Y: 1.857%</title></circle>
+<circle cx="158.500" cy="449.154" r="3" fill="#176b9e"><title>3Y: 1.953%</title></circle>
+<circle cx="183.000" cy="430.009" r="3" fill="#176b9e"><title>4Y: 2.1%</title></circle>
+<circle cx="207.500" cy="415.813" r="3" fill="#176b9e"><title>5Y: 2.209%</title></circle>
+<circle cx="232.000" cy="403.050" r="3" fill="#176b9e"><title>6Y: 2.307%</title></circle>
+<circle cx="256.500" cy="387.942" r="3" fill="#176b9e"><title>7Y: 2.423%</title></circle>
+<circle cx="281.000" cy="369.839" r="3" fill="#176b9e"><title>8Y: 2.562%</title></circle>
+<circle cx="305.500" cy="352.647" r="3" fill="#176b9e"><title>9Y: 2.694%</title></circle>
+<circle cx="330.000" cy="333.502" r="3" fill="#176b9e"><title>10Y: 2.841%</title></circle>
+<circle cx="452.500" cy="263.043" r="3" fill="#176b9e"><title>15Y: 3.382%</title></circle>
+<circle cx="575.000" cy="221.888" r="3" fill="#176b9e"><title>20Y: 3.698%</title></circle>
+<circle cx="697.500" cy="182.035" r="3" fill="#176b9e"><title>25Y: 4.004%</title></circle>
+<circle cx="820.000" cy="185.942" r="3" fill="#176b9e"><title>30Y: 3.974%</title></circle>
+<circle cx="1065.000" cy="181.774" r="3" fill="#176b9e"><title>40Y: 4.006%</title></circle>
+<text x="85" y="573" font-size="11">Maturity (caller-supplied years); source yields in percent per annum</text>
+<text x="85" y="591" font-size="11">Retrieved: 2026-11-14T15:41:52+00:00 | As-of: Latest usable observation in the saved official input(s); not a common close.</text>
+<text x="85" y="609" font-size="11">All supplied source nodes plotted. Lines are visual guides, not additional quotes or calibrated interpolation.</text>
+<text x="85" y="627" font-size="11">Not a live executable quote, trading recommendation, zero-curve conversion or PIT backtest.</text>
+<text x="85" y="645" font-size="11">Rights: APPROVED_PUBLIC_DISPLAY — Ministry of Finance, Japan; PDL1.0 (https://www.digital.go.jp/en/resources/open_data/public_data_license_v1.0). P-Curve extracted a</text>
+<a href="https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/jgbcme.csv" target="_blank" rel="noopener noreferrer"><text x="85" y="668" font-size="10" fill="#176b9e">Source: https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/jgbcme.csv</text></a>
+</g>
+</svg>

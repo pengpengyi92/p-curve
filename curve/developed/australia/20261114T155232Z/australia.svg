@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="680" viewBox="0 0 1100 680" role="img" aria-labelledby="title description">
+<title id="title">Australia — nominal government yields</title>
+<desc id="description">Global sovereign yield curves — collection 2026-11-14. Market date 2026-11-11. Generated 2026-11-14T15:52:32+00:00. Source nodes only; no missing yields filled.</desc>
+<rect width="1100" height="680" fill="#f8fafc"/>
+<g font-family="Arial,sans-serif" fill="#172033">
+<text x="85" y="35" font-size="23" font-weight="bold">Australia — nominal government yields</text>
+<text x="85" y="60" font-size="13">Market date: 2026-11-11 | Generated: 2026-11-14T15:52:32+00:00</text>
+<text x="85" y="83" font-size="13">AUD | RBA F2 nominal government yields; interpolated by source</text>
+<text x="85" y="107" font-size="12" fill="#934500">PUBLIC DISPLAY — producer-reviewed source rights</text>
+<line x1="85" y1="525.000" x2="1065" y2="525.000" stroke="#d6dee9"/>
+<text x="73" y="529.000" text-anchor="end" font-size="12">4.583</text>
+<line x1="85" y1="449.000" x2="1065" y2="449.000" stroke="#d6dee9"/>
+<text x="73" y="453.000" text-anchor="end" font-size="12">4.705</text>
+<line x1="85" y1="373.000" x2="1065" y2="373.000" stroke="#d6dee9"/>
+<text x="73" y="377.000" text-anchor="end" font-size="12">4.827</text>
+<line x1="85" y1="297.000" x2="1065" y2="297.000" stroke="#d6dee9"/>
+<text x="73" y="301.000" text-anchor="end" font-size="12">4.950</text>
+<line x1="85" y1="221.000" x2="1065" y2="221.000" stroke="#d6dee9"/>
+<text x="73" y="225.000" text-anchor="end" font-size="12">5.072</text>
+<line x1="85" y1="145.000" x2="1065" y2="145.000" stroke="#d6dee9"/>
+<text x="73" y="149.000" text-anchor="end" font-size="12">5.194</text>
+<line x1="85.000" y1="145" x2="85.000" y2="525" stroke="#e3e8ef"/>
+<text x="85.000" y="547" text-anchor="middle" font-size="12">0</text>
+<line x1="183.000" y1="145" x2="183.000" y2="525" stroke="#e3e8ef"/>
+<text x="183.000" y="547" text-anchor="middle" font-size="12">1</text>
+<line x1="281.000" y1="145" x2="281.000" y2="525" stroke="#e3e8ef"/>
+<text x="281.000" y="547" text-anchor="middle" font-size="12">2</text>
+<line x1="379.000" y1="145" x2="379.000" y2="525" stroke="#e3e8ef"/>
+<text x="379.000" y="547" text-anchor="middle" font-size="12">3</text>
+<line x1="575.000" y1="145" x2="575.000" y2="525" stroke="#e3e8ef"/>
+<text x="575.000" y="547" text-anchor="middle" font-size="12">5</text>
+<line x1="771.000" y1="145" x2="771.000" y2="525" stroke="#e3e8ef"/>
+<text x="771.000" y="547" text-anchor="middle" font-size="12">7</text>
+<line x1="1065.000" y1="145" x2="1065.000" y2="525" stroke="#e3e8ef"/>
+<text x="1065.000" y="547" text-anchor="middle" font-size="12">10</text>
+<path d="M281.000,385.065 L379.000,431.710 L575.000,416.784 L1065.000,238.290" fill="none" stroke="#176b9e" stroke-width="2.5"/>
+<circle cx="281.000" cy="385.065" r="3" fill="#176b9e"><title>2Y: 4.808%</title></circle>
+<circle cx="379.000" cy="431.710" r="3" fill="#176b9e"><title>3Y: 4.733%</title></circle>
+<circle cx="575.000" cy="416.784" r="3" fill="#176b9e"><title>5Y: 4.757%</title></circle>
+<circle cx="1065.000" cy="238.290" r="3" fill="#176b9e"><title>10Y: 5.044%</title></circle>
+<text x="85" y="573" font-size="11">Maturity (caller-supplied years); source yields in percent per annum</text>
+<text x="85" y="591" font-size="11">Retrieved: 2026-11-14T15:41:55+00:00 | As-of: Latest usable observation in the saved official input(s); not a common close.</text>
+<text x="85" y="609" font-size="11">All supplied source nodes plotted. Lines are visual guides, not additional quotes or calibrated interpolation.</text>
+<text x="85" y="627" font-size="11">Not a live executable quote, trading recommendation, zero-curve conversion or PIT backtest.</text>
+<text x="85" y="645" font-size="11">Rights: APPROVED_PUBLIC_DISPLAY — Source: Reserve Bank of Australia 2026; Copyright and Disclaimer Notice sections 3 and 5; selected four columns explicitly sourced </text>
+<a href="https://www.rba.gov.au/statistics/tables/csv/f2-data.csv" target="_blank" rel="noopener noreferrer"><text x="85" y="668" font-size="10" fill="#176b9e">Source: https://www.rba.gov.au/statistics/tables/csv/f2-data.csv</text></a>
+</g>
+</svg>

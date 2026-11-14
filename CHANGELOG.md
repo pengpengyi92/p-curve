@@ -1,5 +1,11 @@
 # Changelog
 
+## Grouped sovereign archive — 2026-11-14 (package remains 0.2.1)
+
+- Add immutable editions grouped by developed/emerging market and country or
+  region, with a public overview and five reviewed series across four geographies.
+- Preserve the 2026-11-11 snapshot; keep unreviewed sources as links only.
+
 ## Visualization references — 2026-11-14 (package remains 0.2.1)
 
 - Add12 pinned public visualization/reporting references with FICC-specific

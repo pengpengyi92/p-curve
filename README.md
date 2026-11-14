@@ -66,6 +66,10 @@ unconfirmed redistribution rights remain excluded; see
 [source/data rights](curve/DATA_LICENSES.md). The offline renderer does not fetch
 data and cannot grant source rights. Future snapshots must pass the same gate.
 
+Latest: [Developed markets](curve/developed/20261114T155232Z/index.html) ·
+[Emerging and developing markets](curve/emerging/20261114T155232Z/index.html) ·
+[Scope, dates and sources](update/2026-11-14-global-sovereign-yield-curves.md).
+
 ## Mathematical core (introduced in 0.1.0)
 
 - Given-parameter Nelson–Siegel and Nelson–Siegel–Svensson yield functions.
