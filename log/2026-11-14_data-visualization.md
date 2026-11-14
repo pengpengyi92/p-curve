@@ -43,3 +43,15 @@ claim the local package was installed; hosted CI separately installs it first.
 allowlist additions are precisely the approved public reference/test/log files.
 No live source, private material or rendering-library runtime executed.
 Remote CI, commit and push readback follow after actual delivery.
+
+## Remote receipt — 2026-11-14T16:24:42+08:00
+
+Source2f605fb03edf5f33139c81cd77b3e0eef17ddfa7 pushed;
+[PR9](https://github.com/pengpengyi92/p-curve/pull/9) normally merged as
+f690436c5029e8ae225dea655384460e4e8c394b after all six OS/Python platforms in
+[CI43575453374](https://github.com/pengpengyi92/p-curve/actions/runs/43575453374)
+passed installed-package68 tests, synthetic example and publication checks.
+No admin bypass, self-approval or independent human review claim. Synced to
+actual merged main; final receipt is documentation-only and remains under the
+same explicit publication allowlist. No private-source/data or curve code
+change; catalog remains reference-only, renderer gains UNMEASURED.
