@@ -63,3 +63,23 @@ No private archive/history or raw CSV, XLS/XLSX, ZIP download is exported.
 Add each future collection under a fresh timestamp. Corrections link to the prior
 snapshot rather than overwrite it. Continue source-rights review for excluded
 markets; do not infer permission from a public webpage or open-source code.
+
+## Real-data cross-timezone replay — 2026-11-14T18:31:54+08:00
+
+**Question.** Can two daily sovereign par-curve streams be replayed in UTC across the European and U.S. autumn clock changes while preserving source yields, local market dates, and the caller's timezone-aware inputs?
+
+**Fixed sample.** 2026-10-23 through 2026-11-04, inclusive; 9 observations per source, at the published 2Y, 5Y and 10Y tenors, in percent. [U.S. Treasury daily nominal par curve](https://home.treasury.gov/policy-issues/financing-the-government/interest-rate-statistics/) ([October XML](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value_month=202610), [November XML](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value_month=202611); [CC0 source metadata](https://catalog.data.gov/dataset/interest-rate-statistics-daily-treasury-yield-curve-rates)) and [European Central Bank euro-area all-ratings par curve](https://www.ecb.europa.eu/stats/financial_markets_and_interest_rates/euro_area_yield_curves/html/index.en.html) ([YC API CSV](https://data-api.ecb.europa.eu/service/data/YC/B.U2.EUR.4F.G_N_A.SV_C_YM.PY_2Y+PY_5Y+PY_10Y?startPeriod=2026-10-23&endPeriod=2026-11-04&format=csvdata), series `PY_2Y`, `PY_5Y`, `PY_10Y`; [ECB source/use conditions](https://www.ecb.europa.eu/services/using-our-site/disclaimer/html/index.en.html)). No interpolation, fill, revisions inferred, or combination of the two curves into one. Rates are real; timestamp transformations are ours. Raw downloads and replay code are not published here.
+
+**Clock model.** Anchor ECB events at its scheduled noon release in `Europe/Berlin`; anchor UST events at the documented approximate 15:30 indicative quote observation in `America/New_York`, not a verified release time. Preserve the source market date independently of UTC and `Asia/Shanghai` dates. These are modeled daily events, not historical tick or data-availability timestamps.
+
+| Local market date | ECB modeled UTC | UST modeled UTC |
+| --- | --- | --- |
+| 2026-10-23 | 10:00 | 19:30 |
+| 2026-10-26 (after European DST change) | 11:00 | 19:30 |
+| 2026-11-02 (after U.S. DST change) | 11:00 | 20:30 |
+
+**Baseline → change → result.** Holding the first day's UTC offsets fixed misplaced 11 of 18 events by one hour (ECB 8, UST 3). Using IANA zones (tzdata 2026.6), Point72 CSP 0.19.0 replayed 18 distinct events in one merged UTC stream and preserved all 54 source values. All 9 UST events landed on the following date in Shanghai; a join on market date alone would attach a later modeled UST observation to all 9 same-day ECB events. This does not establish actual publication lag or prove a point-in-time trading backtest.
+
+**CSP #794 cross-check.** With the same released native wheel and identical input, the baseline Python curve adapter rewrote all 18 timestamps in the caller's lists; the adapter at [Point72 CSP #794](https://github.com/Point72/csp/pull/794) rewrote zero. Both emitted the same event times and yields; 5 focused CSP tests passed on the PR source. No native rebuild or CI matrix was run locally. There was no public reviewer feedback; DCO passed separately, while the [build](https://github.com/Point72/csp/actions/runs/43573181608) and [Conda](https://github.com/Point72/csp/actions/runs/43573181708) workflows still required upstream action.
+
+**Trade-off / next action.** This is an offline chronology check on one fixed window, not a new P-Curve dataset, runtime dependency, live ingestion feature, pricing result or alpha claim. Actual historical publication timestamps, revisions, and performance are `UNMEASURED`. For future point-in-time use, collect and audit publication/receipt timestamps separately before any cross-market join.
