@@ -15,6 +15,10 @@ P-Curve began with a selected release from **PFICC**, an internal, private propr
 
 ## P-Curve opens for public FICC research and curve sharing
 
+[Visualization references and FICC plotting checklist](repo/data-visualization/README.md):
+12 public repositories, pinned code/license evidence, actual-tenor axes, units,
+conventions and source rights. Reference-only; no new curve model/data release.
+
 **2026-11-14T03:37:12+08:00** (Asia/Shanghai) · [Full statement and version history](update/).
 
 Share synthetic or rights-cleared curves from any market: FX forwards and swaps, rates/OIS/swap curves, sovereign and corporate/credit bond yields, or commodity futures term structures. Countries, regions, issuers, and other organizations are all welcome. Clearly distinguish the market observation date from the submission timestamp.

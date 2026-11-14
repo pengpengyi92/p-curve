@@ -1,5 +1,12 @@
 # Changelog
 
+## Visualization references — 2026-11-14 (package remains 0.2.1)
+
+- Add12 pinned public visualization/reporting references with FICC-specific
+  tenor/unit/convention/rights checks, explicit license limits and4 contracts.
+- Extend the reviewed file allowlist for references/tests/log only; no new
+  approved financial implementation, private data or immutable archive changes.
+
 ## Community update — 2026-11-14 (package remains 0.2.1)
 
 - Define the public FICC research and curve-sharing mission, agent contribution

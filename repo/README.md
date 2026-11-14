@@ -2,6 +2,10 @@
 
 FICC source repositories worth inspecting.
 
+[Data visualization / curve reporting](data-visualization/README.md):12 public
+references with FICC-specific reading questions, fixed source entries and license
+limits. No private methods/data or new numerical implementation published.
+
 - [FICC institution and Tencent repository guide](ficc-institutions.md) — State Street, XTX, Deutsche Bank, other institutions, and the previous WeChat Pay contributions.
 
 See the [reviewed open-source precedents](../docs/OPEN_SOURCE_PRECEDENTS.md). Include a canonical URL, exact implementation path, license and a limitation.

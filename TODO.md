@@ -1,5 +1,12 @@
 # Verifiable priorities
 
+## P1 — visualization reference route (2026-11-14)
+
+- [x] Add12 pinned public references and FICC-specific axes/units/curve-type/rights checklist; preserve unknown-license/NOTICE/AGPL boundaries.
+- [x] Full offline tests68/68, synthetic example and exact publication allowlist checks PASS with temporary PYTHONPATH=src in isolated worktree.
+- [ ] Push/read back authorized public references/log and verify installed-package remote CI.
+- [ ] Separately evaluate a renderer on approved synthetic or public-display-cleared snapshots; no new curve method/calibration/live ingestion implied.
+
 ## P0 — community research launch
 
 - [x] Publish a dated direction and five public contribution indexes.

@@ -1,5 +1,14 @@
 # P-Curve — Benchmark Cards
 
+## Visualization reference route — 2026-11-14
+
+- **Baseline**:independent curve renderer and public archive; no visualization repo reading route.
+- **Change**:12 fixed public source references with FICC tenor/unit/type/rights checks, manual license notes and4 metadata/link tests. No private PFICC files, new financial models or immutable snapshots changed.
+- **Measure**:full offline suite, synthetic example and explicit publication manifest; actual results in log/2026-11-14_data-visualization.md. External renderers NOT_RUN.
+- **Result**:source/reading references only; renderer speed, financial validity and research gains UNMEASURED.
+- **Trade-off**:open code is not a data license or export approval; AGPL/NOTICE/manual unknown-SPDX boundaries retained. No new runtime dependencies.
+- **Next Action**:complete source/privacy/CI review and push; separately test an approved renderer without expanding curve/calibration/live-data scope.
+
 ## Community update — 2026-11-14
 
 - **Baseline:** public math library and immutable curve archive; no five-track contribution index.
