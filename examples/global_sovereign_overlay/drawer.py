@@ -1,7 +1,7 @@
 """Draw normalized source nodes. Does not read configs or retrieve data."""
 
 from html import escape
-from math import ceil, floor
+from math import ceil, floor, sqrt
 from pathlib import Path
 
 # Distinct hues and dash patterns remain identifiable where curves cross.
@@ -20,12 +20,15 @@ STYLES = (
 class Drawer:
     def render(self, snapshot: dict, *, public: bool = True, portfolio: bool = False) -> str:
         markets = snapshot["markets"]
+        coverage = portfolio and snapshot.get("layout") == "coverage"
         point_observations = snapshot.get("point_observations", {})
         if public and any(m["rights"]["status"] == "HOLD" and m["nodes"] for m in markets):
             raise ValueError("public rendering cannot include HOLD nodes")
         nodes = [n for m in markets for n in m["nodes"] if n["yield_pct"] is not None]
         max_years = max(10, ceil(max(n["years"] for n in nodes) / 10) * 10)
-        low = min(0, floor(min(n["yield_pct"] for n in nodes)))
+        low = floor(min(n["yield_pct"] for n in nodes))
+        if not coverage:
+            low = min(0, low)
         high = max(low + 1, ceil(max(n["yield_pct"] for n in nodes) + 0.15))
         y_step = max(1, ceil((high - low) / 7))
         left, top, right, bottom = 82, 151, 827, 533
@@ -33,6 +36,8 @@ class Drawer:
         height = max(footer + 110, 230 + 67 * len(markets))
 
         def x(years: float) -> float:
+            if coverage:
+                return left + (right - left) * sqrt(years / max_years)
             return left + (right - left) * years / max_years
 
         def y(value: float) -> float:
@@ -74,8 +79,12 @@ class Drawer:
                 f'<path d="M{left},{yp:.2f}H{right}" stroke="#e1e8ed"/>',
                 text(left - 9, f"{yp + 4:.2f}", tick, 13, extra=' text-anchor="end"'),
             ]
-        step = max(5, ceil(max_years / 50) * 5)
-        for tick in sorted({0, 2, max_years, *range(step, max_years, step)}):
+        if coverage:
+            ticks = {max_years, *(v for v in (0, 0.25, 1, 2, 3, 5, 7, 10, 15, 20, 30, 40, 50) if v < max_years)}
+        else:
+            step = max(5, ceil(max_years / 50) * 5)
+            ticks = {0, 2, max_years, *range(step, max_years, step)}
+        for tick in sorted(ticks):
             xp = x(tick)
             bits += [
                 f'<path d="M{xp:.2f},{top}V{bottom}" stroke="#e9eef0"/>',
@@ -83,11 +92,14 @@ class Drawer:
             ]
         bits.extend([
             f'<path d="M{left},{top}V{bottom}H{right}" stroke="#a5b6c2" fill="none"/>',
-            text((left + right) / 2, 580, "Maturity (years)", 14, extra=' text-anchor="middle"'),
+            text((left + right) / 2, 580, "Maturity (years; square-root spacing)" if coverage
+                 else "Maturity (years)", 14, extra=' text-anchor="middle"'),
             f'<path d="M856,151V{max(573, footer - 15)}" stroke="#e1e8ed"/>'
             if portfolio else '<path d="M856,151V573" stroke="#e1e8ed"/>',
-            text(881, 158, "MARKET / OBSERVATION DATE", 12, extra=' font-weight="700"'),
-            text(1163, 158, "10Y", 12, extra=' font-weight="700" text-anchor="end"'),
+            text(881, 158, "MARKET / DATE" if coverage else "MARKET / OBSERVATION DATE", 12,
+                 extra=' font-weight="700"'),
+            text(1163, 158, "OBSERVED POINT" if coverage else "10Y", 12,
+                 extra=' font-weight="700" text-anchor="end"'),
         ])
         for i, market in enumerate(markets):
             available = market["status"] == "AVAILABLE"
@@ -98,6 +110,11 @@ class Drawer:
             dash = f' stroke-dasharray="{pattern}"' if pattern else ""
             vals = {n["years"]: n["yield_pct"] for n in market["nodes"] if n["yield_pct"] is not None}
             value = f'{vals[10]:.3f}%' if 10 in vals else "-"
+            reference = ""
+            if coverage and vals:
+                years = min(vals, key=lambda t: (abs(t - 10), t))
+                value = f"{vals[years]:.3f}%"
+                reference = f"{years:.2f}".rstrip("0").rstrip(".") + "Y"
             yy = 186 + 62 * i
             no_data = "Not displayed: rights HOLD" if market["rights"]["status"] == "HOLD" else "No verified nodes"
             date_label = market["market_date"] if available else no_data
@@ -121,6 +138,8 @@ class Drawer:
                 text(914, yy + 17, date_label, 12),
                 text(914, yy + 33, curve_label, 12),
             ]
+            if reference:
+                bits.append(text(1163, yy + 33, reference, 12, extra=' text-anchor="end"'))
             if not available:
                 continue
             parts = []
@@ -158,10 +177,13 @@ class Drawer:
                                if point_observations else
                                "Par, fitted zero, benchmark-issue and other published yields retain their source conventions.")
             sources = "Sources: see the portfolio source and rights register."
+        guides = "Markers are source nodes. Lines are visual guides; no filled gaps, extrapolation or tradeable cross-currency spread."
+        if coverage:
+            guides = "The sidebar shows the available tenor closest to 10Y. Lines guide the eye; no missing yields are estimated."
         bits += [
             f'<path d="M56,{footer}H1160" stroke="#dee6ea"/>',
             text(56, footer + 23, comparison_note, 12),
-            text(56, footer + 44, "Markers are source nodes. Lines are visual guides; no filled gaps, extrapolation or tradeable cross-currency spread.", 12),
+            text(56, footer + 44, guides, 12),
             text(56, footer + 65, sources + (" Curated by pengyi." if portfolio else " See data and rights notes. Curated by pengyi."), 12),
             "</g></svg>",
         ]

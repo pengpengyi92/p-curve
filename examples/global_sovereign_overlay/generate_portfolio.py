@@ -12,13 +12,16 @@ from .drawer import Drawer
 from .generate import ROOT
 
 
-EDITION = ROOT / "curve/portfolio/20261118T175156Z"
+EDITION = ROOT / "curve/portfolio/20261118T180812Z"
 
 
 def compose(edition: Path = EDITION) -> dict:
     spec = load_snapshot(edition / "portfolio.json")
-    if set(spec) != {"sources", "window", "groups"}:
+    required = {"sources", "window", "groups"}
+    if not required.issubset(spec) or set(spec) - (required | {"layout"}):
         raise ValueError("invalid portfolio keys")
+    if "layout" in spec and spec["layout"] != "coverage":
+        raise ValueError("unrecognized portfolio layout")
     recent = DataCollector(edition / "config.json").collect()
     if recent["snapshot_id"] != edition.name:
         raise ValueError("portfolio snapshot_id must match the edition directory")
@@ -26,22 +29,37 @@ def compose(edition: Path = EDITION) -> dict:
     if start > end or end > date.fromisoformat(recent["generated_at"][:10]):
         raise ValueError("invalid portfolio observation window")
 
-    inputs = [recent]
-    for source in spec["sources"]:
+    inputs = [(recent, None)]
+    for entry in spec["sources"]:
+        if isinstance(entry, str):
+            source, selection = entry, None
+        elif isinstance(entry, dict) and set(entry) == {"path", "markets"}:
+            source, selection = entry["path"], entry["markets"]
+            if not isinstance(selection, list) or not selection or len(selection) != len(set(selection)):
+                raise ValueError("portfolio source selection must contain distinct market IDs")
+        else:
+            raise ValueError("invalid portfolio source reference")
         path = (ROOT / source).resolve()
         if not path.is_relative_to(ROOT / "curve"):
             raise ValueError("portfolio sources must be frozen repository curve configs")
-        inputs.append(DataCollector(path).collect())
+        inputs.append((DataCollector(path).collect(), selection))
 
     markets = {}
     observations = {}
-    for snapshot in inputs:
+    for snapshot, selection in inputs:
+        available_ids = {m["id"] for m in snapshot["markets"]}
+        if selection is not None and set(selection) - available_ids:
+            raise ValueError("portfolio source includes an unknown selected market")
+        selected = available_ids if selection is None else set(selection)
         for market in snapshot["markets"]:
             key = market["id"]
+            if key not in selected:
+                continue
             if key in markets:
                 raise ValueError(f"duplicate source market: {key}")
             markets[key] = market
-        observations.update(snapshot.get("point_observations", {}))
+        observations.update({key: points for key, points in snapshot.get("point_observations", {}).items()
+                             if key in selected})
 
     outputs = {}
     for slug, group in spec["groups"].items():
@@ -62,6 +80,8 @@ def compose(edition: Path = EDITION) -> dict:
             if any(not start <= date.fromisoformat(day) <= end for day in days):
                 raise ValueError(f"observation outside the portfolio window: {market['id']}")
         outputs[slug] = {**view, "point_observations": selected_points}
+        if "layout" in spec:
+            outputs[slug]["layout"] = spec["layout"]
     if not outputs:
         raise ValueError("portfolio has no groups")
     return outputs
@@ -69,13 +89,15 @@ def compose(edition: Path = EDITION) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output-dir", type=Path, default=EDITION)
+    parser.add_argument("--edition", type=Path, default=EDITION, help="frozen portfolio directory")
+    parser.add_argument("--output-dir", type=Path, help="defaults to the edition directory")
     args = parser.parse_args()
-    views = compose()
-    args.output_dir.mkdir(parents=True, exist_ok=True)
+    views = compose(args.edition)
+    output_dir = args.output_dir or args.edition
+    output_dir.mkdir(parents=True, exist_ok=True)
     drawer = Drawer()
     for slug, view in views.items():
-        output = args.output_dir / f"{slug}.svg"
+        output = output_dir / f"{slug}.svg"
         drawer.write(view, output, portfolio=True)
         print(f"{slug}: {len(view['markets'])} series -> {output.name}")
 

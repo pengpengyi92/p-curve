@@ -3,6 +3,7 @@
 from datetime import date
 import json
 from pathlib import Path
+import re
 import tempfile
 import unittest
 import xml.etree.ElementTree as ET
@@ -14,6 +15,7 @@ from examples.global_sovereign_overlay.generate_portfolio import EDITION, compos
 
 SVG = {"svg": "http://www.w3.org/2000/svg"}
 GROUPS = {
+    "global": {"ust", "cgb", "jgb", "uk", "au", "sg"},
     "advanced": {"ust", "ca", "uk", "au", "jgb", "hk", "sg", "kr"},
     "asia": {"hk", "sg", "cgb", "jgb", "kr"},
     "americas": {"ust", "ca", "mx", "br"},
@@ -36,23 +38,29 @@ class RegionalYieldPortfolioTests(unittest.TestCase):
                 self.assertEqual(market["status"], "AVAILABLE")
                 self.assertEqual(market["rights"]["status"], "APPROVED_PUBLIC_DISPLAY")
                 self.assertGreaterEqual(sum(n["yield_pct"] is not None for n in market["nodes"]), 2)
-                self.assertLessEqual(date(2026, 10, 1), date.fromisoformat(market["market_date"]))
+                self.assertLessEqual(date(2026, 1, 1), date.fromisoformat(market["market_date"]))
                 self.assertLessEqual(date.fromisoformat(market["market_date"]), date(2026, 11, 18))
         days = {obs["market_date"] for view in self.views.values()
                 for market in view["point_observations"].values() for obs in market.values()}
-        self.assertEqual((min(days), max(days)), ("2026-10-21", "2026-11-18"))
+        self.assertEqual((min(days), max(days)), ("2026-04-14", "2026-11-18"))
 
     def test_selected_official_observations(self):
         markets = {m["id"]: m for view in self.views.values() for m in view["markets"]}
-        anchors = {"ca": ("10Y", 3.81), "hk": ("10Y", 4.164), "kr": ("10Y", 3.985),
-                   "nz": ("2032-05-15", 4.2163), "mx": ("91D", 6.49), "br": ("2032-01-01", 15.35)}
+        anchors = {"ca": ("10Y", 3.8846), "hk": ("5Y", 3.27), "kr": ("20Y", 4.155),
+                   "nz": ("2036-05-15", 4.9948), "mx": ("10Y", 9.25),
+                   "br": ("2037-01-01", 15.29), "cgb": ("5Y", 1.50)}
         for key, expected in anchors.items():
             with self.subTest(market=key):
                 self.assertIn(expected, [(n["tenor"], n["yield_pct"]) for n in markets[key]["nodes"]])
-        self.assertAlmostEqual(markets["nz"]["nodes"][0]["years"], 5.5112936345)
+        self.assertEqual(len(markets["ca"]["nodes"]), 120)
+        self.assertEqual(markets["ca"]["nodes"][0]["years"], 0.25)
+        self.assertEqual(markets["ca"]["nodes"][-1]["years"], 30.0)
+        self.assertEqual(len(markets["cgb"]["nodes"]), 10)
+        self.assertEqual(len(markets["nz"]["nodes"]), 6)
         self.assertEqual(len(markets["euro_area_aaa"]["nodes"]), 358)
         self.assertEqual(len(markets["euro_area_all"]["nodes"]), 358)
         self.assertEqual(len(markets), 14)
+        self.assertEqual(sum(len(m["nodes"]) for m in markets.values()), 923)
 
     def test_svg_bytes_exact_and_every_auction_is_a_diamond(self):
         for group, view in self.views.items():
@@ -72,19 +80,40 @@ class RegionalYieldPortfolioTests(unittest.TestCase):
                         self.assertEqual(len(plot.findall("svg:circle", SVG)), count)
                         self.assertIsNotNone(plot.find("svg:path", SVG))
 
-    def test_readme_embeds_all_groups_after_original(self):
+    def test_sidebar_uses_observed_tenors_instead_of_blank_10y_cells(self):
+        for slug, view in self.views.items():
+            with self.subTest(slug=slug):
+                svg = Drawer().render(view, portfolio=True)
+                root = ET.fromstring(svg)
+                values = root.findall(".//svg:text[@x='1163'][@font-size='14']", SVG)
+                self.assertEqual(len(values), len(view["markets"]))
+                self.assertTrue(all(v.text.endswith("%") for v in values))
+                self.assertIn("Maturity (years; square-root spacing)", svg)
+        oceania = Drawer().render(self.views["oceania"], portfolio=True)
+        self.assertIn(">4.725%<", oceania)
+        self.assertIn(">10.43Y<", oceania)
+        americas = Drawer().render(self.views["americas"], portfolio=True)
+        self.assertIn(">9.250%<", americas)
+        self.assertIn(">MXN / Monthly auction averages<", americas)
+
+    def test_previous_portfolio_replays_without_new_layout(self):
+        prior = ROOT / "curve/portfolio/20261118T175156Z"
+        for group, view in compose(prior).items():
+            svg = Drawer().render(view, portfolio=True)
+            self.assertEqual(svg.encode("utf-8"), (prior / f"{group}.svg").read_bytes())
+
+    def test_readme_embeds_updated_overview_then_regional_groups(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
-        position = readme.index("curve/20261118T172919Z/global_sovereign_yields.svg")
-        for group in GROUPS:
-            asset = f"](curve/portfolio/{EDITION.name}/{group}.svg)"
-            self.assertEqual(readme.count(asset), 1)
-            self.assertGreater(readme.index(asset), position)
-            position = readme.index(asset)
+        embeds = re.findall(r"!\[[^\]\n]*\]\((curve/portfolio/[^)\n]+)\)", readme)
+        self.assertEqual(embeds, [f"curve/portfolio/{EDITION.name}/{group}.svg" for group in GROUPS])
 
     def test_mismatched_source_group_and_window_fail_closed(self):
         for change, error in [
             ({"sources": ["../elsewhere.json"]}, "frozen repository curve configs"),
-            ({"window": ["2026-11-01", "2026-11-18"]}, "outside the portfolio window: hk"),
+            ({"window": ["2026-11-01", "2026-11-18"]}, "outside the portfolio window: cgb"),
+            ({"sources": [{"path": "curve/20261118T172919Z/config.json", "markets": ["invalid"]}]},
+             "unknown selected market"),
+            ({"sources": ["curve/20261118T172919Z/config.json"]}, "duplicate source market"),
             ({"groups": {"fake": {"title": "Missing", "markets": ["ust", "unknown"]}}}, "distinct known markets"),
         ]:
             with self.subTest(change=change), tempfile.TemporaryDirectory() as temp:

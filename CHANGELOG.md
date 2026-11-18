@@ -1,5 +1,12 @@
 # Changelog
 
+## Expanded 2026 sovereign coverage — 2026-11-19 (package remains 0.2.1)
+
+- Replace all seven README charts with an expanded, dated 2026 edition.
+- Add source maturities, use Bank of Canada fitted zeros and Mexican monthly
+  auction averages, and show an observed reference rate in every legend row.
+- Widen the short end visually, while preserving every prior archived chart.
+
 ## Regional sovereign portfolio — 2026-11-19 (package remains 0.2.1)
 
 - Keep the six-market figure and add six grouped exhibits with real dated observations.

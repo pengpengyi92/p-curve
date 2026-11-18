@@ -103,11 +103,10 @@ class GlobalSovereignOverlayTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError, error):
                     DataCollector(config).collect()
 
-    def test_homepage_embeds_only_the_six_market_edition(self):
+    def test_homepage_does_not_embed_the_superseded_overlays(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
-        self.assertIn(f"](curve/{EDITION.name}/global_sovereign_yields.svg)", readme)
-        for archived in (ARCHIVED_EDITION, TARGET_EDITION):
-            self.assertNotIn(f"curve/{archived.name}/global_sovereign_yields.svg", readme)
+        for archived in (ARCHIVED_EDITION, TARGET_EDITION, EDITION):
+            self.assertNotIn(f"](curve/{archived.name}/global_sovereign_yields.svg)", readme)
 
     def test_six_market_chart_reproduces_without_connecting_auction_points(self):
         snapshot = DataCollector(EDITION / "config.json").collect()

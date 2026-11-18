@@ -1,0 +1,302 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1216" height="784" viewBox="0 0 1216 784" role="img" aria-labelledby="title desc">
+<title id="title">Advanced economies</title>
+<desc id="desc">2026-11-19T02:08:12+08:00. US · UST: 2026-11-17; Nominal par (CMT) | Canada / GoC: 2026-10-28; BoC fitted zero-coupon yields | UK · Gilts: 2026-11-16; BoE Database nominal par | Australia · AGS: 2026-11-11; RBA F2 nominal yield | Japan · JGB: 2026-11-17; Constant-maturity yield | Hong Kong SAR: 2026-11-11; Government bond tender YTM | Singapore · SGS: 2026-11-18; SGS benchmark bond yield | South Korea / KTB: 2026-11-16; KTB auction award yield. Maturity in years. Annual nominal yield in percent.</desc>
+<rect width="1216" height="784" fill="#f4f7f8"/>
+<rect x="26" y="24" width="1164" height="736" rx="8" fill="white" stroke="#dee6ea"/>
+<g font-family="system-ui, sans-serif">
+<text x="56" y="56" font-size="13" fill="#236a74" font-weight="700">P-CURVE  /  PUBLIC SNAPSHOT</text>
+<text x="56" y="96" font-size="34" fill="#24394a" font-weight="720">Advanced economies</text>
+<text x="56" y="120" font-size="14" fill="#24394a">Regional portfolio  /  Compiled: 2026-11-19T02:08:12+08:00  /  Asynchronous observations</text>
+<text x="82" y="141" font-size="13" fill="#24394a" font-weight="650">Annual nominal rate / yield (%)</text>
+<path d="M82,533.00H827" stroke="#e1e8ed"/>
+<text x="73" y="537.00" font-size="13" fill="#24394a" text-anchor="end">1</text>
+<path d="M82,456.60H827" stroke="#e1e8ed"/>
+<text x="73" y="460.60" font-size="13" fill="#24394a" text-anchor="end">2</text>
+<path d="M82,380.20H827" stroke="#e1e8ed"/>
+<text x="73" y="384.20" font-size="13" fill="#24394a" text-anchor="end">3</text>
+<path d="M82,303.80H827" stroke="#e1e8ed"/>
+<text x="73" y="307.80" font-size="13" fill="#24394a" text-anchor="end">4</text>
+<path d="M82,227.40H827" stroke="#e1e8ed"/>
+<text x="73" y="231.40" font-size="13" fill="#24394a" text-anchor="end">5</text>
+<path d="M82,151.00H827" stroke="#e1e8ed"/>
+<text x="73" y="155.00" font-size="13" fill="#24394a" text-anchor="end">6</text>
+<path d="M82.00,151V533" stroke="#e9eef0"/>
+<text x="82.00" y="553" font-size="13" fill="#24394a" text-anchor="middle">0</text>
+<path d="M134.68,151V533" stroke="#e9eef0"/>
+<text x="134.68" y="553" font-size="13" fill="#24394a" text-anchor="middle">0.25</text>
+<path d="M187.36,151V533" stroke="#e9eef0"/>
+<text x="187.36" y="553" font-size="13" fill="#24394a" text-anchor="middle">1</text>
+<path d="M231.00,151V533" stroke="#e9eef0"/>
+<text x="231.00" y="553" font-size="13" fill="#24394a" text-anchor="middle">2</text>
+<path d="M264.49,151V533" stroke="#e9eef0"/>
+<text x="264.49" y="553" font-size="13" fill="#24394a" text-anchor="middle">3</text>
+<path d="M317.59,151V533" stroke="#e9eef0"/>
+<text x="317.59" y="553" font-size="13" fill="#24394a" text-anchor="middle">5</text>
+<path d="M360.75,151V533" stroke="#e9eef0"/>
+<text x="360.75" y="553" font-size="13" fill="#24394a" text-anchor="middle">7</text>
+<path d="M415.17,151V533" stroke="#e9eef0"/>
+<text x="415.17" y="553" font-size="13" fill="#24394a" text-anchor="middle">10</text>
+<path d="M490.05,151V533" stroke="#e9eef0"/>
+<text x="490.05" y="553" font-size="13" fill="#24394a" text-anchor="middle">15</text>
+<path d="M553.18,151V533" stroke="#e9eef0"/>
+<text x="553.18" y="553" font-size="13" fill="#24394a" text-anchor="middle">20</text>
+<path d="M659.07,151V533" stroke="#e9eef0"/>
+<text x="659.07" y="553" font-size="13" fill="#24394a" text-anchor="middle">30</text>
+<path d="M748.35,151V533" stroke="#e9eef0"/>
+<text x="748.35" y="553" font-size="13" fill="#24394a" text-anchor="middle">40</text>
+<path d="M827.00,151V533" stroke="#e9eef0"/>
+<text x="827.00" y="553" font-size="13" fill="#24394a" text-anchor="middle">50</text>
+<path d="M82,151V533H827" stroke="#a5b6c2" fill="none"/>
+<text x="454.5" y="580" font-size="14" fill="#24394a" text-anchor="middle">Maturity (years; square-root spacing)</text>
+<path d="M856,151V659" stroke="#e1e8ed"/>
+<text x="881" y="158" font-size="12" fill="#24394a" font-weight="700">MARKET / DATE</text>
+<text x="1163" y="158" font-size="12" fill="#24394a" font-weight="700" text-anchor="end">OBSERVED POINT</text>
+<path d="M882,182h22" stroke="#23538c" stroke-width="3"/>
+<text x="914" y="186" font-size="15" fill="#23538c" font-weight="720">US · UST</text>
+<text x="1163" y="203" font-size="14" fill="#24394a" text-anchor="end" font-weight="700">5.100%</text>
+<text x="914" y="203" font-size="12" fill="#24394a">2026-11-17</text>
+<text x="914" y="219" font-size="12" fill="#24394a">USD / Nominal par (CMT)</text>
+<text x="1163" y="219" font-size="12" fill="#24394a" text-anchor="end">10Y</text>
+<g id="ust" fill="#23538c">
+<path d="M112.41,296.92 L119.25,285.46 L125.01,283.94 L134.68,278.59 L142.83,279.35 L156.50,272.48 L187.36,257.96 L231.00,242.68 L264.49,239.62 L317.59,235.04 L360.75,228.16 L415.17,219.76 L553.18,189.20 L659.07,192.26" stroke="#23538c" stroke-width="2.8" fill="none"/>
+<circle cx="112.41" cy="296.92" r="2.4"><title>US · UST, 1M: 4.09%</title></circle>
+<circle cx="119.25" cy="285.46" r="2.4"><title>US · UST, 1.5M: 4.24%</title></circle>
+<circle cx="125.01" cy="283.94" r="2.4"><title>US · UST, 2M: 4.26%</title></circle>
+<circle cx="134.68" cy="278.59" r="2.4"><title>US · UST, 3M: 4.33%</title></circle>
+<circle cx="142.83" cy="279.35" r="2.4"><title>US · UST, 4M: 4.32%</title></circle>
+<circle cx="156.50" cy="272.48" r="2.4"><title>US · UST, 6M: 4.41%</title></circle>
+<circle cx="187.36" cy="257.96" r="2.4"><title>US · UST, 1Y: 4.6%</title></circle>
+<circle cx="231.00" cy="242.68" r="2.4"><title>US · UST, 2Y: 4.8%</title></circle>
+<circle cx="264.49" cy="239.62" r="2.4"><title>US · UST, 3Y: 4.84%</title></circle>
+<circle cx="317.59" cy="235.04" r="2.4"><title>US · UST, 5Y: 4.9%</title></circle>
+<circle cx="360.75" cy="228.16" r="2.4"><title>US · UST, 7Y: 4.99%</title></circle>
+<circle cx="415.17" cy="219.76" r="2.4"><title>US · UST, 10Y: 5.1%</title></circle>
+<circle cx="553.18" cy="189.20" r="2.4"><title>US · UST, 20Y: 5.5%</title></circle>
+<circle cx="659.07" cy="192.26" r="2.4"><title>US · UST, 30Y: 5.46%</title></circle>
+</g>
+<path d="M882,244h22" stroke="#a23f32" stroke-width="3" stroke-dasharray="9 4"/>
+<text x="914" y="248" font-size="15" fill="#a23f32" font-weight="720">Canada / GoC</text>
+<text x="1163" y="265" font-size="14" fill="#24394a" text-anchor="end" font-weight="700">3.885%</text>
+<text x="914" y="265" font-size="12" fill="#24394a">2026-10-28</text>
+<text x="914" y="281" font-size="12" fill="#24394a">CAD / BoC fitted zero-coupon yields</text>
+<text x="1163" y="281" font-size="12" fill="#24394a" text-anchor="end">10Y</text>
+<g id="ca" fill="#a23f32">
+<path d="M134.68,415.47 L156.50,398.86 L173.24,388.62 L187.36,378.10 L199.79,366.72 L211.04,361.04 L221.38,356.26 L231.00,352.29 L240.04,349.02 L248.59,346.37 L256.72,344.21 L264.49,342.47 L271.94,341.04 L279.11,339.85 L286.03,338.84 L292.72,337.94 L299.20,337.10 L305.50,336.30 L311.62,335.49 L317.59,334.67 L323.41,333.80 L329.09,332.89 L334.64,331.93 L340.08,330.92 L345.40,329.86 L350.61,328.75 L355.73,327.60 L360.75,326.43 L365.69,325.23 L370.54,324.01 L375.31,322.79 L380.00,321.57 L384.62,320.35 L389.17,319.16 L393.66,317.98 L398.08,316.84 L402.44,315.72 L406.74,314.65 L410.98,313.61 L415.17,312.62 L419.31,311.67 L423.40,310.76 L427.44,309.91 L431.44,309.09 L435.38,308.33 L439.29,307.60 L443.15,306.92 L446.97,306.28 L450.76,305.68 L454.50,305.12 L458.21,304.59 L461.88,304.09 L465.51,303.63 L469.11,303.18 L472.68,302.77 L476.22,302.38 L479.72,302.00 L483.19,301.65 L486.64,301.31 L490.05,300.98 L493.44,300.67 L496.80,300.36 L500.13,300.06 L503.44,299.78 L506.72,299.49 L509.97,299.21 L513.20,298.94 L516.41,298.66 L519.59,298.39 L522.75,298.13 L525.88,297.86 L529.00,297.59 L532.09,297.33 L535.17,297.06 L538.22,296.79 L541.25,296.53 L544.26,296.27 L547.25,296.00 L550.23,295.74 L553.18,295.48 L556.12,295.22 L559.03,294.97 L561.93,294.72 L564.82,294.46 L567.68,294.22 L570.53,293.97 L573.36,293.73 L576.18,293.50 L578.98,293.27 L581.76,293.04 L584.53,292.83 L587.28,292.61 L590.02,292.41 L592.75,292.21 L595.46,292.01 L598.15,291.83 L600.83,291.65 L603.50,291.48 L606.15,291.32 L608.79,291.16 L611.42,291.01 L614.04,290.87 L616.64,290.74 L619.23,290.62 L621.80,290.51 L624.37,290.40 L626.92,290.30 L629.46,290.21 L631.99,290.13 L634.51,290.05 L637.01,289.98 L639.51,289.92 L641.99,289.87 L644.46,289.82 L646.92,289.78 L649.38,289.75 L651.82,289.72 L654.25,289.69 L656.67,289.68 L659.07,289.66" stroke="#a23f32" stroke-width="2.8" fill="none" stroke-dasharray="9 4"/>
+<circle cx="134.68" cy="415.47" r="1.1"><title>Canada / GoC, 0.25Y: 2.53829%</title></circle>
+<circle cx="156.50" cy="398.86" r="1.1"><title>Canada / GoC, 0.5Y: 2.75576%</title></circle>
+<circle cx="173.24" cy="388.62" r="1.1"><title>Canada / GoC, 0.75Y: 2.88985%</title></circle>
+<circle cx="187.36" cy="378.10" r="1.1"><title>Canada / GoC, 1Y: 3.02751%</title></circle>
+<circle cx="199.79" cy="366.72" r="1.1"><title>Canada / GoC, 1.25Y: 3.17644%</title></circle>
+<circle cx="211.04" cy="361.04" r="1.1"><title>Canada / GoC, 1.5Y: 3.25076%</title></circle>
+<circle cx="221.38" cy="356.26" r="1.1"><title>Canada / GoC, 1.75Y: 3.31336%</title></circle>
+<circle cx="231.00" cy="352.29" r="1.1"><title>Canada / GoC, 2Y: 3.36537%</title></circle>
+<circle cx="240.04" cy="349.02" r="1.1"><title>Canada / GoC, 2.25Y: 3.40808%</title></circle>
+<circle cx="248.59" cy="346.37" r="1.1"><title>Canada / GoC, 2.5Y: 3.44286%</title></circle>
+<circle cx="256.72" cy="344.21" r="1.1"><title>Canada / GoC, 2.75Y: 3.47104%</title></circle>
+<circle cx="264.49" cy="342.47" r="1.1"><title>Canada / GoC, 3Y: 3.49389%</title></circle>
+<circle cx="271.94" cy="341.04" r="1.1"><title>Canada / GoC, 3.25Y: 3.51257%</title></circle>
+<circle cx="279.11" cy="339.85" r="1.1"><title>Canada / GoC, 3.5Y: 3.5281%</title></circle>
+<circle cx="286.03" cy="338.84" r="1.1"><title>Canada / GoC, 3.75Y: 3.54139%</title></circle>
+<circle cx="292.72" cy="337.94" r="1.1"><title>Canada / GoC, 4Y: 3.55317%</title></circle>
+<circle cx="299.20" cy="337.10" r="1.1"><title>Canada / GoC, 4.25Y: 3.56409%</title></circle>
+<circle cx="305.50" cy="336.30" r="1.1"><title>Canada / GoC, 4.5Y: 3.57462%</title></circle>
+<circle cx="311.62" cy="335.49" r="1.1"><title>Canada / GoC, 4.75Y: 3.58515%</title></circle>
+<circle cx="317.59" cy="334.67" r="1.1"><title>Canada / GoC, 5Y: 3.59597%</title></circle>
+<circle cx="323.41" cy="333.80" r="1.1"><title>Canada / GoC, 5.25Y: 3.60728%</title></circle>
+<circle cx="329.09" cy="332.89" r="1.1"><title>Canada / GoC, 5.5Y: 3.61919%</title></circle>
+<circle cx="334.64" cy="331.93" r="1.1"><title>Canada / GoC, 5.75Y: 3.63177%</title></circle>
+<circle cx="340.08" cy="330.92" r="1.1"><title>Canada / GoC, 6Y: 3.64503%</title></circle>
+<circle cx="345.40" cy="329.86" r="1.1"><title>Canada / GoC, 6.25Y: 3.65893%</title></circle>
+<circle cx="350.61" cy="328.75" r="1.1"><title>Canada / GoC, 6.5Y: 3.67342%</title></circle>
+<circle cx="355.73" cy="327.60" r="1.1"><title>Canada / GoC, 6.75Y: 3.68843%</title></circle>
+<circle cx="360.75" cy="326.43" r="1.1"><title>Canada / GoC, 7Y: 3.70384%</title></circle>
+<circle cx="365.69" cy="325.23" r="1.1"><title>Canada / GoC, 7.25Y: 3.71956%</title></circle>
+<circle cx="370.54" cy="324.01" r="1.1"><title>Canada / GoC, 7.5Y: 3.73548%</title></circle>
+<circle cx="375.31" cy="322.79" r="1.1"><title>Canada / GoC, 7.75Y: 3.75148%</title></circle>
+<circle cx="380.00" cy="321.57" r="1.1"><title>Canada / GoC, 8Y: 3.76747%</title></circle>
+<circle cx="384.62" cy="320.35" r="1.1"><title>Canada / GoC, 8.25Y: 3.78334%</title></circle>
+<circle cx="389.17" cy="319.16" r="1.1"><title>Canada / GoC, 8.5Y: 3.799%</title></circle>
+<circle cx="393.66" cy="317.98" r="1.1"><title>Canada / GoC, 8.75Y: 3.81437%</title></circle>
+<circle cx="398.08" cy="316.84" r="1.1"><title>Canada / GoC, 9Y: 3.82937%</title></circle>
+<circle cx="402.44" cy="315.72" r="1.1"><title>Canada / GoC, 9.25Y: 3.84394%</title></circle>
+<circle cx="406.74" cy="314.65" r="1.1"><title>Canada / GoC, 9.5Y: 3.85803%</title></circle>
+<circle cx="410.98" cy="313.61" r="1.1"><title>Canada / GoC, 9.75Y: 3.8716%</title></circle>
+<circle cx="415.17" cy="312.62" r="1.1"><title>Canada / GoC, 10Y: 3.8846%</title></circle>
+<circle cx="419.31" cy="311.67" r="1.1"><title>Canada / GoC, 10.25Y: 3.89703%</title></circle>
+<circle cx="423.40" cy="310.76" r="1.1"><title>Canada / GoC, 10.5Y: 3.90886%</title></circle>
+<circle cx="427.44" cy="309.91" r="1.1"><title>Canada / GoC, 10.75Y: 3.92009%</title></circle>
+<circle cx="431.44" cy="309.09" r="1.1"><title>Canada / GoC, 11Y: 3.93072%</title></circle>
+<circle cx="435.38" cy="308.33" r="1.1"><title>Canada / GoC, 11.25Y: 3.94077%</title></circle>
+<circle cx="439.29" cy="307.60" r="1.1"><title>Canada / GoC, 11.5Y: 3.95023%</title></circle>
+<circle cx="443.15" cy="306.92" r="1.1"><title>Canada / GoC, 11.75Y: 3.95914%</title></circle>
+<circle cx="446.97" cy="306.28" r="1.1"><title>Canada / GoC, 12Y: 3.9675%</title></circle>
+<circle cx="450.76" cy="305.68" r="1.1"><title>Canada / GoC, 12.25Y: 3.97536%</title></circle>
+<circle cx="454.50" cy="305.12" r="1.1"><title>Canada / GoC, 12.5Y: 3.98274%</title></circle>
+<circle cx="458.21" cy="304.59" r="1.1"><title>Canada / GoC, 12.75Y: 3.98967%</title></circle>
+<circle cx="461.88" cy="304.09" r="1.1"><title>Canada / GoC, 13Y: 3.99617%</title></circle>
+<circle cx="465.51" cy="303.63" r="1.1"><title>Canada / GoC, 13.25Y: 4.00229%</title></circle>
+<circle cx="469.11" cy="303.18" r="1.1"><title>Canada / GoC, 13.5Y: 4.00805%</title></circle>
+<circle cx="472.68" cy="302.77" r="1.1"><title>Canada / GoC, 13.75Y: 4.01349%</title></circle>
+<circle cx="476.22" cy="302.38" r="1.1"><title>Canada / GoC, 14Y: 4.01864%</title></circle>
+<circle cx="479.72" cy="302.00" r="1.1"><title>Canada / GoC, 14.25Y: 4.02352%</title></circle>
+<circle cx="483.19" cy="301.65" r="1.1"><title>Canada / GoC, 14.5Y: 4.02818%</title></circle>
+<circle cx="486.64" cy="301.31" r="1.1"><title>Canada / GoC, 14.75Y: 4.03263%</title></circle>
+<circle cx="490.05" cy="300.98" r="1.1"><title>Canada / GoC, 15Y: 4.0369%</title></circle>
+<circle cx="493.44" cy="300.67" r="1.1"><title>Canada / GoC, 15.25Y: 4.04102%</title></circle>
+<circle cx="496.80" cy="300.36" r="1.1"><title>Canada / GoC, 15.5Y: 4.04501%</title></circle>
+<circle cx="500.13" cy="300.06" r="1.1"><title>Canada / GoC, 15.75Y: 4.04889%</title></circle>
+<circle cx="503.44" cy="299.78" r="1.1"><title>Canada / GoC, 16Y: 4.05268%</title></circle>
+<circle cx="506.72" cy="299.49" r="1.1"><title>Canada / GoC, 16.25Y: 4.0564%</title></circle>
+<circle cx="509.97" cy="299.21" r="1.1"><title>Canada / GoC, 16.5Y: 4.06005%</title></circle>
+<circle cx="513.20" cy="298.94" r="1.1"><title>Canada / GoC, 16.75Y: 4.06365%</title></circle>
+<circle cx="516.41" cy="298.66" r="1.1"><title>Canada / GoC, 17Y: 4.06722%</title></circle>
+<circle cx="519.59" cy="298.39" r="1.1"><title>Canada / GoC, 17.25Y: 4.07076%</title></circle>
+<circle cx="522.75" cy="298.13" r="1.1"><title>Canada / GoC, 17.5Y: 4.07427%</title></circle>
+<circle cx="525.88" cy="297.86" r="1.1"><title>Canada / GoC, 17.75Y: 4.07777%</title></circle>
+<circle cx="529.00" cy="297.59" r="1.1"><title>Canada / GoC, 18Y: 4.08126%</title></circle>
+<circle cx="532.09" cy="297.33" r="1.1"><title>Canada / GoC, 18.25Y: 4.08475%</title></circle>
+<circle cx="535.17" cy="297.06" r="1.1"><title>Canada / GoC, 18.5Y: 4.08822%</title></circle>
+<circle cx="538.22" cy="296.79" r="1.1"><title>Canada / GoC, 18.75Y: 4.09169%</title></circle>
+<circle cx="541.25" cy="296.53" r="1.1"><title>Canada / GoC, 19Y: 4.09514%</title></circle>
+<circle cx="544.26" cy="296.27" r="1.1"><title>Canada / GoC, 19.25Y: 4.09859%</title></circle>
+<circle cx="547.25" cy="296.00" r="1.1"><title>Canada / GoC, 19.5Y: 4.10203%</title></circle>
+<circle cx="550.23" cy="295.74" r="1.1"><title>Canada / GoC, 19.75Y: 4.10545%</title></circle>
+<circle cx="553.18" cy="295.48" r="1.1"><title>Canada / GoC, 20Y: 4.10886%</title></circle>
+<circle cx="556.12" cy="295.22" r="1.1"><title>Canada / GoC, 20.25Y: 4.11224%</title></circle>
+<circle cx="559.03" cy="294.97" r="1.1"><title>Canada / GoC, 20.5Y: 4.11559%</title></circle>
+<circle cx="561.93" cy="294.72" r="1.1"><title>Canada / GoC, 20.75Y: 4.11891%</title></circle>
+<circle cx="564.82" cy="294.46" r="1.1"><title>Canada / GoC, 21Y: 4.12219%</title></circle>
+<circle cx="567.68" cy="294.22" r="1.1"><title>Canada / GoC, 21.25Y: 4.12543%</title></circle>
+<circle cx="570.53" cy="293.97" r="1.1"><title>Canada / GoC, 21.5Y: 4.12861%</title></circle>
+<circle cx="573.36" cy="293.73" r="1.1"><title>Canada / GoC, 21.75Y: 4.13175%</title></circle>
+<circle cx="576.18" cy="293.50" r="1.1"><title>Canada / GoC, 22Y: 4.13483%</title></circle>
+<circle cx="578.98" cy="293.27" r="1.1"><title>Canada / GoC, 22.25Y: 4.13784%</title></circle>
+<circle cx="581.76" cy="293.04" r="1.1"><title>Canada / GoC, 22.5Y: 4.14078%</title></circle>
+<circle cx="584.53" cy="292.83" r="1.1"><title>Canada / GoC, 22.75Y: 4.14364%</title></circle>
+<circle cx="587.28" cy="292.61" r="1.1"><title>Canada / GoC, 23Y: 4.14643%</title></circle>
+<circle cx="590.02" cy="292.41" r="1.1"><title>Canada / GoC, 23.25Y: 4.14914%</title></circle>
+<circle cx="592.75" cy="292.21" r="1.1"><title>Canada / GoC, 23.5Y: 4.15175%</title></circle>
+<circle cx="595.46" cy="292.01" r="1.1"><title>Canada / GoC, 23.75Y: 4.15428%</title></circle>
+<circle cx="598.15" cy="291.83" r="1.1"><title>Canada / GoC, 24Y: 4.15671%</title></circle>
+<circle cx="600.83" cy="291.65" r="1.1"><title>Canada / GoC, 24.25Y: 4.15904%</title></circle>
+<circle cx="603.50" cy="291.48" r="1.1"><title>Canada / GoC, 24.5Y: 4.16128%</title></circle>
+<circle cx="606.15" cy="291.32" r="1.1"><title>Canada / GoC, 24.75Y: 4.16341%</title></circle>
+<circle cx="608.79" cy="291.16" r="1.1"><title>Canada / GoC, 25Y: 4.16544%</title></circle>
+<circle cx="611.42" cy="291.01" r="1.1"><title>Canada / GoC, 25.25Y: 4.16737%</title></circle>
+<circle cx="614.04" cy="290.87" r="1.1"><title>Canada / GoC, 25.5Y: 4.16919%</title></circle>
+<circle cx="616.64" cy="290.74" r="1.1"><title>Canada / GoC, 25.75Y: 4.1709%</title></circle>
+<circle cx="619.23" cy="290.62" r="1.1"><title>Canada / GoC, 26Y: 4.17251%</title></circle>
+<circle cx="621.80" cy="290.51" r="1.1"><title>Canada / GoC, 26.25Y: 4.17401%</title></circle>
+<circle cx="624.37" cy="290.40" r="1.1"><title>Canada / GoC, 26.5Y: 4.17541%</title></circle>
+<circle cx="626.92" cy="290.30" r="1.1"><title>Canada / GoC, 26.75Y: 4.1767%</title></circle>
+<circle cx="629.46" cy="290.21" r="1.1"><title>Canada / GoC, 27Y: 4.17789%</title></circle>
+<circle cx="631.99" cy="290.13" r="1.1"><title>Canada / GoC, 27.25Y: 4.17898%</title></circle>
+<circle cx="634.51" cy="290.05" r="1.1"><title>Canada / GoC, 27.5Y: 4.17997%</title></circle>
+<circle cx="637.01" cy="289.98" r="1.1"><title>Canada / GoC, 27.75Y: 4.18086%</title></circle>
+<circle cx="639.51" cy="289.92" r="1.1"><title>Canada / GoC, 28Y: 4.18166%</title></circle>
+<circle cx="641.99" cy="289.87" r="1.1"><title>Canada / GoC, 28.25Y: 4.18236%</title></circle>
+<circle cx="644.46" cy="289.82" r="1.1"><title>Canada / GoC, 28.5Y: 4.18298%</title></circle>
+<circle cx="646.92" cy="289.78" r="1.1"><title>Canada / GoC, 28.75Y: 4.18351%</title></circle>
+<circle cx="649.38" cy="289.75" r="1.1"><title>Canada / GoC, 29Y: 4.18396%</title></circle>
+<circle cx="651.82" cy="289.72" r="1.1"><title>Canada / GoC, 29.25Y: 4.18433%</title></circle>
+<circle cx="654.25" cy="289.69" r="1.1"><title>Canada / GoC, 29.5Y: 4.18463%</title></circle>
+<circle cx="656.67" cy="289.68" r="1.1"><title>Canada / GoC, 29.75Y: 4.18486%</title></circle>
+<circle cx="659.07" cy="289.66" r="1.1"><title>Canada / GoC, 30Y: 4.18502%</title></circle>
+</g>
+<path d="M882,306h22" stroke="#71419a" stroke-width="3" stroke-dasharray="3 3"/>
+<text x="914" y="310" font-size="15" fill="#71419a" font-weight="720">UK · Gilts</text>
+<text x="1163" y="327" font-size="14" fill="#24394a" text-anchor="end" font-weight="700">5.315%</text>
+<text x="914" y="327" font-size="12" fill="#24394a">2026-11-16</text>
+<text x="914" y="343" font-size="12" fill="#24394a">GBP / BoE Database nominal par</text>
+<text x="1163" y="343" font-size="12" fill="#24394a" text-anchor="end">10Y</text>
+<g id="uk" fill="#71419a">
+<path d="M317.59,229.43 L415.17,203.33 L553.18,181.24" stroke="#71419a" stroke-width="2.8" fill="none" stroke-dasharray="3 3"/>
+<circle cx="317.59" cy="229.43" r="2.4"><title>UK · Gilts, 5Y: 4.9734%</title></circle>
+<circle cx="415.17" cy="203.33" r="2.4"><title>UK · Gilts, 10Y: 5.3151%</title></circle>
+<circle cx="553.18" cy="181.24" r="2.4"><title>UK · Gilts, 20Y: 5.6042%</title></circle>
+</g>
+<path d="M882,368h22" stroke="#176f73" stroke-width="3" stroke-dasharray="12 4 3 4"/>
+<text x="914" y="372" font-size="15" fill="#176f73" font-weight="720">Australia · AGS</text>
+<text x="1163" y="389" font-size="14" fill="#24394a" text-anchor="end" font-weight="700">5.044%</text>
+<text x="914" y="389" font-size="12" fill="#24394a">2026-11-11</text>
+<text x="914" y="405" font-size="12" fill="#24394a">AUD / RBA F2 nominal yield</text>
+<text x="1163" y="405" font-size="12" fill="#24394a" text-anchor="end">10Y</text>
+<g id="au" fill="#176f73">
+<path d="M231.00,242.07 L264.49,247.80 L317.59,245.97 L415.17,224.04" stroke="#176f73" stroke-width="2.8" fill="none" stroke-dasharray="12 4 3 4"/>
+<circle cx="231.00" cy="242.07" r="2.4"><title>Australia · AGS, 2Y: 4.808%</title></circle>
+<circle cx="264.49" cy="247.80" r="2.4"><title>Australia · AGS, 3Y: 4.733%</title></circle>
+<circle cx="317.59" cy="245.97" r="2.4"><title>Australia · AGS, 5Y: 4.757%</title></circle>
+<circle cx="415.17" cy="224.04" r="2.4"><title>Australia · AGS, 10Y: 5.044%</title></circle>
+</g>
+<path d="M882,430h22" stroke="#a06013" stroke-width="3" stroke-dasharray="5 4"/>
+<text x="914" y="434" font-size="15" fill="#a06013" font-weight="720">Japan · JGB</text>
+<text x="1163" y="451" font-size="14" fill="#24394a" text-anchor="end" font-weight="700">2.925%</text>
+<text x="914" y="451" font-size="12" fill="#24394a">2026-11-17</text>
+<text x="914" y="467" font-size="12" fill="#24394a">JPY / Constant-maturity yield</text>
+<text x="1163" y="467" font-size="12" fill="#24394a" text-anchor="end">10Y</text>
+<g id="jgb" fill="#a06013">
+<path d="M187.36,481.81 L231.00,465.92 L264.49,457.75 L292.72,444.83 L317.59,435.67 L340.08,428.10 L360.75,418.71 L380.00,407.63 L398.08,397.08 L415.17,385.93 L490.05,342.92 L553.18,320.07 L608.79,297.08 L659.07,298.53 L748.35,296.08" stroke="#a06013" stroke-width="2.8" fill="none" stroke-dasharray="5 4"/>
+<circle cx="187.36" cy="481.81" r="2.4"><title>Japan · JGB, 1Y: 1.67%</title></circle>
+<circle cx="231.00" cy="465.92" r="2.4"><title>Japan · JGB, 2Y: 1.878%</title></circle>
+<circle cx="264.49" cy="457.75" r="2.4"><title>Japan · JGB, 3Y: 1.985%</title></circle>
+<circle cx="292.72" cy="444.83" r="2.4"><title>Japan · JGB, 4Y: 2.154%</title></circle>
+<circle cx="317.59" cy="435.67" r="2.4"><title>Japan · JGB, 5Y: 2.274%</title></circle>
+<circle cx="340.08" cy="428.10" r="2.4"><title>Japan · JGB, 6Y: 2.373%</title></circle>
+<circle cx="360.75" cy="418.71" r="2.4"><title>Japan · JGB, 7Y: 2.496%</title></circle>
+<circle cx="380.00" cy="407.63" r="2.4"><title>Japan · JGB, 8Y: 2.641%</title></circle>
+<circle cx="398.08" cy="397.08" r="2.4"><title>Japan · JGB, 9Y: 2.779%</title></circle>
+<circle cx="415.17" cy="385.93" r="2.4"><title>Japan · JGB, 10Y: 2.925%</title></circle>
+<circle cx="490.05" cy="342.92" r="2.4"><title>Japan · JGB, 15Y: 3.488%</title></circle>
+<circle cx="553.18" cy="320.07" r="2.4"><title>Japan · JGB, 20Y: 3.787%</title></circle>
+<circle cx="608.79" cy="297.08" r="2.4"><title>Japan · JGB, 25Y: 4.088%</title></circle>
+<circle cx="659.07" cy="298.53" r="2.4"><title>Japan · JGB, 30Y: 4.069%</title></circle>
+<circle cx="748.35" cy="296.08" r="2.4"><title>Japan · JGB, 40Y: 4.101%</title></circle>
+</g>
+<polygon points="893.00,487.00 898.00,492.00 893.00,497.00 888.00,492.00" fill="#fff" stroke="#23744e" stroke-width="2"></polygon>
+<text x="914" y="496" font-size="15" fill="#23744e" font-weight="720">Hong Kong SAR</text>
+<text x="1163" y="513" font-size="14" fill="#24394a" text-anchor="end" font-weight="700">4.164%</text>
+<text x="914" y="513" font-size="12" fill="#24394a">2026-08-12 to 2026-11-11</text>
+<text x="914" y="529" font-size="12" fill="#24394a">HKD / Government bond tender YTM</text>
+<text x="1163" y="529" font-size="12" fill="#24394a" text-anchor="end">10Y</text>
+<g id="hk" fill="#23744e">
+<polygon points="264.49,312.48 269.49,317.48 264.49,322.48 259.49,317.48" fill="#fff" stroke="#23744e" stroke-width="2"><title>Hong Kong SAR, 3Y: 3.821% | auction on 2026-10-21</title></polygon>
+<polygon points="317.59,354.57 322.59,359.57 317.59,364.57 312.59,359.57" fill="#fff" stroke="#23744e" stroke-width="2"><title>Hong Kong SAR, 5Y: 3.27% | auction on 2026-08-12</title></polygon>
+<polygon points="360.75,321.11 365.75,326.11 360.75,331.11 355.75,326.11" fill="#fff" stroke="#23744e" stroke-width="2"><title>Hong Kong SAR, 7Y: 3.708% | auction on 2026-11-11</title></polygon>
+<polygon points="415.17,286.27 420.17,291.27 415.17,296.27 410.17,291.27" fill="#fff" stroke="#23744e" stroke-width="2"><title>Hong Kong SAR, 10Y: 4.164% | auction on 2026-10-21</title></polygon>
+</g>
+<path d="M882,554h22" stroke="#9c3e73" stroke-width="3" stroke-dasharray="7 3 2 3"/>
+<text x="914" y="558" font-size="15" fill="#9c3e73" font-weight="720">Singapore · SGS</text>
+<text x="1163" y="575" font-size="14" fill="#24394a" text-anchor="end" font-weight="700">2.290%</text>
+<text x="914" y="575" font-size="12" fill="#24394a">2026-11-18</text>
+<text x="914" y="591" font-size="12" fill="#24394a">SGD / SGS benchmark bond yield</text>
+<text x="1163" y="591" font-size="12" fill="#24394a" text-anchor="end">10Y</text>
+<g id="sg" fill="#9c3e73">
+<path d="M231.00,458.13 L317.59,451.25 L415.17,434.44 L490.05,430.62 L553.18,431.39 L659.07,427.57 L827.00,411.52" stroke="#9c3e73" stroke-width="2.8" fill="none" stroke-dasharray="7 3 2 3"/>
+<circle cx="231.00" cy="458.13" r="2.4"><title>Singapore · SGS, 2Y: 1.98%</title></circle>
+<circle cx="317.59" cy="451.25" r="2.4"><title>Singapore · SGS, 5Y: 2.07%</title></circle>
+<circle cx="415.17" cy="434.44" r="2.4"><title>Singapore · SGS, 10Y: 2.29%</title></circle>
+<circle cx="490.05" cy="430.62" r="2.4"><title>Singapore · SGS, 15Y: 2.34%</title></circle>
+<circle cx="553.18" cy="431.39" r="2.4"><title>Singapore · SGS, 20Y: 2.33%</title></circle>
+<circle cx="659.07" cy="427.57" r="2.4"><title>Singapore · SGS, 30Y: 2.38%</title></circle>
+<circle cx="827.00" cy="411.52" r="2.4"><title>Singapore · SGS, 50Y: 2.59%</title></circle>
+</g>
+<polygon points="893.00,611.00 898.00,616.00 893.00,621.00 888.00,616.00" fill="#fff" stroke="#526321" stroke-width="2"></polygon>
+<text x="914" y="620" font-size="15" fill="#526321" font-weight="720">South Korea / KTB</text>
+<text x="1163" y="637" font-size="14" fill="#24394a" text-anchor="end" font-weight="700">3.985%</text>
+<text x="914" y="637" font-size="12" fill="#24394a">2026-10-26 to 2026-11-16</text>
+<text x="914" y="653" font-size="12" fill="#24394a">KRW / KTB auction award yield</text>
+<text x="1163" y="653" font-size="12" fill="#24394a" text-anchor="end">10Y</text>
+<g id="kr" fill="#526321">
+<polygon points="231.00,319.81 236.00,324.81 231.00,329.81 226.00,324.81" fill="#fff" stroke="#526321" stroke-width="2"><title>South Korea / KTB, 2Y: 3.725% | auction on 2026-11-02</title></polygon>
+<polygon points="264.49,325.54 269.49,330.54 264.49,335.54 259.49,330.54" fill="#fff" stroke="#526321" stroke-width="2"><title>South Korea / KTB, 3Y: 3.65% | auction on 2026-11-09</title></polygon>
+<polygon points="317.59,303.77 322.59,308.77 317.59,313.77 312.59,308.77" fill="#fff" stroke="#526321" stroke-width="2"><title>South Korea / KTB, 5Y: 3.935% | auction on 2026-10-26</title></polygon>
+<polygon points="415.17,299.95 420.17,304.95 415.17,309.95 410.17,304.95" fill="#fff" stroke="#526321" stroke-width="2"><title>South Korea / KTB, 10Y: 3.985% | auction on 2026-11-16</title></polygon>
+<polygon points="553.18,286.96 558.18,291.96 553.18,296.96 548.18,291.96" fill="#fff" stroke="#526321" stroke-width="2"><title>South Korea / KTB, 20Y: 4.155% | auction on 2026-10-27</title></polygon>
+<polygon points="659.07,293.45 664.07,298.45 659.07,303.45 654.07,298.45" fill="#fff" stroke="#526321" stroke-width="2"><title>South Korea / KTB, 30Y: 4.07% | auction on 2026-11-03</title></polygon>
+<polygon points="827.00,295.74 832.00,300.74 827.00,305.74 822.00,300.74" fill="#fff" stroke="#526321" stroke-width="2"><title>South Korea / KTB, 50Y: 4.04% | auction on 2026-11-13</title></polygon>
+</g>
+<path d="M56,674H1160" stroke="#dee6ea"/>
+<text x="56" y="697" font-size="12" fill="#24394a">Diamonds: primary auction observations, not a secondary-market curve. Conventions and dates differ.</text>
+<text x="56" y="718" font-size="12" fill="#24394a">The sidebar shows the available tenor closest to 10Y. Lines guide the eye; no missing yields are estimated.</text>
+<text x="56" y="739" font-size="12" fill="#24394a">Sources: see the portfolio source and rights register. Curated by pengyi.</text>
+</g></svg>

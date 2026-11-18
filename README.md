@@ -7,16 +7,16 @@
 
 ## Global sovereign yield curves
 
-**November 2026 · Compiled: `2026-11-19T01:29:19+08:00`.**
-All six markets have published November observations. The UK line uses
-Bank of England Database nominal par yields. China's diamonds are observed
-Ministry of Finance primary auction rates, **not** a secondary-market curve.
-Dates and rate conventions differ; this is not a synchronized close.
+**2026 observations · Compiled: `2026-11-19T02:08:12+08:00`.**
+All six markets have published observations. China now includes 1Y, 2Y, 5Y
+and 30Y auction results alongside the prior points. Its diamonds are primary
+auction rates, **not** a secondary-market curve. Dates and rate conventions
+differ; this is not a synchronized close.
 
-[![November sovereign yield comparison: US, China auction points, Japan, UK, Australia and Singapore](curve/20261118T172919Z/global_sovereign_yields.svg)](curve/20261118T172919Z/global_sovereign_yields.svg)
+[![2026 sovereign yield comparison: US, China auction points, Japan, UK, Australia and Singapore](curve/portfolio/20261118T180812Z/global.svg)](curve/portfolio/20261118T180812Z/global.svg)
 
-[Run the Python example](examples/global_sovereign_overlay/README.md) ·
-[Dated config and source notes](curve/20261118T172919Z/config.json) ·
+[Reproduce with Python](examples/global_sovereign_overlay/README.md#reproduce-the-regional-portfolio) ·
+[Dated data and sources](curve/portfolio/20261118T180812Z/README.md) ·
 [Contribute a data adapter](https://github.com/pengpengyi92/p-curve/issues/10)
 
 Contains information from **Daily SGS Prices**, accessed on 2026-11-19 from
@@ -26,17 +26,19 @@ the **Monetary Authority of Singapore**, made available under the
 UK data: Bank of England Database, licensed under the
 [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/).
 China auction statistics: Ministry of Finance of China. See
-[per-point citations and conventions](examples/global_sovereign_overlay/README.md).
+[per-point citations and conventions](curve/portfolio/20261118T180812Z/config.json).
 
 ## Sovereign curve portfolio
 
-**October–November 2026 · Compiled: `2026-11-19T01:51:56+08:00`.**
-Six comparisons built from frozen public observations. Maturity is in years
-and local-currency yield or rate is in annual percent. Each panel has its own
-scale. Diamonds are primary auction observations, not a secondary-market
-curve; lines only connect published nodes. This is not a common market close.
+**2026 sample · Published observation dates or reporting periods: April 14 to November 18.**
+Six comparisons built from frozen public observations. The maturity axis uses
+square-root spacing so short-dated points are easier to see. Each panel has
+its own scale. The sidebar shows each series' observed tenor closest to 10Y,
+with the actual tenor beside the rate. Diamonds are separate auction
+observations; lines link published nodes. There is no interpolation or
+common market close.
 
-[Source and rights register](curve/portfolio/20261118T175156Z/README.md) · [Frozen inputs and groups](curve/portfolio/20261118T175156Z/portfolio.json) ·
+[Source and rights register](curve/portfolio/20261118T180812Z/README.md) · [Frozen inputs and groups](curve/portfolio/20261118T180812Z/portfolio.json) ·
 [Python reproduction](examples/global_sovereign_overlay/README.md#reproduce-the-regional-portfolio)
 
 ### Advanced economies
@@ -44,41 +46,41 @@ curve; lines only connect published nodes. This is not a common market close.
 United States, Canada, United Kingdom, Australia, Japan, Hong Kong SAR,
 Singapore and South Korea. Classification follows the IMF WEO.
 
-![Advanced economies: eight sovereign yield series](curve/portfolio/20261118T175156Z/advanced.svg)
+![Advanced economies: eight sovereign yield series](curve/portfolio/20261118T180812Z/advanced.svg)
 
 ### Asia
 
 Hong Kong SAR, Singapore, China, Japan and South Korea, including the
 official Hong Kong, China and Korea tender observations.
 
-![Asia: Hong Kong SAR, Singapore, China, Japan and South Korea](curve/portfolio/20261118T175156Z/asia.svg)
+![Asia: Hong Kong SAR, Singapore, China, Japan and South Korea](curve/portfolio/20261118T180812Z/asia.svg)
 
 ### Americas
 
-United States and Canada benchmark curves, Mexico auction yields and Brazil
-Treasury Direct morning quotes.
+US Treasury par yields, the Bank of Canada's fitted zero curve, Mexican
+October auction averages and Brazilian Treasury Direct morning quotes.
 
-![Americas: United States, Canada, Mexico and Brazil](curve/portfolio/20261118T175156Z/americas.svg)
+![Americas: United States, Canada, Mexico and Brazil](curve/portfolio/20261118T180812Z/americas.svg)
 
 ### Europe
 
 UK nominal par yields alongside the ECB's AAA and all-rated euro area
 government fitted zero rates. These are not the same quote convention.
 
-![Europe: UK par yields and two ECB euro area spot curves](curve/portfolio/20261118T175156Z/europe.svg)
+![Europe: UK par yields and two ECB euro area spot curves](curve/portfolio/20261118T180812Z/europe.svg)
 
 ### Oceania
 
 Australian government bond yields and New Zealand nominal bond tender yields.
 
-![Oceania: Australia and New Zealand](curve/portfolio/20261118T175156Z/oceania.svg)
+![Oceania: Australia and New Zealand](curve/portfolio/20261118T180812Z/oceania.svg)
 
 ### Emerging and developing markets
 
 China, Mexico and Brazil. Cross-country gaps are descriptive, not
 executable spreads.
 
-![Emerging and developing markets: China, Mexico and Brazil](curve/portfolio/20261118T175156Z/emerging.svg)
+![Emerging and developing markets: China, Mexico and Brazil](curve/portfolio/20261118T180812Z/emerging.svg)
 
 ## About P-Curve
 

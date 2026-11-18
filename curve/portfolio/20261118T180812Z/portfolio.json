@@ -1,0 +1,88 @@
+{
+  "sources": [
+    {
+      "path": "curve/20261118T172919Z/config.json",
+      "markets": [
+        "ust",
+        "jgb",
+        "uk",
+        "au",
+        "sg"
+      ]
+    },
+    "curve/developed/euro-area/20261114T155232Z/snapshot.json"
+  ],
+  "window": [
+    "2026-01-01",
+    "2026-11-18"
+  ],
+  "layout": "coverage",
+  "groups": {
+    "global": {
+      "title": "Global sovereign yields: six markets",
+      "markets": [
+        "ust",
+        "cgb",
+        "jgb",
+        "uk",
+        "au",
+        "sg"
+      ]
+    },
+    "advanced": {
+      "title": "Advanced economies",
+      "markets": [
+        "ust",
+        "ca",
+        "uk",
+        "au",
+        "jgb",
+        "hk",
+        "sg",
+        "kr"
+      ]
+    },
+    "asia": {
+      "title": "Asia: sovereign yields",
+      "markets": [
+        "hk",
+        "sg",
+        "cgb",
+        "jgb",
+        "kr"
+      ]
+    },
+    "americas": {
+      "title": "Americas: sovereign yields",
+      "markets": [
+        "ust",
+        "ca",
+        "mx",
+        "br"
+      ]
+    },
+    "europe": {
+      "title": "Europe: sovereign yields",
+      "markets": [
+        "uk",
+        "euro_area_aaa",
+        "euro_area_all"
+      ]
+    },
+    "oceania": {
+      "title": "Oceania: sovereign yields",
+      "markets": [
+        "au",
+        "nz"
+      ]
+    },
+    "emerging": {
+      "title": "Emerging and developing markets",
+      "markets": [
+        "cgb",
+        "mx",
+        "br"
+      ]
+    }
+  }
+}

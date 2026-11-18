@@ -2,6 +2,8 @@
 
 ## P1 — regional sovereign portfolio (2026-11-19)
 
+- [x] Expand to selected observations from the full published part of 2026 and
+  replace blank reference cells with explicitly labeled observed tenors.
 - [x] Add six README exhibits with available, attributed observations and reproduce
   them offline from an immutable edition.
 - [ ] Compare synchronized secondary-market dates for auction-only markets once

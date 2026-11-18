@@ -1,0 +1,1113 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_id": "20261118T180812Z",
+  "title": "2026 sovereign curve portfolio: expanded coverage",
+  "generated_at": "2026-11-19T02:08:12+08:00",
+  "notes": [
+    "The eligible data window begins on 2026-01-01; selected observations use their actual published dates or clearly identified reporting periods.",
+    "No dates are synchronized across markets and no unavailable maturities are interpolated.",
+    "The Canada benchmark data from the previous edition are not reused in this edition; use the Bank of Canada published fitted curve."
+  ],
+  "markets": [
+    {
+      "id": "ca",
+      "title": "Canada / GoC",
+      "currency": "CAD",
+      "market_date": "2026-10-28",
+      "asof": "Single Bank of Canada published fitted GoC zero-coupon curve. Full native quarterly grid, 0.25 to 30 years. Convert source decimal to annual percent; source is the Bank's published model output, not a third-party benchmark bond closing series.",
+      "retrieved_at": "2026-11-19T02:08:12+08:00",
+      "source_url": "https://www.bankofcanada.ca/stats/results/csv?lookupPage=lookup_yield_curve.php&startRange=1986-01-01&searchRange=&dFrom=2026-10-28&dTo=2026-10-28&submit=Submit",
+      "curve_type": "BoC fitted zero-coupon yields",
+      "units": "percent_per_annum",
+      "status": "AVAILABLE",
+      "rights": {
+        "status": "APPROVED_PUBLIC_DISPLAY",
+        "source_url": "https://www.bankofcanada.ca/terms/",
+        "reason": "Bank of Canada fitted zero-coupon yield curve released on the Bank's own curve page, distinct from the benchmark table with CanDeal attribution. Source credited, decimal units converted to percent and chart redrawn, no endorsement. No input quotes or vendor data redistributed."
+      },
+      "nodes": [
+        {
+          "tenor": "0.25Y",
+          "years": 0.25,
+          "yield_pct": 2.53829
+        },
+        {
+          "tenor": "0.5Y",
+          "years": 0.5,
+          "yield_pct": 2.75576
+        },
+        {
+          "tenor": "0.75Y",
+          "years": 0.75,
+          "yield_pct": 2.88985
+        },
+        {
+          "tenor": "1Y",
+          "years": 1,
+          "yield_pct": 3.02751
+        },
+        {
+          "tenor": "1.25Y",
+          "years": 1.25,
+          "yield_pct": 3.17644
+        },
+        {
+          "tenor": "1.5Y",
+          "years": 1.5,
+          "yield_pct": 3.25076
+        },
+        {
+          "tenor": "1.75Y",
+          "years": 1.75,
+          "yield_pct": 3.31336
+        },
+        {
+          "tenor": "2Y",
+          "years": 2,
+          "yield_pct": 3.36537
+        },
+        {
+          "tenor": "2.25Y",
+          "years": 2.25,
+          "yield_pct": 3.40808
+        },
+        {
+          "tenor": "2.5Y",
+          "years": 2.5,
+          "yield_pct": 3.44286
+        },
+        {
+          "tenor": "2.75Y",
+          "years": 2.75,
+          "yield_pct": 3.47104
+        },
+        {
+          "tenor": "3Y",
+          "years": 3,
+          "yield_pct": 3.49389
+        },
+        {
+          "tenor": "3.25Y",
+          "years": 3.25,
+          "yield_pct": 3.51257
+        },
+        {
+          "tenor": "3.5Y",
+          "years": 3.5,
+          "yield_pct": 3.5281
+        },
+        {
+          "tenor": "3.75Y",
+          "years": 3.75,
+          "yield_pct": 3.54139
+        },
+        {
+          "tenor": "4Y",
+          "years": 4,
+          "yield_pct": 3.55317
+        },
+        {
+          "tenor": "4.25Y",
+          "years": 4.25,
+          "yield_pct": 3.56409
+        },
+        {
+          "tenor": "4.5Y",
+          "years": 4.5,
+          "yield_pct": 3.57462
+        },
+        {
+          "tenor": "4.75Y",
+          "years": 4.75,
+          "yield_pct": 3.58515
+        },
+        {
+          "tenor": "5Y",
+          "years": 5,
+          "yield_pct": 3.59597
+        },
+        {
+          "tenor": "5.25Y",
+          "years": 5.25,
+          "yield_pct": 3.60728
+        },
+        {
+          "tenor": "5.5Y",
+          "years": 5.5,
+          "yield_pct": 3.61919
+        },
+        {
+          "tenor": "5.75Y",
+          "years": 5.75,
+          "yield_pct": 3.63177
+        },
+        {
+          "tenor": "6Y",
+          "years": 6,
+          "yield_pct": 3.64503
+        },
+        {
+          "tenor": "6.25Y",
+          "years": 6.25,
+          "yield_pct": 3.65893
+        },
+        {
+          "tenor": "6.5Y",
+          "years": 6.5,
+          "yield_pct": 3.67342
+        },
+        {
+          "tenor": "6.75Y",
+          "years": 6.75,
+          "yield_pct": 3.68843
+        },
+        {
+          "tenor": "7Y",
+          "years": 7,
+          "yield_pct": 3.70384
+        },
+        {
+          "tenor": "7.25Y",
+          "years": 7.25,
+          "yield_pct": 3.71956
+        },
+        {
+          "tenor": "7.5Y",
+          "years": 7.5,
+          "yield_pct": 3.73548
+        },
+        {
+          "tenor": "7.75Y",
+          "years": 7.75,
+          "yield_pct": 3.75148
+        },
+        {
+          "tenor": "8Y",
+          "years": 8,
+          "yield_pct": 3.76747
+        },
+        {
+          "tenor": "8.25Y",
+          "years": 8.25,
+          "yield_pct": 3.78334
+        },
+        {
+          "tenor": "8.5Y",
+          "years": 8.5,
+          "yield_pct": 3.799
+        },
+        {
+          "tenor": "8.75Y",
+          "years": 8.75,
+          "yield_pct": 3.81437
+        },
+        {
+          "tenor": "9Y",
+          "years": 9,
+          "yield_pct": 3.82937
+        },
+        {
+          "tenor": "9.25Y",
+          "years": 9.25,
+          "yield_pct": 3.84394
+        },
+        {
+          "tenor": "9.5Y",
+          "years": 9.5,
+          "yield_pct": 3.85803
+        },
+        {
+          "tenor": "9.75Y",
+          "years": 9.75,
+          "yield_pct": 3.8716
+        },
+        {
+          "tenor": "10Y",
+          "years": 10,
+          "yield_pct": 3.8846
+        },
+        {
+          "tenor": "10.25Y",
+          "years": 10.25,
+          "yield_pct": 3.89703
+        },
+        {
+          "tenor": "10.5Y",
+          "years": 10.5,
+          "yield_pct": 3.90886
+        },
+        {
+          "tenor": "10.75Y",
+          "years": 10.75,
+          "yield_pct": 3.92009
+        },
+        {
+          "tenor": "11Y",
+          "years": 11,
+          "yield_pct": 3.93072
+        },
+        {
+          "tenor": "11.25Y",
+          "years": 11.25,
+          "yield_pct": 3.94077
+        },
+        {
+          "tenor": "11.5Y",
+          "years": 11.5,
+          "yield_pct": 3.95023
+        },
+        {
+          "tenor": "11.75Y",
+          "years": 11.75,
+          "yield_pct": 3.95914
+        },
+        {
+          "tenor": "12Y",
+          "years": 12,
+          "yield_pct": 3.9675
+        },
+        {
+          "tenor": "12.25Y",
+          "years": 12.25,
+          "yield_pct": 3.97536
+        },
+        {
+          "tenor": "12.5Y",
+          "years": 12.5,
+          "yield_pct": 3.98274
+        },
+        {
+          "tenor": "12.75Y",
+          "years": 12.75,
+          "yield_pct": 3.98967
+        },
+        {
+          "tenor": "13Y",
+          "years": 13,
+          "yield_pct": 3.99617
+        },
+        {
+          "tenor": "13.25Y",
+          "years": 13.25,
+          "yield_pct": 4.00229
+        },
+        {
+          "tenor": "13.5Y",
+          "years": 13.5,
+          "yield_pct": 4.00805
+        },
+        {
+          "tenor": "13.75Y",
+          "years": 13.75,
+          "yield_pct": 4.01349
+        },
+        {
+          "tenor": "14Y",
+          "years": 14,
+          "yield_pct": 4.01864
+        },
+        {
+          "tenor": "14.25Y",
+          "years": 14.25,
+          "yield_pct": 4.02352
+        },
+        {
+          "tenor": "14.5Y",
+          "years": 14.5,
+          "yield_pct": 4.02818
+        },
+        {
+          "tenor": "14.75Y",
+          "years": 14.75,
+          "yield_pct": 4.03263
+        },
+        {
+          "tenor": "15Y",
+          "years": 15,
+          "yield_pct": 4.0369
+        },
+        {
+          "tenor": "15.25Y",
+          "years": 15.25,
+          "yield_pct": 4.04102
+        },
+        {
+          "tenor": "15.5Y",
+          "years": 15.5,
+          "yield_pct": 4.04501
+        },
+        {
+          "tenor": "15.75Y",
+          "years": 15.75,
+          "yield_pct": 4.04889
+        },
+        {
+          "tenor": "16Y",
+          "years": 16,
+          "yield_pct": 4.05268
+        },
+        {
+          "tenor": "16.25Y",
+          "years": 16.25,
+          "yield_pct": 4.0564
+        },
+        {
+          "tenor": "16.5Y",
+          "years": 16.5,
+          "yield_pct": 4.06005
+        },
+        {
+          "tenor": "16.75Y",
+          "years": 16.75,
+          "yield_pct": 4.06365
+        },
+        {
+          "tenor": "17Y",
+          "years": 17,
+          "yield_pct": 4.06722
+        },
+        {
+          "tenor": "17.25Y",
+          "years": 17.25,
+          "yield_pct": 4.07076
+        },
+        {
+          "tenor": "17.5Y",
+          "years": 17.5,
+          "yield_pct": 4.07427
+        },
+        {
+          "tenor": "17.75Y",
+          "years": 17.75,
+          "yield_pct": 4.07777
+        },
+        {
+          "tenor": "18Y",
+          "years": 18,
+          "yield_pct": 4.08126
+        },
+        {
+          "tenor": "18.25Y",
+          "years": 18.25,
+          "yield_pct": 4.08475
+        },
+        {
+          "tenor": "18.5Y",
+          "years": 18.5,
+          "yield_pct": 4.08822
+        },
+        {
+          "tenor": "18.75Y",
+          "years": 18.75,
+          "yield_pct": 4.09169
+        },
+        {
+          "tenor": "19Y",
+          "years": 19,
+          "yield_pct": 4.09514
+        },
+        {
+          "tenor": "19.25Y",
+          "years": 19.25,
+          "yield_pct": 4.09859
+        },
+        {
+          "tenor": "19.5Y",
+          "years": 19.5,
+          "yield_pct": 4.10203
+        },
+        {
+          "tenor": "19.75Y",
+          "years": 19.75,
+          "yield_pct": 4.10545
+        },
+        {
+          "tenor": "20Y",
+          "years": 20,
+          "yield_pct": 4.10886
+        },
+        {
+          "tenor": "20.25Y",
+          "years": 20.25,
+          "yield_pct": 4.11224
+        },
+        {
+          "tenor": "20.5Y",
+          "years": 20.5,
+          "yield_pct": 4.11559
+        },
+        {
+          "tenor": "20.75Y",
+          "years": 20.75,
+          "yield_pct": 4.11891
+        },
+        {
+          "tenor": "21Y",
+          "years": 21,
+          "yield_pct": 4.12219
+        },
+        {
+          "tenor": "21.25Y",
+          "years": 21.25,
+          "yield_pct": 4.12543
+        },
+        {
+          "tenor": "21.5Y",
+          "years": 21.5,
+          "yield_pct": 4.12861
+        },
+        {
+          "tenor": "21.75Y",
+          "years": 21.75,
+          "yield_pct": 4.13175
+        },
+        {
+          "tenor": "22Y",
+          "years": 22,
+          "yield_pct": 4.13483
+        },
+        {
+          "tenor": "22.25Y",
+          "years": 22.25,
+          "yield_pct": 4.13784
+        },
+        {
+          "tenor": "22.5Y",
+          "years": 22.5,
+          "yield_pct": 4.14078
+        },
+        {
+          "tenor": "22.75Y",
+          "years": 22.75,
+          "yield_pct": 4.14364
+        },
+        {
+          "tenor": "23Y",
+          "years": 23,
+          "yield_pct": 4.14643
+        },
+        {
+          "tenor": "23.25Y",
+          "years": 23.25,
+          "yield_pct": 4.14914
+        },
+        {
+          "tenor": "23.5Y",
+          "years": 23.5,
+          "yield_pct": 4.15175
+        },
+        {
+          "tenor": "23.75Y",
+          "years": 23.75,
+          "yield_pct": 4.15428
+        },
+        {
+          "tenor": "24Y",
+          "years": 24,
+          "yield_pct": 4.15671
+        },
+        {
+          "tenor": "24.25Y",
+          "years": 24.25,
+          "yield_pct": 4.15904
+        },
+        {
+          "tenor": "24.5Y",
+          "years": 24.5,
+          "yield_pct": 4.16128
+        },
+        {
+          "tenor": "24.75Y",
+          "years": 24.75,
+          "yield_pct": 4.16341
+        },
+        {
+          "tenor": "25Y",
+          "years": 25,
+          "yield_pct": 4.16544
+        },
+        {
+          "tenor": "25.25Y",
+          "years": 25.25,
+          "yield_pct": 4.16737
+        },
+        {
+          "tenor": "25.5Y",
+          "years": 25.5,
+          "yield_pct": 4.16919
+        },
+        {
+          "tenor": "25.75Y",
+          "years": 25.75,
+          "yield_pct": 4.1709
+        },
+        {
+          "tenor": "26Y",
+          "years": 26,
+          "yield_pct": 4.17251
+        },
+        {
+          "tenor": "26.25Y",
+          "years": 26.25,
+          "yield_pct": 4.17401
+        },
+        {
+          "tenor": "26.5Y",
+          "years": 26.5,
+          "yield_pct": 4.17541
+        },
+        {
+          "tenor": "26.75Y",
+          "years": 26.75,
+          "yield_pct": 4.1767
+        },
+        {
+          "tenor": "27Y",
+          "years": 27,
+          "yield_pct": 4.17789
+        },
+        {
+          "tenor": "27.25Y",
+          "years": 27.25,
+          "yield_pct": 4.17898
+        },
+        {
+          "tenor": "27.5Y",
+          "years": 27.5,
+          "yield_pct": 4.17997
+        },
+        {
+          "tenor": "27.75Y",
+          "years": 27.75,
+          "yield_pct": 4.18086
+        },
+        {
+          "tenor": "28Y",
+          "years": 28,
+          "yield_pct": 4.18166
+        },
+        {
+          "tenor": "28.25Y",
+          "years": 28.25,
+          "yield_pct": 4.18236
+        },
+        {
+          "tenor": "28.5Y",
+          "years": 28.5,
+          "yield_pct": 4.18298
+        },
+        {
+          "tenor": "28.75Y",
+          "years": 28.75,
+          "yield_pct": 4.18351
+        },
+        {
+          "tenor": "29Y",
+          "years": 29,
+          "yield_pct": 4.18396
+        },
+        {
+          "tenor": "29.25Y",
+          "years": 29.25,
+          "yield_pct": 4.18433
+        },
+        {
+          "tenor": "29.5Y",
+          "years": 29.5,
+          "yield_pct": 4.18463
+        },
+        {
+          "tenor": "29.75Y",
+          "years": 29.75,
+          "yield_pct": 4.18486
+        },
+        {
+          "tenor": "30Y",
+          "years": 30,
+          "yield_pct": 4.18502
+        }
+      ],
+      "notes": [
+        "Source one-row CSV SHA-256: a13038cc9a7713a86afa4bd2ebd10faeb0c218e49bd251c5b160e024773e88db."
+      ]
+    },
+    {
+      "id": "hk",
+      "title": "Hong Kong SAR",
+      "currency": "HKD",
+      "market_date": "2026-11-11",
+      "asof": "HKSAR institutional HKD Government Bonds only. Published tenor buckets, not bonds' exact remaining lives. Annualized yield implied by average accepted price.",
+      "retrieved_at": "2026-11-19T02:08:12+08:00",
+      "source_url": "https://www.info.gov.hk/gia/general/202611/11/P2026111100497p.htm",
+      "curve_type": "Government bond tender YTM",
+      "units": "percent_per_annum",
+      "status": "AVAILABLE",
+      "rights": {
+        "status": "APPROVED_PUBLIC_DISPLAY",
+        "source_url": "https://data.gov.hk/en/terms-and-conditions",
+        "reason": "Four attributed numerical results from HKSAR Government press records, announced by HKMA on its behalf (official Government News and Media Information System feed). No third-party data, document, or underlying price/yield bulletin reproduced."
+      },
+      "nodes": [
+        {
+          "tenor": "3Y",
+          "years": 3,
+          "yield_pct": 3.821
+        },
+        {
+          "tenor": "5Y",
+          "years": 5,
+          "yield_pct": 3.27
+        },
+        {
+          "tenor": "7Y",
+          "years": 7,
+          "yield_pct": 3.708
+        },
+        {
+          "tenor": "10Y",
+          "years": 10,
+          "yield_pct": 4.164
+        }
+      ]
+    },
+    {
+      "id": "kr",
+      "title": "South Korea / KTB",
+      "currency": "KRW",
+      "market_date": "2026-11-16",
+      "asof": "Republic of Korea Ministry of Economy and Finance KTB reopening results in published tenor buckets. Weighted-average award at 2/3/5/10/20/30Y; stated award at 50Y.",
+      "retrieved_at": "2026-11-19T02:08:12+08:00",
+      "source_url": "https://mofe.go.kr/st/fnancstats/detailTbFnancstatsView.do?bbsId=MOSFBBS_000000000049&menuNo=6050300&searchSn=MOSF_000000000079970",
+      "curve_type": "KTB auction award yield",
+      "units": "percent_per_annum",
+      "status": "AVAILABLE",
+      "rights": {
+        "status": "APPROVED_PUBLIC_DISPLAY",
+        "source_url": "https://www.copyright.or.kr/eng/laws-and-treaties/copyright-law/chapter02/section01.do",
+        "reason": "Only seven numerical facts from central government award announcements, attributed to the Ministry. Korean Copyright Act Art. 7 government announcements / simple facts; no press text, attachments or third-party quotes copied. No claim of KOGL licensing of the pages."
+      },
+      "nodes": [
+        {
+          "tenor": "2Y",
+          "years": 2,
+          "yield_pct": 3.725
+        },
+        {
+          "tenor": "3Y",
+          "years": 3,
+          "yield_pct": 3.65
+        },
+        {
+          "tenor": "5Y",
+          "years": 5,
+          "yield_pct": 3.935
+        },
+        {
+          "tenor": "10Y",
+          "years": 10,
+          "yield_pct": 3.985
+        },
+        {
+          "tenor": "20Y",
+          "years": 20,
+          "yield_pct": 4.155
+        },
+        {
+          "tenor": "30Y",
+          "years": 30,
+          "yield_pct": 4.07
+        },
+        {
+          "tenor": "50Y",
+          "years": 50,
+          "yield_pct": 4.04
+        }
+      ]
+    },
+    {
+      "id": "nz",
+      "title": "New Zealand / NZGB",
+      "currency": "NZD",
+      "market_date": "2026-11-05",
+      "asof": "Treasury Debt Management nominal bond tenders 1012, 1014 and 1016. Weighted average accepted yields; years are actual calendar days from each tender's settlement divided by 365.25.",
+      "retrieved_at": "2026-11-19T02:08:12+08:00",
+      "source_url": "https://debtmanagement.treasury.govt.nz/tender/nominal-bond-tender-1016",
+      "curve_type": "Nominal tender award YTM",
+      "units": "percent_per_annum",
+      "status": "AVAILABLE",
+      "rights": {
+        "status": "APPROVED_PUBLIC_DISPLAY",
+        "source_url": "https://debtmanagement.treasury.govt.nz/copyright-and-licensing",
+        "reason": "New Zealand Debt Management, The Treasury; Crown copyright under CC BY 4.0. Observation values unchanged; tenor transformation and new chart noted."
+      },
+      "nodes": [
+        {
+          "tenor": "2029-04-20",
+          "years": 2.518822724,
+          "yield_pct": 4.1218
+        },
+        {
+          "tenor": "2031-05-15",
+          "years": 4.544832307,
+          "yield_pct": 4.475
+        },
+        {
+          "tenor": "2032-05-15",
+          "years": 5.511293634,
+          "yield_pct": 4.2163
+        },
+        {
+          "tenor": "2036-05-15",
+          "years": 9.546885695,
+          "yield_pct": 4.9948
+        },
+        {
+          "tenor": "2037-04-15",
+          "years": 10.428473648,
+          "yield_pct": 4.7249
+        },
+        {
+          "tenor": "2051-05-15",
+          "years": 24.509240246,
+          "yield_pct": 5.2605
+        }
+      ],
+      "notes": [
+        "Tender 1012 settlement: 2026-10-13.",
+        "Tender 1014 settlement: 2026-10-28.",
+        "Tender 1016 settlement: 2026-11-10."
+      ]
+    },
+    {
+      "id": "mx",
+      "title": "Mexico / CETES, Bonos",
+      "currency": "MXN",
+      "market_date": "2026-10-31",
+      "asof": "Banco de Mexico SIE CF114 primary average rates (October 2026). Date is month end, not a trading or auction date. Nominal CETES and fixed-rate Bonos only; published maturity categories, with CETES days/365.",
+      "retrieved_at": "2026-11-19T02:08:12+08:00",
+      "source_url": "https://www.banxico.org.mx/SieInternet/consultarDirectorioInternetAction.do?accion=consultarCuadro&idCuadro=CF114",
+      "curve_type": "Monthly auction averages",
+      "units": "percent_per_annum",
+      "status": "AVAILABLE",
+      "rights": {
+        "status": "APPROVED_PUBLIC_DISPLAY",
+        "source_url": "https://www.banxico.org.mx/footer-en/disclaimer-usage-policies-ban.html",
+        "reason": "Banco de Mexico published monthly average government securities rates; numerical facts attributed and reproduced unchanged under its usage policy. No indication of endorsement."
+      },
+      "nodes": [
+        {
+          "tenor": "28D",
+          "years": 0.07671232876712329,
+          "yield_pct": 6.16
+        },
+        {
+          "tenor": "91D",
+          "years": 0.2493150684931507,
+          "yield_pct": 6.7
+        },
+        {
+          "tenor": "182D",
+          "years": 0.4986301369863014,
+          "yield_pct": 6.85
+        },
+        {
+          "tenor": "364D",
+          "years": 0.9972602739726028,
+          "yield_pct": 7.23
+        },
+        {
+          "tenor": "3Y",
+          "years": 3,
+          "yield_pct": 8
+        },
+        {
+          "tenor": "5Y",
+          "years": 5,
+          "yield_pct": 8.78
+        },
+        {
+          "tenor": "10Y",
+          "years": 10,
+          "yield_pct": 9.25
+        },
+        {
+          "tenor": "20Y",
+          "years": 20,
+          "yield_pct": 9.94
+        },
+        {
+          "tenor": "30Y",
+          "years": 30,
+          "yield_pct": 10.15
+        }
+      ],
+      "notes": [
+        "Rates are the official October 2026 averages, not contemporaneous auction fills or secondary market quotes. The source table has no 7Y value in October; it is not filled."
+      ]
+    },
+    {
+      "id": "br",
+      "title": "Brazil / Tesouro",
+      "currency": "BRL",
+      "market_date": "2026-11-17",
+      "asof": "Treasury Direct Taxa Compra Manha, 2026-11-17. Non-coupon Tesouro Prefixado for 2027/2028/2029/2031/2032 and fixed-rate coupon-bond Tesouro Prefixado com Juros Semestrais for 2033/2035/2037. Years are days from the reference date divided by 365.25. Each value is the published retail quote in its original convention, not a fitted curve.",
+      "retrieved_at": "2026-11-19T02:08:12+08:00",
+      "source_url": "https://www.tesourotransparente.gov.br/ckan/dataset/df56aa42-484a-4a59-8184-7676580c81e3",
+      "curve_type": "Retail fixed-rate posted yields",
+      "units": "percent_per_annum",
+      "status": "AVAILABLE",
+      "rights": {
+        "status": "APPROVED_PUBLIC_DISPLAY",
+        "source_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "reason": "Tesouro Nacional, Treasury Direct historical prices and rates (ODbL 1.0). Selected rates retain the source attribution and database terms, not the repository's MIT code license. P-Curve maps tenors and redraws."
+      },
+      "nodes": [
+        {
+          "tenor": "2027-01-01",
+          "years": 0.123203285,
+          "yield_pct": 13.57
+        },
+        {
+          "tenor": "2028-01-01",
+          "years": 1.122518823,
+          "yield_pct": 14.43
+        },
+        {
+          "tenor": "2029-01-01",
+          "years": 2.124572211,
+          "yield_pct": 14.98
+        },
+        {
+          "tenor": "2031-01-01",
+          "years": 4.123203285,
+          "yield_pct": 15.27
+        },
+        {
+          "tenor": "2032-01-01",
+          "years": 5.122518823,
+          "yield_pct": 15.35
+        },
+        {
+          "tenor": "2033-01-01",
+          "years": 6.124572211,
+          "yield_pct": 15.39
+        },
+        {
+          "tenor": "2035-01-01",
+          "years": 8.123203285,
+          "yield_pct": 15.39
+        },
+        {
+          "tenor": "2037-01-01",
+          "years": 10.124572211,
+          "yield_pct": 15.29
+        }
+      ],
+      "notes": [
+        "Line connects published same-date issue yields for visualization. The long-dated coupon bonds and short-dated zero-coupon bonds are not the same cashflow instrument."
+      ]
+    },
+    {
+      "id": "cgb",
+      "title": "China · CGB",
+      "currency": "CNY",
+      "market_date": "2026-11-18",
+      "asof": "Latest auction in this set; individual dates and source URLs are in point_observations.",
+      "retrieved_at": "2026-11-19T02:08:12+08:00",
+      "source_url": "https://zwgls.mof.gov.cn/ywgg/index.htm",
+      "curve_type": "MOF primary auction rates",
+      "units": "percent_per_annum",
+      "status": "AVAILABLE",
+      "rights": {
+        "status": "APPROVED_PUBLIC_DISPLAY",
+        "source_url": "https://zwgls.mof.gov.cn/",
+        "reason": "Limited to cited numerical facts from Ministry of Finance of China issuance announcements. The publisher's site permits reprinting with attribution. Does not cover CCDC market data."
+      },
+      "nodes": [
+        {
+          "tenor": "91D",
+          "years": 0.2493150684931507,
+          "yield_pct": 1.11
+        },
+        {
+          "tenor": "182D",
+          "years": 0.4986301369863014,
+          "yield_pct": 1.12
+        },
+        {
+          "tenor": "1Y",
+          "years": 1,
+          "yield_pct": 1.16
+        },
+        {
+          "tenor": "2Y",
+          "years": 2,
+          "yield_pct": 1.21
+        },
+        {
+          "tenor": "3Y",
+          "years": 3,
+          "yield_pct": 1.22
+        },
+        {
+          "tenor": "5Y",
+          "years": 5,
+          "yield_pct": 1.5
+        },
+        {
+          "tenor": "7Y",
+          "years": 7,
+          "yield_pct": 1.4
+        },
+        {
+          "tenor": "10Y",
+          "years": 10,
+          "yield_pct": 1.56
+        },
+        {
+          "tenor": "30Y",
+          "years": 30,
+          "yield_pct": 2.06
+        },
+        {
+          "tenor": "49Y",
+          "years": 49,
+          "yield_pct": 2.15
+        }
+      ],
+      "notes": [
+        "Treasury bill terms in days mapped to years as days/365. Reopening tenor is remaining years, not the original issue term.",
+        "Under MOF rate-auction rules, new-issue coupons shown are rounded weighted winning rates, not secondary-market YTM or identical rates for every allotment.",
+        "The 7Y is a sovereign special bond. Do not fit or join observations from different dates.",
+        "91D: 2026 MOF announcement 199: annualized original bill issue yield.",
+        "182D: 2026 MOF announcement 198: annualized original bill issue yield.",
+        "3Y: 2026 MOF announcement 194: auction-set new-issue coupon (rounded weighted auction rate).",
+        "7Y: 2026 MOF announcement 197: auction-set new-issue coupon, special sovereign issue.",
+        "10Y: 2026 MOF announcement 195: auction-set new-issue coupon (rounded weighted auction rate).",
+        "49Y: 2026 MOF announcement 190: annualized reopening yield, original 50Y issue, ~49 years remaining.",
+        "1Y: 2026 MOF announcement 174: auction-set new-issue coupon.",
+        "2Y: 2026 MOF announcement 103: auction-set new-issue coupon.",
+        "5Y: 2026 MOF announcement 58: auction-set new-issue coupon.",
+        "30Y: 2026 MOF announcement 184: auction-set new-issue coupon."
+      ]
+    }
+  ],
+  "point_observations": {
+    "hk": {
+      "3Y": {
+        "market_date": "2026-10-21",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100512p.htm"
+      },
+      "7Y": {
+        "market_date": "2026-11-11",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/11/P2026111100497p.htm"
+      },
+      "10Y": {
+        "market_date": "2026-10-21",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100513p.htm"
+      },
+      "5Y": {
+        "market_date": "2026-08-12",
+        "source_url": "https://www.info.gov.hk/gia/general/202608/12/P2026081200499p.htm"
+      }
+    },
+    "kr": {
+      "3Y": {
+        "market_date": "2026-11-09",
+        "source_url": "https://mofe.go.kr/st/fnancstats/detailTbFnancstatsView.do?bbsId=MOSFBBS_000000000049&menuNo=6050300&searchSn=MOSF_000000000079902"
+      },
+      "10Y": {
+        "market_date": "2026-11-16",
+        "source_url": "https://mofe.go.kr/st/fnancstats/detailTbFnancstatsView.do?bbsId=MOSFBBS_000000000049&menuNo=6050300&searchSn=MOSF_000000000079970"
+      },
+      "50Y": {
+        "market_date": "2026-11-13",
+        "source_url": "https://mofe.go.kr/st/fnancstats/detailTbFnancstatsView.do?bbsId=MOSFBBS_000000000049&menuNo=6050300&searchSn=MOSF_000000000079954"
+      },
+      "2Y": {
+        "market_date": "2026-11-02",
+        "source_url": "https://mofe.go.kr/st/fnancstats/detailTbFnancstatsView.do?bbsId=MOSFBBS_000000000049&menuNo=6050300&searchSn=MOSF_000000000079825"
+      },
+      "5Y": {
+        "market_date": "2026-10-26",
+        "source_url": "https://mofe.go.kr/st/fnancstats/detailTbFnancstatsView.do?bbsId=MOSFBBS_000000000049&menuNo=6050300&searchSn=MOSF_000000000079754"
+      },
+      "20Y": {
+        "market_date": "2026-10-27",
+        "source_url": "https://mofe.go.kr/st/fnancstats/detailTbFnancstatsView.do?bbsId=MOSFBBS_000000000049&menuNo=6050300&searchSn=MOSF_000000000079771"
+      },
+      "30Y": {
+        "market_date": "2026-11-03",
+        "source_url": "https://mofe.go.kr/st/fnancstats/detailTbFnancstatsView.do?bbsId=MOSFBBS_000000000049&menuNo=6050300&searchSn=MOSF_000000000079845"
+      }
+    },
+    "nz": {
+      "2032-05-15": {
+        "market_date": "2026-11-05",
+        "source_url": "https://debtmanagement.treasury.govt.nz/tender/nominal-bond-tender-1016"
+      },
+      "2037-04-15": {
+        "market_date": "2026-11-05",
+        "source_url": "https://debtmanagement.treasury.govt.nz/tender/nominal-bond-tender-1016"
+      },
+      "2051-05-15": {
+        "market_date": "2026-11-05",
+        "source_url": "https://debtmanagement.treasury.govt.nz/tender/nominal-bond-tender-1016"
+      },
+      "2029-04-20": {
+        "market_date": "2026-10-08",
+        "source_url": "https://debtmanagement.treasury.govt.nz/tender/nominal-bond-tender-1012"
+      },
+      "2031-05-15": {
+        "market_date": "2026-10-22",
+        "source_url": "https://debtmanagement.treasury.govt.nz/tender/nominal-bond-tender-1014"
+      },
+      "2036-05-15": {
+        "market_date": "2026-10-22",
+        "source_url": "https://debtmanagement.treasury.govt.nz/tender/nominal-bond-tender-1014"
+      }
+    },
+    "cgb": {
+      "91D": {
+        "market_date": "2026-11-18",
+        "source_url": "https://zwgls.mof.gov.cn/ywgg/202611/t20261118_4004935.htm"
+      },
+      "182D": {
+        "market_date": "2026-11-18",
+        "source_url": "https://zwgls.mof.gov.cn/ywgg/202611/t20261118_4004932.htm"
+      },
+      "3Y": {
+        "market_date": "2026-11-13",
+        "source_url": "https://zwgls.mof.gov.cn/ywgg/202611/t20261113_4004659.htm"
+      },
+      "7Y": {
+        "market_date": "2026-11-18",
+        "source_url": "https://zwgls.mof.gov.cn/ywgg/202611/t20261118_4004931.htm"
+      },
+      "10Y": {
+        "market_date": "2026-11-13",
+        "source_url": "https://zwgls.mof.gov.cn/ywgg/202611/t20261113_4004660.htm"
+      },
+      "49Y": {
+        "market_date": "2026-11-06",
+        "source_url": "https://zwgls.mof.gov.cn/ywgg/202611/t20261106_4004206.htm"
+      },
+      "1Y": {
+        "market_date": "2026-10-14",
+        "source_url": "https://zwgls.mof.gov.cn/ywgg/202610/t20261014_4002819.htm"
+      },
+      "2Y": {
+        "market_date": "2026-06-24",
+        "source_url": "https://zwgls.mof.gov.cn/ywgg/202606/t20260624_3992217.htm"
+      },
+      "5Y": {
+        "market_date": "2026-04-14",
+        "source_url": "https://zwgls.mof.gov.cn/ywgg/202604/t20260414_3987577.htm"
+      },
+      "30Y": {
+        "market_date": "2026-10-23",
+        "source_url": "https://zwgls.mof.gov.cn/ywgg/202610/t20261023_4003386.htm"
+      }
+    }
+  }
+}

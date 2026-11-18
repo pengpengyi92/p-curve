@@ -156,3 +156,17 @@ HOLD until their separate publication review passes.
   auction diamonds and retail quotes cannot substitute for secondary closes.
 - **Next Action:** obtain permission for comparable secondary-market sources
   before adding a common-date comparison. Trading usefulness: **UNMEASURED**.
+
+## Expanded 2026 coverage — 2026-11-19
+
+- **Baseline:** 789 distinct source nodes; three markets had no exact 10Y
+  point in the fixed sidebar; charts had a linear maturity axis.
+- **Change:** select from 2026, add native tenors, show actual sidebar tenors
+  and spread the short end visually while retaining the full maturity range.
+- **Measure:** source anchors, unique node counts, seven README embeds, all
+  sidebar rates present, old and new byte-exact replay and Chrome rendering.
+- **Result:** 923 distinct nodes across the same 14 series; all 90 local tests
+  pass. Older SVG files are unchanged.
+- **Trade-off:** yield and date conventions remain heterogeneous; the scale
+  does not preserve slope per pixel. Calendar/trading comparability is **UNMEASURED**.
+- **Next Action:** pursue rights-reviewed same-day secondary-market coverage.
