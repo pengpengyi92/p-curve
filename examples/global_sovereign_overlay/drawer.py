@@ -39,6 +39,9 @@ class Drawer:
 
         heading = "Global sovereign yield curves"
         timestamp = snapshot["generated_at"]
+        target = snapshot.get("target_market_date")
+        subtitle = (f"Target market date: {target}   |   Compiled: {timestamp}"
+                    if target else f"Snapshot cutoff: {timestamp}   |   Market observation dates vary")
         description = " | ".join(
             f"{m['title']}: {m['market_date'] or 'not displayed'}; {m['curve_type']}" for m in markets
         )
@@ -55,7 +58,7 @@ class Drawer:
             '<g font-family="system-ui, sans-serif">',
             text(56, 56, f"P-CURVE  /  {mode}", 13, color="#236a74", extra=' font-weight="700"'),
             text(56, 96, heading, 34, extra=' font-weight="720"'),
-            text(56, 120, f"Snapshot cutoff: {timestamp}   |   Market observation dates vary", 14),
+            text(56, 120, subtitle, 14),
             text(left, top - 10, "Annual nominal yield (%)", 13, extra=' font-weight="650"'),
         ]
         for tick in range(low, high + 1, y_step):
@@ -88,11 +91,15 @@ class Drawer:
             value = f'{vals[10]:.3f}%' if 10 in vals else "-"
             yy = 186 + 62 * i
             no_data = "Not displayed: rights HOLD" if market["rights"]["status"] == "HOLD" else "No verified nodes"
+            date_label = market["market_date"] if available else no_data
+            if available and target:
+                role = "Target date" if market["market_date"] == target else "Earlier reference"
+                date_label = f"{date_label}  /  {role}"
             bits += [
                 f'<path d="M882,{yy - 4}h22" stroke="{color}" stroke-width="3"{dash}/>',
                 text(914, yy, market["title"], 15, color=color, extra=' font-weight="720"'),
                 text(1163, yy, value, 14, extra=' text-anchor="end" font-weight="700"'),
-                text(914, yy + 17, market["market_date"] if available else no_data, 12),
+                text(914, yy + 17, date_label, 12),
                 text(914, yy + 33, market["curve_type"], 12),
             ]
             if not available:

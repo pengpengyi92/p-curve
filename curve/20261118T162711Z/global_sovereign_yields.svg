@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1216" height="708" viewBox="0 0 1216 708" role="img" aria-labelledby="title desc">
+<title id="title">Global sovereign yield curves</title>
+<desc id="desc">2026-11-19T00:27:11+08:00. US · UST: 2026-11-17; Nominal par (CMT) | China · CGB: not displayed; ChinaBond nominal YTM | Japan · JGB: 2026-11-17; Constant-maturity yield | UK · Gilts: not displayed; BoE nominal spot | Australia · AGS: 2026-11-11; RBA F2 nominal yield | Singapore · SGS: 2026-11-18; SGS benchmark bond yield. Maturity in years. Annual nominal yield in percent.</desc>
+<rect width="1216" height="708" fill="#f4f7f8"/>
+<rect x="26" y="24" width="1164" height="660" rx="8" fill="white" stroke="#dee6ea"/>
+<g font-family="system-ui, sans-serif">
+<text x="56" y="56" font-size="13" fill="#236a74" font-weight="700">P-CURVE  /  PUBLIC SNAPSHOT</text>
+<text x="56" y="96" font-size="34" fill="#24394a" font-weight="720">Global sovereign yield curves</text>
+<text x="56" y="120" font-size="14" fill="#24394a">Target market date: 2026-11-18   |   Compiled: 2026-11-19T00:27:11+08:00</text>
+<text x="82" y="141" font-size="13" fill="#24394a" font-weight="650">Annual nominal yield (%)</text>
+<path d="M82,533.00H827" stroke="#e1e8ed"/>
+<text x="73" y="537.00" font-size="13" fill="#24394a" text-anchor="end">0</text>
+<path d="M82,469.33H827" stroke="#e1e8ed"/>
+<text x="73" y="473.33" font-size="13" fill="#24394a" text-anchor="end">1</text>
+<path d="M82,405.67H827" stroke="#e1e8ed"/>
+<text x="73" y="409.67" font-size="13" fill="#24394a" text-anchor="end">2</text>
+<path d="M82,342.00H827" stroke="#e1e8ed"/>
+<text x="73" y="346.00" font-size="13" fill="#24394a" text-anchor="end">3</text>
+<path d="M82,278.33H827" stroke="#e1e8ed"/>
+<text x="73" y="282.33" font-size="13" fill="#24394a" text-anchor="end">4</text>
+<path d="M82,214.67H827" stroke="#e1e8ed"/>
+<text x="73" y="218.67" font-size="13" fill="#24394a" text-anchor="end">5</text>
+<path d="M82,151.00H827" stroke="#e1e8ed"/>
+<text x="73" y="155.00" font-size="13" fill="#24394a" text-anchor="end">6</text>
+<path d="M82.00,151V533" stroke="#e9eef0"/>
+<text x="82.00" y="553" font-size="13" fill="#24394a" text-anchor="middle">0</text>
+<path d="M111.80,151V533" stroke="#e9eef0"/>
+<text x="111.80" y="553" font-size="13" fill="#24394a" text-anchor="middle">2</text>
+<path d="M156.50,151V533" stroke="#e9eef0"/>
+<text x="156.50" y="553" font-size="13" fill="#24394a" text-anchor="middle">5</text>
+<path d="M231.00,151V533" stroke="#e9eef0"/>
+<text x="231.00" y="553" font-size="13" fill="#24394a" text-anchor="middle">10</text>
+<path d="M305.50,151V533" stroke="#e9eef0"/>
+<text x="305.50" y="553" font-size="13" fill="#24394a" text-anchor="middle">15</text>
+<path d="M380.00,151V533" stroke="#e9eef0"/>
+<text x="380.00" y="553" font-size="13" fill="#24394a" text-anchor="middle">20</text>
+<path d="M454.50,151V533" stroke="#e9eef0"/>
+<text x="454.50" y="553" font-size="13" fill="#24394a" text-anchor="middle">25</text>
+<path d="M529.00,151V533" stroke="#e9eef0"/>
+<text x="529.00" y="553" font-size="13" fill="#24394a" text-anchor="middle">30</text>
+<path d="M603.50,151V533" stroke="#e9eef0"/>
+<text x="603.50" y="553" font-size="13" fill="#24394a" text-anchor="middle">35</text>
+<path d="M678.00,151V533" stroke="#e9eef0"/>
+<text x="678.00" y="553" font-size="13" fill="#24394a" text-anchor="middle">40</text>
+<path d="M752.50,151V533" stroke="#e9eef0"/>
+<text x="752.50" y="553" font-size="13" fill="#24394a" text-anchor="middle">45</text>
+<path d="M827.00,151V533" stroke="#e9eef0"/>
+<text x="827.00" y="553" font-size="13" fill="#24394a" text-anchor="middle">50</text>
+<path d="M82,151V533H827" stroke="#a5b6c2" fill="none"/>
+<text x="454.5" y="580" font-size="14" fill="#24394a" text-anchor="middle">Maturity (years)</text>
+<path d="M856,151V573" stroke="#e1e8ed"/>
+<text x="881" y="158" font-size="12" fill="#24394a" font-weight="700">MARKET / OBSERVATION DATE</text>
+<text x="1163" y="158" font-size="12" fill="#24394a" font-weight="700" text-anchor="end">10Y</text>
+<path d="M882,182h22" stroke="#23538c" stroke-width="3"/>
+<text x="914" y="186" font-size="15" fill="#23538c" font-weight="720">US · UST</text>
+<text x="1163" y="186" font-size="14" fill="#24394a" text-anchor="end" font-weight="700">5.100%</text>
+<text x="914" y="203" font-size="12" fill="#24394a">2026-11-17  /  Earlier reference</text>
+<text x="914" y="219" font-size="12" fill="#24394a">Nominal par (CMT)</text>
+<g id="ust" fill="#23538c">
+<path d="M83.24,272.60 L83.86,263.05 L84.48,261.78 L85.72,257.32 L86.97,257.96 L89.45,252.23 L96.90,240.13 L111.80,227.40 L126.70,224.85 L156.50,221.03 L186.30,215.30 L231.00,208.30 L380.00,182.83 L529.00,185.38" stroke="#23538c" stroke-width="2.8" fill="none"/>
+<circle cx="83.24" cy="272.60" r="2.4"><title>US · UST, 1M: 4.09%</title></circle>
+<circle cx="83.86" cy="263.05" r="2.4"><title>US · UST, 1.5M: 4.24%</title></circle>
+<circle cx="84.48" cy="261.78" r="2.4"><title>US · UST, 2M: 4.26%</title></circle>
+<circle cx="85.72" cy="257.32" r="2.4"><title>US · UST, 3M: 4.33%</title></circle>
+<circle cx="86.97" cy="257.96" r="2.4"><title>US · UST, 4M: 4.32%</title></circle>
+<circle cx="89.45" cy="252.23" r="2.4"><title>US · UST, 6M: 4.41%</title></circle>
+<circle cx="96.90" cy="240.13" r="2.4"><title>US · UST, 1Y: 4.6%</title></circle>
+<circle cx="111.80" cy="227.40" r="2.4"><title>US · UST, 2Y: 4.8%</title></circle>
+<circle cx="126.70" cy="224.85" r="2.4"><title>US · UST, 3Y: 4.84%</title></circle>
+<circle cx="156.50" cy="221.03" r="2.4"><title>US · UST, 5Y: 4.9%</title></circle>
+<circle cx="186.30" cy="215.30" r="2.4"><title>US · UST, 7Y: 4.99%</title></circle>
+<circle cx="231.00" cy="208.30" r="2.4"><title>US · UST, 10Y: 5.1%</title></circle>
+<circle cx="380.00" cy="182.83" r="2.4"><title>US · UST, 20Y: 5.5%</title></circle>
+<circle cx="529.00" cy="185.38" r="2.4"><title>US · UST, 30Y: 5.46%</title></circle>
+</g>
+<path d="M882,244h22" stroke="#627480" stroke-width="3" stroke-dasharray="2 4"/>
+<text x="914" y="248" font-size="15" fill="#627480" font-weight="720">China · CGB</text>
+<text x="1163" y="248" font-size="14" fill="#24394a" text-anchor="end" font-weight="700">-</text>
+<text x="914" y="265" font-size="12" fill="#24394a">Not displayed: rights HOLD</text>
+<text x="914" y="281" font-size="12" fill="#24394a">ChinaBond nominal YTM</text>
+<path d="M882,306h22" stroke="#71419a" stroke-width="3" stroke-dasharray="3 3"/>
+<text x="914" y="310" font-size="15" fill="#71419a" font-weight="720">Japan · JGB</text>
+<text x="1163" y="310" font-size="14" fill="#24394a" text-anchor="end" font-weight="700">2.925%</text>
+<text x="914" y="327" font-size="12" fill="#24394a">2026-11-17  /  Earlier reference</text>
+<text x="914" y="343" font-size="12" fill="#24394a">Constant-maturity yield</text>
+<g id="jgb" fill="#71419a">
+<path d="M96.90,426.68 L111.80,413.43 L126.70,406.62 L141.60,395.86 L156.50,388.22 L171.40,381.92 L186.30,374.09 L201.20,364.86 L216.10,356.07 L231.00,346.77 L305.50,310.93 L380.00,291.89 L454.50,272.73 L529.00,273.94 L678.00,271.90" stroke="#71419a" stroke-width="2.8" fill="none" stroke-dasharray="3 3"/>
+<circle cx="96.90" cy="426.68" r="2.4"><title>Japan · JGB, 1Y: 1.67%</title></circle>
+<circle cx="111.80" cy="413.43" r="2.4"><title>Japan · JGB, 2Y: 1.878%</title></circle>
+<circle cx="126.70" cy="406.62" r="2.4"><title>Japan · JGB, 3Y: 1.985%</title></circle>
+<circle cx="141.60" cy="395.86" r="2.4"><title>Japan · JGB, 4Y: 2.154%</title></circle>
+<circle cx="156.50" cy="388.22" r="2.4"><title>Japan · JGB, 5Y: 2.274%</title></circle>
+<circle cx="171.40" cy="381.92" r="2.4"><title>Japan · JGB, 6Y: 2.373%</title></circle>
+<circle cx="186.30" cy="374.09" r="2.4"><title>Japan · JGB, 7Y: 2.496%</title></circle>
+<circle cx="201.20" cy="364.86" r="2.4"><title>Japan · JGB, 8Y: 2.641%</title></circle>
+<circle cx="216.10" cy="356.07" r="2.4"><title>Japan · JGB, 9Y: 2.779%</title></circle>
+<circle cx="231.00" cy="346.77" r="2.4"><title>Japan · JGB, 10Y: 2.925%</title></circle>
+<circle cx="305.50" cy="310.93" r="2.4"><title>Japan · JGB, 15Y: 3.488%</title></circle>
+<circle cx="380.00" cy="291.89" r="2.4"><title>Japan · JGB, 20Y: 3.787%</title></circle>
+<circle cx="454.50" cy="272.73" r="2.4"><title>Japan · JGB, 25Y: 4.088%</title></circle>
+<circle cx="529.00" cy="273.94" r="2.4"><title>Japan · JGB, 30Y: 4.069%</title></circle>
+<circle cx="678.00" cy="271.90" r="2.4"><title>Japan · JGB, 40Y: 4.101%</title></circle>
+</g>
+<path d="M882,368h22" stroke="#627480" stroke-width="3" stroke-dasharray="2 4"/>
+<text x="914" y="372" font-size="15" fill="#627480" font-weight="720">UK · Gilts</text>
+<text x="1163" y="372" font-size="14" fill="#24394a" text-anchor="end" font-weight="700">-</text>
+<text x="914" y="389" font-size="12" fill="#24394a">Not displayed: rights HOLD</text>
+<text x="914" y="405" font-size="12" fill="#24394a">BoE nominal spot</text>
+<path d="M882,430h22" stroke="#a06013" stroke-width="3" stroke-dasharray="5 4"/>
+<text x="914" y="434" font-size="15" fill="#a06013" font-weight="720">Australia · AGS</text>
+<text x="1163" y="434" font-size="14" fill="#24394a" text-anchor="end" font-weight="700">5.044%</text>
+<text x="914" y="451" font-size="12" fill="#24394a">2026-11-11  /  Earlier reference</text>
+<text x="914" y="467" font-size="12" fill="#24394a">RBA F2 nominal yield</text>
+<g id="au" fill="#a06013">
+<path d="M111.80,226.89 L126.70,231.67 L156.50,230.14 L231.00,211.87" stroke="#a06013" stroke-width="2.8" fill="none" stroke-dasharray="5 4"/>
+<circle cx="111.80" cy="226.89" r="2.4"><title>Australia · AGS, 2Y: 4.808%</title></circle>
+<circle cx="126.70" cy="231.67" r="2.4"><title>Australia · AGS, 3Y: 4.733%</title></circle>
+<circle cx="156.50" cy="230.14" r="2.4"><title>Australia · AGS, 5Y: 4.757%</title></circle>
+<circle cx="231.00" cy="211.87" r="2.4"><title>Australia · AGS, 10Y: 5.044%</title></circle>
+</g>
+<path d="M882,492h22" stroke="#23744e" stroke-width="3" stroke-dasharray="14 4"/>
+<text x="914" y="496" font-size="15" fill="#23744e" font-weight="720">Singapore · SGS</text>
+<text x="1163" y="496" font-size="14" fill="#24394a" text-anchor="end" font-weight="700">2.290%</text>
+<text x="914" y="513" font-size="12" fill="#24394a">2026-11-18  /  Target date</text>
+<text x="914" y="529" font-size="12" fill="#24394a">SGS benchmark bond yield</text>
+<g id="sg" fill="#23744e">
+<path d="M111.80,406.94 L156.50,401.21 L231.00,387.20 L305.50,384.02 L380.00,384.66 L529.00,381.47 L827.00,368.10" stroke="#23744e" stroke-width="2.8" fill="none" stroke-dasharray="14 4"/>
+<circle cx="111.80" cy="406.94" r="2.4"><title>Singapore · SGS, 2Y: 1.98%</title></circle>
+<circle cx="156.50" cy="401.21" r="2.4"><title>Singapore · SGS, 5Y: 2.07%</title></circle>
+<circle cx="231.00" cy="387.20" r="2.4"><title>Singapore · SGS, 10Y: 2.29%</title></circle>
+<circle cx="305.50" cy="384.02" r="2.4"><title>Singapore · SGS, 15Y: 2.34%</title></circle>
+<circle cx="380.00" cy="384.66" r="2.4"><title>Singapore · SGS, 20Y: 2.33%</title></circle>
+<circle cx="529.00" cy="381.47" r="2.4"><title>Singapore · SGS, 30Y: 2.38%</title></circle>
+<circle cx="827.00" cy="368.10" r="2.4"><title>Singapore · SGS, 50Y: 2.59%</title></circle>
+</g>
+<path d="M56,598H1160" stroke="#dee6ea"/>
+<text x="56" y="621" font-size="12" fill="#24394a">Local-currency rates in source conventions: par, interpolated bond yields, benchmark yields and spot yields are not interchangeable.</text>
+<text x="56" y="642" font-size="12" fill="#24394a">Markers are source nodes. Lines are visual guides; no filled gaps, extrapolation or tradeable cross-currency spread.</text>
+<text x="56" y="663" font-size="12" fill="#24394a">Sources: US Treasury, Japan MOF, RBA, MAS. See data and rights notes. Curated by pengyi.</text>
+</g></svg>

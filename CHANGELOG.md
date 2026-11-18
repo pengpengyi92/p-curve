@@ -1,5 +1,10 @@
 # Changelog
 
+## November 18 target edition — 2026-11-19 (package remains 0.2.1)
+
+- Replace the README figure with a November 18 target-date view. Label earlier
+  points as references and keep the original November 19 snapshot immutable.
+
 ## Global sovereign overlay — 2026-11-19 (package remains 0.2.1)
 
 - Add a config-backed collector and an offline comparison drawer, with a

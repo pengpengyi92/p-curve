@@ -1,12 +1,11 @@
 # Global sovereign yield overlay
 
-**Snapshot cutoff:** `2026-11-19T00:17:13+08:00`, or `2026-11-18T16:17:13Z`.
-The cutoff dates the example. The markets did not share a close, and these are
-not November 19 end-of-day observations or intraday prices.
+| Edition | Chart and config | Timing |
+| --- | --- | --- |
+| 2026-11-18 target (README default) | [Chart](../../curve/20261118T162711Z/global_sovereign_yields.svg) · [Config](../../curve/20261118T162711Z/config.json) | Compiled `2026-11-19T00:27:11+08:00`; only Singapore is a verified Nov 18 public observation. Earlier curves are labeled references. |
+| 2026-11-19 snapshot (archive) | [Chart](../../curve/20261118T161713Z/global_sovereign_yields.svg) · [Config](../../curve/20261118T161713Z/config.json) | Original cutoff `2026-11-19T00:17:13+08:00`, original bytes retained; no Nov 19 market observation. |
 
-- [Frozen public config](../../curve/20261118T161713Z/config.json)
-- [Single shared-axis chart](../../curve/20261118T161713Z/global_sovereign_yields.svg)
-- [Source and rights review](../../curve/DATA_LICENSES.md)
+The markets did not share a close. See the [source and rights review](../../curve/DATA_LICENSES.md).
 
 ## Reproduce
 
@@ -18,9 +17,17 @@ python -m examples.global_sovereign_overlay.generate
 
 [DataCollector](data_collector.py) reads the JSON and validates its dates,
 identifiers, units, nodes and public-display status; it performs **no network
-calls**. [Drawer](drawer.py) consumes that snapshot and draws one SVG. It
+calls**. It accepts an optional `target_market_date` distinct from compilation
+time, and rejects observations later than the target. [Drawer](drawer.py)
+labels earlier observations as references and draws one SVG. It
 reuses existing bytes on an exact rerun and will not overwrite a differing
 chart. A new observation belongs in a new dated config and file.
+
+To rerender the archived edition byte-for-byte into an unused local path:
+
+```sh
+python -m examples.global_sovereign_overlay.generate --config curve/20261118T161713Z/config.json --output build/archive-20261119.svg
+```
 
 For a lawful personal research file under the ignored `build/` directory:
 

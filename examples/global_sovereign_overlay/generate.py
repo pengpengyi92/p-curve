@@ -7,7 +7,7 @@ from .data_collector import DataCollector
 from .drawer import Drawer
 
 ROOT = Path(__file__).resolve().parents[2]
-EDITION = ROOT / "curve/20261118T161713Z"
+EDITION = ROOT / "curve/20261118T162711Z"
 BUILD = ROOT / "build"
 
 

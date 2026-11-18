@@ -7,15 +7,15 @@
 
 ## Global sovereign yield curves
 
-**Snapshot cutoff: `2026-11-19T00:17:13+08:00` (Asia/Shanghai).**
-The plot shows the latest source rows verified by that cutoff, not a common
-2026-11-19 market close. China and the UK are listed without plotted values
-pending redistribution clearance.
+**Target market date: `2026-11-18` · Compiled: `2026-11-19T00:27:11+08:00`.**
+Singapore is the verified November 18 public observation. The US, Japan and
+Australia are earlier reference curves, with their actual dates labeled.
+China and the UK remain source-only pending redistribution clearance.
 
-[![Global sovereign yields: US, Japan, Australia and Singapore; China and UK source-only](curve/20261118T161713Z/global_sovereign_yields.svg)](curve/20261118T161713Z/global_sovereign_yields.svg)
+[![November 18 sovereign yields: Singapore and earlier US, Japan and Australia references](curve/20261118T162711Z/global_sovereign_yields.svg)](curve/20261118T162711Z/global_sovereign_yields.svg)
 
 [Run the Python example](examples/global_sovereign_overlay/README.md) ·
-[Dated config and source notes](curve/20261118T161713Z/config.json) ·
+[Dated config and source notes](curve/20261118T162711Z/config.json) ·
 [Contribute a data adapter](https://github.com/pengpengyi92/p-curve/issues/10)
 
 Contains information from **Daily SGS Prices**, accessed on 2026-11-19 from
