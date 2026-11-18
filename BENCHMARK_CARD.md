@@ -141,3 +141,18 @@ HOLD until their separate publication review passes.
   can evolve while historical snapshots remain immutable.
 - **Next Action:** preserve selected public deployment and both Git syncs. New
   collection events still need new dated source/rights reviews and timestamps.
+
+## Regional sovereign portfolio — 2026-11-19
+
+- **Baseline:** one six-market README chart; 83 offline tests.
+- **Change:** six regional/classification panels from three frozen inputs,
+  using the existing `DataCollector` and `Drawer`.
+- **Measure:** geography coverage, dates and rights, selected source values,
+  preserved native node counts, auction markers, six byte-exact replays and
+  all three prior overlay replays; desktop SVG render check.
+- **Result:** 88 local tests pass; 14 distinct series and 789 native observations
+  represented. All six panels rendered in an isolated Chromium profile.
+- **Trade-off:** published local-currency conventions and market dates differ;
+  auction diamonds and retail quotes cannot substitute for secondary closes.
+- **Next Action:** obtain permission for comparable secondary-market sources
+  before adding a common-date comparison. Trading usefulness: **UNMEASURED**.

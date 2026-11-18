@@ -1,0 +1,67 @@
+{
+  "sources": [
+    "curve/20261118T172919Z/config.json",
+    "curve/developed/euro-area/20261114T155232Z/snapshot.json"
+  ],
+  "window": [
+    "2026-10-01",
+    "2026-11-18"
+  ],
+  "groups": {
+    "advanced": {
+      "title": "Advanced economies",
+      "markets": [
+        "ust",
+        "ca",
+        "uk",
+        "au",
+        "jgb",
+        "hk",
+        "sg",
+        "kr"
+      ]
+    },
+    "asia": {
+      "title": "Asia: sovereign yield comparison",
+      "markets": [
+        "hk",
+        "sg",
+        "cgb",
+        "jgb",
+        "kr"
+      ]
+    },
+    "americas": {
+      "title": "Americas: sovereign yield comparison",
+      "markets": [
+        "ust",
+        "ca",
+        "mx",
+        "br"
+      ]
+    },
+    "europe": {
+      "title": "Europe: sovereign yield comparison",
+      "markets": [
+        "uk",
+        "euro_area_aaa",
+        "euro_area_all"
+      ]
+    },
+    "oceania": {
+      "title": "Oceania: sovereign yield comparison",
+      "markets": [
+        "au",
+        "nz"
+      ]
+    },
+    "emerging": {
+      "title": "Emerging and developing markets",
+      "markets": [
+        "cgb",
+        "mx",
+        "br"
+      ]
+    }
+  }
+}

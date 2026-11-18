@@ -1,5 +1,11 @@
 # Changelog
 
+## Regional sovereign portfolio — 2026-11-19 (package remains 0.2.1)
+
+- Keep the six-market figure and add six grouped exhibits with real dated observations.
+- Reuse the offline collector and drawer, with per-point issuer sources for
+  all auction series and byte-exact regeneration of previous charts.
+
 ## November six-market comparison — 2026-11-19 (package remains 0.2.1)
 
 - Add OGL-licensed UK nominal par yields and attributed China MOF auction

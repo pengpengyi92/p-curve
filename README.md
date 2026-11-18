@@ -28,6 +28,58 @@ UK data: Bank of England Database, licensed under the
 China auction statistics: Ministry of Finance of China. See
 [per-point citations and conventions](examples/global_sovereign_overlay/README.md).
 
+## Sovereign curve portfolio
+
+**October–November 2026 · Compiled: `2026-11-19T01:51:56+08:00`.**
+Six comparisons built from frozen public observations. Maturity is in years
+and local-currency yield or rate is in annual percent. Each panel has its own
+scale. Diamonds are primary auction observations, not a secondary-market
+curve; lines only connect published nodes. This is not a common market close.
+
+[Source and rights register](curve/portfolio/20261118T175156Z/README.md) · [Frozen inputs and groups](curve/portfolio/20261118T175156Z/portfolio.json) ·
+[Python reproduction](examples/global_sovereign_overlay/README.md#reproduce-the-regional-portfolio)
+
+### Advanced economies
+
+United States, Canada, United Kingdom, Australia, Japan, Hong Kong SAR,
+Singapore and South Korea. Classification follows the IMF WEO.
+
+![Advanced economies: eight sovereign yield series](curve/portfolio/20261118T175156Z/advanced.svg)
+
+### Asia
+
+Hong Kong SAR, Singapore, China, Japan and South Korea, including the
+official Hong Kong, China and Korea tender observations.
+
+![Asia: Hong Kong SAR, Singapore, China, Japan and South Korea](curve/portfolio/20261118T175156Z/asia.svg)
+
+### Americas
+
+United States and Canada benchmark curves, Mexico auction yields and Brazil
+Treasury Direct morning quotes.
+
+![Americas: United States, Canada, Mexico and Brazil](curve/portfolio/20261118T175156Z/americas.svg)
+
+### Europe
+
+UK nominal par yields alongside the ECB's AAA and all-rated euro area
+government fitted zero rates. These are not the same quote convention.
+
+![Europe: UK par yields and two ECB euro area spot curves](curve/portfolio/20261118T175156Z/europe.svg)
+
+### Oceania
+
+Australian government bond yields and New Zealand nominal bond tender yields.
+
+![Oceania: Australia and New Zealand](curve/portfolio/20261118T175156Z/oceania.svg)
+
+### Emerging and developing markets
+
+China, Mexico and Brazil. Cross-country gaps are descriptive, not
+executable spreads.
+
+![Emerging and developing markets: China, Mexico and Brazil](curve/portfolio/20261118T175156Z/emerging.svg)
+
 ## About P-Curve
 
 Author: **pengyi** · Curated & visualized by pengyi. Official data sources are

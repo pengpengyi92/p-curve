@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1216" height="708" viewBox="0 0 1216 708" role="img" aria-labelledby="title desc">
+<title id="title">Americas: sovereign yield comparison</title>
+<desc id="desc">2026-11-19T01:51:56+08:00. US · UST: 2026-11-17; Nominal par (CMT) | Canada / GoC: 2026-11-16; Benchmark bond YTM | Mexico / CETES, Bonos: 2026-11-17; CETES and nominal Bono auction | Brazil / Tesouro: 2026-11-17; Retail posted morning yield. Maturity in years. Annual nominal yield in percent.</desc>
+<rect width="1216" height="708" fill="#f4f7f8"/>
+<rect x="26" y="24" width="1164" height="660" rx="8" fill="white" stroke="#dee6ea"/>
+<g font-family="system-ui, sans-serif">
+<text x="56" y="56" font-size="13" fill="#236a74" font-weight="700">P-CURVE  /  PUBLIC SNAPSHOT</text>
+<text x="56" y="96" font-size="34" fill="#24394a" font-weight="720">Americas: sovereign yield comparison</text>
+<text x="56" y="120" font-size="14" fill="#24394a">Regional portfolio  /  Compiled: 2026-11-19T01:51:56+08:00  /  Asynchronous observations</text>
+<text x="82" y="141" font-size="13" fill="#24394a" font-weight="650">Annual nominal rate / yield (%)</text>
+<path d="M82,533.00H827" stroke="#e1e8ed"/>
+<text x="73" y="537.00" font-size="13" fill="#24394a" text-anchor="end">0</text>
+<path d="M82,461.38H827" stroke="#e1e8ed"/>
+<text x="73" y="465.38" font-size="13" fill="#24394a" text-anchor="end">3</text>
+<path d="M82,389.75H827" stroke="#e1e8ed"/>
+<text x="73" y="393.75" font-size="13" fill="#24394a" text-anchor="end">6</text>
+<path d="M82,318.12H827" stroke="#e1e8ed"/>
+<text x="73" y="322.12" font-size="13" fill="#24394a" text-anchor="end">9</text>
+<path d="M82,246.50H827" stroke="#e1e8ed"/>
+<text x="73" y="250.50" font-size="13" fill="#24394a" text-anchor="end">12</text>
+<path d="M82,174.88H827" stroke="#e1e8ed"/>
+<text x="73" y="178.88" font-size="13" fill="#24394a" text-anchor="end">15</text>
+<path d="M82.00,151V533" stroke="#e9eef0"/>
+<text x="82.00" y="553" font-size="13" fill="#24394a" text-anchor="middle">0</text>
+<path d="M131.67,151V533" stroke="#e9eef0"/>
+<text x="131.67" y="553" font-size="13" fill="#24394a" text-anchor="middle">2</text>
+<path d="M206.17,151V533" stroke="#e9eef0"/>
+<text x="206.17" y="553" font-size="13" fill="#24394a" text-anchor="middle">5</text>
+<path d="M330.33,151V533" stroke="#e9eef0"/>
+<text x="330.33" y="553" font-size="13" fill="#24394a" text-anchor="middle">10</text>
+<path d="M454.50,151V533" stroke="#e9eef0"/>
+<text x="454.50" y="553" font-size="13" fill="#24394a" text-anchor="middle">15</text>
+<path d="M578.67,151V533" stroke="#e9eef0"/>
+<text x="578.67" y="553" font-size="13" fill="#24394a" text-anchor="middle">20</text>
+<path d="M702.83,151V533" stroke="#e9eef0"/>
+<text x="702.83" y="553" font-size="13" fill="#24394a" text-anchor="middle">25</text>
+<path d="M827.00,151V533" stroke="#e9eef0"/>
+<text x="827.00" y="553" font-size="13" fill="#24394a" text-anchor="middle">30</text>
+<path d="M82,151V533H827" stroke="#a5b6c2" fill="none"/>
+<text x="454.5" y="580" font-size="14" fill="#24394a" text-anchor="middle">Maturity (years)</text>
+<path d="M856,151V583" stroke="#e1e8ed"/>
+<text x="881" y="158" font-size="12" fill="#24394a" font-weight="700">MARKET / OBSERVATION DATE</text>
+<text x="1163" y="158" font-size="12" fill="#24394a" font-weight="700" text-anchor="end">10Y</text>
+<path d="M882,182h22" stroke="#23538c" stroke-width="3"/>
+<text x="914" y="186" font-size="15" fill="#23538c" font-weight="720">US · UST</text>
+<text x="1163" y="203" font-size="14" fill="#24394a" text-anchor="end" font-weight="700">5.100%</text>
+<text x="914" y="203" font-size="12" fill="#24394a">2026-11-17</text>
+<text x="914" y="219" font-size="12" fill="#24394a">USD / Nominal par (CMT)</text>
+<g id="ust" fill="#23538c">
+<path d="M84.07,435.35 L85.10,431.77 L86.14,431.29 L88.21,429.62 L90.28,429.86 L94.42,427.71 L106.83,423.18 L131.67,418.40 L156.50,417.44 L206.17,416.01 L255.83,413.86 L330.33,411.24 L578.67,401.69 L827.00,402.64" stroke="#23538c" stroke-width="2.8" fill="none"/>
+<circle cx="84.07" cy="435.35" r="2.4"><title>US · UST, 1M: 4.09%</title></circle>
+<circle cx="85.10" cy="431.77" r="2.4"><title>US · UST, 1.5M: 4.24%</title></circle>
+<circle cx="86.14" cy="431.29" r="2.4"><title>US · UST, 2M: 4.26%</title></circle>
+<circle cx="88.21" cy="429.62" r="2.4"><title>US · UST, 3M: 4.33%</title></circle>
+<circle cx="90.28" cy="429.86" r="2.4"><title>US · UST, 4M: 4.32%</title></circle>
+<circle cx="94.42" cy="427.71" r="2.4"><title>US · UST, 6M: 4.41%</title></circle>
+<circle cx="106.83" cy="423.18" r="2.4"><title>US · UST, 1Y: 4.6%</title></circle>
+<circle cx="131.67" cy="418.40" r="2.4"><title>US · UST, 2Y: 4.8%</title></circle>
+<circle cx="156.50" cy="417.44" r="2.4"><title>US · UST, 3Y: 4.84%</title></circle>
+<circle cx="206.17" cy="416.01" r="2.4"><title>US · UST, 5Y: 4.9%</title></circle>
+<circle cx="255.83" cy="413.86" r="2.4"><title>US · UST, 7Y: 4.99%</title></circle>
+<circle cx="330.33" cy="411.24" r="2.4"><title>US · UST, 10Y: 5.1%</title></circle>
+<circle cx="578.67" cy="401.69" r="2.4"><title>US · UST, 20Y: 5.5%</title></circle>
+<circle cx="827.00" cy="402.64" r="2.4"><title>US · UST, 30Y: 5.46%</title></circle>
+</g>
+<path d="M882,244h22" stroke="#a23f32" stroke-width="3" stroke-dasharray="9 4"/>
+<text x="914" y="248" font-size="15" fill="#a23f32" font-weight="720">Canada / GoC</text>
+<text x="1163" y="265" font-size="14" fill="#24394a" text-anchor="end" font-weight="700">3.810%</text>
+<text x="914" y="265" font-size="12" fill="#24394a">2026-11-16</text>
+<text x="914" y="281" font-size="12" fill="#24394a">CAD / Benchmark bond YTM</text>
+<g id="ca" fill="#a23f32">
+<path d="M131.67,454.21 L156.50,452.06 L206.17,448.72 L255.83,446.57 L330.33,442.04" stroke="#a23f32" stroke-width="2.8" fill="none" stroke-dasharray="9 4"/>
+<circle cx="131.67" cy="454.21" r="2.4"><title>Canada / GoC, 2Y: 3.3%</title></circle>
+<circle cx="156.50" cy="452.06" r="2.4"><title>Canada / GoC, 3Y: 3.39%</title></circle>
+<circle cx="206.17" cy="448.72" r="2.4"><title>Canada / GoC, 5Y: 3.53%</title></circle>
+<circle cx="255.83" cy="446.57" r="2.4"><title>Canada / GoC, 7Y: 3.62%</title></circle>
+<circle cx="330.33" cy="442.04" r="2.4"><title>Canada / GoC, 10Y: 3.81%</title></circle>
+</g>
+<polygon points="893.00,301.00 898.00,306.00 893.00,311.00 888.00,306.00" fill="#fff" stroke="#71419a" stroke-width="2"></polygon>
+<text x="914" y="310" font-size="15" fill="#71419a" font-weight="720">Mexico / CETES, Bonos</text>
+<text x="1163" y="327" font-size="14" fill="#24394a" text-anchor="end" font-weight="700">-</text>
+<text x="914" y="327" font-size="12" fill="#24394a">2026-11-17</text>
+<text x="914" y="343" font-size="12" fill="#24394a">MXN / CETES and nominal Bono auction</text>
+<g id="mx" fill="#71419a">
+<polygon points="83.91,380.21 88.91,385.21 83.91,390.21 78.91,385.21" fill="#fff" stroke="#71419a" stroke-width="2"><title>Mexico / CETES, Bonos, 28D: 6.19% | auction on 2026-11-17</title></polygon>
+<polygon points="88.19,373.05 93.19,378.05 88.19,383.05 83.19,378.05" fill="#fff" stroke="#71419a" stroke-width="2"><title>Mexico / CETES, Bonos, 91D: 6.49% | auction on 2026-11-17</title></polygon>
+<polygon points="94.38,368.75 99.38,373.75 94.38,378.75 89.38,373.75" fill="#fff" stroke="#71419a" stroke-width="2"><title>Mexico / CETES, Bonos, 182D: 6.67% | auction on 2026-11-17</title></polygon>
+<polygon points="106.77,362.07 111.77,367.07 106.77,372.07 101.77,367.07" fill="#fff" stroke="#71419a" stroke-width="2"><title>Mexico / CETES, Bonos, 364D: 6.95% | auction on 2026-11-17</title></polygon>
+<polygon points="156.50,337.00 161.50,342.00 156.50,347.00 151.50,342.00" fill="#fff" stroke="#71419a" stroke-width="2"><title>Mexico / CETES, Bonos, 3Y: 8% | auction on 2026-11-17</title></polygon>
+</g>
+<path d="M882,368h22" stroke="#176f73" stroke-width="3" stroke-dasharray="12 4 3 4"/>
+<text x="914" y="372" font-size="15" fill="#176f73" font-weight="720">Brazil / Tesouro</text>
+<text x="1163" y="389" font-size="14" fill="#24394a" text-anchor="end" font-weight="700">-</text>
+<text x="914" y="389" font-size="12" fill="#24394a">2026-11-17</text>
+<text x="914" y="405" font-size="12" fill="#24394a">BRL / Retail posted morning yield</text>
+<g id="br" fill="#176f73">
+<path d="M85.06,209.02 L109.88,188.48 L134.76,175.35 L184.39,168.43 L209.21,166.52" stroke="#176f73" stroke-width="2.8" fill="none" stroke-dasharray="12 4 3 4"/>
+<circle cx="85.06" cy="209.02" r="2.4"><title>Brazil / Tesouro, 2027-01-01: 13.57%</title></circle>
+<circle cx="109.88" cy="188.48" r="2.4"><title>Brazil / Tesouro, 2028-01-01: 14.43%</title></circle>
+<circle cx="134.76" cy="175.35" r="2.4"><title>Brazil / Tesouro, 2029-01-01: 14.98%</title></circle>
+<circle cx="184.39" cy="168.43" r="2.4"><title>Brazil / Tesouro, 2031-01-01: 15.27%</title></circle>
+<circle cx="209.21" cy="166.52" r="2.4"><title>Brazil / Tesouro, 2032-01-01: 15.35%</title></circle>
+</g>
+<path d="M56,598H1160" stroke="#dee6ea"/>
+<text x="56" y="621" font-size="12" fill="#24394a">Diamonds: primary auction observations, not a secondary-market curve. Conventions and dates differ.</text>
+<text x="56" y="642" font-size="12" fill="#24394a">Markers are source nodes. Lines are visual guides; no filled gaps, extrapolation or tradeable cross-currency spread.</text>
+<text x="56" y="663" font-size="12" fill="#24394a">Sources: see the portfolio source and rights register. Curated by pengyi.</text>
+</g></svg>

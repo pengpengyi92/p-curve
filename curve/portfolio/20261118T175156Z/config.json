@@ -1,0 +1,313 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_id": "20261118T175156Z",
+  "title": "Sovereign curve portfolio: additional observations",
+  "generated_at": "2026-11-19T01:51:56+08:00",
+  "notes": [
+    "Only attributed, selected public observations. Percent per annum, in each market's currency and original quote convention.",
+    "Shared by the portfolio views; older public sources are referenced in portfolio.json and unchanged.",
+    "Auction observations must not be connected or read as a secondary-market curve."
+  ],
+  "markets": [
+    {
+      "id": "ca",
+      "title": "Canada / GoC",
+      "currency": "CAD",
+      "market_date": "2026-11-16",
+      "asof": "Bank of Canada nominal benchmark closing mid-market yields. Retain the 2Y, 3Y, 5Y, 7Y and 10Y published buckets; omit the long-term bucket with no fixed tenor and real yields.",
+      "retrieved_at": "2026-11-19T01:51:56+08:00",
+      "source_url": "https://www.bankofcanada.ca/rates/interest-rates/canadian-bonds/",
+      "curve_type": "Benchmark bond YTM",
+      "units": "percent_per_annum",
+      "status": "AVAILABLE",
+      "rights": {
+        "status": "APPROVED_PUBLIC_DISPLAY",
+        "source_url": "https://www.bankofcanada.ca/terms/",
+        "reason": "Bank of Canada source attribution; numerical observations unchanged, chart redrawn. No association or endorsement."
+      },
+      "nodes": [
+        {
+          "tenor": "2Y",
+          "years": 2,
+          "yield_pct": 3.3
+        },
+        {
+          "tenor": "3Y",
+          "years": 3,
+          "yield_pct": 3.39
+        },
+        {
+          "tenor": "5Y",
+          "years": 5,
+          "yield_pct": 3.53
+        },
+        {
+          "tenor": "7Y",
+          "years": 7,
+          "yield_pct": 3.62
+        },
+        {
+          "tenor": "10Y",
+          "years": 10,
+          "yield_pct": 3.81
+        }
+      ]
+    },
+    {
+      "id": "hk",
+      "title": "Hong Kong SAR",
+      "currency": "HKD",
+      "market_date": "2026-11-11",
+      "asof": "HKSAR institutional HKD Government Bonds only. Published tenor buckets, not bonds' exact remaining lives. Annualized yield implied by average accepted price.",
+      "retrieved_at": "2026-11-19T01:51:56+08:00",
+      "source_url": "https://www.info.gov.hk/gia/general/202611/11/P2026111100497p.htm",
+      "curve_type": "Government bond tender YTM",
+      "units": "percent_per_annum",
+      "status": "AVAILABLE",
+      "rights": {
+        "status": "APPROVED_PUBLIC_DISPLAY",
+        "source_url": "https://data.gov.hk/en/terms-and-conditions",
+        "reason": "Three attributed numerical results from HKSAR Government press records, announced by HKMA on its behalf (official Government News and Media Information System feed). No third-party data, document, or underlying price/yield bulletin reproduced."
+      },
+      "nodes": [
+        {
+          "tenor": "3Y",
+          "years": 3,
+          "yield_pct": 3.821
+        },
+        {
+          "tenor": "7Y",
+          "years": 7,
+          "yield_pct": 3.708
+        },
+        {
+          "tenor": "10Y",
+          "years": 10,
+          "yield_pct": 4.164
+        }
+      ]
+    },
+    {
+      "id": "kr",
+      "title": "South Korea / KTB",
+      "currency": "KRW",
+      "market_date": "2026-11-16",
+      "asof": "Republic of Korea Ministry of Economy and Finance KTB reopening results, in published tenor buckets. Weighted-average award at 3Y and 10Y; stated award at 50Y.",
+      "retrieved_at": "2026-11-19T01:51:56+08:00",
+      "source_url": "https://mofe.go.kr/st/fnancstats/detailTbFnancstatsView.do?bbsId=MOSFBBS_000000000049&menuNo=6050300&searchSn=MOSF_000000000079970",
+      "curve_type": "KTB auction award yield",
+      "units": "percent_per_annum",
+      "status": "AVAILABLE",
+      "rights": {
+        "status": "APPROVED_PUBLIC_DISPLAY",
+        "source_url": "https://www.copyright.or.kr/eng/laws-and-treaties/copyright-law/chapter02/section01.do",
+        "reason": "Only three numerical facts from central government award announcements, attributed to the Ministry. Korean Copyright Act Art. 7 government announcements / simple facts; no press text, attachments or third-party quotes copied. No claim of KOGL licensing of the pages."
+      },
+      "nodes": [
+        {
+          "tenor": "3Y",
+          "years": 3,
+          "yield_pct": 3.65
+        },
+        {
+          "tenor": "10Y",
+          "years": 10,
+          "yield_pct": 3.985
+        },
+        {
+          "tenor": "50Y",
+          "years": 50,
+          "yield_pct": 4.04
+        }
+      ]
+    },
+    {
+      "id": "nz",
+      "title": "New Zealand / NZGB",
+      "currency": "NZD",
+      "market_date": "2026-11-05",
+      "asof": "Treasury Debt Management nominal bond tender 1016. Weighted average accepted yields; actual maturity x coordinates are calendar days from settlement on 2026-11-10 divided by 365.25.",
+      "retrieved_at": "2026-11-19T01:51:56+08:00",
+      "source_url": "https://debtmanagement.treasury.govt.nz/tender/nominal-bond-tender-1016",
+      "curve_type": "Nominal tender award YTM",
+      "units": "percent_per_annum",
+      "status": "AVAILABLE",
+      "rights": {
+        "status": "APPROVED_PUBLIC_DISPLAY",
+        "source_url": "https://debtmanagement.treasury.govt.nz/copyright-and-licensing",
+        "reason": "New Zealand Debt Management, The Treasury; Crown copyright under CC BY 4.0. Observation values unchanged; tenor transformation and new chart noted."
+      },
+      "nodes": [
+        {
+          "tenor": "2032-05-15",
+          "years": 5.511293634,
+          "yield_pct": 4.2163
+        },
+        {
+          "tenor": "2037-04-15",
+          "years": 10.428473648,
+          "yield_pct": 4.7249
+        },
+        {
+          "tenor": "2051-05-15",
+          "years": 24.509240246,
+          "yield_pct": 5.2605
+        }
+      ]
+    },
+    {
+      "id": "mx",
+      "title": "Mexico / CETES, Bonos",
+      "currency": "MXN",
+      "market_date": "2026-11-17",
+      "asof": "Banco de Mexico government securities auction: CETES auction yield and nominal fixed-rate Bono yield; bill tenors are days/365, 3Y is published bucket. No Udibonos.",
+      "retrieved_at": "2026-11-19T01:51:56+08:00",
+      "source_url": "https://www.banxico.org.mx/tipcamb/llenarTasasInteresAction.do?idioma=sp",
+      "curve_type": "CETES and nominal Bono auction",
+      "units": "percent_per_annum",
+      "status": "AVAILABLE",
+      "rights": {
+        "status": "APPROVED_PUBLIC_DISPLAY",
+        "source_url": "https://www.banxico.org.mx/footer-en/disclaimer-usage-policies-ban.html",
+        "reason": "Banco de Mexico published sovereign auction facts; URL and attribution retained per usage policies, without endorsement or changes to rates."
+      },
+      "nodes": [
+        {
+          "tenor": "28D",
+          "years": 0.07671232876712329,
+          "yield_pct": 6.19
+        },
+        {
+          "tenor": "91D",
+          "years": 0.2493150684931507,
+          "yield_pct": 6.49
+        },
+        {
+          "tenor": "182D",
+          "years": 0.4986301369863014,
+          "yield_pct": 6.67
+        },
+        {
+          "tenor": "364D",
+          "years": 0.9972602739726028,
+          "yield_pct": 6.95
+        },
+        {
+          "tenor": "3Y",
+          "years": 3,
+          "yield_pct": 8
+        }
+      ]
+    },
+    {
+      "id": "br",
+      "title": "Brazil / Tesouro",
+      "currency": "BRL",
+      "market_date": "2026-11-17",
+      "asof": "Tesouro Prefixado (non-coupon), Taxa Compra Manha field from Tesouro Direto. Maturity x coordinates are days from the reference date divided by 365.25; not a wholesale sovereign curve.",
+      "retrieved_at": "2026-11-19T01:51:56+08:00",
+      "source_url": "https://www.tesourotransparente.gov.br/ckan/dataset/df56aa42-484a-4a59-8184-7676580c81e3",
+      "curve_type": "Retail posted morning yield",
+      "units": "percent_per_annum",
+      "status": "AVAILABLE",
+      "rights": {
+        "status": "APPROVED_PUBLIC_DISPLAY",
+        "source_url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "reason": "Tesouro Nacional, Treasury Direct historical prices and rates (ODbL 1.0). Selected rates retain the source attribution and database terms, not the repository's MIT code license. P-Curve maps tenors and redraws."
+      },
+      "nodes": [
+        {
+          "tenor": "2027-01-01",
+          "years": 0.123203285,
+          "yield_pct": 13.57
+        },
+        {
+          "tenor": "2028-01-01",
+          "years": 1.122518823,
+          "yield_pct": 14.43
+        },
+        {
+          "tenor": "2029-01-01",
+          "years": 2.124572211,
+          "yield_pct": 14.98
+        },
+        {
+          "tenor": "2031-01-01",
+          "years": 4.123203285,
+          "yield_pct": 15.27
+        },
+        {
+          "tenor": "2032-01-01",
+          "years": 5.122518823,
+          "yield_pct": 15.35
+        }
+      ]
+    }
+  ],
+  "point_observations": {
+    "hk": {
+      "3Y": {
+        "market_date": "2026-10-21",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100512p.htm"
+      },
+      "7Y": {
+        "market_date": "2026-11-11",
+        "source_url": "https://www.info.gov.hk/gia/general/202611/11/P2026111100497p.htm"
+      },
+      "10Y": {
+        "market_date": "2026-10-21",
+        "source_url": "https://www.info.gov.hk/gia/general/202610/21/P2026102100513p.htm"
+      }
+    },
+    "kr": {
+      "3Y": {
+        "market_date": "2026-11-09",
+        "source_url": "https://mofe.go.kr/st/fnancstats/detailTbFnancstatsView.do?bbsId=MOSFBBS_000000000049&menuNo=6050300&searchSn=MOSF_000000000079902"
+      },
+      "10Y": {
+        "market_date": "2026-11-16",
+        "source_url": "https://mofe.go.kr/st/fnancstats/detailTbFnancstatsView.do?bbsId=MOSFBBS_000000000049&menuNo=6050300&searchSn=MOSF_000000000079970"
+      },
+      "50Y": {
+        "market_date": "2026-11-13",
+        "source_url": "https://mofe.go.kr/st/fnancstats/detailTbFnancstatsView.do?bbsId=MOSFBBS_000000000049&menuNo=6050300&searchSn=MOSF_000000000079954"
+      }
+    },
+    "nz": {
+      "2032-05-15": {
+        "market_date": "2026-11-05",
+        "source_url": "https://debtmanagement.treasury.govt.nz/tender/nominal-bond-tender-1016"
+      },
+      "2037-04-15": {
+        "market_date": "2026-11-05",
+        "source_url": "https://debtmanagement.treasury.govt.nz/tender/nominal-bond-tender-1016"
+      },
+      "2051-05-15": {
+        "market_date": "2026-11-05",
+        "source_url": "https://debtmanagement.treasury.govt.nz/tender/nominal-bond-tender-1016"
+      }
+    },
+    "mx": {
+      "28D": {
+        "market_date": "2026-11-17",
+        "source_url": "https://www.banxico.org.mx/tipcamb/llenarTasasInteresAction.do?idioma=sp"
+      },
+      "91D": {
+        "market_date": "2026-11-17",
+        "source_url": "https://www.banxico.org.mx/tipcamb/llenarTasasInteresAction.do?idioma=sp"
+      },
+      "182D": {
+        "market_date": "2026-11-17",
+        "source_url": "https://www.banxico.org.mx/tipcamb/llenarTasasInteresAction.do?idioma=sp"
+      },
+      "364D": {
+        "market_date": "2026-11-17",
+        "source_url": "https://www.banxico.org.mx/tipcamb/llenarTasasInteresAction.do?idioma=sp"
+      },
+      "3Y": {
+        "market_date": "2026-11-17",
+        "source_url": "https://www.banxico.org.mx/tipcamb/llenarTasasInteresAction.do?idioma=sp"
+      }
+    }
+  }
+}

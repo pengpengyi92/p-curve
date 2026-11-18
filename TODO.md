@@ -1,5 +1,12 @@
 # Verifiable priorities
 
+## P1 — regional sovereign portfolio (2026-11-19)
+
+- [x] Add six README exhibits with available, attributed observations and reproduce
+  them offline from an immutable edition.
+- [ ] Compare synchronized secondary-market dates for auction-only markets once
+  rights-reviewed fixing sources exist; do not connect present auction points.
+
 ## P1 — grouped sovereign archive (2026-11-14)
 
 - [x] Add separate group indexes, dated geography pages and exact public source metadata.

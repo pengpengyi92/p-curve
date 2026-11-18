@@ -12,11 +12,13 @@ STYLES = (
     ("#176f73", "12 4 3 4"),
     ("#a06013", "5 4"),
     ("#23744e", "14 4"),
+    ("#9c3e73", "7 3 2 3"),
+    ("#526321", "2 5"),
 )
 
 
 class Drawer:
-    def render(self, snapshot: dict, *, public: bool = True) -> str:
+    def render(self, snapshot: dict, *, public: bool = True, portfolio: bool = False) -> str:
         markets = snapshot["markets"]
         point_observations = snapshot.get("point_observations", {})
         if public and any(m["rights"]["status"] == "HOLD" and m["nodes"] for m in markets):
@@ -27,7 +29,8 @@ class Drawer:
         high = max(low + 1, ceil(max(n["yield_pct"] for n in nodes) + 0.15))
         y_step = max(1, ceil((high - low) / 7))
         left, top, right, bottom = 82, 151, 827, 533
-        height = max(708, 230 + 67 * len(markets))
+        footer = max(598, 186 + 62 * (len(markets) - 1) + 54)
+        height = max(footer + 110, 230 + 67 * len(markets))
 
         def x(years: float) -> float:
             return left + (right - left) * years / max_years
@@ -43,6 +46,8 @@ class Drawer:
         target = snapshot.get("target_market_date")
         subtitle = (f"Target market date: {target}   |   Compiled: {timestamp}"
                     if target else f"Snapshot cutoff: {timestamp}   |   Market observation dates vary")
+        if portfolio:
+            subtitle = f"Regional portfolio  /  Compiled: {timestamp}  /  Asynchronous observations"
         description = " | ".join(
             f"{m['title']}: {m['market_date'] or 'not displayed'}; {m['curve_type']}" for m in markets
         )
@@ -79,7 +84,8 @@ class Drawer:
         bits.extend([
             f'<path d="M{left},{top}V{bottom}H{right}" stroke="#a5b6c2" fill="none"/>',
             text((left + right) / 2, 580, "Maturity (years)", 14, extra=' text-anchor="middle"'),
-            '<path d="M856,151V573" stroke="#e1e8ed"/>',
+            f'<path d="M856,151V{max(573, footer - 15)}" stroke="#e1e8ed"/>'
+            if portfolio else '<path d="M856,151V573" stroke="#e1e8ed"/>',
             text(881, 158, "MARKET / OBSERVATION DATE", 12, extra=' font-weight="700"'),
             text(1163, 158, "10Y", 12, extra=' font-weight="700" text-anchor="end"'),
         ])
@@ -102,13 +108,18 @@ class Drawer:
             if observations:
                 dates = [o["market_date"] for o in observations.values()]
                 date_label = f"{min(dates)} to {max(dates)}"
+                if portfolio and min(dates) == max(dates):
+                    date_label = min(dates)
                 legend = _diamond(893, yy - 4, color)
+            curve_label = market["curve_type"]
+            if portfolio:
+                curve_label = f"{market['currency']} / {curve_label.partition(';')[0]}"
             bits += [
                 legend,
                 text(914, yy, market["title"], 15, color=color, extra=' font-weight="720"'),
-                text(1163, yy, value, 14, extra=' text-anchor="end" font-weight="700"'),
+                text(1163, yy + 17 if portfolio else yy, value, 14, extra=' text-anchor="end" font-weight="700"'),
                 text(914, yy + 17, date_label, 12),
-                text(914, yy + 33, market["curve_type"], 12),
+                text(914, yy + 33, curve_label, 12),
             ]
             if not available:
                 continue
@@ -128,7 +139,8 @@ class Drawer:
                     label += f" | auction on {observations[node['tenor']]['market_date']}"
                     markers.append(_diamond(px, py, color, label))
                 else:
-                    markers.append(f'<circle cx="{px:.2f}" cy="{py:.2f}" r="2.4"><title>{escape(label)}</title></circle>')
+                    radius = 1.1 if portfolio and len(market["nodes"]) > 100 else 2.4
+                    markers.append(f'<circle cx="{px:.2f}" cy="{py:.2f}" r="{radius}"><title>{escape(label)}</title></circle>')
             bits += [
                 f'<g id="{market["id"]}" fill="{color}">',
                 *([] if observations else [f'<path d="{" ".join(parts)}" stroke="{color}" stroke-width="2.8" fill="none"{dash}/>']),
@@ -141,17 +153,22 @@ class Drawer:
         sources = ("Sources: US Treasury, China MOF, Japan MOF, Bank of England Database, RBA and MAS."
                    if point_observations else "Sources: US Treasury, Japan MOF, RBA, MAS" +
                    ("; local series: CCDC and Bank of England." if not public else "."))
+        if portfolio:
+            comparison_note = ("Diamonds: primary auction observations, not a secondary-market curve. Conventions and dates differ."
+                               if point_observations else
+                               "Par, fitted zero, benchmark-issue and other published yields retain their source conventions.")
+            sources = "Sources: see the portfolio source and rights register."
         bits += [
-            '<path d="M56,598H1160" stroke="#dee6ea"/>',
-            text(56, 621, comparison_note, 12),
-            text(56, 642, "Markers are source nodes. Lines are visual guides; no filled gaps, extrapolation or tradeable cross-currency spread.", 12),
-            text(56, 663, sources + " See data and rights notes. Curated by pengyi.", 12),
+            f'<path d="M56,{footer}H1160" stroke="#dee6ea"/>',
+            text(56, footer + 23, comparison_note, 12),
+            text(56, footer + 44, "Markers are source nodes. Lines are visual guides; no filled gaps, extrapolation or tradeable cross-currency spread.", 12),
+            text(56, footer + 65, sources + (" Curated by pengyi." if portfolio else " See data and rights notes. Curated by pengyi."), 12),
             "</g></svg>",
         ]
         return "\n".join(bits) + "\n"
 
-    def write(self, snapshot: dict, output: Path, *, public: bool = True) -> None:
-        svg = self.render(snapshot, public=public)
+    def write(self, snapshot: dict, output: Path, *, public: bool = True, portfolio: bool = False) -> None:
+        svg = self.render(snapshot, public=public, portfolio=portfolio)
         try:
             with output.open("x", encoding="utf-8", newline="\n") as file:
                 file.write(svg)

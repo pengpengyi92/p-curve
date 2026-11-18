@@ -95,3 +95,19 @@ Contains information from **Daily SGS Prices**, accessed on 2026-11-19 from
 the **Monetary Authority of Singapore**, made available under the
 [MAS Terms of Use of Datasets](https://www.mas.gov.sg/terms-of-use).
 No endorsement. Source yields are unchanged.
+
+## Reproduce the regional portfolio
+
+From the repository root (Python 3.10+, no third-party packages or network):
+
+```sh
+python -m examples.global_sovereign_overlay.generate_portfolio
+python -m examples.global_sovereign_overlay.generate_portfolio --output-dir build/regional-reproduction
+```
+
+The module reads one [portfolio definition](../../curve/portfolio/20261118T175156Z/portfolio.json)
+and uses `DataCollector` to validate all three frozen inputs. It selects the
+markets and per-tenor auction observations for each view and passes them to
+`Drawer`. SVGs are append-only: exact rerender is allowed, a changed existing
+file is refused. No unobserved tenor, estimated quote or live data is added.
+See the [dated source register](../../curve/portfolio/20261118T175156Z/README.md).
