@@ -1,5 +1,11 @@
 # Changelog
 
+## Global sovereign overlay — 2026-11-19 (package remains 0.2.1)
+
+- Add a config-backed collector and an offline comparison drawer, with a
+  timestamped four-curve public example and source-only CGB/gilt rows.
+- Keep prospective daily/intraday adapters out of this version.
+
 ## Grouped sovereign archive — 2026-11-14 (package remains 0.2.1)
 
 - Add immutable editions grouped by developed/emerging market and country or

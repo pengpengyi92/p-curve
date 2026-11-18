@@ -5,6 +5,25 @@
 **[一键打开 Curve 总览](https://pengpengyi92.github.io/p-curve/curve/)** ·
 [HTML source](curve/index.html) · [Local one-click](curve/OPEN_OVERVIEW.cmd)
 
+## Global sovereign yield curves
+
+**Snapshot cutoff: `2026-11-19T00:17:13+08:00` (Asia/Shanghai).**
+The plot shows the latest source rows verified by that cutoff, not a common
+2026-11-19 market close. China and the UK are listed without plotted values
+pending redistribution clearance.
+
+[![Global sovereign yields: US, Japan, Australia and Singapore; China and UK source-only](curve/20261118T161713Z/global_sovereign_yields.svg)](curve/20261118T161713Z/global_sovereign_yields.svg)
+
+[Run the Python example](examples/global_sovereign_overlay/README.md) ·
+[Dated config and source notes](curve/20261118T161713Z/config.json) ·
+[Contribute a data adapter](https://github.com/pengpengyi92/p-curve/issues/10)
+
+Contains information from **Daily SGS Prices**, accessed on 2026-11-19 from
+the **Monetary Authority of Singapore**, made available under the
+[MAS Terms of Use of Datasets](https://www.mas.gov.sg/terms-of-use).
+
+## About P-Curve
+
 Author: **pengyi** · Curated & visualized by pengyi. Official data sources are
 credited separately. Aesthetic comments in the viewer are subjective, not
 investment signals.

@@ -30,3 +30,17 @@ labels do not certify financial accuracy or grant rights beyond the sources.
 - ChinaBond and BoE remain **HOLD**. Hong Kong's source-only page does not
   republish the institutional fixings or y-t-m from the separate HKMA Exchange
   Fund proxy; that proxy has a third-party data credit and remains **HOLD**.
+
+## Global overlay — 2026-11-19
+
+- Same reviewed scopes for UST, Japan MOF and RBA F2, with independently
+  dated rows. Source: Reserve Bank of Australia 2026. Unchanged yields, chart
+  redrawn. Japan MOF data under [PDL 1.0](https://www.digital.go.jp/en/resources/open_data/public_data_license_v1.0).
+- **MAS Daily SGS Prices:** bounded public display of the seven selected
+  benchmark bond yield columns under the [MAS Terms of Use of Datasets](https://www.mas.gov.sg/terms-of-use).
+  Source is MAS's published Closing Levels table; primary-dealer bid rates are
+  the stated inputs. No separate dealer feed, price columns, raw download or
+  MAS branding is redistributed. Preserve source/access-date attribution.
+- **CGB and UK gilts:** retain HOLD, with public source links but neither
+  values nor derived plot lines. A user's separately authorized personal copy
+  stays outside the public tree, including all outputs from it.

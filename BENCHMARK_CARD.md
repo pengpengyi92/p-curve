@@ -1,5 +1,19 @@
 # P-Curve — Benchmark Cards
 
+## Global sovereign overlay — 2026-11-19
+
+- **Baseline:** dated sovereign pages with separate single-market charts.
+- **Change:** a config-backed collector and one SVG with shared maturity and
+  yield scales, source observation labels, and fail-closed public rendering.
+- **Measure:** fixed 2026-11-19 config; four approved curves, 40 nodes. Recheck
+  source dates, 10Y values, 2s10s, exact output bytes and HOLD rejection.
+- **Result:** 77 local tests passed; UST 2s10s +30.0 bp and JGB +104.7 bp
+  on 11-17. No live feed, forecasting or economic validity claim.
+- **Trade-off:** different observation dates and quote conventions; RBA F2
+  ends at 10Y and the source file was older. CGB/UK are source-only on README.
+- **Next Action:** implement one official daily adapter with fixtures and
+  rights evidence ([Issue #10](https://github.com/pengpengyi92/p-curve/issues/10)).
+
 ## Grouped sovereign archive — 2026-11-14
 
 - **Baseline:** four rights-reviewed public series in a flat dated archive.
