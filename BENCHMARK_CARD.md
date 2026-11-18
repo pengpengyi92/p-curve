@@ -1,5 +1,17 @@
 # P-Curve — Benchmark Cards
 
+## Six-market November edition — 2026-11-19
+
+- **Baseline:** four curves; CGB and UK source-only.
+- **Change:** exact UK Database nominal par series and six China MOF auction
+  observations with per-node dates. Preserve the original rights holds.
+- **Measure:** 49 public plotted values; validate auction marker separation,
+  source data, older SVG byte equality and the README asset reference.
+- **Result:** 83 local tests passed, and six markets visible on the new SVG.
+- **Trade-off:** CGB points are not a daily secondary-market curve; rate
+  conventions and observation dates are not homogeneous.
+- **Next Action:** identify a redistributable CGB daily secondary series.
+
 ## Global sovereign overlay — 2026-11-19
 
 - **Baseline:** dated sovereign pages with separate single-market charts.

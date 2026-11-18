@@ -7,7 +7,7 @@ from .data_collector import DataCollector
 from .drawer import Drawer
 
 ROOT = Path(__file__).resolve().parents[2]
-EDITION = ROOT / "curve/20261118T162711Z"
+EDITION = ROOT / "curve/20261118T172919Z"
 BUILD = ROOT / "build"
 
 
@@ -25,7 +25,7 @@ def main() -> None:
     snapshot = DataCollector(args.config or (EDITION / "config.json")).collect(public=not args.local)
     output.parent.mkdir(parents=True, exist_ok=True)
     Drawer().write(snapshot, output, public=not args.local)
-    print(f"{sum(m['status'] == 'AVAILABLE' for m in snapshot['markets'])} curves -> {output}")
+    print(f"{sum(m['status'] == 'AVAILABLE' for m in snapshot['markets'])} markets -> {output}")
 
 
 if __name__ == "__main__":

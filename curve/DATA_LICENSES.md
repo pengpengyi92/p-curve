@@ -44,3 +44,19 @@ labels do not certify financial accuracy or grant rights beyond the sources.
 - **CGB and UK gilts:** retain HOLD, with public source links but neither
   values nor derived plot lines. A user's separately authorized personal copy
   stays outside the public tree, including all outputs from it.
+
+## November 2026 six-market comparison
+
+- **UK:** the three nominal-par series `IUDSNPY`, `IUDMNPY`, `IUDLNPY` are
+  from the Bank of England Statistics Database, whose [own legal terms](https://www.bankofengland.co.uk/legal#bank-of-england-database)
+  identify OGL for Database data unless otherwise stated. No series-specific
+  rights exclusion was indicated for these three modeled series. Contains
+  public sector information licensed under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/).
+  The unrelated latest-curve spot workbook remains HOLD.
+- **China:** the six plotted numerical facts are independently sourced from
+  the [Ministry of Finance debt-management site](https://zwgls.mof.gov.cn/),
+  whose footer requests attribution for republication. Only the rates/terms
+  and dates needed to identify the points were extracted from ministry-authored
+  announcements with per-point citations. The ChinaBond market curve remains
+  HOLD and no ChinaBond numbers are included in the public SVG or config.
+- See the [edition and source table](../examples/global_sovereign_overlay/README.md).

@@ -7,20 +7,26 @@
 
 ## Global sovereign yield curves
 
-**Target market date: `2026-11-18` · Compiled: `2026-11-19T00:27:11+08:00`.**
-Singapore is the verified November 18 public observation. The US, Japan and
-Australia are earlier reference curves, with their actual dates labeled.
-China and the UK remain source-only pending redistribution clearance.
+**November 2026 · Compiled: `2026-11-19T01:29:19+08:00`.**
+All six markets have published November observations. The UK line uses
+Bank of England Database nominal par yields. China's diamonds are observed
+Ministry of Finance primary auction rates, **not** a secondary-market curve.
+Dates and rate conventions differ; this is not a synchronized close.
 
-[![November 18 sovereign yields: Singapore and earlier US, Japan and Australia references](curve/20261118T162711Z/global_sovereign_yields.svg)](curve/20261118T162711Z/global_sovereign_yields.svg)
+[![November sovereign yield comparison: US, China auction points, Japan, UK, Australia and Singapore](curve/20261118T172919Z/global_sovereign_yields.svg)](curve/20261118T172919Z/global_sovereign_yields.svg)
 
 [Run the Python example](examples/global_sovereign_overlay/README.md) ·
-[Dated config and source notes](curve/20261118T162711Z/config.json) ·
+[Dated config and source notes](curve/20261118T172919Z/config.json) ·
 [Contribute a data adapter](https://github.com/pengpengyi92/p-curve/issues/10)
 
 Contains information from **Daily SGS Prices**, accessed on 2026-11-19 from
 the **Monetary Authority of Singapore**, made available under the
 [MAS Terms of Use of Datasets](https://www.mas.gov.sg/terms-of-use).
+
+UK data: Bank of England Database, licensed under the
+[Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/).
+China auction statistics: Ministry of Finance of China. See
+[per-point citations and conventions](examples/global_sovereign_overlay/README.md).
 
 ## About P-Curve
 

@@ -14,6 +14,7 @@ from examples.global_sovereign_overlay.generate import EDITION, ROOT
 
 SVG = {"svg": "http://www.w3.org/2000/svg"}
 ARCHIVED_EDITION = ROOT / "curve/20261118T161713Z"
+TARGET_EDITION = ROOT / "curve/20261118T162711Z"
 
 
 class GlobalSovereignOverlayTests(unittest.TestCase):
@@ -79,13 +80,13 @@ class GlobalSovereignOverlayTests(unittest.TestCase):
         self.assertEqual(svg.count("Not displayed: rights HOLD"), 2)
 
     def test_target_edition_labels_actual_dates_and_regenerates(self):
-        snapshot = DataCollector(EDITION / "config.json").collect()
+        snapshot = DataCollector(TARGET_EDITION / "config.json").collect()
         self.assertEqual(snapshot["target_market_date"], "2026-11-18")
         self.assertEqual(snapshot["generated_at"], "2026-11-19T00:27:11+08:00")
         self.assertEqual([m["id"] for m in snapshot["markets"]
                           if m["market_date"] == snapshot["target_market_date"]], ["sg"])
         svg = Drawer().render(snapshot)
-        self.assertEqual(svg.encode("utf-8"), (EDITION / "global_sovereign_yields.svg").read_bytes())
+        self.assertEqual(svg.encode("utf-8"), (TARGET_EDITION / "global_sovereign_yields.svg").read_bytes())
         self.assertIn("2026-11-18  /  Target date", svg)
         self.assertEqual(svg.count("/  Earlier reference"), 3)
 
@@ -102,10 +103,54 @@ class GlobalSovereignOverlayTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError, error):
                     DataCollector(config).collect()
 
-    def test_homepage_does_not_embed_archived_november_19_chart(self):
+    def test_homepage_embeds_only_the_six_market_edition(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
-        self.assertIn("](curve/20261118T162711Z/global_sovereign_yields.svg)", readme)
-        self.assertNotIn("curve/20261118T161713Z/global_sovereign_yields.svg", readme)
+        self.assertIn(f"](curve/{EDITION.name}/global_sovereign_yields.svg)", readme)
+        for archived in (ARCHIVED_EDITION, TARGET_EDITION):
+            self.assertNotIn(f"curve/{archived.name}/global_sovereign_yields.svg", readme)
+
+    def test_six_market_chart_reproduces_without_connecting_auction_points(self):
+        snapshot = DataCollector(EDITION / "config.json").collect()
+        self.assertEqual({m["id"] for m in snapshot["markets"] if m["status"] == "AVAILABLE"},
+                         {"ust", "jgb", "au", "sg", "uk", "cgb"})
+        svg = Drawer().render(snapshot)
+        self.assertEqual(svg.encode("utf-8"), (EDITION / "global_sovereign_yields.svg").read_bytes())
+        root = ET.fromstring(svg)
+        cgb = root.find(".//svg:g[@id='cgb']", SVG)
+        uk = root.find(".//svg:g[@id='uk']", SVG)
+        self.assertEqual(len(cgb.findall("svg:polygon", SVG)), 6)
+        self.assertIsNone(cgb.find("svg:path", SVG))
+        self.assertEqual(len(uk.findall("svg:circle", SVG)), 3)
+        self.assertEqual(len(root.findall(".//svg:circle", SVG)), 43)
+        self.assertIn("10Y: 1.56% | auction on 2026-11-13", svg)
+
+    def test_uk_database_and_mof_auction_known_observations(self):
+        snapshot = DataCollector(EDITION / "config.json").collect()
+        uk = next(m for m in snapshot["markets"] if m["id"] == "uk")
+        cgb = next(m for m in snapshot["markets"] if m["id"] == "cgb")
+        self.assertEqual(uk["market_date"], "2026-11-16")
+        self.assertEqual([node["yield_pct"] for node in uk["nodes"]], [4.9734, 5.3151, 5.6042])
+        self.assertIn("IUDMNPY", uk["source_url"])
+        self.assertEqual([node["yield_pct"] for node in cgb["nodes"]], [1.11, 1.12, 1.22, 1.4, 1.56, 2.15])
+        self.assertEqual(snapshot["point_observations"]["cgb"]["49Y"]["market_date"], "2026-11-06")
+
+    def test_point_market_cannot_omit_provenance_or_hide_newer_dates(self):
+        for mode, message in [("missing", "every plotted tenor"),
+                              ("future", "latest point date"),
+                              ("untrusted", "public HTTPS URL")]:
+            with self.subTest(mode=mode), tempfile.TemporaryDirectory() as directory:
+                fixture = DataCollector(EDITION / "config.json").collect()
+                points = fixture["point_observations"]["cgb"]
+                if mode == "missing":
+                    del points["10Y"]
+                elif mode == "future":
+                    points["10Y"]["market_date"] = "2026-11-20"
+                else:
+                    points["10Y"]["source_url"] = "http://example.invalid"
+                config = Path(directory) / "config.json"
+                config.write_text(json.dumps(fixture), encoding="utf-8")
+                with self.assertRaisesRegex(ValueError, message):
+                    DataCollector(config).collect()
 
     def test_existing_different_chart_is_not_overwritten(self):
         with tempfile.TemporaryDirectory() as directory:

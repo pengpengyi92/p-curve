@@ -1,0 +1,427 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot_id": "20261118T172919Z",
+  "title": "November 2026 sovereign yield comparison",
+  "generated_at": "2026-11-19T01:29:19+08:00",
+  "notes": [
+    "November observations, not a common market close or comparable discount curves.",
+    "China uses official primary-market auction points only. No ChinaBond or Bank of England zip/workbook data used."
+  ],
+  "markets": [
+    {
+      "id": "ust",
+      "title": "US · UST",
+      "currency": "USD",
+      "market_date": "2026-11-17",
+      "asof": "Frozen verified November row from the previous public edition.",
+      "retrieved_at": "2026-11-19T00:16:15+08:00",
+      "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value_month=202611",
+      "curve_type": "Nominal par (CMT)",
+      "units": "percent_per_annum",
+      "status": "AVAILABLE",
+      "rights": {
+        "status": "APPROVED_PUBLIC_DISPLAY",
+        "source_url": "https://catalog.data.gov/dataset/interest-rate-statistics-daily-treasury-yield-curve-rates",
+        "reason": "CC0 1.0 per Data.gov; source US Department of the Treasury."
+      },
+      "nodes": [
+        {
+          "tenor": "1M",
+          "years": 0.08333333333333333,
+          "yield_pct": 4.09
+        },
+        {
+          "tenor": "1.5M",
+          "years": 0.125,
+          "yield_pct": 4.24
+        },
+        {
+          "tenor": "2M",
+          "years": 0.16666666666666666,
+          "yield_pct": 4.26
+        },
+        {
+          "tenor": "3M",
+          "years": 0.25,
+          "yield_pct": 4.33
+        },
+        {
+          "tenor": "4M",
+          "years": 0.3333333333333333,
+          "yield_pct": 4.32
+        },
+        {
+          "tenor": "6M",
+          "years": 0.5,
+          "yield_pct": 4.41
+        },
+        {
+          "tenor": "1Y",
+          "years": 1,
+          "yield_pct": 4.6
+        },
+        {
+          "tenor": "2Y",
+          "years": 2,
+          "yield_pct": 4.8
+        },
+        {
+          "tenor": "3Y",
+          "years": 3,
+          "yield_pct": 4.84
+        },
+        {
+          "tenor": "5Y",
+          "years": 5,
+          "yield_pct": 4.9
+        },
+        {
+          "tenor": "7Y",
+          "years": 7,
+          "yield_pct": 4.99
+        },
+        {
+          "tenor": "10Y",
+          "years": 10,
+          "yield_pct": 5.1
+        },
+        {
+          "tenor": "20Y",
+          "years": 20,
+          "yield_pct": 5.5
+        },
+        {
+          "tenor": "30Y",
+          "years": 30,
+          "yield_pct": 5.46
+        }
+      ],
+      "notes": [
+        "Official XML SHA-256: cfd253bd6330538ed93bc1a876fb8c197742adacd82a131955cc83304233239e."
+      ]
+    },
+    {
+      "id": "cgb",
+      "title": "China · CGB",
+      "currency": "CNY",
+      "market_date": "2026-11-18",
+      "asof": "Latest auction in this set; individual dates and source URLs are in point_observations.",
+      "retrieved_at": "2026-11-19T01:29:19+08:00",
+      "source_url": "https://zwgls.mof.gov.cn/ywgg/index.htm",
+      "curve_type": "MOF primary auction rates",
+      "units": "percent_per_annum",
+      "status": "AVAILABLE",
+      "rights": {
+        "status": "APPROVED_PUBLIC_DISPLAY",
+        "source_url": "https://zwgls.mof.gov.cn/",
+        "reason": "Limited to cited numerical facts from Ministry of Finance of China issuance announcements. The publisher's site permits reprinting with attribution. Does not cover CCDC market data."
+      },
+      "nodes": [
+        {
+          "tenor": "91D",
+          "years": 0.2493150684931507,
+          "yield_pct": 1.11
+        },
+        {
+          "tenor": "182D",
+          "years": 0.4986301369863014,
+          "yield_pct": 1.12
+        },
+        {
+          "tenor": "3Y",
+          "years": 3,
+          "yield_pct": 1.22
+        },
+        {
+          "tenor": "7Y",
+          "years": 7,
+          "yield_pct": 1.4
+        },
+        {
+          "tenor": "10Y",
+          "years": 10,
+          "yield_pct": 1.56
+        },
+        {
+          "tenor": "49Y",
+          "years": 49,
+          "yield_pct": 2.15
+        }
+      ],
+      "notes": [
+        "Treasury bill terms in days mapped to years as days/365. Reopening tenor is remaining years, not the original issue term.",
+        "Under MOF rate-auction rules, new-issue coupons shown are rounded weighted winning rates, not secondary-market YTM or identical rates for every allotment.",
+        "The 7Y is a sovereign special bond. Do not fit or join observations from different dates.",
+        "91D: 2026 MOF announcement 199: annualized original bill issue yield.",
+        "182D: 2026 MOF announcement 198: annualized original bill issue yield.",
+        "3Y: 2026 MOF announcement 194: auction-set new-issue coupon (rounded weighted auction rate).",
+        "7Y: 2026 MOF announcement 197: auction-set new-issue coupon, special sovereign issue.",
+        "10Y: 2026 MOF announcement 195: auction-set new-issue coupon (rounded weighted auction rate).",
+        "49Y: 2026 MOF announcement 190: annualized reopening yield, original 50Y issue, ~49 years remaining."
+      ]
+    },
+    {
+      "id": "jgb",
+      "title": "Japan · JGB",
+      "currency": "JPY",
+      "market_date": "2026-11-17",
+      "asof": "Frozen verified November row from the previous public edition.",
+      "retrieved_at": "2026-11-19T00:16:15+08:00",
+      "source_url": "https://www.mof.go.jp/english/policy/jgbs/reference/interest_rate/jgbcme.csv",
+      "curve_type": "Constant-maturity yield",
+      "units": "percent_per_annum",
+      "status": "AVAILABLE",
+      "rights": {
+        "status": "APPROVED_PUBLIC_DISPLAY",
+        "source_url": "https://www.mof.go.jp/english/about_mof/notice/index.html",
+        "reason": "Japan Ministry of Finance, PDL 1.0; P-Curve selected date and re-plotted yields without changing them."
+      },
+      "nodes": [
+        {
+          "tenor": "1Y",
+          "years": 1,
+          "yield_pct": 1.67
+        },
+        {
+          "tenor": "2Y",
+          "years": 2,
+          "yield_pct": 1.878
+        },
+        {
+          "tenor": "3Y",
+          "years": 3,
+          "yield_pct": 1.985
+        },
+        {
+          "tenor": "4Y",
+          "years": 4,
+          "yield_pct": 2.154
+        },
+        {
+          "tenor": "5Y",
+          "years": 5,
+          "yield_pct": 2.274
+        },
+        {
+          "tenor": "6Y",
+          "years": 6,
+          "yield_pct": 2.373
+        },
+        {
+          "tenor": "7Y",
+          "years": 7,
+          "yield_pct": 2.496
+        },
+        {
+          "tenor": "8Y",
+          "years": 8,
+          "yield_pct": 2.641
+        },
+        {
+          "tenor": "9Y",
+          "years": 9,
+          "yield_pct": 2.779
+        },
+        {
+          "tenor": "10Y",
+          "years": 10,
+          "yield_pct": 2.925
+        },
+        {
+          "tenor": "15Y",
+          "years": 15,
+          "yield_pct": 3.488
+        },
+        {
+          "tenor": "20Y",
+          "years": 20,
+          "yield_pct": 3.787
+        },
+        {
+          "tenor": "25Y",
+          "years": 25,
+          "yield_pct": 4.088
+        },
+        {
+          "tenor": "30Y",
+          "years": 30,
+          "yield_pct": 4.069
+        },
+        {
+          "tenor": "40Y",
+          "years": 40,
+          "yield_pct": 4.101
+        }
+      ],
+      "notes": [
+        "Official CSV SHA-256: 29a71038a12ae13f744a70211b603b9c22bbc142ea027f8608526e3f2d6d7eab."
+      ]
+    },
+    {
+      "id": "uk",
+      "title": "UK · Gilts",
+      "currency": "GBP",
+      "market_date": "2026-11-16",
+      "asof": "Last complete row in the downloaded three-series Bank of England Statistics Database CSV.",
+      "retrieved_at": "2026-11-19T01:29:19+08:00",
+      "source_url": "https://www.bankofengland.co.uk/boeapps/database/_iadb-fromshowcolumns.asp?csv.x=yes&Datefrom=01%2FNov%2F2026&Dateto=18%2FNov%2F2026&SeriesCodes=IUDSNPY,IUDMNPY,IUDLNPY&CSVF=TN&UsingCodes=Y&VFD=N&VPD=Y",
+      "curve_type": "BoE Database nominal par",
+      "units": "percent_per_annum",
+      "status": "AVAILABLE",
+      "rights": {
+        "status": "APPROVED_PUBLIC_DISPLAY",
+        "source_url": "https://www.bankofengland.co.uk/legal#bank-of-england-database",
+        "reason": "Contains public sector information from the Bank of England Database licensed under the UK Open Government Licence v3.0. No third-party latest curve workbook or spot data used."
+      },
+      "nodes": [
+        {
+          "tenor": "5Y",
+          "years": 5,
+          "yield_pct": 4.9734
+        },
+        {
+          "tenor": "10Y",
+          "years": 10,
+          "yield_pct": 5.3151
+        },
+        {
+          "tenor": "20Y",
+          "years": 20,
+          "yield_pct": 5.6042
+        }
+      ],
+      "notes": [
+        "Official series IUDSNPY, IUDMNPY and IUDLNPY are 5Y, 10Y and 20Y nominal par yields, respectively.",
+        "CSV SHA-256: ac7259f7843c7c5dc67373aaab5b4a73108d2b63e29633259b28f4e4428883f4."
+      ]
+    },
+    {
+      "id": "au",
+      "title": "Australia · AGS",
+      "currency": "AUD",
+      "market_date": "2026-11-11",
+      "asof": "Frozen verified November row from the previous public edition.",
+      "retrieved_at": "2026-11-19T00:16:15+08:00",
+      "source_url": "https://www.rba.gov.au/statistics/tables/csv/f2-data.csv",
+      "curve_type": "RBA F2 nominal yield",
+      "units": "percent_per_annum",
+      "status": "AVAILABLE",
+      "rights": {
+        "status": "APPROVED_PUBLIC_DISPLAY",
+        "source_url": "https://www.rba.gov.au/copyright/",
+        "reason": "Source: Reserve Bank of Australia 2026, F2, RBA-only series. No benchmark use or endorsement."
+      },
+      "nodes": [
+        {
+          "tenor": "2Y",
+          "years": 2,
+          "yield_pct": 4.808
+        },
+        {
+          "tenor": "3Y",
+          "years": 3,
+          "yield_pct": 4.733
+        },
+        {
+          "tenor": "5Y",
+          "years": 5,
+          "yield_pct": 4.757
+        },
+        {
+          "tenor": "10Y",
+          "years": 10,
+          "yield_pct": 5.044
+        }
+      ],
+      "notes": [
+        "Last nonempty row of downloaded file; the CSV has publication date 13-Nov-2026. Longer tenors and indexed yields are not used.",
+        "Official CSV SHA-256: ce557587cb80a8d5a2c288ae9bc0bcff15053e1b6caa08923dbc822c4eef8655."
+      ]
+    },
+    {
+      "id": "sg",
+      "title": "Singapore · SGS",
+      "currency": "SGD",
+      "market_date": "2026-11-18",
+      "asof": "Frozen verified November row from the previous public edition.",
+      "retrieved_at": "2026-11-19T00:16:15+08:00",
+      "source_url": "https://eservices.mas.gov.sg/statistics/fdanet/SgsBenchmarkIssuePrices.aspx",
+      "curve_type": "SGS benchmark bond yield",
+      "units": "percent_per_annum",
+      "status": "AVAILABLE",
+      "rights": {
+        "status": "APPROVED_PUBLIC_DISPLAY",
+        "source_url": "https://www.mas.gov.sg/terms-of-use",
+        "reason": "Contains information from Daily SGS Prices accessed on 2026-11-19 from the Monetary Authority of Singapore, made available under its Terms of Use of Datasets. No MAS endorsement."
+      },
+      "nodes": [
+        {
+          "tenor": "2Y",
+          "years": 2,
+          "yield_pct": 1.98
+        },
+        {
+          "tenor": "5Y",
+          "years": 5,
+          "yield_pct": 2.07
+        },
+        {
+          "tenor": "10Y",
+          "years": 10,
+          "yield_pct": 2.29
+        },
+        {
+          "tenor": "15Y",
+          "years": 15,
+          "yield_pct": 2.34
+        },
+        {
+          "tenor": "20Y",
+          "years": 20,
+          "yield_pct": 2.33
+        },
+        {
+          "tenor": "30Y",
+          "years": 30,
+          "yield_pct": 2.38
+        },
+        {
+          "tenor": "50Y",
+          "years": 50,
+          "yield_pct": 2.59
+        }
+      ],
+      "notes": [
+        "Closing bid-side benchmark issue yields, named source maturity buckets (not actual remaining lives or par rates). Treasury bills are not included."
+      ]
+    }
+  ],
+  "point_observations": {
+    "cgb": {
+      "91D": {
+        "market_date": "2026-11-18",
+        "source_url": "https://zwgls.mof.gov.cn/ywgg/202611/t20261118_4004935.htm"
+      },
+      "182D": {
+        "market_date": "2026-11-18",
+        "source_url": "https://zwgls.mof.gov.cn/ywgg/202611/t20261118_4004932.htm"
+      },
+      "3Y": {
+        "market_date": "2026-11-13",
+        "source_url": "https://zwgls.mof.gov.cn/ywgg/202611/t20261113_4004659.htm"
+      },
+      "7Y": {
+        "market_date": "2026-11-18",
+        "source_url": "https://zwgls.mof.gov.cn/ywgg/202611/t20261118_4004931.htm"
+      },
+      "10Y": {
+        "market_date": "2026-11-13",
+        "source_url": "https://zwgls.mof.gov.cn/ywgg/202611/t20261113_4004660.htm"
+      },
+      "49Y": {
+        "market_date": "2026-11-06",
+        "source_url": "https://zwgls.mof.gov.cn/ywgg/202611/t20261106_4004206.htm"
+      }
+    }
+  }
+}

@@ -35,8 +35,10 @@
 - [ ] Trial one documented official daily adapter against frozen source
   fixtures ([Issue #10](https://github.com/pengpengyi92/p-curve/issues/10)).
   Verify availability lag and rights before adding live refresh.
-- [ ] Find public-redistributable CGB and GBP sovereign curves or obtain
-  permission for the exact source before plotting either on the public README.
+- [x] Add publicly reusable GBP nominal-par Database series and cited China
+  Ministry of Finance primary auction points to the README comparison.
+- [ ] Find a redistributable CGB secondary-market curve or obtain permission
+  for the exact source. Auction points must not be treated as that curve.
 
 - [x] Add current pengyi-attributed overview, editorial comments and portable local launcher.
 - [x] Verify one-click public Pages HTTP/rendering,64-test CI and both Git syncs.

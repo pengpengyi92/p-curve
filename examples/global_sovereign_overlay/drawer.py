@@ -18,6 +18,7 @@ STYLES = (
 class Drawer:
     def render(self, snapshot: dict, *, public: bool = True) -> str:
         markets = snapshot["markets"]
+        point_observations = snapshot.get("point_observations", {})
         if public and any(m["rights"]["status"] == "HOLD" and m["nodes"] for m in markets):
             raise ValueError("public rendering cannot include HOLD nodes")
         nodes = [n for m in markets for n in m["nodes"] if n["yield_pct"] is not None]
@@ -37,7 +38,7 @@ class Drawer:
         def text(xp, yp, value, size=13, *, color="#24394a", extra=""):
             return f'<text x="{xp}" y="{yp}" font-size="{size}" fill="{color}"{extra}>{escape(str(value))}</text>'
 
-        heading = "Global sovereign yield curves"
+        heading = snapshot["title"]
         timestamp = snapshot["generated_at"]
         target = snapshot.get("target_market_date")
         subtitle = (f"Target market date: {target}   |   Compiled: {timestamp}"
@@ -49,7 +50,7 @@ class Drawer:
         bits = [
             f'<svg xmlns="http://www.w3.org/2000/svg" width="1216" height="{height}" '
             f'viewBox="0 0 1216 {height}" role="img" aria-labelledby="title desc">',
-            f'<title id="title">{heading}</title>',
+            f'<title id="title">{escape(heading)}</title>',
             f'<desc id="desc">{escape(timestamp)}. {escape(description)}. '
             'Maturity in years. Annual nominal yield in percent.</desc>',
             f'<rect width="1216" height="{height}" fill="#f4f7f8"/>',
@@ -59,7 +60,8 @@ class Drawer:
             text(56, 56, f"P-CURVE  /  {mode}", 13, color="#236a74", extra=' font-weight="700"'),
             text(56, 96, heading, 34, extra=' font-weight="720"'),
             text(56, 120, subtitle, 14),
-            text(left, top - 10, "Annual nominal yield (%)", 13, extra=' font-weight="650"'),
+            text(left, top - 10, "Annual nominal rate / yield (%)" if point_observations
+                 else "Annual nominal yield (%)", 13, extra=' font-weight="650"'),
         ]
         for tick in range(low, high + 1, y_step):
             yp = y(tick)
@@ -83,6 +85,7 @@ class Drawer:
         ])
         for i, market in enumerate(markets):
             available = market["status"] == "AVAILABLE"
+            observations = point_observations.get(market["id"])
             color, pattern = STYLES[i % len(STYLES)]
             if not available:
                 color, pattern = "#627480", "2 4"
@@ -95,8 +98,13 @@ class Drawer:
             if available and target:
                 role = "Target date" if market["market_date"] == target else "Earlier reference"
                 date_label = f"{date_label}  /  {role}"
+            legend = f'<path d="M882,{yy - 4}h22" stroke="{color}" stroke-width="3"{dash}/>'
+            if observations:
+                dates = [o["market_date"] for o in observations.values()]
+                date_label = f"{min(dates)} to {max(dates)}"
+                legend = _diamond(893, yy - 4, color)
             bits += [
-                f'<path d="M882,{yy - 4}h22" stroke="{color}" stroke-width="3"{dash}/>',
+                legend,
                 text(914, yy, market["title"], 15, color=color, extra=' font-weight="720"'),
                 text(1163, yy, value, 14, extra=' text-anchor="end" font-weight="700"'),
                 text(914, yy + 17, date_label, 12),
@@ -115,21 +123,29 @@ class Drawer:
                 px, py = x(node["years"]), y(rate)
                 parts.append(f"{next_cmd}{px:.2f},{py:.2f}")
                 next_cmd = "L"
-                label = escape(f"{market['title']}, {node['tenor']}: {rate:g}%")
-                markers.append(f'<circle cx="{px:.2f}" cy="{py:.2f}" r="2.4"><title>{label}</title></circle>')
+                label = f"{market['title']}, {node['tenor']}: {rate:g}%"
+                if observations:
+                    label += f" | auction on {observations[node['tenor']]['market_date']}"
+                    markers.append(_diamond(px, py, color, label))
+                else:
+                    markers.append(f'<circle cx="{px:.2f}" cy="{py:.2f}" r="2.4"><title>{escape(label)}</title></circle>')
             bits += [
                 f'<g id="{market["id"]}" fill="{color}">',
-                f'<path d="{" ".join(parts)}" stroke="{color}" stroke-width="2.8" fill="none"{dash}/>',
+                *([] if observations else [f'<path d="{" ".join(parts)}" stroke="{color}" stroke-width="2.8" fill="none"{dash}/>']),
                 *markers,
                 "</g>",
             ]
+        comparison_note = ("CGB diamonds are official primary-market auction rates on different dates, not a secondary-market curve."
+                           if point_observations else
+                           "Local-currency rates in source conventions: par, interpolated bond yields, benchmark yields and spot yields are not interchangeable.")
+        sources = ("Sources: US Treasury, China MOF, Japan MOF, Bank of England Database, RBA and MAS."
+                   if point_observations else "Sources: US Treasury, Japan MOF, RBA, MAS" +
+                   ("; local series: CCDC and Bank of England." if not public else "."))
         bits += [
             '<path d="M56,598H1160" stroke="#dee6ea"/>',
-            text(56, 621, "Local-currency rates in source conventions: par, interpolated bond yields, benchmark yields and spot yields are not interchangeable.", 12),
+            text(56, 621, comparison_note, 12),
             text(56, 642, "Markers are source nodes. Lines are visual guides; no filled gaps, extrapolation or tradeable cross-currency spread.", 12),
-            text(56, 663, "Sources: US Treasury, Japan MOF, RBA, MAS" +
-                 ("; local series: CCDC and Bank of England." if not public else ".") +
-                 " See data and rights notes. Curated by pengyi.", 12),
+            text(56, 663, sources + " See data and rights notes. Curated by pengyi.", 12),
             "</g></svg>",
         ]
         return "\n".join(bits) + "\n"
@@ -142,3 +158,9 @@ class Drawer:
         except FileExistsError:
             if output.read_bytes() != svg.encode("utf-8"):
                 raise ValueError(f"refusing to overwrite an existing chart: {output}") from None
+
+
+def _diamond(x: float, y: float, color: str, label: str = "") -> str:
+    tip = f"<title>{escape(label)}</title>" if label else ""
+    points = f"{x:.2f},{y-5:.2f} {x+5:.2f},{y:.2f} {x:.2f},{y+5:.2f} {x-5:.2f},{y:.2f}"
+    return f'<polygon points="{points}" fill="#fff" stroke="{color}" stroke-width="2">{tip}</polygon>'

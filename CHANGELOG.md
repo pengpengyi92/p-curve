@@ -1,5 +1,11 @@
 # Changelog
 
+## November six-market comparison — 2026-11-19 (package remains 0.2.1)
+
+- Add OGL-licensed UK nominal par yields and attributed China MOF auction
+  points. Draw the latter without a connecting line, with per-tenor provenance.
+- Replace only the homepage example; preserve both preceding edition assets.
+
 ## November 18 target edition — 2026-11-19 (package remains 0.2.1)
 
 - Replace the README figure with a November 18 target-date view. Label earlier
