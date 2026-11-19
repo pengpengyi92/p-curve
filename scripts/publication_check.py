@@ -5,6 +5,7 @@ Run after initializing this independent repository and before each public push.
 """
 
 import ast
+from hashlib import sha256
 import importlib.util
 import json
 from pathlib import Path
@@ -14,6 +15,15 @@ import sys
 
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def matches_reviewed_webp(raw: bytes, digest: str) -> bool:
+    return (
+        raw.startswith(b"RIFF")
+        and raw[8:12] == b"WEBP"
+        and int.from_bytes(raw[4:8], "little") + 8 == len(raw)
+        and sha256(raw).hexdigest() == digest
+    )
 
 
 def check() -> list[str]:
@@ -34,6 +44,11 @@ def check() -> list[str]:
         errors.append(f"unapproved file: {path}")
     for path in sorted(expected - actual):
         errors.append(f"allowlisted file missing from public inventory: {path}")
+    reviewed_webp = manifest.get("reviewed_webp_sha256", {})
+    for name, digest in reviewed_webp.items():
+        if (name not in expected or not re.fullmatch(r"assets/[a-z0-9-]+\.webp", name)
+                or not re.fullmatch(r"[0-9a-f]{64}", digest)):
+            errors.append(f"invalid reviewed WebP entry: {name}")
     patterns = [
         ("private repository URL", re.compile(r"https?://github\.com/[^/\s]+/(?:PFICC|P-University)(?:[/#?]|\b)", re.I)),
         ("absolute Windows path", re.compile(r"\b[A-Z]:[\\/]")),
@@ -51,6 +66,10 @@ def check() -> list[str]:
         raw = path.read_bytes()
         if len(raw) > 512_000:
             errors.append(f"unexpectedly large export: {name}")
+        if name in reviewed_webp:
+            if not matches_reviewed_webp(raw, reviewed_webp[name]):
+                errors.append(f"WebP format or approved fingerprint mismatch: {name}")
+            continue
         try:
             content = raw.decode("utf-8")
         except UnicodeDecodeError:

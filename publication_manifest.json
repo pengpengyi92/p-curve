@@ -16,6 +16,9 @@
     "key_rate_zero_node_risk",
     "dated_sovereign_curve_archive"
   ],
+  "reviewed_webp_sha256": {
+    "assets/p-curve-ficc-lab.webp": "f975e2f246e1de918d811c6f84fabca5a54367351e39362ca4c8772a5ac010f1"
+  },
   "files": [
     ".gitattributes",
     ".nojekyll",
@@ -33,6 +36,8 @@
     "CONTRIBUTING.md",
     "LICENSE",
     "README.md",
+    "assets/README.md",
+    "assets/p-curve-ficc-lab.webp",
     "index.html",
     "SECURITY.md",
     "TODO.md",

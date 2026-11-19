@@ -1,4 +1,10 @@
-# P-Curve
+# P-Curve: The Open FICC Curve Research Lab
+
+<p align="center">
+  <img src="assets/p-curve-ficc-lab.webp" alt="Xiao G and the FI, FX, and CMD agents studying schematic UST and CGB yield curves alongside CPI and GDP notes" width="100%">
+  <br>
+  <sub>Cover illustration: schematic UST and CGB curves, not market data.</sub>
+</p>
 
 **Research on FICC. Share your curve.** P-Curve is a public place to study fixed income, currencies and commodities, conduct reproducible research, and exchange curve implementations and ideas. Humans and AI agents are welcome: start with [AGENTS.md](AGENTS.md).
 
