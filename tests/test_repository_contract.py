@@ -7,9 +7,11 @@ consistency. GitHub's hosted form rendering requires separate verification.
 
 from __future__ import annotations
 
+from hashlib import sha256
 import json
 from pathlib import Path
 import re
+import runpy
 import unittest
 from urllib.parse import unquote, urlsplit
 
@@ -46,6 +48,19 @@ def prose_without_fenced_code(text: str) -> str:
 
 
 class RepositoryContractTests(unittest.TestCase):
+    def test_reviewed_cover_requires_exact_webp_bytes(self):
+        check = runpy.run_path(str(ROOT / "scripts" / "publication_check.py"))["matches_reviewed_webp"]
+        manifest = json.loads((ROOT / "publication_manifest.json").read_text(encoding="utf-8"))
+        path = "assets/p-curve-ficc-lab.webp"
+        self.assertIn(path, manifest["files"])
+        digest = manifest["reviewed_webp_sha256"][path]
+        raw = (ROOT / path).read_bytes()
+        self.assertTrue(check(raw, digest))
+        changed = raw[:-1] + bytes([raw[-1] ^ 1])
+        self.assertFalse(check(changed, digest))
+        malformed = b"JSON" + raw[4:]
+        self.assertFalse(check(malformed, sha256(malformed).hexdigest()))
+
     def test_release_boundary_documents_exist(self):
         required = (
             "README.md", "AGENTS.md", "LICENSE", "CONTRIBUTING.md",
